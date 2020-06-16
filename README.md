@@ -1,8 +1,7 @@
-
 # About docs repo
 
 This repo contains public documentation of the hpc-resources and tutorials.
-Thist repo is mirrored from gitlab.
+Thist repo is mirrored from gitlab to github.
 https://docs.gitlab.com/ee/user/project/repository/repository_mirroring.html
 
 HPC @ ICM UW: <http://kdm.icm.edu.pl/>
