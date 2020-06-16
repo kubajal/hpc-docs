@@ -1,0 +1,1308 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Komputery Dużej Mocy w ICM UW">
+      
+      
+      
+        <meta name="author" content="ICM">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1, mkdocs-material-4.6.3">
+    
+    
+      
+        <title>1. Basic Usage</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.adb8469c.css">
+      
+        <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#546e7a">
+      
+    
+    
+      <script src="../../../assets/javascripts/modernizr.86422ebf.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../../../style.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="blue-grey" data-md-color-accent="green">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../../.." title="Dokumentacja ICM UW" aria-label="Dokumentacja ICM UW" class="md-header-nav__button md-logo">
+          
+            <img alt="logo" src="../../../images/Logo_icm_biale.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Dokumentacja ICM UW
+            </span>
+            <span class="md-header-nav__topic">
+              
+                1. Basic Usage
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" aria-label="search" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://git.icm.edu.pl/owu/hpc-docs/" title="Go to repository" class="md-source" data-md-source="">
+  
+  <div class="md-source__repository">
+    ICM-HPC
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../../.." title="Dokumentacja ICM UW" class="md-nav__button md-logo">
+      
+        <img alt="logo" src="../../../images/Logo_icm_biale.png" width="48" height="48">
+      
+    </a>
+    Dokumentacja ICM UW
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://git.icm.edu.pl/owu/hpc-docs/" title="Go to repository" class="md-source" data-md-source="">
+  
+  <div class="md-source__repository">
+    ICM-HPC
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="Strona główna" class="md-nav__link">
+      Strona główna
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Formalności
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Formalności
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../O_zasobach_ICM/Formalnosci/uzytkownik/" title="Kto może być użytkownikiem" class="md-nav__link">
+      Kto może być użytkownikiem
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../O_zasobach_ICM/Formalnosci/warunki/" title="Warunki korzystania" class="md-nav__link">
+      Warunki korzystania
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../O_zasobach_ICM/Formalnosci/regulamin/" title="Regulamin użytkownika" class="md-nav__link">
+      Regulamin użytkownika
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Zasoby sprzętowe
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Zasoby sprzętowe
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../O_zasobach_ICM/Zasoby/komputery_w_icm/" title="Komputery" class="md-nav__link">
+      Komputery
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../O_zasobach_ICM/Zasoby/przechowywanie_danych/" title="Przechowywanie danych" class="md-nav__link">
+      Przechowywanie danych
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Aplikacje
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Aplikacje
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../O_zasobach_ICM/Aplikacje/aplikacje/" title="Dostępne oprogramowanie" class="md-nav__link">
+      Dostępne oprogramowanie
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../O_zasobach_ICM/Aplikacje/kompilatory/" title="Dostępne kompilatory" class="md-nav__link">
+      Dostępne kompilatory
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../O_zasobach_ICM/Aplikacje/ci_status/" title="CI status" class="md-nav__link">
+      CI status
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Licencje krajowe
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Licencje krajowe
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Licencje_krajowe/ansys/" title="ANSYS" class="md-nav__link">
+      ANSYS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Licencje_krajowe/gaussian/" title="Gaussian" class="md-nav__link">
+      Gaussian
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Podręcznik grantowy
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Podręcznik grantowy
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Podrecznik_grantowy/zakladanie_konta/" title="Zakładanie konta" class="md-nav__link">
+      Zakładanie konta
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Podrecznik_grantowy/nazwa_konta_i_haslo/" title="Nazwa konta i hasło" class="md-nav__link">
+      Nazwa konta i hasło
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Podrecznik_grantowy/poczta_elektroniczna/" title="Poczta elektroniczna" class="md-nav__link">
+      Poczta elektroniczna
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Podrecznik_grantowy/jak_wystapic_o_grant_obliczeniowy/" title="Jak wystąpić o grant obliczeniowy" class="md-nav__link">
+      Jak wystąpić o grant obliczeniowy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Podrecznik_grantowy/kierownik_oraz_nowi_wspolwykonawcy_grantu/" title="Kierownik oraz współwykonawcy grantu" class="md-nav__link">
+      Kierownik oraz współwykonawcy grantu
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Podrecznik_grantowy/sprawozdania_i_publikacje_w_grancie/" title="Sprawozdania i publikacje w grancie" class="md-nav__link">
+      Sprawozdania i publikacje w grancie
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Podrecznik_grantowy/rozliczanie_grantu/" title="Rozliczanie grantu" class="md-nav__link">
+      Rozliczanie grantu
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Podrecznik_grantowy/uzytkownik_i_kilka_grantow_obliczeniowych/" title="Użytkownik i kilka grantów obliczeniowych" class="md-nav__link">
+      Użytkownik i kilka grantów obliczeniowych
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" checked>
+    
+    <label class="md-nav__link" for="nav-7">
+      Instrukcje
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        Instrukcje
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-1" type="checkbox" id="nav-7-1">
+    
+    <label class="md-nav__link" for="nav-7-1">
+      Podstawy HPC
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-1">
+        Podstawy HPC
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../HPC-intro/introduction/" title="Wstęp" class="md-nav__link">
+      Wstęp
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../HPC-intro/bash_intro/" title="Bash i terminal" class="md-nav__link">
+      Bash i terminal
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../HPC-intro/ssh_intro/" title="Logowanie SSH" class="md-nav__link">
+      Logowanie SSH
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../HPC-intro/ssh_windows/" title="Logowanie SSH (Użytkownicy Windows)" class="md-nav__link">
+      Logowanie SSH (Użytkownicy Windows)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../HPC-intro/kopiowanie_plikow/" title="Kopiowanie plików" class="md-nav__link">
+      Kopiowanie plików
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../HPC-intro/slurm_intro/" title="Zlecanie zadań do SLURM" class="md-nav__link">
+      Zlecanie zadań do SLURM
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../HPC-intro/ustawianie_srodowiska/" title="Ustawianie środowiska" class="md-nav__link">
+      Ustawianie środowiska
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../HPC-intro/status_zadania/" title="Status zadania" class="md-nav__link">
+      Status zadania
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../HPC-intro/status_grantu_i_konta/" title="Status grantu/konta/qos" class="md-nav__link">
+      Status grantu/konta/qos
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../HPC-intro/ssh-tunel/" title="Tunelowanie SSH" class="md-nav__link">
+      Tunelowanie SSH
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-2" type="checkbox" id="nav-7-2">
+    
+    <label class="md-nav__link" for="nav-7-2">
+      Podstawy GPU
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-2">
+        Podstawy GPU
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GPU-intro/introduction/" title="Introduction (Cheat Sheet)" class="md-nav__link">
+      Introduction (Cheat Sheet)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GPU-intro/hello_world/" title="Hello World" class="md-nav__link">
+      Hello World
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GPU-intro/vector_add/" title="Vector Add" class="md-nav__link">
+      Vector Add
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GPU-intro/matrix_addition/" title="Element-wise Matrix Add" class="md-nav__link">
+      Element-wise Matrix Add
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GPU-intro/parallel_reduction/" title="Parallel reduction" class="md-nav__link">
+      Parallel reduction
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-3" type="checkbox" id="nav-7-3">
+    
+    <label class="md-nav__link" for="nav-7-3">
+      Kontenery
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-3">
+        Kontenery
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Kontenery/singularity_intro/" title="Singularity" class="md-nav__link">
+      Singularity
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-4" type="checkbox" id="nav-7-4" checked>
+    
+    <label class="md-nav__link" for="nav-7-4">
+      NEC SX-Aurora Tsubasa
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-4">
+        NEC SX-Aurora Tsubasa
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+    <a href="./" title="Podstawy użytkowania" class="md-nav__link md-nav__link--active">
+      Podstawy użytkowania
+    </a>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../sol/" title="SOL - sieci neuronowe" class="md-nav__link">
+      SOL - sieci neuronowe
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../python/" title="Python - środowisko wirtualne" class="md-nav__link">
+      Python - środowisko wirtualne
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      Szkolenia
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        Szkolenia
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Szkolenia/informacje/" title="Informacje" class="md-nav__link">
+      Informacje
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-2" type="checkbox" id="nav-8-2">
+    
+    <label class="md-nav__link" for="nav-8-2">
+      Materiały
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-8-2">
+        Materiały
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Szkolenia/intro_icm/" title="Wprowadzenie do obliczeń na komputerach ICM" class="md-nav__link">
+      Wprowadzenie do obliczeń na komputerach ICM
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Szkolenia/intro_nec/" title="Wprowadzenie do obliczeń wektorowych – NEC SX-Aurora Tsubasa" class="md-nav__link">
+      Wprowadzenie do obliczeń wektorowych – NEC SX-Aurora Tsubasa
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Szkolenia/archiwum/" title="Archiwum" class="md-nav__link">
+      Archiwum
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../kontakt/" title="Kontakt" class="md-nav__link">
+      Kontakt
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://git.icm.edu.pl/owu/hpc-docs/edit/master/docs/Tutorials/NEC/basic_usage.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                  <h1>Podstawy użytkowania</h1>
+                
+                <!-- <Last revision: 2020-04-30 by M. Hermanowicz <m.hermanowicz@icm.edu.pl> -->
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Please note that a PDF version of the materials contained herein is also <a href="../pdf/en_nec_tsubasa.pdf">available</a>.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>This document aims to provide basic information on how to use the NEC SX-Aurora Tsubasa system
+available at ICM UW computational facility. The contents herein are based on a number of documents,
+as referenced in the text, to provide a concise quick start guide and suggest further reading material for
+the ICM users.</p>
+</div>
+<p>To use the Tsubasa installation users must access the login node first
+at <code>hpc.icm.edu.pl</code> through <a href="https://en.wikipedia.org/wiki/Secure_Shell">SSH</a> and then establish a further
+connection to the Rysy cluster:</p>
+<div class="codehilite"><pre><span></span><code>ssh username@hpc.icm.edu.pl
+ssh rysy
+</code></pre></div>
+
+
+<p>Alternatively, the <code>-J</code> command line option can be passed to the OpenSSH
+client to specify a jump host (here the <code>hpc</code> login node) through which
+the connection to Rysy will be established (issue <code>man ssh</code> command for
+details).</p>
+<p>The system runs <a href="https://slurm.schedmd.com/overview.html">Slurm Workload Manager</a> for job scheduling and
+<a href="https://modules.readthedocs.io/en/latest">Environment Modules</a> to manage software. The single compute node
+(PBaran) of the ve partition can be used interactively – as shown below
+– or as a batch job (see further in the text).</p>
+<div class="codehilite"><pre><span></span><code>srun -A GRANT_ID -p ve --gres<span class="o">=</span>ve:1 --pty bash -l
+</code></pre></div>
+
+
+<p>Once the interactive shell session has started, the environmental
+variable <code>$VE NODE NUMBER</code> is being automatically set to control which
+VE card is to be used by the user programs. This variable can be read
+and set manually with <a href="https://en.wikipedia.org/wiki/Echo_(command)">echo</a> and <a href="https://ss64.com/bash/export.html">export</a> commands,
+respectively. The software used to operate the VEs – including
+binaries, libraries, header files, etc. – is installed in <code>/opt/nec/ve</code>
+directory. Its effective use requires modification of the
+<a href="https://en.wikipedia.org/wiki/Environment_variable">environmental variables</a>, such as <code>$PATH</code>, <code>$LD LIBRARY PATH</code> and
+others, which can be done conveniently with the <a href="https://ss64.com/bash/source.html">source</a> command:</p>
+<div class="codehilite"><pre><span></span><code><span class="nb">source</span> /opt/nec/ve/mpi/2.2.0/bin/necmpivars.sh
+</code></pre></div>
+
+
+<p>Sourcing the variables makes various VE tools accessible within the
+user environment. This includes the NEC compilers for C, C++, and
+Fortran languages that can be invoked by <code>ncc</code>, <code>nc++</code>, and <code>nfort</code>,
+respectively, or by their respective MPI wrappers: <code>mpincc</code>,
+<code>mpinc++</code>, and <code>mpinfort</code>. Please note that several compiler versions
+are currently installed and it might be necessary to include a version
+number in your command, e.g. <code>ncc-2.5.1</code>. The general usage is
+consistent with the GNU GCC: <code>&lt;compiler&gt; &lt;options&gt; &lt;source file&gt;</code>. The
+table below lists several standard options for the NEC compilers – see
+<a href="https://www.hpc.nec/documents/">documentation</a> for details.</p>
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-c</code></td>
+<td>create object file</td>
+</tr>
+<tr>
+<td><code>-o</code></td>
+<td>output file name</td>
+</tr>
+<tr>
+<td><code>-I/path/to/include</code></td>
+<td>include header files</td>
+</tr>
+<tr>
+<td><code>-L/path/to/lib</code></td>
+<td>include libraries</td>
+</tr>
+<tr>
+<td><code>-g</code></td>
+<td>debugger symbols</td>
+</tr>
+<tr>
+<td><code>-Wall</code></td>
+<td>enable syntax warnings</td>
+</tr>
+<tr>
+<td><code>-Werror</code></td>
+<td>treat warnings as errors</td>
+</tr>
+<tr>
+<td><code>-O[0-4]</code></td>
+<td>optimisation levels</td>
+</tr>
+<tr>
+<td><code>-ftrace</code></td>
+<td>use the profiler</td>
+</tr>
+<tr>
+<td><code>-proginf</code></td>
+<td>enable execution analysis</td>
+</tr>
+<tr>
+<td><code>-report-all</code></td>
+<td>report diagnostics</td>
+</tr>
+<tr>
+<td><code>-traceback</code></td>
+<td>provides traceback information</td>
+</tr>
+<tr>
+<td><code>-fdiag-vector=[0-3]</code></td>
+<td>level of details for vector diagnostics</td>
+</tr>
+</tbody>
+</table>
+<p>The last four of them are used for performance analysis and allow for
+efficient software development. Some of these, apart from being used
+as command line options at compile time, also rely on dedicated
+environmental variables that need to be set at runtime. For a full
+list of performance-related options, variables, as well as their
+output description, see <a href="https://www.hpc.nec/documents/sdk/pdfs/g2at03e-PROGINF_FTRACE_User_Guide_en.pdf">PROGINF/FTRACE User’s Guide</a> and the
+compiler-specific <a href="https://www.hpc.nec/documents/">documentation</a>.</p>
+<p>The binaries can be run directly by specifying the path or by using
+the VE loader program (<code>ve exec</code>) – a few examples including parallel
+execution are listed below:</p>
+<div class="codehilite"><pre><span></span><code>./program
+</code></pre></div>
+
+
+<div class="codehilite"><pre><span></span><code>ve_exec ./program
+</code></pre></div>
+
+
+<div class="codehilite"><pre><span></span><code>mpirun ./program
+</code></pre></div>
+
+
+<div class="codehilite"><pre><span></span><code>mpirun -v -np <span class="m">2</span> -ve <span class="m">0</span>-1 ./program <span class="c1"># enables the use of VE cards 0 and 1</span>
+</code></pre></div>
+
+
+<p>For a full list of options available for <code>mpirun</code> see the corresponding
+<a href="https://www.open-mpi.org/doc/v4.0/man1/mpirun.1.php">manual page</a> or issue <code>mpirun -h command</code>.</p>
+<p>Full documentation for SX-Aurora Tsubasa, its hardware and software
+components, is available at the <a href="https://www.hpc.nec/documents/">NEC website</a>. An accessible
+introduction to using Tsubasa is also provided on the <a href="https://sx-aurora.github.io/posts/VE-first-steps">blog</a>.</p>
+<p>Another, non-interactive, mode of operation is a batch mode which
+requires a script to be submitted to Slurm. An example job script is
+shown below.</p>
+<div class="codehilite"><pre><span></span><code><span class="ch">#!/bin/bash -l</span>
+<span class="c1">#SBATCH -J name</span>
+<span class="c1">#SBATCH -N 1</span>
+<span class="c1">#SBATCH --ntasks-per-node 1</span>
+<span class="c1">#SBATCH --mem 1000</span>
+<span class="c1">#SBATCH --time=1:00:00</span>
+<span class="c1">#SBATCH -A &lt;Grant ID&gt;</span>
+<span class="c1">#SBATCH -p ve</span>
+<span class="c1">#SBATCH --gres=ve:1</span>
+<span class="c1">#SBATCH --output=out</span>
+
+./program
+</code></pre></div>
+
+
+<p>It specifies the name of the job (<code>-J</code>), requested number of nodes (<code>-N</code>),
+CPUs (<code>--ntasks-per-node</code>), memory (<code>-mem</code>; here in Megabytes), wall time
+limit (<code>--time</code>), grant ID (<code>-A</code>), partition (<code>-p</code>), generic resources
+(<code>--gres</code>), output file (<code>--output</code>), and the actual commands to be
+executed once the resources are granted. See <a href="https://slurm.schedmd.com/documentation.html">Slurm documentation</a> for
+an extensive list of available options.</p>
+<p>Below are few basic example commands used to work with job scrips:
+submitting the job (<code>sbatch</code>) which returns the ID number assigned to
+the it by the queuing system, listing the user’s jobs along with their
+status (<code>squeue</code>), listing the details of the specified job
+(<code>scontrol</code>), cancelling execution of the job (<code>scancel</code>). Consult the
+<a href="https://slurm.schedmd.com/documentation.html">documentation</a> for more.</p>
+<div class="codehilite"><pre><span></span><code>sbatch job.sl <span class="c1"># submits the job</span>
+squeue -u <span class="nv">$USER</span> <span class="c1"># lists the user’s current jobs</span>
+scontrol show job &lt;ID&gt; <span class="c1"># lists the details of the job specified by given &lt;ID&gt;</span>
+scancel &lt;ID&gt; <span class="c1"># cancels the job with given &lt;ID&gt;</span>
+</code></pre></div>
+
+
+<p>Since there’s no dedicated filesystem to be used for calculations on
+the Rysy cluster, in contrast to other ICM systems, the jobs should be
+run from within the $HOME directory. The ve partition (PBaran compute
+node) is intended for jobs utilizing VE cards, and as such it should
+not be used for intensive CPU-consuming tasks.</p>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../../Kontenery/singularity_intro/" title="Singularity" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Singularity
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../sol/" title="SOL - sieci neuronowe" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                SOL - sieci neuronowe
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org" target="_blank" rel="noopener">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/application.c33a9706.js"></script>
+      
+      <script>app.initialize({version:"1.1",url:{base:"../../.."}})</script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      
+    
+  </body>
+</html>
