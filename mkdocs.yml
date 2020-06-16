@@ -1,0 +1,95 @@
+site_name: Dokumentacja ICM UW
+site_description: Komputery Dużej Mocy w ICM UW
+site_author: ICM
+#strict: true
+
+theme: 
+  logo: 'images/Logo_icm_biale.png'
+  name: 'material'
+  palette:
+    primary: 'blue-grey'
+    accent: 'green'
+
+extra_css:
+    - style.css
+
+repo_name: ICM-HPC
+repo_url: https://github.com/ICM-UW/hpc-docs
+edit_uri: "https://github.com/ICM-UW/hpc-docs/edit/master/docs/"
+
+markdown_extensions:
+    - fenced_code
+    - codehilite
+    - mdx_math
+    - admonition
+    - footnotes
+    - pymdownx.emoji:
+        emoji_index: !!python/name:pymdownx.emoji.twemoji
+        emoji_generator: !!python/name:pymdownx.emoji.to_svg
+
+# list of emoji: https://gist.github.com/rxaviers/7360908
+
+
+extra_javascript: 
+    - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+
+nav:
+- Strona główna: index.md
+- Formalności:
+    - Kto może być użytkownikiem: O_zasobach_ICM/Formalnosci/uzytkownik.md
+    - Warunki korzystania: O_zasobach_ICM/Formalnosci/warunki.md
+    - Regulamin użytkownika: O_zasobach_ICM/Formalnosci/regulamin.md
+- Zasoby sprzętowe:
+    - Komputery: O_zasobach_ICM/Zasoby/komputery_w_icm.md
+    - Przechowywanie danych: O_zasobach_ICM/Zasoby/przechowywanie_danych.md
+- Aplikacje:
+    - Dostępne oprogramowanie: O_zasobach_ICM/Aplikacje/aplikacje.md
+    - Dostępne kompilatory: O_zasobach_ICM/Aplikacje/kompilatory.md
+    - CI status: O_zasobach_ICM/Aplikacje/ci_status.md
+- Licencje krajowe:
+    - ANSYS: Licencje_krajowe/ansys.md
+    - Gaussian: Licencje_krajowe/gaussian.md
+- Podręcznik grantowy:
+    - Zakładanie konta: Podrecznik_grantowy/zakladanie_konta.md
+    - Nazwa konta i hasło: Podrecznik_grantowy/nazwa_konta_i_haslo.md
+    - Poczta elektroniczna: Podrecznik_grantowy/poczta_elektroniczna.md
+    - Jak wystąpić o grant obliczeniowy: Podrecznik_grantowy/jak_wystapic_o_grant_obliczeniowy.md
+    - Kierownik oraz współwykonawcy grantu: Podrecznik_grantowy/kierownik_oraz_nowi_wspolwykonawcy_grantu.md
+    - Sprawozdania i publikacje w grancie: Podrecznik_grantowy/sprawozdania_i_publikacje_w_grancie.md
+    - Rozliczanie grantu: Podrecznik_grantowy/rozliczanie_grantu.md
+    #- Zamykanie grantu: Podrecznik_grantowy/
+    - Użytkownik i kilka grantów obliczeniowych: Podrecznik_grantowy/uzytkownik_i_kilka_grantow_obliczeniowych.md
+#- Najczęściej zadawane pytania:
+- Instrukcje:
+  - Podstawy HPC:
+    - Wstęp: Tutorials/HPC-intro/introduction.md
+    - Bash i terminal: Tutorials/HPC-intro/bash_intro.md
+    - Logowanie SSH: Tutorials/HPC-intro/ssh_intro.md
+    - Logowanie SSH (Użytkownicy Windows): Tutorials/HPC-intro/ssh_windows.md
+    - Kopiowanie plików: Tutorials/HPC-intro/kopiowanie_plikow.md
+    - Zlecanie zadań do SLURM: Tutorials/HPC-intro/slurm_intro.md
+    - Ustawianie środowiska: Tutorials/HPC-intro/ustawianie_srodowiska.md
+    - Status zadania: Tutorials/HPC-intro/status_zadania.md
+    - Status grantu/konta/qos: Tutorials/HPC-intro/status_grantu_i_konta.md
+    - Tunelowanie SSH: Tutorials/HPC-intro/ssh-tunel.md
+  - Podstawy GPU:
+    - Introduction (Cheat Sheet): Tutorials/GPU-intro/introduction.md
+    - Hello World: Tutorials/GPU-intro/hello_world.md
+    - Vector Add: Tutorials/GPU-intro/vector_add.md
+    - Element-wise Matrix Add: Tutorials/GPU-intro/matrix_addition.md
+    - Parallel reduction: Tutorials/GPU-intro/parallel_reduction.md
+  - Kontenery:
+    - Singularity: Tutorials/Kontenery/singularity_intro.md
+  - NEC SX-Aurora Tsubasa:
+    - Podstawy użytkowania: Tutorials/NEC/basic_usage.md
+    - SOL - sieci neuronowe: Tutorials/NEC/sol.md
+  - Python - środowisko wirtualne: Tutorials/python.md
+
+- Szkolenia:
+  - Informacje: Szkolenia/informacje.md
+  - Materiały:
+    - Wprowadzenie do obliczeń na komputerach ICM: Szkolenia/intro_icm.md
+    - Wprowadzenie do obliczeń wektorowych – NEC SX-Aurora Tsubasa: Szkolenia/intro_nec.md
+  - Archiwum: Szkolenia/archiwum.md
+    
+- Kontakt: kontakt.md
