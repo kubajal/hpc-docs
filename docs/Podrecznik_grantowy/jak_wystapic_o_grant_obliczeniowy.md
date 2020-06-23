@@ -18,7 +18,7 @@ System pozwala na:
 ### Jak przygotować *wniosek o przyznanie grantu obliczeniowego*
 
 Uwaga\!\!\! Wniosek o grant na systemie Crey (**Okeanos**) dostępny jest
-na stronie [konkurs Okeanos](https://www.icm.edu.pl/kdm/Granty_Okeanos)
+na stronie [konkurs Okeanos](./konkurs_okeanos.md)
 
 **Uruchamianie Grantów na serwerach Hydra, Topola, Boreasz, Nostromo**
 
