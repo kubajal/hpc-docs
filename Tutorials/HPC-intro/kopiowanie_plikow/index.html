@@ -1177,17 +1177,17 @@
                   <h1>Kopiowanie plików</h1>
                 
                 <p>Do kopiowania plików używa się komendy cp:
-<code>cp kopiowany\_plik ścieżka\_docelowa\</code></p>
-<p>Katalogi można kopiować komendą <code>cp</code> z opcją <code>-r</code>:
-<code>cp -r katalog ścieżka_decelowa</code></p>
-<p>Podczas kopiowania można używać uogólnionych nazw z <code>\*</code>:</p>
+<code class="codehilite"><span class="err">cp kopiowany\_plik ścieżka\_docelowa\</span></code></p>
+<p>Katalogi można kopiować komendą <code class="codehilite"><span class="err">cp</span></code> z opcją <code class="codehilite"><span class="err">-r</span></code>:
+<code class="codehilite"><span class="err">cp -r katalog ścieżka_decelowa</span></code></p>
+<p>Podczas kopiowania można używać uogólnionych nazw z <code class="codehilite"><span class="err">\*</span></code>:</p>
 <ul>
-<li><code>*</code> – wszystkie pliki/katalogi</li>
-<li><code>*.roz</code> – wszystkie pliki z rozszerzeniem .roz</li>
-<li><code>a*</code> – wszystkie pliki/katalogi zaczynające się od a</li>
+<li><code class="codehilite"><span class="err">*</span></code> – wszystkie pliki/katalogi</li>
+<li><code class="codehilite"><span class="err">*.roz</span></code> – wszystkie pliki z rozszerzeniem .roz</li>
+<li><code class="codehilite"><span class="err">a*</span></code> – wszystkie pliki/katalogi zaczynające się od a</li>
 </ul>
 <p>Do sprawdzenia rozmiaru katalagu można użyć komendy:
-<code>du -hc katalog/</code></p>
+<code class="codehilite"><span class="err">du -hc katalog/</span></code></p>
 <h3 id="kopiowanie-plikow-ssh">Kopiowanie plików - SSH</h3>
 <p>Aby przegrać pliki pomiędzy maszynami korzystamy z polecenia <em>scp</em>.
 Składnia jest taka jak przy zwykłym kopiowaniu <em>cp</em>.</p>
@@ -1220,9 +1220,9 @@ Składnia jest taka jak przy zwykłym kopiowaniu <em>cp</em>.</p>
 </table>
 <p>Uwagi:</p>
 <ul>
-<li>swój katalog domowy można zastąpić przez znak <code>~</code></li>
+<li>swój katalog domowy można zastąpić przez znak <code class="codehilite"><span class="err">~</span></code></li>
 <li>nie podanie ścieżki spowoduje wgrywanie plików względem katalogu domowego</li>
-<li>Sprawdzenie dostępnego miejsca w katalogu użytkownika <code>quota -v login_uzytkownika</code></li>
+<li>Sprawdzenie dostępnego miejsca w katalogu użytkownika <code class="codehilite"><span class="err">quota -v login_uzytkownika</span></code></li>
 </ul>
 <p><strong>Przykłady:</strong></p>
 <div class="codehilite"><pre><span></span><code><span class="c1"># Kopiowanie pliku do ICM:</span>
@@ -1235,10 +1235,9 @@ Składnia jest taka jak przy zwykłym kopiowaniu <em>cp</em>.</p>
     scp -r -C -p username@hpc.icm.edu.pl:source_folder destination_folder
 </code></pre></div>
 
-
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Użytkownicy Windowsa mogą skorzystać z darmowej aplikacji <code>WinScp</code> lub <code>Filezilla</code> (dostępna też do Linuxem).</p>
+<p>Użytkownicy Windowsa mogą skorzystać z darmowej aplikacji <code class="codehilite"><span class="err">WinScp</span></code> lub <code class="codehilite"><span class="err">Filezilla</span></code> (dostępna też do Linuxem).</p>
 </div>
 <h3 id="synchronizacja-i-montowanie-katalogow">Synchronizacja i montowanie katalogów</h3>
 <div class="codehilite"><pre><span></span><code><span class="c1"># Zamontowanie zdalnego folderu na lokalnej maszynie</span>
@@ -1251,7 +1250,6 @@ Składnia jest taka jak przy zwykłym kopiowaniu <em>cp</em>.</p>
     rsync -zarv --prune-empty-dirs --include <span class="s2">&quot;*/&quot;</span>  --include<span class="o">=</span><span class="s2">&quot;*.csv&quot;</span> --exclude<span class="o">=</span><span class="s2">&quot;*&quot;</span> <span class="s2">&quot;</span><span class="nv">$FROM</span><span class="s2">&quot;</span> <span class="s2">&quot;</span><span class="nv">$TO</span><span class="s2">&quot;</span>
 </code></pre></div>
 
-
 <h2 id="przechowywanie-danych">Przechowywanie Danych</h2>
 <p>Szczegóły zasobów dyskowych ICM dostępne są <a href="../../../O_zasobach_ICM/Zasoby/przechowywanie_danych/">tu</a>.</p>
 <h3 id="kopiowanie-poprzez-zasob-wspodzielony">Kopiowanie poprzez zasób współdzielony</h3>
@@ -1261,32 +1259,41 @@ Składnia jest taka jak przy zwykłym kopiowaniu <em>cp</em>.</p>
 /lu/tetyda <span class="o">(</span>dla okeanosa<span class="o">)</span>
 </code></pre></div>
 
-
 <p>Katalog domowy okeanosa <em>/lustre/tetyda/home/</em> jest widoczny pod scieżką <em>/lu/tetyda/home/user_name/</em> z topoli.</p>
 <h2 id="udzielenie-dostepu-do-danych-dla-czonkow-tego-samego-grantu">Udzielenie dostępu do danych dla członków tego samego grantu</h2>
 <p>Najlepszym sposobem na przekaznie dostępu do plików w ramach grantu jest użycie mechanizmu praw dostępu do pliku w Linux.
 W tym celu należy najpierw ustawić właściwą grupę dla plików które nas interesują,
 a następnie prawo odczytu (i zapisu jeżeli dotyczy) dla tej grupy.</p>
-<p>Przykładowo, jeżeli grant ma numer <code>GBXX-YY</code>,</p>
+<p>Przykładowo, jeżeli grant ma numer <code class="codehilite"><span class="err">GBXX-YY</span></code>,</p>
 <ol>
 <li>
 <p>Zmieniamy grupę główną w powłoce:  </p>
-<p><code>$ newgrp GBXX-YY</code></p>
+<p><code class="codehilite">$ newgrp GBXX-YY</code></p>
 </li>
 <li>
 <p>Ustawiamy własność dla tej grupy dla plików:</p>
-<p><code>$ chgrp GBXX-YY  nazwa_pliku</code></p>
-<p>opcja <code>-R</code> pozwala robić to rekursywnie dla katalogów</p>
+<p><code class="codehilite">$ chgrp GBXX-YY  nazwa_pliku</code></p>
+<p>opcja <code class="codehilite"><span class="err">-R</span></code> pozwala robić to rekursywnie dla katalogów</p>
 </li>
 <li>
 <p>Ustawiamy prawa dla członków grupy:</p>
-<p><code>$ chmod g+r nazwa_pliku # odczyt</code></p>
-<p><code>$ chmod g+w nazwa_pliku # zapis</code></p>
+<p><code class="codehilite">$ chmod g+r nazwa_pliku <span class="c1"># odczyt</span></code></p>
+<p><code class="codehilite">$ chmod g+w nazwa_pliku <span class="c1"># zapis</span></code></p>
 </li>
 </ol>
                 
                   
                 
+                
+                  
+                  <hr>
+                  <div class="md-source-date">
+                    <small>
+                      
+                        Last update: June 16, 2020
+                      
+                    </small>
+                  </div>
                 
               
               

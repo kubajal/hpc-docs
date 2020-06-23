@@ -1049,13 +1049,12 @@
                   <h1>Status grantu/konta/qos</h1>
                 
                 <p>Często pojawia się pytanie czy użytkownik ma dostęp do XXX?</p>
-<p>Aby sprawdzić status grantu / konta / qos należy użyć polecenia <code>sacctmgr</code>, udostępnionego przez system <em>Slurm</em>.</p>
+<p>Aby sprawdzić status grantu / konta / qos należy użyć polecenia <code class="codehilite"><span class="err">sacctmgr</span></code>, udostępnionego przez system <em>Slurm</em>.</p>
 <div class="codehilite"><pre><span></span><code>sacctmgr show user <span class="nv">$USER</span> <span class="c1"># pokaż informacje o użytkowniku</span>
 sacctmgr show assoc where <span class="nv">account</span><span class="o">=</span>&lt;grant_id&gt; <span class="nv">format</span><span class="o">=</span>Cluster,Account%25,Partition%20,user,QOS,DefaultQOS,GrpTRESMins%50 <span class="c1"># pokaż informację o grancie</span>
 sacctmgr show assoc <span class="nv">format</span><span class="o">=</span>account%25,cluster,user,QOS <span class="p">|</span> grep <span class="nv">$USER</span> <span class="c1"># pokaż w jakich jestem grupach i do których qos mam dostęp</span>
 sacctmgr show qos <span class="nv">format</span><span class="o">=</span>name,MaxWall,Priority,MaxTRESPU%50 <span class="c1"># pokaż limit czasu obliczen dla poszczególnych qos</span>
 </code></pre></div>
-
 
 <p>Inne przydatne komendy:</p>
 <div class="codehilite"><pre><span></span><code>id <span class="nv">$USER</span>     <span class="c1"># udostępnia podstawowe dane o użytkowniku</span>
@@ -1065,7 +1064,6 @@ getent group NAZWA_GRUPY <span class="c1"># wypisuje użytkowników należących
 limit <span class="c1"># limity nałożone na procesy użytkownika</span>
 </code></pre></div>
 
-
 <p><strong>Jak policzyć ile grantu jeszcze zostało?</strong></p>
 <div class="codehilite"><pre><span></span><code>/apps/bin/chkgrantusage &lt;grant_id&gt; <span class="o">[</span>yyyy-mm-dd yyyy-mm-dd<span class="o">]</span> <span class="c1"># aktualnie zużycie</span>
 sacctmgr show assoc where <span class="nv">account</span><span class="o">=</span>&lt;grant_id&gt; <span class="nv">format</span><span class="o">=</span>user,GrpTRESMins%50  <span class="c1"># limit cpu w grancie</span>
@@ -1073,6 +1071,16 @@ sacctmgr show assoc where <span class="nv">account</span><span class="o">=</span
                 
                   
                 
+                
+                  
+                  <hr>
+                  <div class="md-source-date">
+                    <small>
+                      
+                        Last update: June 16, 2020
+                      
+                    </small>
+                  </div>
                 
               
               

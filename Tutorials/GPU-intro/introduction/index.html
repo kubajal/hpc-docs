@@ -1294,7 +1294,6 @@
 <span class="kr">__host__</span>   <span class="c1">// can be executed by CPU (can be used together with __device__)</span>
 </code></pre></div>
 
-
 <h3 id="copying-memory">Copying memory</h3>
 <p>The memory between host and device can be copied in two ways.
 The synchronous call blocks the CPU until the copy is complete.
@@ -1302,8 +1301,7 @@ Copy begins when all preceding CUDA calls are completed.</p>
 <div class="codehilite"><pre><span></span><code><span class="n">cudaMemcpy</span> <span class="p">(</span><span class="kt">void</span> <span class="err">∗</span><span class="n">dst</span><span class="p">,</span> <span class="k">const</span> <span class="kt">void</span> <span class="err">∗</span><span class="n">src</span><span class="p">,</span> <span class="kt">size_t</span> <span class="n">count</span><span class="p">,</span> <span class="k">enum</span> <span class="n">cudaMemcpyKind</span> <span class="n">kind</span><span class="p">)</span>
 </code></pre></div>
 
-
-<p>Asynchronous call which does not block the CPU is <code>cudaMemcpyAsync(...)</code></p>
+<p>Asynchronous call which does not block the CPU is <code class="codehilite"><span class="err">cudaMemcpyAsync(...)</span></code></p>
 <h3 id="kernel-launch">Kernel launch</h3>
 <p>Kernel launches are asynchronous - Control returns to the CPU immediately.
 According to <a href="https://docs.nvidia.com/cuda/cuda-c-programming-guide/#execution-configuration">documentation</a> the execution configuration is defined as follows:</p>
@@ -1313,11 +1311,9 @@ According to <a href="https://docs.nvidia.com/cuda/cuda-c-programming-guide/#exe
 <span class="c1">// strId - specifies the associated stream, is an optional parameter which defaults to 0.</span>
 </code></pre></div>
 
-
 <p>To block the CPU until all preceding CUDA calls have completed call</p>
 <div class="codehilite"><pre><span></span><code><span class="n">cudaDeviceSynchronize</span><span class="p">()</span>
 </code></pre></div>
-
 
 <h3 id="dimensions-of-the-blockgrid">Dimensions of the block/grid</h3>
 <p><center> <img alt="" src="../GPU_images/CUDA_Thread_Block_Idx.png" /> </center></p>
@@ -1328,7 +1324,6 @@ However, if the y or z dimension is not specified explicitly then the defualt va
 <span class="kt">dim3</span> <span class="nb">blockDim</span>  <span class="c1">// This variable describes number of threads in the block in each dimension.</span>
 </code></pre></div>
 
-
 <h4 id="setting-the-dimensions-of-a-kernel">Setting the dimensions of a kernel</h4>
 <p>Given N as the size of the problem, the block/grid dimenesions can be evalueated as:</p>
 <div class="codehilite"><pre><span></span><code><span class="c1">// if N is a friendly multiplier of THREADS_PER_BLOCK</span>
@@ -1337,7 +1332,6 @@ However, if the y or z dimension is not specified explicitly then the defualt va
 <span class="c1">// if N is not a friendly multiplier of THREADS_PER_BLOCK</span>
 <span class="n">my_kernel</span><span class="o">&lt;&lt;&lt;</span><span class="p">(</span><span class="n">N</span> <span class="o">+</span> <span class="n">THREADS_PER_BLOCK</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span> <span class="o">/</span> <span class="n">THREADS_PER_BLOCK</span><span class="p">,</span> <span class="n">THREADS_PER_BLOCK</span><span class="o">&gt;&gt;&gt;</span><span class="p">(</span><span class="n">args</span><span class="p">);</span>
 </code></pre></div>
-
 
 <h4 id="calculating-threadid">Calculating threadId</h4>
 <p>Within the kernel, the following build-in variables can be referenced (in x,y,z-dimension) to calculate <em>tid</em>:</p>
@@ -1348,14 +1342,13 @@ However, if the y or z dimension is not specified explicitly then the defualt va
 <span class="kt">int</span> <span class="nb">blockIdx</span><span class="p">.</span><span class="n">x</span>  <span class="c1">// This variable contains the block index within the grid in x-dimension.</span>
 </code></pre></div>
 
-
 <!-- gridDim describes number of blocks in the grid.
 blockDim describes number of threads in the block.
 // dim3 dimBlock(blocksize, blocksize);
 // dim3 dimGrid(N/dimBlock.x, N/dimBlock.y); -->
 
 <h3 id="maximum-number-of-threads-in-a-block">Maximum number of threads in a block</h3>
-<p>The maximum number of threads in the block is limited to 1024. This is the product of whatever your threadblock dimensions are (x<em>y</em>z). For example (32,32,1) creates a block of 1024 threads. (33,32,1) is not legal, since 33*32*1 &gt; 1024.</p>
+<p>The maximum number of threads in the block is limited to 1024. This is the product of whatever your threadblock dimensions are (x*y*z). For example (32,32,1) creates a block of 1024 threads. (33,32,1) is not legal, since 33*32*1 &gt; 1024.</p>
 <p>Source:</p>
 <p><a href="https://devtalk.nvidia.com/default/topic/978550/cuda-programming-and-performance/maximum-number-of-threads-on-thread-block/">https://devtalk.nvidia.com/default/topic/978550/cuda-programming-and-performance/maximum-number-of-threads-on-thread-block/</a></p>
 <p><a href="https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#features-and-technical-specifications__technical-specifications-per-compute-capability">https://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html#features-and-technical-specifications__technical-specifications-per-compute-capability</a></p>
@@ -1374,7 +1367,6 @@ $ nvprof  <span class="c1"># command-line CUDA profiler (logger)</span>
 $ cuda-gdb <span class="c1"># Linux and mac (debugger)</span>
 </code></pre></div>
 
-
 <h3 id="device-query">Device Query</h3>
 <div class="codehilite"><pre><span></span><code><span class="sb">`</span>sudo apt-get install cuda-samples-10-2<span class="sb">`</span>
 <span class="sb">`</span>cp -r /usr/local/cuda-10.2/samples/ NVIDIA_CUDA-10.2_Samples<span class="sb">`</span>
@@ -1382,7 +1374,6 @@ $ cuda-gdb <span class="c1"># Linux and mac (debugger)</span>
 <span class="sb">`</span>~/NVIDIA_CUDA-10.2_Samples/1_Utilities/deviceQuery$ ./deviceQuery<span class="sb">`</span>
 ./deviceQuery Starting...
 </code></pre></div>
-
 
 <p>Sample output</p>
 <div class="codehilite"><pre><span></span><code> CUDA Device Query <span class="o">(</span>Runtime API<span class="o">)</span> version <span class="o">(</span>CUDART static linking<span class="o">)</span>
@@ -1429,13 +1420,22 @@ deviceQuery, CUDA <span class="nv">Driver</span> <span class="o">=</span> CUDART
 <span class="nv">Result</span> <span class="o">=</span> PASS
 </code></pre></div>
 
-
 <h3 id="acknowledgements">Acknowledgements</h3>
 <p>The wide variety of materials provided by nvidia is acknowledgement:</p>
 <p><a href="https://developer.nvidia.com/cuda-education-training">https://developer.nvidia.com/cuda-education-training</a></p>
                 
                   
                 
+                
+                  
+                  <hr>
+                  <div class="md-source-date">
+                    <small>
+                      
+                        Last update: June 16, 2020
+                      
+                    </small>
+                  </div>
                 
               
               

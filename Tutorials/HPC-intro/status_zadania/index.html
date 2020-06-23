@@ -1108,7 +1108,7 @@
                 
                   <h1>Status zadania</h1>
                 
-                <p>Po wstawieniu zadania do kolejki poleceniem <code>sbatch</code> system kolejkowy powiadamia nas o przyznanym numerze zadania (<code>JOBID</code>).
+                <p>Po wstawieniu zadania do kolejki poleceniem <code class="codehilite"><span class="err">sbatch</span></code> system kolejkowy powiadamia nas o przyznanym numerze zadania (<code class="codehilite"><span class="err">JOBID</span></code>).
 Jeśli polecenie to wykonamy gdy nasz program został już uruchomiony,
 możemy między innymi sprawdzić, na których węzłach/procesorach wykonywane są nasze obliczenia.
 W czasie trwania obliczeń na węźle możemy połączyć się z tym węzłem przy pomocy <strong>ssh</strong>,
@@ -1129,7 +1129,6 @@ scontrol show job &lt;job_ID&gt; <span class="c1"># informacje o wszystkich para
 scancel &lt;job_ID&gt; <span class="c1"># analuj zadanie</span>
 scancel -u <span class="nv">$USER</span> <span class="c1"># analuj wszystkie zadania należące do użytkownika</span>
 </code></pre></div>
-
 
 <h3 id="przykad-sformatowania-wydruku-squeue">Przykład sformatowania wydruku „squeue”</h3>
 <div class="codehilite"><pre><span></span><code><span class="c1"># squeue - format output</span>
@@ -1153,6 +1152,16 @@ squeue -o <span class="s2">&quot;% 16j% i&quot;</span> <span class="p">|</span> 
                 
                   
                 
+                
+                  
+                  <hr>
+                  <div class="md-source-date">
+                    <small>
+                      
+                        Last update: June 16, 2020
+                      
+                    </small>
+                  </div>
                 
               
               

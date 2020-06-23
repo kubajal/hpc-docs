@@ -1218,25 +1218,21 @@ w systemie Topola</p>
 <div class="codehilite"><pre><span></span><code>srun -N1 -n10 --partition<span class="o">=</span>topola --account<span class="o">=</span>NR_GRANTU --qos<span class="o">=</span>hpc --time<span class="o">=</span><span class="m">01</span>:00:00 --pty /bin/bash -l
 </code></pre></div>
 
-
 <p>lub w systemie Okeanos</p>
 <div class="codehilite"><pre><span></span><code>srun -N1 -n10 --partition<span class="o">=</span>okeanos --account<span class="o">=</span>NR_GRANTU --time<span class="o">=</span><span class="m">01</span>:00:00 --pty /bin/bash -l
 module load common/go/1.13.12
 module load common/singularity/3.5.3
 </code></pre></div>
 
-
 <p>lub w systemie Rysy</p>
 <div class="codehilite"><pre><span></span><code>srun -N1 -n4 --account<span class="o">=</span>app-NR_GRANTU --gres<span class="o">=</span>gpu:1 --time<span class="o">=</span><span class="m">01</span>:00:00 --pty /bin/bash -l
 </code></pre></div>
 
-
-<p>Możemy użyć polecenia <code>singularity</code>.
+<p>Możemy użyć polecenia <code class="codehilite"><span class="err">singularity</span></code>.
 Jako przykład posłuży kontener o nazwie 'lolcow'.</p>
 <div class="codehilite"><pre><span></span><code>singularity search lolcow  <span class="c1"># wyszukaj kontenery o nazwie lolcow</span>
 singularity pull library://sylabsed/examples/lolcow  <span class="c1"># ściągnij wybrany kontener</span>
 </code></pre></div>
-
 
 <p>Po ściągnięciu kontenera</p>
 <div class="codehilite"><pre><span></span><code>singularity run lolcow_latest.sif  <span class="c1"># uruchom kontener z domyślnym programem</span>
@@ -1244,7 +1240,6 @@ singularity <span class="nb">exec</span> lolcow_latest.sif cowsay moo <span clas
 singularity shell --cleanenv lolcow_latest.sif <span class="c1"># wejdź do kontenera - sesja interaktywna wewnątrz kontenera</span>
 <span class="c1"># jeżeli nie chcemy przekazywać zmiennych środowiskych systemu hosta do wnętrza kontenera, należy użyć flagi --cleanenv </span>
 </code></pre></div>
-
 
 <h2 id="zlecenie-zadan">Zlecenie zadań</h2>
 <p>Zlecenie zadań z wykorzystaniem kontera singularity, odbywa się analogicznie jak dla innych programów</p>
@@ -1263,13 +1258,11 @@ module load common/singularity/3.4.2  <span class="c1"># na systemie okeanos</sp
 singularity <span class="nb">exec</span> moj_kontener.sif ./skrypt_do_wykonania_wewnatrz_kontenera.sh
 </code></pre></div>
 
-
 <p>skrypt_do_wykonania_wewnatrz_kontenera.sh</p>
 <div class="codehilite"><pre><span></span><code><span class="ch">#!/bin/bash -l</span>
 
 <span class="nb">echo</span> hello <span class="c1"># program do wykonania wewnątrz kontenera</span>
 </code></pre></div>
-
 
 <h3 id="singularity-a-mpi">Singularity a MPI</h3>
 <p>Szczegóły na oficjalnej stronie singularity:
@@ -1282,6 +1275,16 @@ Kontener musi zostać zbudowany na lokalnym komputerze użytkownika (lub w chmur
                 
                   
                 
+                
+                  
+                  <hr>
+                  <div class="md-source-date">
+                    <small>
+                      
+                        Last update: June 16, 2020
+                      
+                    </small>
+                  </div>
                 
               
               

@@ -1062,16 +1062,15 @@ as referenced in the text, to provide a concise quick start guide and suggest fu
 the ICM users.</p>
 </div>
 <p>To use the Tsubasa installation users must access the login node first
-at <code>hpc.icm.edu.pl</code> through <a href="https://en.wikipedia.org/wiki/Secure_Shell">SSH</a> and then establish a further
+at <code class="codehilite"><span class="err">hpc.icm.edu.pl</span></code> through <a href="https://en.wikipedia.org/wiki/Secure_Shell">SSH</a> and then establish a further
 connection to the Rysy cluster:</p>
 <div class="codehilite"><pre><span></span><code>ssh username@hpc.icm.edu.pl
 ssh rysy
 </code></pre></div>
 
-
-<p>Alternatively, the <code>-J</code> command line option can be passed to the OpenSSH
-client to specify a jump host (here the <code>hpc</code> login node) through which
-the connection to Rysy will be established (issue <code>man ssh</code> command for
+<p>Alternatively, the <code class="codehilite"><span class="err">-J</span></code> command line option can be passed to the OpenSSH
+client to specify a jump host (here the <code class="codehilite"><span class="err">hpc</span></code> login node) through which
+the connection to Rysy will be established (issue <code class="codehilite"><span class="err">man ssh</span></code> command for
 details).</p>
 <p>The system runs <a href="https://slurm.schedmd.com/overview.html">Slurm Workload Manager</a> for job scheduling and
 <a href="https://modules.readthedocs.io/en/latest">Environment Modules</a> to manage software. The single compute node
@@ -1080,28 +1079,26 @@ details).</p>
 <div class="codehilite"><pre><span></span><code>srun -A GRANT_ID -p ve --gres<span class="o">=</span>ve:1 --pty bash -l
 </code></pre></div>
 
-
 <p>Once the interactive shell session has started, the environmental
-variable <code>$VE NODE NUMBER</code> is being automatically set to control which
+variable <code class="codehilite"><span class="err">$VE NODE NUMBER</span></code> is being automatically set to control which
 VE card is to be used by the user programs. This variable can be read
 and set manually with <a href="https://en.wikipedia.org/wiki/Echo_(command)">echo</a> and <a href="https://ss64.com/bash/export.html">export</a> commands,
 respectively. The software used to operate the VEs – including
-binaries, libraries, header files, etc. – is installed in <code>/opt/nec/ve</code>
+binaries, libraries, header files, etc. – is installed in <code class="codehilite"><span class="err">/opt/nec/ve</span></code>
 directory. Its effective use requires modification of the
-<a href="https://en.wikipedia.org/wiki/Environment_variable">environmental variables</a>, such as <code>$PATH</code>, <code>$LD LIBRARY PATH</code> and
+<a href="https://en.wikipedia.org/wiki/Environment_variable">environmental variables</a>, such as <code class="codehilite"><span class="err">$PATH</span></code>, <code class="codehilite"><span class="err">$LD LIBRARY PATH</span></code> and
 others, which can be done conveniently with the <a href="https://ss64.com/bash/source.html">source</a> command:</p>
 <div class="codehilite"><pre><span></span><code><span class="nb">source</span> /opt/nec/ve/mpi/2.2.0/bin/necmpivars.sh
 </code></pre></div>
 
-
 <p>Sourcing the variables makes various VE tools accessible within the
 user environment. This includes the NEC compilers for C, C++, and
-Fortran languages that can be invoked by <code>ncc</code>, <code>nc++</code>, and <code>nfort</code>,
-respectively, or by their respective MPI wrappers: <code>mpincc</code>,
-<code>mpinc++</code>, and <code>mpinfort</code>. Please note that several compiler versions
+Fortran languages that can be invoked by <code class="codehilite"><span class="err">ncc</span></code>, <code class="codehilite"><span class="err">nc++</span></code>, and <code class="codehilite"><span class="err">nfort</span></code>,
+respectively, or by their respective MPI wrappers: <code class="codehilite"><span class="err">mpincc</span></code>,
+<code class="codehilite"><span class="err">mpinc++</span></code>, and <code class="codehilite"><span class="err">mpinfort</span></code>. Please note that several compiler versions
 are currently installed and it might be necessary to include a version
-number in your command, e.g. <code>ncc-2.5.1</code>. The general usage is
-consistent with the GNU GCC: <code>&lt;compiler&gt; &lt;options&gt; &lt;source file&gt;</code>. The
+number in your command, e.g. <code class="codehilite"><span class="err">ncc-2.5.1</span></code>. The general usage is
+consistent with the GNU GCC: <code class="codehilite"><span class="err">&lt;compiler&gt; &lt;options&gt; &lt;source file&gt;</span></code>. The
 table below lists several standard options for the NEC compilers – see
 <a href="https://www.hpc.nec/documents/">documentation</a> for details.</p>
 <table>
@@ -1113,55 +1110,55 @@ table below lists several standard options for the NEC compilers – see
 </thead>
 <tbody>
 <tr>
-<td><code>-c</code></td>
+<td><code class="codehilite"><span class="err">-c</span></code></td>
 <td>create object file</td>
 </tr>
 <tr>
-<td><code>-o</code></td>
+<td><code class="codehilite"><span class="err">-o</span></code></td>
 <td>output file name</td>
 </tr>
 <tr>
-<td><code>-I/path/to/include</code></td>
+<td><code class="codehilite"><span class="err">-I/path/to/include</span></code></td>
 <td>include header files</td>
 </tr>
 <tr>
-<td><code>-L/path/to/lib</code></td>
+<td><code class="codehilite"><span class="err">-L/path/to/lib</span></code></td>
 <td>include libraries</td>
 </tr>
 <tr>
-<td><code>-g</code></td>
+<td><code class="codehilite"><span class="err">-g</span></code></td>
 <td>debugger symbols</td>
 </tr>
 <tr>
-<td><code>-Wall</code></td>
+<td><code class="codehilite"><span class="err">-Wall</span></code></td>
 <td>enable syntax warnings</td>
 </tr>
 <tr>
-<td><code>-Werror</code></td>
+<td><code class="codehilite"><span class="err">-Werror</span></code></td>
 <td>treat warnings as errors</td>
 </tr>
 <tr>
-<td><code>-O[0-4]</code></td>
+<td><code class="codehilite"><span class="err">-O[0-4]</span></code></td>
 <td>optimisation levels</td>
 </tr>
 <tr>
-<td><code>-ftrace</code></td>
+<td><code class="codehilite"><span class="err">-ftrace</span></code></td>
 <td>use the profiler</td>
 </tr>
 <tr>
-<td><code>-proginf</code></td>
+<td><code class="codehilite"><span class="err">-proginf</span></code></td>
 <td>enable execution analysis</td>
 </tr>
 <tr>
-<td><code>-report-all</code></td>
+<td><code class="codehilite"><span class="err">-report-all</span></code></td>
 <td>report diagnostics</td>
 </tr>
 <tr>
-<td><code>-traceback</code></td>
+<td><code class="codehilite"><span class="err">-traceback</span></code></td>
 <td>provides traceback information</td>
 </tr>
 <tr>
-<td><code>-fdiag-vector=[0-3]</code></td>
+<td><code class="codehilite"><span class="err">-fdiag-vector=[0-3]</span></code></td>
 <td>level of details for vector diagnostics</td>
 </tr>
 </tbody>
@@ -1174,26 +1171,22 @@ list of performance-related options, variables, as well as their
 output description, see <a href="https://www.hpc.nec/documents/sdk/pdfs/g2at03e-PROGINF_FTRACE_User_Guide_en.pdf">PROGINF/FTRACE User’s Guide</a> and the
 compiler-specific <a href="https://www.hpc.nec/documents/">documentation</a>.</p>
 <p>The binaries can be run directly by specifying the path or by using
-the VE loader program (<code>ve exec</code>) – a few examples including parallel
+the VE loader program (<code class="codehilite"><span class="err">ve exec</span></code>) – a few examples including parallel
 execution are listed below:</p>
 <div class="codehilite"><pre><span></span><code>./program
 </code></pre></div>
 
-
 <div class="codehilite"><pre><span></span><code>ve_exec ./program
 </code></pre></div>
-
 
 <div class="codehilite"><pre><span></span><code>mpirun ./program
 </code></pre></div>
 
-
 <div class="codehilite"><pre><span></span><code>mpirun -v -np <span class="m">2</span> -ve <span class="m">0</span>-1 ./program <span class="c1"># enables the use of VE cards 0 and 1</span>
 </code></pre></div>
 
-
-<p>For a full list of options available for <code>mpirun</code> see the corresponding
-<a href="https://www.open-mpi.org/doc/v4.0/man1/mpirun.1.php">manual page</a> or issue <code>mpirun -h command</code>.</p>
+<p>For a full list of options available for <code class="codehilite"><span class="err">mpirun</span></code> see the corresponding
+<a href="https://www.open-mpi.org/doc/v4.0/man1/mpirun.1.php">manual page</a> or issue <code class="codehilite"><span class="err">mpirun -h command</span></code>.</p>
 <p>Full documentation for SX-Aurora Tsubasa, its hardware and software
 components, is available at the <a href="https://www.hpc.nec/documents/">NEC website</a>. An accessible
 introduction to using Tsubasa is also provided on the <a href="https://sx-aurora.github.io/posts/VE-first-steps">blog</a>.</p>
@@ -1214,25 +1207,23 @@ shown below.</p>
 ./program
 </code></pre></div>
 
-
-<p>It specifies the name of the job (<code>-J</code>), requested number of nodes (<code>-N</code>),
-CPUs (<code>--ntasks-per-node</code>), memory (<code>-mem</code>; here in Megabytes), wall time
-limit (<code>--time</code>), grant ID (<code>-A</code>), partition (<code>-p</code>), generic resources
-(<code>--gres</code>), output file (<code>--output</code>), and the actual commands to be
+<p>It specifies the name of the job (<code class="codehilite"><span class="err">-J</span></code>), requested number of nodes (<code class="codehilite"><span class="err">-N</span></code>),
+CPUs (<code class="codehilite"><span class="err">--ntasks-per-node</span></code>), memory (<code class="codehilite"><span class="err">-mem</span></code>; here in Megabytes), wall time
+limit (<code class="codehilite"><span class="err">--time</span></code>), grant ID (<code class="codehilite"><span class="err">-A</span></code>), partition (<code class="codehilite"><span class="err">-p</span></code>), generic resources
+(<code class="codehilite"><span class="err">--gres</span></code>), output file (<code class="codehilite"><span class="err">--output</span></code>), and the actual commands to be
 executed once the resources are granted. See <a href="https://slurm.schedmd.com/documentation.html">Slurm documentation</a> for
 an extensive list of available options.</p>
 <p>Below are few basic example commands used to work with job scrips:
-submitting the job (<code>sbatch</code>) which returns the ID number assigned to
+submitting the job (<code class="codehilite"><span class="err">sbatch</span></code>) which returns the ID number assigned to
 the it by the queuing system, listing the user’s jobs along with their
-status (<code>squeue</code>), listing the details of the specified job
-(<code>scontrol</code>), cancelling execution of the job (<code>scancel</code>). Consult the
+status (<code class="codehilite"><span class="err">squeue</span></code>), listing the details of the specified job
+(<code class="codehilite"><span class="err">scontrol</span></code>), cancelling execution of the job (<code class="codehilite"><span class="err">scancel</span></code>). Consult the
 <a href="https://slurm.schedmd.com/documentation.html">documentation</a> for more.</p>
 <div class="codehilite"><pre><span></span><code>sbatch job.sl <span class="c1"># submits the job</span>
 squeue -u <span class="nv">$USER</span> <span class="c1"># lists the user’s current jobs</span>
 scontrol show job &lt;ID&gt; <span class="c1"># lists the details of the job specified by given &lt;ID&gt;</span>
 scancel &lt;ID&gt; <span class="c1"># cancels the job with given &lt;ID&gt;</span>
 </code></pre></div>
-
 
 <p>Since there’s no dedicated filesystem to be used for calculations on
 the Rysy cluster, in contrast to other ICM systems, the jobs should be
@@ -1242,6 +1233,16 @@ not be used for intensive CPU-consuming tasks.</p>
                 
                   
                 
+                
+                  
+                  <hr>
+                  <div class="md-source-date">
+                    <small>
+                      
+                        Last update: June 16, 2020
+                      
+                    </small>
+                  </div>
                 
               
               

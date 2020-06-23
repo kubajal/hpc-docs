@@ -1179,8 +1179,8 @@
                 <h2 id="ssh-logowanie">SSH - logowanie</h2>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>Logowanie do ICM: <code>ssh username@hpc.icm.edu.pl</code>
-W przypadku niektórych systemów możliwy/wymagany jest dodatkowy krok logowania wykonany z komputera hpc.icm.edu.pl, np. <code>ssh rysy</code>, <code>ssh okeanos</code>.</p>
+<p>Logowanie do ICM: <code class="codehilite"><span class="err">ssh username@hpc.icm.edu.pl</span></code>
+W przypadku niektórych systemów możliwy/wymagany jest dodatkowy krok logowania wykonany z komputera hpc.icm.edu.pl, np. <code class="codehilite"><span class="err">ssh rysy</span></code>, <code class="codehilite"><span class="err">ssh okeanos</span></code>.</p>
 </div>
 <h2 id="tworzenie-kluczy-ssh">Tworzenie kluczy SSH</h2>
 <p>Logowanie użytkowania może być uwierzytelnione poprzez podanie hasła lub użycie klucza kryptograficznego.
@@ -1204,7 +1204,6 @@ ssh -o <span class="nv">IdentitiesOnly</span><span class="o">=</span>yes -i ~/.s
 ssh -o <span class="nv">PubkeyAuthentication</span><span class="o">=</span>no user@your.server.example.com
 </code></pre></div>
 
-
 <h3 id="zmiana-kluczy">Zmiana kluczy</h3>
 <p>1. System Windows + Putty (klient ssh): Należy uruchomić program
 'regedit' (systemowa aplikacja w Windows). Następnie w panelu po lewej
@@ -1212,12 +1211,10 @@ stronie wyszukać w drzewie wpis:</p>
 <div class="codehilite"><pre><span></span><code>HKEY<span class="se">\_</span>CURRENT<span class="se">\_</span>USER<span class="se">\\</span>Software<span class="se">\\</span>SimonTatham<span class="se">\\</span>PuTTY<span class="se">\\</span>SshHostKeys
 </code></pre></div>
 
-
 <p>i w oknie po prawej stronie odszukać wiersz zawierający nazwę 'hpc.icm.edu.pl', a następnie go usunąć.</p>
 <p>2. System Linux: Aby usunąć stary klucz wykonujemy w terminalu komendę:</p>
 <div class="codehilite"><pre><span></span><code>ssh-keygen -f <span class="se">\$</span>HOME/.ssh/known<span class="se">\_</span>hosts -R hpc.icm.edu.pl
 </code></pre></div>
-
 
 <h2 id="manager-hase">Manager haseł</h2>
 <p>Program <a href="https://www.passwordstore.org/">pass</a> jest menadżerem haseł umożliwiającym użytkownikom linux'a bezpieczne przechowywanie haseł na lokalnym komputerze.
@@ -1226,13 +1223,22 @@ Przykładowo:</p>
 Copied zdalne_komputery/icm to clipboard. Will clear in <span class="m">45</span> seconds.
 </code></pre></div>
 
-
 <h2 id="konczenie-pracy">Kończenie pracy</h2>
-<p>Po skończeniu pracy należy się wylogować poleceniem <code>exit</code> lub <code>logout</code>
-lub kombinacją klawiszy <code>Ctrl+D</code>.</p>
+<p>Po skończeniu pracy należy się wylogować poleceniem <code class="codehilite"><span class="err">exit</span></code> lub <code class="codehilite"><span class="err">logout</span></code>
+lub kombinacją klawiszy <code class="codehilite"><span class="err">Ctrl+D</span></code>.</p>
                 
                   
                 
+                
+                  
+                  <hr>
+                  <div class="md-source-date">
+                    <small>
+                      
+                        Last update: June 16, 2020
+                      
+                    </small>
+                  </div>
                 
               
               

@@ -1485,6 +1485,11 @@
                 <!-- <Last revision: 2020-04-15 by M. Hermanowicz <m.hermanowicz@icm.edu.pl> -->
 
 <h2 id="informacje-ogolne">Informacje ogólne</h2>
+<div class="admonition success">
+<p class="admonition-title">Status aplikacji i przykłady</p>
+<p>Na stronie <a href="../ci_status/">CI status</a> przedstawiona jest operacyjność aplikacji zainstalowanych na komputerach ICM.
+Dostępnę są też przykłady do ściągnięcia.</p>
+</div>
 <p>Zbiór aplikacji dostępnych na komputerach ICM ulega częstym zmianom –
 w szczególności pod względem zainstalowanych wersji. Poniższa lista
 zawiera najważniejsze z nich, jednak należy mieć na uwadze, że może
@@ -1503,6 +1508,273 @@ dopełnienia jej warunków spoczywa na Użytkowniku.</p>
 <p>Użytkownicy mają także możliwość samodzielnej kompilacji i instalacji
 oprogramowania z wykorzystaniem dostępnych w systemach narzędzi. W tym
 przypadku również mają zastosowanie powyższe uwagi dotyczące licencji.</p>
+<details class="info" open="open"><summary>Wersje aplikacji</summary><p>Werjse aplikacji na poszczególnych maszynach</p>
+<div class="superfences-tabs">
+<input name="__tabs_1" type="radio" id="__tab_1_0" checked="checked" />
+<label for="__tab_1_0">Bash</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code><span class="ch">#!/bin/bash</span>
+
+<span class="nv">FILE</span><span class="o">=</span><span class="s2">&quot;list_of_apps.txt&quot;</span>
+rm -f <span class="nv">$FILE</span>
+
+<span class="nb">echo</span> <span class="s2">&quot;Generated on: </span><span class="k">$(</span>date<span class="k">)</span><span class="s2">&quot;</span> &gt;&gt;  <span class="nv">$FILE</span>
+<span class="k">for</span> app in <span class="k">$(</span>ls /apps/modulefiles/apps/<span class="k">)</span><span class="p">;</span> <span class="k">do</span>
+    <span class="nb">echo</span> -e <span class="s2">&quot;================ APP: </span><span class="nv">$app</span><span class="s2"> ==============\n&quot;</span>
+    <span class="nb">echo</span> <span class="s2">&quot;&quot;</span> &gt;&gt;  <span class="nv">$FILE</span>
+    <span class="k">if</span> <span class="o">[</span> ! <span class="s2">&quot;</span><span class="nv">$app</span><span class="s2">&quot;</span> <span class="o">==</span> <span class="s2">&quot;r&quot;</span> <span class="o">]</span>
+    <span class="k">then</span>     
+        module avail -t <span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span> <span class="p">|</span> grep -i <span class="nv">$app</span> <span class="p">|</span> grep -v <span class="s2">&quot;@&quot;</span> <span class="p">|</span> sed <span class="s1">&#39;s/apps\///&#39;</span> <span class="p">|</span> sort <span class="p">|</span> uniq <span class="p">|</span> tee -a <span class="nv">$FILE</span>
+    <span class="k">else</span>
+        module avail -t <span class="m">2</span>&gt;<span class="p">&amp;</span><span class="m">1</span> <span class="p">|</span> grep -i apps/r/ <span class="p">|</span> grep -v <span class="s2">&quot;@&quot;</span> <span class="p">|</span> sed <span class="s1">&#39;s/apps\///&#39;</span> <span class="p">|</span> sort <span class="p">|</span> uniq <span class="p">|</span> tee -a <span class="nv">$FILE</span>
+    <span class="k">fi</span>
+<span class="k">done</span>
+</code></pre></div></div>
+<input name="__tabs_1" type="radio" id="__tab_1_1" />
+<label for="__tab_1_1">Okeanos</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code><span class="k">Generated</span> <span class="k">on</span><span class="p">:</span> <span class="n">wto</span><span class="p">,</span> <span class="mi">23</span> <span class="n">cze</span> <span class="mi">2020</span><span class="p">,</span> <span class="mi">21</span><span class="p">:</span><span class="mi">27</span><span class="p">:</span><span class="mi">53</span> <span class="n">CEST</span>
+
+<span class="n">abinit</span><span class="o">/</span><span class="mi">8</span><span class="p">.</span><span class="mi">10</span><span class="p">.</span><span class="mi">1</span>
+<span class="n">abinit</span><span class="o">/</span><span class="mi">8</span><span class="p">.</span><span class="mi">10</span><span class="p">.</span><span class="mi">3</span><span class="p">(</span><span class="k">default</span><span class="p">)</span>
+<span class="n">abinit</span><span class="o">/</span><span class="mi">8</span><span class="p">.</span><span class="mi">10</span><span class="p">.</span><span class="mi">3</span><span class="o">-</span><span class="n">patch</span>
+
+<span class="n">amber</span><span class="o">/</span><span class="mi">14</span>
+
+<span class="n">ansys</span><span class="o">/</span><span class="mi">17</span><span class="p">.</span><span class="mi">0</span>
+<span class="n">ansys</span><span class="o">/</span><span class="mi">17</span><span class="p">.</span><span class="mi">1</span>
+<span class="n">ansys</span><span class="o">/</span><span class="mi">19</span><span class="p">.</span><span class="mi">1</span>
+
+<span class="n">bedtools2</span><span class="o">/</span><span class="mi">2</span><span class="p">.</span><span class="mi">29</span><span class="p">.</span><span class="mi">2</span>
+
+<span class="n">castep</span><span class="o">/</span><span class="mi">19</span><span class="p">.</span><span class="mi">11</span>
+
+<span class="n">cp2k</span><span class="o">/</span><span class="mi">6</span><span class="p">.</span><span class="mi">1</span><span class="p">.</span><span class="mi">0</span><span class="p">(</span><span class="k">default</span><span class="p">)</span>
+
+<span class="n">cpmd</span><span class="o">/</span><span class="n">v4</span>
+
+<span class="n">elk</span><span class="o">/</span><span class="mi">5</span><span class="p">.</span><span class="mi">2</span><span class="p">.</span><span class="mi">14</span>
+
+<span class="n">espresso</span><span class="o">/</span><span class="mi">6</span><span class="p">.</span><span class="mi">1</span>
+<span class="n">espresso</span><span class="o">/</span><span class="mi">6</span><span class="p">.</span><span class="mi">1</span><span class="p">.</span><span class="mi">0</span><span class="p">(</span><span class="k">default</span><span class="p">)</span>
+<span class="n">espresso</span><span class="o">/</span><span class="mi">6</span><span class="p">.</span><span class="mi">2</span><span class="p">.</span><span class="mi">1</span>
+<span class="n">espresso</span><span class="o">/</span><span class="mi">6</span><span class="p">.</span><span class="mi">4</span>
+<span class="n">espresso</span><span class="o">/</span><span class="mi">6</span><span class="p">.</span><span class="mi">5</span>
+
+<span class="n">esys</span><span class="o">-</span><span class="n">particle</span><span class="o">/</span><span class="mi">2</span><span class="p">.</span><span class="mi">3</span><span class="p">.</span><span class="mi">5</span>
+
+<span class="n">fluent</span><span class="o">/</span><span class="mi">17</span><span class="p">.</span><span class="mi">0</span>
+<span class="n">fluent</span><span class="o">/</span><span class="mi">17</span><span class="p">.</span><span class="mi">1</span>
+<span class="n">fluent</span><span class="o">/</span><span class="mi">18</span><span class="p">.</span><span class="mi">0</span>
+<span class="n">fluent</span><span class="o">/</span><span class="mi">19</span><span class="p">.</span><span class="mi">1</span>
+
+<span class="n">gromacs</span><span class="o">/</span><span class="mi">2018</span><span class="p">.</span><span class="mi">4</span><span class="o">-</span><span class="n">plumed</span>
+<span class="n">gromacs</span><span class="o">/</span><span class="mi">2019</span><span class="p">.</span><span class="mi">0</span>
+<span class="n">gromacs</span><span class="o">/</span><span class="mi">2020</span><span class="p">(</span><span class="k">default</span><span class="p">)</span>
+
+<span class="n">lammps</span><span class="o">/</span><span class="mi">31</span><span class="n">Mar17</span>
+<span class="n">lammps</span><span class="o">/</span><span class="mi">5</span><span class="n">Jun19</span><span class="p">(</span><span class="k">default</span><span class="p">)</span>
+
+<span class="n">ls</span><span class="o">-</span><span class="n">dyna</span><span class="o">/</span><span class="mi">10</span><span class="p">.</span><span class="mi">1</span><span class="p">.</span><span class="mi">0</span><span class="p">(</span><span class="k">default</span><span class="p">)</span>
+<span class="n">ls</span><span class="o">-</span><span class="n">dyna</span><span class="o">/</span><span class="mi">11</span><span class="p">.</span><span class="mi">0</span><span class="p">.</span><span class="mi">0</span>
+<span class="n">ls</span><span class="o">-</span><span class="n">dyna</span><span class="o">/</span><span class="mi">8</span><span class="p">.</span><span class="mi">0</span><span class="p">.</span><span class="mi">0</span>
+
+<span class="n">namd</span><span class="o">/</span><span class="mi">2</span><span class="p">.</span><span class="mi">11</span>
+<span class="n">namd</span><span class="o">/</span><span class="mi">2</span><span class="p">.</span><span class="mi">13</span><span class="p">(</span><span class="k">default</span><span class="p">)</span>
+
+<span class="n">ncl</span><span class="o">/</span><span class="mi">6</span><span class="p">.</span><span class="mi">6</span><span class="p">.</span><span class="mi">2</span>
+
+<span class="n">nwchem</span><span class="o">/</span><span class="mi">6</span><span class="p">.</span><span class="mi">6</span>
+<span class="n">nwchem</span><span class="o">/</span><span class="mi">6</span><span class="p">.</span><span class="mi">8</span>
+
+<span class="n">openfoam</span><span class="o">/</span><span class="mi">1218</span><span class="p">(</span><span class="k">default</span><span class="p">)</span>
+
+<span class="n">phonopy</span><span class="o">/</span><span class="mi">1</span><span class="p">.</span><span class="mi">10</span><span class="p">.</span><span class="mi">4</span>
+
+<span class="n">r</span><span class="o">/</span><span class="mi">3</span><span class="p">.</span><span class="mi">4</span><span class="p">.</span><span class="mi">2</span>
+
+<span class="n">samtools</span><span class="o">/</span><span class="mi">1</span><span class="p">.</span><span class="mi">10</span>
+
+<span class="n">siesta</span><span class="o">/</span><span class="mi">4</span><span class="p">.</span><span class="mi">1</span>
+<span class="n">siesta</span><span class="o">/</span><span class="mi">4</span><span class="p">.</span><span class="mi">1</span><span class="o">-</span><span class="n">b4</span>
+
+<span class="n">tensorflow</span><span class="o">/</span><span class="mi">1</span><span class="p">.</span><span class="mi">13</span><span class="p">.</span><span class="mi">0</span>
+
+<span class="n">vasp</span><span class="o">/</span><span class="mi">5</span><span class="p">.</span><span class="mi">2</span><span class="p">.</span><span class="mi">12</span>
+<span class="n">vasp</span><span class="o">/</span><span class="mi">5</span><span class="p">.</span><span class="mi">4</span><span class="p">.</span><span class="mi">4</span><span class="p">(</span><span class="k">default</span><span class="p">)</span>
+<span class="n">vasp</span><span class="o">/</span><span class="mi">5</span><span class="p">.</span><span class="mi">4</span><span class="p">.</span><span class="mi">4</span><span class="n">_optics</span>
+<span class="n">vasp</span><span class="o">/</span><span class="mi">5</span><span class="p">.</span><span class="mi">4</span><span class="p">.</span><span class="mi">4</span><span class="n">_vtst</span>
+
+<span class="n">vtstscripts</span><span class="o">/</span><span class="mi">93</span>
+
+<span class="n">xz</span><span class="o">/</span><span class="mi">5</span><span class="p">.</span><span class="mi">2</span><span class="p">.</span><span class="mi">4</span>
+</code></pre></div></div>
+<input name="__tabs_1" type="radio" id="__tab_1_2" />
+<label for="__tab_1_2">Topola</label>
+<div class="superfences-content"><div class="codehilite"><pre><span></span><code><span class="k">Generated</span> <span class="k">on</span><span class="p">:</span> <span class="n">wto</span><span class="p">,</span> <span class="mi">23</span> <span class="n">cze</span> <span class="mi">2020</span><span class="p">,</span> <span class="mi">21</span><span class="p">:</span><span class="mi">36</span><span class="p">:</span><span class="mi">18</span> <span class="n">CEST</span>
+
+<span class="n">abinit</span><span class="o">/</span><span class="mi">8</span><span class="p">.</span><span class="mi">0</span><span class="p">.</span><span class="mi">6</span>
+<span class="n">abinit</span><span class="o">/</span><span class="mi">8</span><span class="p">.</span><span class="mi">10</span><span class="p">.</span><span class="mi">3</span><span class="p">(</span><span class="k">default</span><span class="p">)</span>
+<span class="n">abinit</span><span class="o">/</span><span class="mi">8</span><span class="p">.</span><span class="mi">4</span><span class="p">.</span><span class="mi">4</span>
+
+<span class="n">atat</span><span class="o">/</span><span class="mi">3</span><span class="p">.</span><span class="mi">36</span>
+
+<span class="n">blastplus</span><span class="o">/</span><span class="mi">2</span><span class="p">.</span><span class="mi">2</span><span class="p">.</span><span class="mi">28</span><span class="p">(</span><span class="k">default</span><span class="p">)</span>
+
+<span class="n">bwa</span><span class="o">/</span><span class="mi">0</span><span class="p">.</span><span class="mi">7</span><span class="p">.</span><span class="mi">12</span><span class="p">(</span><span class="k">default</span><span class="p">)</span>
+
+<span class="n">cfour</span><span class="o">/</span><span class="mi">1</span><span class="p">.</span><span class="mi">0</span>
+
+<span class="n">chargemol</span><span class="o">/</span><span class="mi">09</span><span class="p">.</span><span class="mi">02</span><span class="p">.</span><span class="mi">2017</span>
+
+<span class="n">cp2k</span><span class="o">/</span><span class="mi">6</span><span class="p">.</span><span class="mi">1</span><span class="p">.</span><span class="mi">0</span><span class="p">(</span><span class="k">default</span><span class="p">)</span>
+
+<span class="n">cpmd</span><span class="o">/</span><span class="n">v4</span>
+
+<span class="n">dalton</span><span class="o">/</span><span class="mi">2015</span>
+
+
+
+<span class="n">elk</span><span class="o">/</span><span class="mi">4</span><span class="p">.</span><span class="mi">0</span><span class="p">.</span><span class="mi">15</span>
+<span class="n">elk</span><span class="o">/</span><span class="mi">4</span><span class="p">.</span><span class="mi">3</span><span class="p">.</span><span class="mi">6</span><span class="p">(</span><span class="k">default</span><span class="p">)</span>
+<span class="n">elk</span><span class="o">/</span><span class="mi">4</span><span class="p">.</span><span class="mi">3</span><span class="p">.</span><span class="mi">6</span><span class="n">_libxc</span>
+
+<span class="n">espresso</span><span class="o">/</span><span class="mi">4</span><span class="p">.</span><span class="mi">3</span><span class="p">.</span><span class="mi">2</span>
+<span class="n">espresso</span><span class="o">/</span><span class="mi">5</span><span class="p">.</span><span class="mi">0</span><span class="p">.</span><span class="mi">2</span>
+<span class="n">espresso</span><span class="o">/</span><span class="mi">5</span><span class="p">.</span><span class="mi">0</span><span class="p">.</span><span class="mi">3</span>
+<span class="n">espresso</span><span class="o">/</span><span class="mi">5</span><span class="p">.</span><span class="mi">1</span><span class="p">.</span><span class="mi">1</span>
+<span class="n">espresso</span><span class="o">/</span><span class="mi">5</span><span class="p">.</span><span class="mi">2</span><span class="p">.</span><span class="mi">0</span>
+<span class="n">espresso</span><span class="o">/</span><span class="mi">5</span><span class="p">.</span><span class="mi">3</span><span class="p">.</span><span class="mi">0</span>
+<span class="n">espresso</span><span class="o">/</span><span class="mi">6</span><span class="p">.</span><span class="mi">1</span><span class="p">.</span><span class="mi">0</span><span class="p">(</span><span class="k">default</span><span class="p">)</span>
+<span class="n">espresso</span><span class="o">/</span><span class="mi">6</span><span class="p">.</span><span class="mi">3</span><span class="p">.</span><span class="mi">0</span>
+<span class="n">espresso</span><span class="o">/</span><span class="mi">6</span><span class="p">.</span><span class="mi">5</span>
+
+<span class="n">exciting</span><span class="o">/</span><span class="n">boron</span>
+<span class="n">exciting</span><span class="o">/</span><span class="n">nitrogen</span>
+
+<span class="n">fluent</span><span class="o">/</span><span class="mi">17</span><span class="p">.</span><span class="mi">1</span><span class="p">.</span><span class="mi">0</span>
+<span class="n">fluent</span><span class="o">/</span><span class="mi">17</span><span class="p">.</span><span class="mi">2</span><span class="p">.</span><span class="mi">0</span>
+<span class="n">fluent</span><span class="o">/</span><span class="mi">18</span><span class="p">.</span><span class="mi">0</span>
+<span class="n">fluent</span><span class="o">/</span><span class="mi">18</span><span class="p">.</span><span class="mi">2</span><span class="p">(</span><span class="k">default</span><span class="p">)</span>
+<span class="n">fluent</span><span class="o">/</span><span class="mi">19</span><span class="p">.</span><span class="mi">0</span>
+<span class="n">fluent</span><span class="o">/</span><span class="mi">20</span><span class="p">.</span><span class="mi">1</span>
+
+<span class="n">fluka</span><span class="o">/</span><span class="mi">2011</span><span class="p">.</span><span class="mi">2</span><span class="k">c</span>
+<span class="n">fluka</span><span class="o">/</span><span class="mi">2011</span><span class="p">.</span><span class="mi">2</span><span class="k">c</span><span class="o">-</span><span class="mi">3</span>
+
+<span class="n">freefem</span><span class="o">/</span><span class="mi">3</span><span class="p">.</span><span class="mi">56</span><span class="o">-</span><span class="mi">1</span>
+
+<span class="n">gadget</span><span class="o">/</span><span class="mi">2</span><span class="p">.</span><span class="mi">0</span><span class="p">.</span><span class="mi">7</span>
+
+<span class="n">gamess</span><span class="o">/</span><span class="mi">2012</span><span class="p">.</span><span class="n">R2</span>
+
+<span class="n">gaussian</span><span class="o">/</span><span class="n">g09</span><span class="p">.</span><span class="n">B</span><span class="p">.</span><span class="mi">01</span>
+<span class="n">gaussian</span><span class="o">/</span><span class="n">g09</span><span class="p">.</span><span class="n">D</span><span class="p">.</span><span class="mi">01</span>
+<span class="n">gaussian</span><span class="o">/</span><span class="n">g09</span><span class="p">.</span><span class="n">E</span><span class="p">.</span><span class="mi">01</span>
+<span class="n">gaussian</span><span class="o">/</span><span class="n">g16</span><span class="p">.</span><span class="n">A</span><span class="p">.</span><span class="mi">01</span><span class="p">(</span><span class="k">default</span><span class="p">)</span>
+
+<span class="n">genesis</span><span class="o">/</span><span class="n">parallel</span><span class="o">/</span><span class="mi">2</span><span class="p">.</span><span class="mi">3</span><span class="p">.</span><span class="mi">1</span>
+<span class="n">genesis</span><span class="o">/</span><span class="n">sequential</span><span class="o">/</span><span class="mi">2</span><span class="p">.</span><span class="mi">3</span>
+
+<span class="n">gromacs</span><span class="o">/</span><span class="mi">2020</span>
+<span class="n">gromacs</span><span class="o">/</span><span class="mi">5</span><span class="p">.</span><span class="mi">1</span><span class="p">.</span><span class="mi">1</span><span class="p">(</span><span class="k">default</span><span class="p">)</span>
+
+<span class="n">hadoop</span><span class="o">/</span><span class="n">cdh</span><span class="o">-</span><span class="mi">4</span><span class="p">.</span><span class="mi">3</span><span class="p">.</span><span class="mi">0</span>
+<span class="n">hadoop</span><span class="o">/</span><span class="n">cdh</span><span class="o">-</span><span class="n">tt</span><span class="o">-</span><span class="mi">4</span><span class="p">.</span><span class="mi">3</span><span class="p">.</span><span class="mi">0</span>
+
+<span class="n">imb</span><span class="o">/</span><span class="mi">2014</span>
+
+<span class="n">julia</span><span class="o">/</span><span class="mi">0</span><span class="p">.</span><span class="mi">5</span><span class="p">.</span><span class="mi">0</span>
+<span class="n">julia</span><span class="o">/</span><span class="mi">0</span><span class="p">.</span><span class="mi">6</span><span class="p">.</span><span class="mi">2</span>
+<span class="n">julia</span><span class="o">/</span><span class="mi">1</span><span class="p">.</span><span class="mi">1</span><span class="p">.</span><span class="mi">1</span>
+
+<span class="n">lammps</span><span class="o">/</span><span class="mi">16</span><span class="n">Mar18</span>
+<span class="n">lammps</span><span class="o">/</span><span class="mi">16</span><span class="n">Mar18_mpi3</span>
+<span class="n">lammps</span><span class="o">/</span><span class="mi">16</span><span class="n">Mar18_mpi3_rigid</span>
+<span class="n">lammps</span><span class="o">/</span><span class="mi">30</span><span class="n">Jul16</span>
+<span class="n">lammps</span><span class="o">/</span><span class="mi">30</span><span class="n">Jul16_reax</span>
+<span class="n">lammps</span><span class="o">/</span><span class="mi">5</span><span class="n">Jun19</span><span class="p">(</span><span class="k">default</span><span class="p">)</span>
+<span class="n">lammps</span><span class="o">/</span><span class="mi">6</span><span class="n">Dec13</span><span class="o">-</span><span class="n">mkl</span>
+
+<span class="n">mathematica</span><span class="o">/</span><span class="mi">10</span><span class="p">.</span><span class="mi">3</span>
+<span class="n">mathematica</span><span class="o">/</span><span class="mi">11</span><span class="p">.</span><span class="mi">0</span>
+
+<span class="n">matlab</span><span class="o">/</span><span class="n">R2016b</span><span class="p">(</span><span class="k">default</span><span class="p">)</span>
+
+<span class="n">meep</span><span class="o">/</span><span class="mi">1</span><span class="p">.</span><span class="mi">14</span>
+<span class="n">meep</span><span class="o">/</span><span class="mi">1</span><span class="p">.</span><span class="mi">2</span>
+<span class="n">meep</span><span class="o">/</span><span class="mi">1</span><span class="p">.</span><span class="mi">3</span>
+
+<span class="n">migraine</span><span class="o">/</span><span class="mi">0</span><span class="p">.</span><span class="mi">5</span>
+
+<span class="n">mrbayes</span><span class="o">/</span><span class="mi">3</span><span class="p">.</span><span class="mi">2</span><span class="p">.</span><span class="mi">2</span><span class="p">(</span><span class="k">default</span><span class="p">)</span>
+
+<span class="n">music</span><span class="o">/</span><span class="mi">1</span><span class="p">.</span><span class="mi">0</span>
+
+<span class="n">namd</span><span class="o">/</span><span class="mi">2</span><span class="p">.</span><span class="mi">13</span><span class="p">(</span><span class="k">default</span><span class="p">)</span>
+<span class="n">namd</span><span class="o">/</span><span class="mi">2</span><span class="p">.</span><span class="mi">9</span><span class="n">b2</span>
+
+<span class="n">newtonx</span><span class="o">/</span><span class="mi">1</span><span class="p">.</span><span class="mi">4</span><span class="p">.</span><span class="mi">0</span>
+
+<span class="n">nwchem</span><span class="o">/</span><span class="mi">6</span><span class="p">.</span><span class="mi">3</span>
+<span class="n">nwchem</span><span class="o">/</span><span class="mi">6</span><span class="p">.</span><span class="mi">8</span><span class="p">(</span><span class="k">default</span><span class="p">)</span>
+
+<span class="n">octave</span><span class="o">/</span><span class="mi">3</span><span class="p">.</span><span class="mi">8</span><span class="p">.</span><span class="mi">0</span>
+
+<span class="n">openfoam</span><span class="o">/</span><span class="mi">2</span><span class="p">.</span><span class="mi">1</span><span class="p">.</span><span class="mi">1</span>
+<span class="n">openfoam</span><span class="o">/</span><span class="mi">5</span><span class="p">.</span><span class="mi">0</span>
+
+<span class="n">openmx</span><span class="o">/</span><span class="mi">3</span><span class="p">.</span><span class="mi">7</span>
+
+<span class="n">orca</span><span class="o">/</span><span class="mi">3</span><span class="p">.</span><span class="mi">0</span><span class="p">.</span><span class="mi">1</span>
+<span class="n">orca</span><span class="o">/</span><span class="mi">3</span><span class="p">.</span><span class="mi">0</span><span class="p">.</span><span class="mi">3</span>
+<span class="n">orca</span><span class="o">/</span><span class="mi">4</span><span class="p">.</span><span class="mi">0</span><span class="p">.</span><span class="mi">1</span>
+<span class="n">orca</span><span class="o">/</span><span class="mi">4</span><span class="p">.</span><span class="mi">2</span><span class="p">.</span><span class="mi">1</span>
+
+<span class="n">paraview</span><span class="o">/</span><span class="mi">4</span><span class="p">.</span><span class="mi">1</span><span class="p">.</span><span class="mi">0</span>
+
+<span class="n">patran</span><span class="o">/</span><span class="mi">2012</span><span class="p">.</span><span class="mi">2</span><span class="p">.</span><span class="mi">2</span>
+
+<span class="n">pcj</span><span class="o">-</span><span class="n">blast</span><span class="o">/</span><span class="mi">0</span><span class="p">.</span><span class="mi">1</span><span class="p">.</span><span class="mi">0</span><span class="p">(</span><span class="k">default</span><span class="p">)</span>
+
+<span class="n">plumed</span><span class="o">/</span><span class="mi">2</span><span class="p">.</span><span class="mi">2</span><span class="p">.</span><span class="mi">1</span>
+
+<span class="n">psi4</span><span class="o">/</span><span class="mi">0</span><span class="n">b5</span>
+
+<span class="n">r</span><span class="o">/</span><span class="mi">3</span><span class="p">.</span><span class="mi">0</span><span class="p">.</span><span class="mi">2</span>
+<span class="n">r</span><span class="o">/</span><span class="mi">3</span><span class="p">.</span><span class="mi">1</span><span class="p">.</span><span class="mi">0</span>
+<span class="n">r</span><span class="o">/</span><span class="mi">3</span><span class="p">.</span><span class="mi">1</span><span class="p">.</span><span class="mi">2</span>
+<span class="n">r</span><span class="o">/</span><span class="mi">3</span><span class="p">.</span><span class="mi">5</span><span class="p">.</span><span class="mi">1</span>
+
+<span class="n">raspa</span><span class="o">/</span><span class="mi">2</span><span class="p">.</span><span class="mi">0</span>
+
+<span class="n">rosetta</span><span class="o">/</span><span class="mi">2013</span><span class="n">wk48</span><span class="o">-</span><span class="n">bin</span>
+<span class="n">rosetta</span><span class="o">/</span><span class="mi">2013</span><span class="n">wk48</span><span class="o">-</span><span class="n">bin_single</span><span class="p">(</span><span class="k">default</span><span class="p">)</span>
+<span class="n">rosetta</span><span class="o">/</span><span class="mi">2020</span><span class="p">.</span><span class="mi">08</span><span class="p">.</span><span class="mi">61146</span>
+
+<span class="n">rx</span><span class="o">/</span><span class="n">gnu</span><span class="o">/</span><span class="mi">3</span><span class="p">.</span><span class="mi">1</span><span class="p">.</span><span class="mi">2</span>
+<span class="n">rx</span><span class="o">/</span><span class="n">gnu</span><span class="o">/</span><span class="mi">3</span><span class="p">.</span><span class="mi">3</span><span class="p">.</span><span class="mi">1</span>
+<span class="n">rx</span><span class="o">/</span><span class="n">gnu</span><span class="o">/</span><span class="mi">3</span><span class="p">.</span><span class="mi">3</span><span class="p">.</span><span class="mi">2</span>
+<span class="n">rx</span><span class="o">/</span><span class="n">gnu</span><span class="o">/</span><span class="mi">3</span><span class="p">.</span><span class="mi">3</span><span class="p">.</span><span class="mi">3</span>
+<span class="n">rx</span><span class="o">/</span><span class="n">gnu</span><span class="o">/</span><span class="mi">3</span><span class="p">.</span><span class="mi">4</span><span class="p">.</span><span class="mi">0</span>
+<span class="n">rx</span><span class="o">/</span><span class="n">intel</span><span class="o">/</span><span class="mi">3</span><span class="p">.</span><span class="mi">1</span><span class="p">.</span><span class="mi">2</span>
+<span class="n">rx</span><span class="o">/</span><span class="n">intel</span><span class="o">/</span><span class="mi">3</span><span class="p">.</span><span class="mi">3</span><span class="p">.</span><span class="mi">1</span>
+<span class="n">rx</span><span class="o">/</span><span class="n">intel</span><span class="o">/</span><span class="mi">3</span><span class="p">.</span><span class="mi">3</span><span class="p">.</span><span class="mi">2</span>
+<span class="n">rx</span><span class="o">/</span><span class="n">intel</span><span class="o">/</span><span class="mi">3</span><span class="p">.</span><span class="mi">3</span><span class="p">.</span><span class="mi">3</span>
+<span class="n">rx</span><span class="o">/</span><span class="n">intel</span><span class="o">/</span><span class="mi">3</span><span class="p">.</span><span class="mi">4</span><span class="p">.</span><span class="mi">0</span><span class="p">(</span><span class="k">default</span><span class="p">)</span>
+
+<span class="n">shifter</span><span class="o">/</span><span class="mi">16</span><span class="p">.</span><span class="mi">08</span>
+
+<span class="n">siesta</span><span class="o">/</span><span class="mi">4</span><span class="p">.</span><span class="mi">0</span><span class="n">b</span>
+
+<span class="n">sire</span><span class="o">/</span><span class="mi">14</span><span class="p">.</span><span class="mi">3</span>
+
+
+<span class="n">wannier90</span><span class="o">/</span><span class="mi">2</span><span class="p">.</span><span class="mi">0</span><span class="p">.</span><span class="mi">1</span>
+<span class="n">wannier90</span><span class="o">/</span><span class="mi">3</span><span class="p">.</span><span class="mi">0</span><span class="p">.</span><span class="mi">0</span><span class="p">(</span><span class="k">default</span><span class="p">)</span>
+
+<span class="n">wannier_tools</span><span class="o">/</span><span class="mi">2</span><span class="p">.</span><span class="mi">4</span><span class="p">.</span><span class="mi">1</span>
+</code></pre></div></div>
+</div>
+</details>
 <h2 id="lista-aplikacji">Lista aplikacji</h2>
 <h3 id="abinit"><strong>ABINIT</strong></h3>
 <ul>
@@ -1547,7 +1819,7 @@ przypadku również mają zastosowanie powyższe uwagi dotyczące licencji.</p>
 <li>
 <p><a href="https://www.ansys.com/products/fluids/ansys-fluent">https://www.ansys.com/products/fluids/ansys-fluent</a></p>
 </li>
-<li>Licencja krajowa</li>
+<li><a href="../../../Licencje_krajowe/ansys/">Licencja krajowa</a></li>
 <li>Dostępność: Topola, Okeanos</li>
 </ul>
 <hr />
@@ -1818,6 +2090,16 @@ is a general ab initio quantum chemistry package.</em></p>
                 
                   
                 
+                
+                  
+                  <hr>
+                  <div class="md-source-date">
+                    <small>
+                      
+                        Last update: June 23, 2020
+                      
+                    </small>
+                  </div>
                 
               
               

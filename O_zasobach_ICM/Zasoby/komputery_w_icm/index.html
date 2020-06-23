@@ -1179,9 +1179,9 @@
 Po zalogowaniu się przez ssh na węzeł dostępowy (hpc.icm.edu.pl) można ponownie użyć ssh do zalogowania się na kolejną maszynę (np. Okeanos, Rysy), niedostępna zza firewalla. Po zalogowaniu na węzeł dostępowy <em>hpc.icm.edu.pl</em> może występować on pod nazwą <em>hpc</em>.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>Zlecanie zadań na system <code>topola</code> możliwe jest <strong><em>bezpośrednio z węzła dostępowego</em></strong> <code>hpc.icm.edu.pl</code>.
+<p>Zlecanie zadań na system <code class="codehilite"><span class="err">topola</span></code> możliwe jest <strong><em>bezpośrednio z węzła dostępowego</em></strong> <code class="codehilite"><span class="err">hpc.icm.edu.pl</span></code>.
 W przypadku pozostałych systemów możliwy/wymagany jest <strong><em>dodatkowy krok logowania</em></strong> wykonany z komputera
-hpc.icm.edu.pl, np. <code>ssh rysy</code>, <code>ssh okeanos</code>.</p>
+hpc.icm.edu.pl, np. <code class="codehilite"><span class="err">ssh rysy</span></code>, <code class="codehilite"><span class="err">ssh okeanos</span></code>.</p>
 </div>
 <table>
 <thead>
@@ -1235,7 +1235,6 @@ sinfo -N -l <span class="c1"># lista węzłów</span>
 smap -i <span class="m">2</span> <span class="c1"># quasi-graficzna informacja o wykorzystaniu węzłów</span>
 </code></pre></div>
 
-
 <h2 id="qos-na-poszczegolnych-systemach">QOS na poszczególnych systemach</h2>
 <p>QOS - Quality of Service</p>
 <h3 id="topola-qos">Topola - qos</h3>
@@ -1251,7 +1250,6 @@ smap -i <span class="m">2</span> <span class="c1"># quasi-graficzna informacja o
      meteo                   <span class="m">1500</span>  
 </code></pre></div>
 
-
 <h3 id="okeanos-qos">Okeanos - qos</h3>
 <div class="codehilite"><pre><span></span><code>okeanos-login1 /home/username&gt; sacctmgr show qos <span class="nv">format</span><span class="o">=</span>name,MaxWall,Priority,MaxTRESPU%50
 
@@ -1263,7 +1261,6 @@ smap -i <span class="m">2</span> <span class="c1"># quasi-graficzna informacja o
      ocean  <span class="m">4</span>-00:00:00       <span class="m">1000</span>                                     <span class="nv">node</span><span class="o">=</span><span class="m">1024</span>
 ocean-long  <span class="m">7</span>-00:00:00        <span class="m">750</span>                                      <span class="nv">node</span><span class="o">=</span><span class="m">256</span>
 </code></pre></div>
-
 
 <h3 id="rysy-qos">RYSY - qos</h3>
 <div class="codehilite"><pre><span></span><code>username@rysy ~ $ sacctmgr show qos <span class="nv">format</span><span class="o">=</span>name,MaxWall,Priority,MaxTRESPU%50
@@ -1279,7 +1276,6 @@ ocean-long  <span class="m">7</span>-00:00:00        <span class="m">750</span> 
       none                      <span class="m">0</span>                                         <span class="nv">cpu</span><span class="o">=</span><span class="m">0</span>
 </code></pre></div>
 
-
 <p>Skróty:</p>
 <ul>
 <li>
@@ -1292,6 +1288,16 @@ ocean-long  <span class="m">7</span>-00:00:00        <span class="m">750</span> 
                 
                   
                 
+                
+                  
+                  <hr>
+                  <div class="md-source-date">
+                    <small>
+                      
+                        Last update: June 16, 2020
+                      
+                    </small>
+                  </div>
                 
               
               

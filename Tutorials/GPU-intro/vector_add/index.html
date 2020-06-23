@@ -1359,7 +1359,6 @@ First, consider a serial CPU code.</p>
 <span class="p">}</span>
 </code></pre></div>
 
-
 <h2 id="the-cuda-part">The CUDA part</h2>
 <h3 id="initialize-the-data">Initialize the data</h3>
 <div class="codehilite"><pre><span></span><code><span class="kt">void</span> <span class="nf">GPU_version_wrapper</span><span class="p">(</span><span class="k">const</span> <span class="kt">int</span> <span class="n">N</span><span class="p">)</span>
@@ -1382,7 +1381,6 @@ First, consider a serial CPU code.</p>
     <span class="p">.</span>
 </code></pre></div>
 
-
 <h3 id="allocate-gpu-memory">Allocate GPU memory</h3>
 <p>The GPU has to allocate corresponding amount of memory to handle the data.</p>
 <div class="codehilite"><pre><span></span><code>    <span class="c1">// Allocate device memory for d_a</span>
@@ -1392,13 +1390,11 @@ First, consider a serial CPU code.</p>
     <span class="n">cudaMalloc</span><span class="p">((</span><span class="kt">void</span><span class="o">**</span><span class="p">)</span><span class="o">&amp;</span><span class="n">d_out</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">float</span><span class="p">)</span> <span class="o">*</span> <span class="n">N</span><span class="p">);</span>
 </code></pre></div>
 
-
 <h3 id="transfer-data-to-gpu">Transfer data to GPU</h3>
 <p>Transfer data from host to device (global) memory</p>
 <div class="codehilite"><pre><span></span><code>    <span class="n">cudaMemcpy</span><span class="p">(</span><span class="n">d_a</span><span class="p">,</span> <span class="n">h_a</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">float</span><span class="p">)</span> <span class="o">*</span> <span class="n">N</span><span class="p">,</span> <span class="n">cudaMemcpyHostToDevice</span><span class="p">);</span>
     <span class="n">cudaMemcpy</span><span class="p">(</span><span class="n">d_b</span><span class="p">,</span> <span class="n">h_b</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">float</span><span class="p">)</span> <span class="o">*</span> <span class="n">N</span><span class="p">,</span> <span class="n">cudaMemcpyHostToDevice</span><span class="p">);</span>
 </code></pre></div>
-
 
 <h3 id="call-the-kernel">Call the kernel</h3>
 <div class="codehilite"><pre><span></span><code>    <span class="n">gpu_vector_add</span><span class="o">&lt;&lt;&lt;</span><span class="mi">1</span><span class="p">,</span><span class="mi">1024</span><span class="o">&gt;&gt;&gt;</span><span class="p">(</span><span class="n">d_out</span><span class="p">,</span> <span class="n">d_a</span><span class="p">,</span> <span class="n">d_b</span><span class="p">,</span> <span class="n">N</span><span class="p">);</span> <span class="c1">//  &lt;&lt;&lt;blocks, threads_per_block&gt;&gt;&gt;</span>
@@ -1410,12 +1406,10 @@ First, consider a serial CPU code.</p>
     <span class="c1">// gpu_vector_add&lt;&lt;&lt;(N + MAX_THREADS_IN_BLOCK-1) / MAX_THREADS_IN_BLOCK, MAX_THREADS_IN_BLOCK&gt;&gt;&gt;(d_out, d_a, d_b, N);</span>
 </code></pre></div>
 
-
 <h3 id="transfer-data-from-gpu">Transfer data from GPU</h3>
 <p>Transfer data from device (global) memory to host</p>
 <div class="codehilite"><pre><span></span><code>    <span class="n">cudaMemcpy</span><span class="p">(</span><span class="n">h_out</span><span class="p">,</span> <span class="n">d_out</span><span class="p">,</span> <span class="k">sizeof</span><span class="p">(</span><span class="kt">float</span><span class="p">)</span> <span class="o">*</span> <span class="n">N</span><span class="p">,</span> <span class="n">cudaMemcpyDeviceToHost</span><span class="p">);</span>
 </code></pre></div>
-
 
 <h3 id="verify-the-result">Verify the result</h3>
 <div class="codehilite"><pre><span></span><code>    <span class="n">printf</span><span class="p">(</span><span class="s">&quot;GPU Last element in the array: out[%d] = %f</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span><span class="n">N</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span>  <span class="n">h_out</span><span class="p">[</span><span class="n">N</span><span class="o">-</span><span class="mi">1</span><span class="p">]);</span>
@@ -1425,7 +1419,6 @@ First, consider a serial CPU code.</p>
 
     <span class="n">printf</span><span class="p">(</span><span class="s">&quot;GPU assertion PASSED</span><span class="se">\n\n</span><span class="s">&quot;</span><span class="p">);</span>
 </code></pre></div>
-
 
 <h3 id="free-memory">Free memory</h3>
 <p>Cleanup the memory after kernel execution</p>
@@ -1440,7 +1433,6 @@ First, consider a serial CPU code.</p>
     <span class="n">free</span><span class="p">(</span><span class="n">h_out</span><span class="p">);</span>
 <span class="p">}</span> <span class="c1">// end of GPU_version_wrapper</span>
 </code></pre></div>
-
 
 <h3 id="the-gpu_vector_add-kernel">The gpu_vector_add kernel</h3>
 <p>Don't forget to write the actual kernel</p>
@@ -1460,20 +1452,19 @@ First, consider a serial CPU code.</p>
 <span class="p">}</span>
 </code></pre></div>
 
-
 <h2 id="experiments">Experiments</h2>
 <p>Make experiments to gain experience.</p>
-<p>When do you need to introduce the <code>step</code> in the cuda kernel?</p>
+<p>When do you need to introduce the <code class="codehilite"><span class="err">step</span></code> in the cuda kernel?</p>
 <p>Try to run the following combinations:</p>
 <ul>
 <li>
-<p><code>gpu_vector_add&lt;&lt;&lt;1,1025&gt;&gt;&gt;(d_out, d_a, d_b, N);</code></p>
+<p><code class="codehilite"><span class="err">gpu_vector_add&lt;&lt;&lt;1,1025&gt;&gt;&gt;(d_out, d_a, d_b, N);</span></code></p>
 </li>
 <li>
-<p><code>gpu_vector_add&lt;&lt;&lt;2,1024&gt;&gt;&gt;(d_out, d_a, d_b, N);</code></p>
+<p><code class="codehilite"><span class="err">gpu_vector_add&lt;&lt;&lt;2,1024&gt;&gt;&gt;(d_out, d_a, d_b, N);</span></code></p>
 </li>
 <li>
-<p><code>GPU_version_wrapper(1025);</code></p>
+<p><code class="codehilite"><span class="err">GPU_version_wrapper(1025);</span></code></p>
 </li>
 </ul>
 <h3 id="cuda-memcheck">cuda-memcheck</h3>
@@ -1482,13 +1473,22 @@ First, consider a serial CPU code.</p>
 $ cuda-memcheck ./ex2_vector_add
 </code></pre></div>
 
-
 <h2 id="additional-reading">Additional Reading</h2>
 <p><a href="https://devblogs.nvidia.com/easy-introduction-cuda-c-and-c/">https://devblogs.nvidia.com/easy-introduction-cuda-c-and-c/</a></p>
 <p><a href="https://devblogs.nvidia.com/six-ways-saxpy/">https://devblogs.nvidia.com/six-ways-saxpy/</a></p>
                 
                   
                 
+                
+                  
+                  <hr>
+                  <div class="md-source-date">
+                    <small>
+                      
+                        Last update: June 16, 2020
+                      
+                    </small>
+                  </div>
                 
               
               

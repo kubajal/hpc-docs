@@ -1335,13 +1335,13 @@ użytkownik umieszcza zadanie w kolejce</li>
 Aby zaplanować zadanie, można użyć polecenia salloc, sbatch lub srun.</p>
 <ul>
 <li>
-<p><code>sbatch</code> zawsze tworzy nowy przydział zasobów po jego wywołaniu, wykonuje skrypt zadania na jednym z przydzielonych węzłów (master node), a następnie zwalnia przydział po zakończeniu skryptu. Dodatkową cechą sbatch jest to, że przeanalizuje skrypt w czasie przesyłania zadania - zamiast podawać argumenty z wiersza poleceń, opcje sbatch mogą zostać zapisane za pomocą linii rozpoczynających się od #SBATCH. Jeżeli poda się argumenty do wiersza poleceń to zastępią one opcje #SBATCH w skrypcie, więc można wywoływać pojedynczy skrypt wsadowy dla różnych przydziałów wielkości zadania, określając opcje -N lub -n w wierszu polecenia podczas przesyłania skryptu zadania zsbatch</p>
+<p><code class="codehilite"><span class="err">sbatch</span></code> zawsze tworzy nowy przydział zasobów po jego wywołaniu, wykonuje skrypt zadania na jednym z przydzielonych węzłów (master node), a następnie zwalnia przydział po zakończeniu skryptu. Dodatkową cechą sbatch jest to, że przeanalizuje skrypt w czasie przesyłania zadania - zamiast podawać argumenty z wiersza poleceń, opcje sbatch mogą zostać zapisane za pomocą linii rozpoczynających się od #SBATCH. Jeżeli poda się argumenty do wiersza poleceń to zastępią one opcje #SBATCH w skrypcie, więc można wywoływać pojedynczy skrypt wsadowy dla różnych przydziałów wielkości zadania, określając opcje -N lub -n w wierszu polecenia podczas przesyłania skryptu zadania zsbatch</p>
 </li>
 <li>
-<p><code>srun</code> może, ale nie musi, utworzyć alokację, w zależności od sposobu jej wywołania. Jeśli zostanie wywołany w wierszu poleceń węzła logowania, utworzy nowy przydział i wykona polecenie po srun. Jeśli zostanie wywołany w skrypcie wsadowym, po prostu uruchomi zadanie na bieżącym przydziale. Podobnie, srun może otrzymać argument --jobid, który każe mu uruchomić zadanie jako część danego 'job`a' i jego alokacji.</p>
+<p><code class="codehilite"><span class="err">srun</span></code> może, ale nie musi, utworzyć alokację, w zależności od sposobu jej wywołania. Jeśli zostanie wywołany w wierszu poleceń węzła logowania, utworzy nowy przydział i wykona polecenie po srun. Jeśli zostanie wywołany w skrypcie wsadowym, po prostu uruchomi zadanie na bieżącym przydziale. Podobnie, srun może otrzymać argument --jobid, który każe mu uruchomić zadanie jako część danego 'job`a' i jego alokacji.</p>
 </li>
 <li>
-<p><code>salloc</code> zawsze tworzy nowy przydział zasobów, gdy jest wywoływany, ale nie musi uruchamiać żadnych zadań w przydzielonych węzłach. Typowym przykładem użycia salloc jest utworzenie przydziału w celu uruchomienia serii kolejnych poleceń srun poprzez interaktywną sesję bash lub skrypt uruchamiany z węzła logowania. Zwalnia przydział po zakończeniu sesji skryptu lub sesji bash.</p>
+<p><code class="codehilite"><span class="err">salloc</span></code> zawsze tworzy nowy przydział zasobów, gdy jest wywoływany, ale nie musi uruchamiać żadnych zadań w przydzielonych węzłach. Typowym przykładem użycia salloc jest utworzenie przydziału w celu uruchomienia serii kolejnych poleceń srun poprzez interaktywną sesję bash lub skrypt uruchamiany z węzła logowania. Zwalnia przydział po zakończeniu sesji skryptu lub sesji bash.</p>
 </li>
 </ul>
 <p>Źródło: <a href="https://cvw.cac.cornell.edu/slurm/basics_allocation">https://cvw.cac.cornell.edu/slurm/basics_allocation</a></p>
@@ -1349,13 +1349,13 @@ Aby zaplanować zadanie, można użyć polecenia salloc, sbatch lub srun.</p>
 <p>Opis zadania i zapotrzebowanie na zasoby można specyfikować w specjalnym
 skrypcie - pliku tekstowym dla systemu SLURM. Skrypt tworzy użytkownik.
 Skrypt składa się z tzw. dyrektyw systemu SLURM, czyli linii zaczynające
-się od słowa <code>#SLURM</code> oraz instrukcji uruchamiających odpowiedni
+się od słowa <code class="codehilite"><span class="err">#SLURM</span></code> oraz instrukcji uruchamiających odpowiedni
 program.</p>
 <ul>
 <li>Pierwsza linia skryptu <strong>musi</strong> zawierać ścieżkę do interpretera
     (shell), który ma wykonać skrypt na przydzielonym węźle
     obliczeniowym np.
-    <code>#!/bin/bash -l</code>.</li>
+    <code class="codehilite"><span class="ch">#!/bin/bash -l</span></code>.</li>
 <li>Kolejne linie powinny zawierać specyfikację zasobów</li>
 </ul>
 <div class="admonition note">
@@ -1364,7 +1364,7 @@ program.</p>
 Rezerwacja zasobów oraz wszystkie uruchamiane komendy systemowe i programy nazywane są w skrócie zadaniem.</p>
 </div>
 <p>Większość opcji ma swoje skróty.
-W razie wątpliwości można zajrzeć do instrukcji korzystając z polecenia <code>man sbatch</code> lub <code>man srun</code>
+W razie wątpliwości można zajrzeć do instrukcji korzystając z polecenia <code class="codehilite"><span class="err">man sbatch</span></code> lub <code class="codehilite"><span class="err">man srun</span></code>
 Poniżej przedstawiona jest lista najczęściej używanych opcji:</p>
 <table>
 <thead>
@@ -1459,7 +1459,6 @@ module load apps/espresso/6.1.0
 mpirun -n <span class="m">12</span> pw.x &lt; S.in
 </code></pre></div>
 
-
 <ul>
 <li>w systemie kolejkowym zadnie będzie funkcjonowało pod nazwą "qe-1"</li>
 <li>na jednym węźle obliczeniowym z wykorzystaniem 12 rdzeni
@@ -1491,9 +1490,8 @@ module load espresso/6.1.0
 <span class="nb">srun</span> -n <span class="m">12</span> pw.x &lt; S.in
 </code></pre></div>
 
-
 <h3 id="partycja-rysy">Partycja Rysy</h3>
-<p>W celu uruchomienia aplikacji na GPU niezbędne jest podanie opcji <code>--gres=gpu:liczba_gpu</code>.</p>
+<p>W celu uruchomienia aplikacji na GPU niezbędne jest podanie opcji <code class="codehilite"><span class="err">--gres=gpu:liczba_gpu</span></code>.</p>
 <div class="codehilite"><pre><span></span><code><span class="ch">#!/bin/bash -l</span>
 <span class="kp">#SBATCH -J gpu_test</span>
 <span class="kp">#SBATCH --gres=gpu:1</span>
@@ -1508,44 +1506,42 @@ module load espresso/6.1.0
 <span class="nb">srun</span> hello_world_cuda
 </code></pre></div>
 
-
 <p>Przykładowy program <em>hello_world_cuda</em> znajduje się w sekcji <a href="../../GPU-intro/hello_world/">Podstawy GPU</a>.</p>
 <h2 id="wstawianie-zadania-do-kolejki">Wstawianie zadania do kolejki</h2>
-<p>Polecenie <code>sbatch</code> służy do wstawiania zadań do systemu kolejkowego.
+<p>Polecenie <code class="codehilite"><span class="err">sbatch</span></code> służy do wstawiania zadań do systemu kolejkowego.
 Wszystkie flagi, które można wyspecyfikować w tym poleceniu,
 alternatywnie podaje się w pierwszym bloku komentarza skryptu
-kolejkowego w liniach zaczynających się od <code>#SBATCH</code> .
+kolejkowego w liniach zaczynających się od <code class="codehilite"><span class="err">#SBATCH</span></code> .
 Niektóre opcje tego polecenia są specyficzne dla danego komputera.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>Zlecanie zadań na system <code>topola</code> możliwe jest <strong><em>bezpośrednio z węzła dostępowego</em></strong> <code>hpc.icm.edu.pl</code>.
+<p>Zlecanie zadań na system <code class="codehilite"><span class="err">topola</span></code> możliwe jest <strong><em>bezpośrednio z węzła dostępowego</em></strong> <code class="codehilite"><span class="err">hpc.icm.edu.pl</span></code>.
 W przypadku pozostałych systemów możliwy/wymagany jest <strong><em>dodatkowy krok logowania</em></strong> wykonany z komputera
-hpc.icm.edu.pl, np. <code>ssh rysy</code>, <code>ssh okeanos</code>.</p>
+hpc.icm.edu.pl, np. <code class="codehilite"><span class="err">ssh rysy</span></code>, <code class="codehilite"><span class="err">ssh okeanos</span></code>.</p>
 </div>
 <p>Więcej o komputerach dostępnych w ICM <a href="../../../O_zasobach_ICM/Zasoby/komputery_w_icm/">tutaj</a>.</p>
 <h3 id="tryb-wsadowy">Tryb wsadowy</h3>
-<p>Wstawienie do kolejki zadania opisanego skryptem <code>MojeZadanie.batch</code>
+<p>Wstawienie do kolejki zadania opisanego skryptem <code class="codehilite"><span class="err">MojeZadanie.batch</span></code>
 wykonujemy komendą:</p>
 <div class="codehilite"><pre><span></span><code>sbatch MojeZadanie.batch
 </code></pre></div>
 
-
 <p>Umieści ona w systemie kolejkowym zadanie wsadowe (bez możliwości
 interakcji z wykonywanym programem). Dodatkowe opcje wykonania zadania
 możemy wprowadzać w skrypcie lub podać jako parametry polecenia
-<code>sbatch</code>.</p>
+<code class="codehilite"><span class="err">sbatch</span></code>.</p>
 <h3 id="tryb-interaktywny">Tryb interaktywny</h3>
 <p>Aby uzyskać dostęp do zasobów w trybie interaktywnym z dostępem do
 powłoki (shell), wykonujemy komendę:</p>
-<p><code>srun --cpu_bind=none -p nazwa_partycji -A G99-99 --pty bash -l</code></p>
+<p><code class="codehilite"><span class="err">srun --cpu_bind=none -p nazwa_partycji -A G99-99 --pty bash -l</span></code></p>
 <p>Nazwa partycji (kolejki) zależy od konkretnej maszyny, na której ma być
 uruchamiane zadanie. Dla komputera hydra, spis dostępny jest
 <a href="/Hydra#Kolejki_.28partycje.29" title="wikilink">tutaj</a>. Dodatkowo wymagany
 jest numer grantu obliczeniowego, w ramach którego prowadzone są prace
 (w przykładzie G99-99)</p>
 <p>Dodatkowe opcje wykonania zadania możemy wprowadzać jedynie jako
-parametry polecenia <code>srun</code>, np.</p>
-<p><code>srun --partition=topola -w wn1234 -A G99-99 -N 1 --ntasks-per-node 6 --pty bash -l</code></p>
+parametry polecenia <code class="codehilite"><span class="err">srun</span></code>, np.</p>
+<p><code class="codehilite"><span class="err">srun --partition=topola -w wn1234 -A G99-99 -N 1 --ntasks-per-node 6 --pty bash -l</span></code></p>
 <p>zadanie zostanie uruchomione na <em>jednym</em> węźle o nazwie <em>wn1234</em>, z rezerwacją na *6
 procesorów/rdzeni (per węzeł) *</p>
 <h4 id="przykad-rozpoczecia-pracy-interaktywnej">Przykład rozpoczęcia pracy interaktywnej</h4>
@@ -1553,18 +1549,26 @@ procesorów/rdzeni (per węzeł) *</p>
 srun -A &lt;grant_name&gt; -N <span class="m">1</span> -n <span class="m">12</span> --time<span class="o">=</span><span class="m">1</span>:00:00 --gres<span class="o">=</span>gpu:2 --pty /bin/bash -l <span class="c1"># cluster: rysy</span>
 </code></pre></div>
 
-
 <h2 id="quality-of-service-qos">Quality of Service (QOS)</h2>
 <p>Parametr ten określa na jak długo możliwa jest alokacja zasobów oraz priorytet w uruchomieniu zadania.</p>
 <p>Aby przypisać zadanie do konkretnego qos'a należy ustalić zmienną:</p>
 <div class="codehilite"><pre><span></span><code>--qos<span class="o">=</span>NAZWA_QOSa
 </code></pre></div>
 
-
 <p>Szczegóły qos'ów dostępnych w ICM znajdują się <a href="../../../O_zasobach_ICM/Zasoby/komputery_w_icm/">tu</a>.</p>
                 
                   
                 
+                
+                  
+                  <hr>
+                  <div class="md-source-date">
+                    <small>
+                      
+                        Last update: June 16, 2020
+                      
+                    </small>
+                  </div>
                 
               
               

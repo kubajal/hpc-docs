@@ -1167,7 +1167,7 @@
 <h2 id="przykadowy-skrypt-slurm">Przykładowy skrypt Slurm</h2>
 <div class="admonition warning">
 <p class="admonition-title">Uwaga</p>
-<p>Ze względu na limit miejsca w katalogu home użytkownika, proponujemy prowadzenie obliczeń w katalogu tmp. Poniżej przykładowy skrypt z możliwością zapisu w katalogu <code>tmp</code>.</p>
+<p>Ze względu na limit miejsca w katalogu home użytkownika, proponujemy prowadzenie obliczeń w katalogu tmp. Poniżej przykładowy skrypt z możliwością zapisu w katalogu <code class="codehilite"><span class="err">tmp</span></code>.</p>
 </div>
 <div class="codehilite"><pre><span></span><code><span class="ch">#!/bin/bash -l</span>
 <span class="c1">#SBATCH -J GAUSSIAN_TEST</span>
@@ -1191,11 +1191,20 @@ rm -fr /icm/tmp/<span class="nv">$USER</span>/<span class="nv">$$</span>
 <span class="c1">#-A należy podać numer grantu</span>
 </code></pre></div>
 
-
 <p>Ze względu na limit miejsca w katalogu home, możliwe jest też doprecyzowanie jak duże mają być pliki tymczasowe,w pliku inputowym, przez opcję <strong>%MaxDisk</strong>.</p>
                 
                   
                 
+                
+                  
+                  <hr>
+                  <div class="md-source-date">
+                    <small>
+                      
+                        Last update: June 16, 2020
+                      
+                    </small>
+                  </div>
                 
               
               

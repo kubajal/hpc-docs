@@ -1353,10 +1353,6 @@
                 <!-- <Last revision: 2020-06-16 by M. Hermanowicz <m.hermanowicz@icm.edu.pl> -->
 
 <h2 id="licencja-krajowa">Licencja krajowa</h2>
-<div class="admonition info">
-<p class="admonition-title">Zmiany w konfiguracji serwera licencji</p>
-<p>Od 30.6.2015 zmieniają się dane serwera licencji. Zamiast serwera <strong>licences.icm.edu.pl</strong> należy podać <strong>licenses2.icm.edu.pl</strong>. Reszta ustawień pozostaje bez zmian</p>
-</div>
 <h3 id="konfiguracja-serwera-licencji">Konfiguracja serwera licencji</h3>
 <ul>
 <li>Ze strony <a href="http://www.ansys.com/customer">ANSYS</a> należy pobrać wersję bieżącą pakietu (dla większości użytkowników) ANSYS Academic Research CFD. Po dane logowania na tę stronę należy zwrócić się do firmy SymKom.</li>
@@ -1383,27 +1379,22 @@
 <div class="codehilite"><pre><span></span><code>fluent
 </code></pre></div>
 
-
 <p>uzupełnionym o listę argumentów. Sposób wykonania programu zależeć będzie od podanych argumentów.</p>
 <p>ANSYS Fluent może działać w wersji pojedynczej precyzji oraz w podwójnej precyzji. W większości przypadków, solver działający w pojedynczej precyzji daje wystarczająco dokładne wyniki. Rozpoczynając działanie Fluenta w wierszu poleceń można wskazać zarówno precyzję, z jaką będą wykonywane obliczenia, jak i wymiar przestrzenny modelu (2D lub 3D). W szczególności:</p>
 <div class="codehilite"><pre><span></span><code>fluent 2d
 </code></pre></div>
 
-
 <p>uruchamia solver dwuwymiarowy i działający w pojedynczej precyzji.</p>
 <div class="codehilite"><pre><span></span><code>fluent 3d
 </code></pre></div>
-
 
 <p>uruchamia solver trójwymiarowy, działający w pojedynczej precyzji.</p>
 <div class="codehilite"><pre><span></span><code>fluent 2ddp
 </code></pre></div>
 
-
 <p>uruchamia solver dwuwymiarowy, działający w podwójnej precyzji.</p>
 <div class="codehilite"><pre><span></span><code> fluent 3ddp
 </code></pre></div>
-
 
 <p>uruchamia solver trójwymiarowy, działający w podwójnej precyzji.</p>
 <h3 id="graficzny-interfejs-uzytkownika">Graficzny interfejs użytkownika</h3>
@@ -1414,7 +1405,6 @@
 <p>Sposób uruchomienia Fluenta w trybie wsadowym zależy od systemu operacyjnego. Tu podany jest sposób odpowiedni dla komputerów pracujących pod kontrolą systemu GNU/Linux. Aby rozpocząć działanie programu należy wprowadzić polecenie:</p>
 <div class="codehilite"><pre><span></span><code>fluent inne_opcje -g -i inputfile &gt; outputfile
 </code></pre></div>
-
 
 <p>Znaczenie kolejnych elementów polecenia:</p>
 <ul>
@@ -1435,7 +1425,6 @@ wd example100.dat
 <span class="nb">exit</span>
 </code></pre></div>
 
-
 <p>Plik ten opisuje następujące czynności:</p>
 <ul>
 <li>wczytanie pliku zawierającego definicję zadania (geometria, warunki brzegowe, inne ustawienia, itd) (tu: example.cas);</li>
@@ -1452,7 +1441,6 @@ solve/iterate <span class="m">50</span> <span class="m">50</span>
 file/write-data example100.dat
 <span class="nb">exit</span>
 </code></pre></div>
-
 
 <h2 id="tryb-wsadowy">Tryb wsadowy</h2>
 <p>Zaleca się, aby wszystkie zadania obliczeniowe na dużych maszynach w ICM były uruchamiane za pośrednictwem systemów kolejkowych. Na klastrze hydra kolejkami steruje system SLURM. System SLURM (SLURM) zapewnia środowisko wsadowego wykonywania zadań użytkowników. Jego zadaniem jest optymalne wykorzystanie dostępnych zasobów w celu jak najwydajniejszego wykonywania zadań. Na tej stronie podano tylko podstawowe informacje niezbędne do rozpoczęcia obliczeń w trybie wsadowym. Więcej informacji znajduje się na stronie poświęconej SLURMowi.</p>
@@ -1475,7 +1463,6 @@ wd example100.dat
 <span class="nb">exit</span>
 </code></pre></div>
 
-
 <p>Plik ten opisuje następujące czynności:</p>
 <ul>
 <li>wczytanie pliku zawierającego definicję zadania (geometria, warunki brzegowe, inne ustawienia, itd) (tu: example.cas);</li>
@@ -1493,7 +1480,6 @@ file/write-data example100.dat
 <span class="nb">exit</span>
 </code></pre></div>
 
-
 <p>W ogólnym przypadku w pliku <strong>inputfile</strong> można umieścić znacznie więcej poleceń.</p>
 <p>Kolejny przykład dotyczy zagadnienia ewolucyjnego:</p>
 <div class="codehilite"><pre><span></span><code>read-case example.cas
@@ -1508,7 +1494,6 @@ write-data Model.dat
 yes
 </code></pre></div>
 
-
 <p>Plik ten opisuje następujące czynności:</p>
 <ul>
 <li>wczytanie pliku zawierającego opis zadania (tu: example.cas);</li>
@@ -1520,7 +1505,6 @@ yes
 <p>Ostatnia linia w przykładzie (<strong>yes</strong>) jest niezbędna, bowiem przed zakończeniem działania Fluent wyświetla komunikat:</p>
 <div class="codehilite"><pre><span></span><code>The current <span class="k">case</span> and data have not been saved. Ok to discard?
 </code></pre></div>
-
 
 <p>Odpowiedź na ten komunikat również musiała znaleźć się w pliku input.</p>
 <div class="admonition warning">
@@ -1550,22 +1534,18 @@ fluent 3ddp -ssh -pib -t24  -g -i inputfile &gt; output
 <span class="nb">echo</span> Job finished at <span class="sb">`</span>date<span class="sb">`</span> &gt;&gt;raport
 </code></pre></div>
 
-
 <ul>
 <li>Opcja <strong>-g</strong> oznacza wyłączenie trybu graficznego.</li>
 <li><strong>-i</strong> inputfile oznacza, że komunikacja z programem Fluent będzie odbywała się za pomocą pliku inputfile, natomiast wszystkie komunikaty generowane przez Fluenta, które podczas pracy interaktywnej pojawiałyby się na konsoli, będą zapisywane do pliku output.</li>
 <li>Informacje wyróżnione kolorem w pliku skryptowym są związane z wykorzystaniem Fluenta w obliczeniach wieloprocesowych.</li>
-<li>Sposób, w jaki definiuje się liczbę procesorów, na których będzie wykonywane zadanie:</li>
-</ul>
+<li>Sposób, w jaki definiuje się liczbę procesorów, na których będzie wykonywane zadanie:
 <div class="codehilite"><pre><span></span><code><span class="c1">#SBATCH -N 2</span>
 <span class="c1">#SBATCH -n 24</span>
-</code></pre></div>
-
-
+</code></pre></div></li>
+</ul>
 <p>Powyższa przykładowa konfiguracja oznacza, że obliczenia będą wykonywane na dwóch węzłach (-N 2), sumarycznie korzystając z (-n 24) procesów. Liczba 24 pojawia się w poleceniu wywołującym Fluenta:</p>
 <div class="codehilite"><pre><span></span><code>fluent 3ddp -ssh -pib -t24  -i inputfile &gt;output
 </code></pre></div>
-
 
 <p>Z podanych wartości wynika, że na jeden węzeł przypada 12 procesów i nie jest to wartość przypadkowa, a bezpośrednio związana z rodzajem węzłów dostępnych na hydrze. Z przyczyn praktycznych najlepiej jest zajmować na obliczenia całe węzły, a zatem liczba procesów powinna być wielokrotnością 12.</p>
 <p>W przypadku zadań wymagających większej pamięci/liczby węzłów należy odpowiednio zmienić wartości #SBATCH -N x, #SBATCH -n y oraz parametr -t y w wywołaniu Fluenta. Nie należy zwiększać parametru #SBATCH --mem=24gb</p>
@@ -1573,11 +1553,9 @@ fluent 3ddp -ssh -pib -t24  -g -i inputfile &gt; output
 <li>Opcja <strong>-ssh</strong> wymusza użycie ssh zamiast rsh do komunikacji wewnętrznej procesów. W większości przypadków jest to niezbędne ustawienie.</li>
 <li>Opcja <strong>-pib</strong> oznacza wykorzystanie komunikacji typu infiniband.</li>
 </ul>
-<p>Ustawienie to pojawia się również w definicji zadania w opcji:</p>
+<p>Ustawienie to pojawia się również w definicji zadania w opcji:
 <div class="codehilite"><pre><span></span><code><span class="c1">#SBATCH -C ib</span>
-</code></pre></div>
-
-
+</code></pre></div></p>
 <h3 id="system-topola">System Topola</h3>
 <p>Skrypt przeznaczony do uruchamiania zadań na Topoli wygląda analogicznie. Niewielkie zmiany są spowodowane inną architekturą tej części klastra.</p>
 <div class="admonition warning">
@@ -1603,7 +1581,6 @@ fluent 3ddp -pib -slurm -t56  -g -i inputfile &gt;output
 <span class="nb">echo</span> Job finished at <span class="sb">`</span>date<span class="sb">`</span> &gt;&gt;raport
 </code></pre></div>
 
-
 <p><strong>Główne różnice</strong> to:</p>
 <ul>
 <li>Jeden węzeł zawiera 28 procesorów, dlatego korzystnie jest w obliczeniach wykorzystywać wielokrotność 28.</li>
@@ -1614,6 +1591,16 @@ fluent 3ddp -pib -slurm -t56  -g -i inputfile &gt;output
                 
                   
                 
+                
+                  
+                  <hr>
+                  <div class="md-source-date">
+                    <small>
+                      
+                        Last update: June 23, 2020
+                      
+                    </small>
+                  </div>
                 
               
               
