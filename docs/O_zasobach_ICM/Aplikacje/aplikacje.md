@@ -8,6 +8,10 @@ draft: false
 
 ## Informacje ogólne
 
+!!! success "Status aplikacji i przykłady"
+    Na stronie [CI status](./ci_status.md) przedstawiona jest operacyjność aplikacji zainstalowanych na komputerach ICM.
+    Dostępnę są też przykłady do ściągnięcia.
+
 Zbiór aplikacji dostępnych na komputerach ICM ulega częstym zmianom –
 w szczególności pod względem zainstalowanych wersji. Poniższa lista
 zawiera najważniejsze z nich, jednak należy mieć na uwadze, że może
@@ -33,6 +37,275 @@ Prośby o instalację aplikacji należy zgłaszać [tu](../../kontakt.md).
 Użytkownicy mają także możliwość samodzielnej kompilacji i instalacji
 oprogramowania z wykorzystaniem dostępnych w systemach narzędzi. W tym
 przypadku również mają zastosowanie powyższe uwagi dotyczące licencji.
+
+???+ info "Wersje aplikacji"
+    Werjse aplikacji na poszczególnych maszynach
+
+    ```Bash tab=
+    #!/bin/bash
+
+    FILE="list_of_apps.txt"
+    rm -f $FILE
+
+    echo "Generated on: $(date)" >>  $FILE
+    for app in $(ls /apps/modulefiles/apps/); do
+        echo -e "================ APP: $app ==============\n"
+        echo "" >>  $FILE
+        if [ ! "$app" == "r" ]
+        then     
+            module avail -t 2>&1 | grep -i $app | grep -v "@" | sed 's/apps\///' | sort | uniq | tee -a $FILE
+        else
+            module avail -t 2>&1 | grep -i apps/r/ | grep -v "@" | sed 's/apps\///' | sort | uniq | tee -a $FILE
+        fi
+    done
+    ```
+
+    ```Okeanos tab=
+    Generated on: wto, 23 cze 2020, 21:27:53 CEST
+
+    abinit/8.10.1
+    abinit/8.10.3(default)
+    abinit/8.10.3-patch
+
+    amber/14
+
+    ansys/17.0
+    ansys/17.1
+    ansys/19.1
+
+    bedtools2/2.29.2
+
+    castep/19.11
+
+    cp2k/6.1.0(default)
+
+    cpmd/v4
+
+    elk/5.2.14
+
+    espresso/6.1
+    espresso/6.1.0(default)
+    espresso/6.2.1
+    espresso/6.4
+    espresso/6.5
+
+    esys-particle/2.3.5
+
+    fluent/17.0
+    fluent/17.1
+    fluent/18.0
+    fluent/19.1
+
+    gromacs/2018.4-plumed
+    gromacs/2019.0
+    gromacs/2020(default)
+
+    lammps/31Mar17
+    lammps/5Jun19(default)
+
+    ls-dyna/10.1.0(default)
+    ls-dyna/11.0.0
+    ls-dyna/8.0.0
+
+    namd/2.11
+    namd/2.13(default)
+
+    ncl/6.6.2
+
+    nwchem/6.6
+    nwchem/6.8
+
+    openfoam/1218(default)
+
+    phonopy/1.10.4
+
+    r/3.4.2
+
+    samtools/1.10
+
+    siesta/4.1
+    siesta/4.1-b4
+
+    tensorflow/1.13.0
+
+    vasp/5.2.12
+    vasp/5.4.4(default)
+    vasp/5.4.4_optics
+    vasp/5.4.4_vtst
+
+    vtstscripts/93
+
+    xz/5.2.4
+
+    ```
+
+    ```Topola tab=
+    Generated on: wto, 23 cze 2020, 21:36:18 CEST
+
+    abinit/8.0.6
+    abinit/8.10.3(default)
+    abinit/8.4.4
+
+    atat/3.36
+
+    blastplus/2.2.28(default)
+
+    bwa/0.7.12(default)
+
+    cfour/1.0
+
+    chargemol/09.02.2017
+
+    cp2k/6.1.0(default)
+
+    cpmd/v4
+
+    dalton/2015
+
+
+
+    elk/4.0.15
+    elk/4.3.6(default)
+    elk/4.3.6_libxc
+
+    espresso/4.3.2
+    espresso/5.0.2
+    espresso/5.0.3
+    espresso/5.1.1
+    espresso/5.2.0
+    espresso/5.3.0
+    espresso/6.1.0(default)
+    espresso/6.3.0
+    espresso/6.5
+
+    exciting/boron
+    exciting/nitrogen
+
+    fluent/17.1.0
+    fluent/17.2.0
+    fluent/18.0
+    fluent/18.2(default)
+    fluent/19.0
+    fluent/20.1
+
+    fluka/2011.2c
+    fluka/2011.2c-3
+
+    freefem/3.56-1
+
+    gadget/2.0.7
+
+    gamess/2012.R2
+
+    gaussian/g09.B.01
+    gaussian/g09.D.01
+    gaussian/g09.E.01
+    gaussian/g16.A.01(default)
+
+    genesis/parallel/2.3.1
+    genesis/sequential/2.3
+
+    gromacs/2020
+    gromacs/5.1.1(default)
+
+    hadoop/cdh-4.3.0
+    hadoop/cdh-tt-4.3.0
+
+    imb/2014
+
+    julia/0.5.0
+    julia/0.6.2
+    julia/1.1.1
+
+    lammps/16Mar18
+    lammps/16Mar18_mpi3
+    lammps/16Mar18_mpi3_rigid
+    lammps/30Jul16
+    lammps/30Jul16_reax
+    lammps/5Jun19(default)
+    lammps/6Dec13-mkl
+
+    mathematica/10.3
+    mathematica/11.0
+
+    matlab/R2016b(default)
+
+    meep/1.14
+    meep/1.2
+    meep/1.3
+
+    migraine/0.5
+
+    mrbayes/3.2.2(default)
+
+    music/1.0
+
+    namd/2.13(default)
+    namd/2.9b2
+
+    newtonx/1.4.0
+
+    nwchem/6.3
+    nwchem/6.8(default)
+
+    octave/3.8.0
+
+    openfoam/2.1.1
+    openfoam/5.0
+
+    openmx/3.7
+
+    orca/3.0.1
+    orca/3.0.3
+    orca/4.0.1
+    orca/4.2.1
+
+    paraview/4.1.0
+
+    patran/2012.2.2
+
+    pcj-blast/0.1.0(default)
+
+    plumed/2.2.1
+
+    psi4/0b5
+
+    r/3.0.2
+    r/3.1.0
+    r/3.1.2
+    r/3.5.1
+
+    raspa/2.0
+
+    rosetta/2013wk48-bin
+    rosetta/2013wk48-bin_single(default)
+    rosetta/2020.08.61146
+
+    rx/gnu/3.1.2
+    rx/gnu/3.3.1
+    rx/gnu/3.3.2
+    rx/gnu/3.3.3
+    rx/gnu/3.4.0
+    rx/intel/3.1.2
+    rx/intel/3.3.1
+    rx/intel/3.3.2
+    rx/intel/3.3.3
+    rx/intel/3.4.0(default)
+
+    shifter/16.08
+
+    siesta/4.0b
+
+    sire/14.3
+
+
+    wannier90/2.0.1
+    wannier90/3.0.0(default)
+
+    wannier_tools/2.4.1
+
+
+    ```
 
 ## Lista aplikacji
 
@@ -69,7 +342,7 @@ przypadku również mają zastosowanie powyższe uwagi dotyczące licencji.
 
 [ansys]: https://www.ansys.com/products/fluids/ansys-fluent
 * [https://www.ansys.com/products/fluids/ansys-fluent][ansys]
-* Licencja krajowa
+* [Licencja krajowa](../../Licencje_krajowe/ansys.md)
 * Dostępność: Topola, Okeanos
 
 ***

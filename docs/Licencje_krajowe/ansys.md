@@ -8,9 +8,6 @@ draft: false
 
 ## Licencja krajowa
 
-!!! Info "Zmiany w konfiguracji serwera licencji"
-    Od 30.6.2015 zmieniają się dane serwera licencji. Zamiast serwera **licences.icm.edu.pl** należy podać **licenses2.icm.edu.pl**. Reszta ustawień pozostaje bez zmian
-
 ### Konfiguracja serwera licencji
 
 - Ze strony [ANSYS](http://www.ansys.com/customer) należy pobrać wersję bieżącą pakietu (dla większości użytkowników) ANSYS Academic Research CFD. Po dane logowania na tę stronę należy zwrócić się do firmy SymKom.
@@ -27,6 +24,7 @@ draft: false
     Na komputerze, na którym uruchamiane są obliczenia, należy jednorazowo uruchomić program ANSLIC_ADMIN, wybrać zakładkę "Set License Preferences for User" i ustawić kolejność licencji, jakie będą pobierane z serwera. W zakładce Solver i PrepPost na pierwszym miejscu powinien znaleźć się Ansys Academic Research CFD (lub Ansys Academic Research POLYFLOW).
 
 ### Ustalanie numeru IP
+
 Swój numer IP na potrzeby licencji (tzw. publiczny) można sprawdzić przez dowolną stronę typu: [http://whatismyipaddress.com](http://whatismyipaddress.com) czy [http://www.whatismyip.com](http://www.whatismyip.com). Numery z zakresu **192.168.0.0–192.168.255.255** lub **172.16.0.0–172.31.255.255** są numerami sieci wewnętrznej jednostki.
 
 ## Uruchamianie
@@ -46,22 +44,26 @@ ANSYS Fluent może działać w wersji pojedynczej precyzji oraz w podwójnej pre
 ```bash
 fluent 2d
 ```
+
 uruchamia solver dwuwymiarowy i działający w pojedynczej precyzji.
 
 ```bash
 fluent 3d
 ```
+
 uruchamia solver trójwymiarowy, działający w pojedynczej precyzji.
 
 ```bash
 fluent 2ddp
 ```
+
 uruchamia solver dwuwymiarowy, działający w podwójnej precyzji.
 
 ```bash
  fluent 3ddp
 ```
- uruchamia solver trójwymiarowy, działający w podwójnej precyzji.
+
+uruchamia solver trójwymiarowy, działający w podwójnej precyzji.
 
 ### Graficzny interfejs użytkownika
 
