@@ -39,7 +39,7 @@ oprogramowania z wykorzystaniem dostępnych w systemach narzędzi. W tym
 przypadku również mają zastosowanie powyższe uwagi dotyczące licencji.
 
 ???+ info "Wersje aplikacji"
-    Werjse aplikacji na poszczególnych maszynach
+    Wersje aplikacji na poszczególnych maszynach
 
     ```Bash tab=
     #!/bin/bash
