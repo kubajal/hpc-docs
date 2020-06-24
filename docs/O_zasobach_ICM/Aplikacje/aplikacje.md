@@ -4,7 +4,6 @@ date: 2020-04-09
 draft: false
 ---
 
-<!-- <Last revision: 2020-04-15 by M. Hermanowicz <m.hermanowicz@icm.edu.pl> -->
 
 ## Informacje ogólne
 
@@ -40,25 +39,6 @@ przypadku również mają zastosowanie powyższe uwagi dotyczące licencji.
 
 ???+ info "Wersje aplikacji"
     Wersje aplikacji na poszczególnych maszynach
-
-    ```Bash tab=
-    #!/bin/bash
-
-    FILE="list_of_apps.txt"
-    rm -f $FILE
-
-    echo "Generated on: $(date)" >>  $FILE
-    for app in $(ls /apps/modulefiles/apps/); do
-        echo -e "================ APP: $app ==============\n"
-        echo "" >>  $FILE
-        if [ ! "$app" == "r" ]
-        then     
-            module avail -t 2>&1 | grep -i $app | grep -v "@" | sed 's/apps\///' | sort | uniq | tee -a $FILE
-        else
-            module avail -t 2>&1 | grep -i apps/r/ | grep -v "@" | sed 's/apps\///' | sort | uniq | tee -a $FILE
-        fi
-    done
-    ```
 
     ```Okeanos tab=
     Generated on: wto, 23 cze 2020, 21:27:53 CEST
@@ -304,8 +284,29 @@ przypadku również mają zastosowanie powyższe uwagi dotyczące licencji.
 
     wannier_tools/2.4.1
 
-
     ```
+
+    ```Bash tab=
+    #!/bin/bash
+
+    # this scripts generates a list of available applications based on modules.
+
+    FILE="list_of_apps.txt"
+    rm -f $FILE
+
+    echo "Generated on: $(date)" >>  $FILE
+    for app in $(ls /apps/modulefiles/apps/); do
+        echo -e "================ APP: $app ==============\n"
+        echo "" >>  $FILE
+        if [ ! "$app" == "r" ]
+        then     
+            module avail -t 2>&1 | grep -i $app | grep -v "@" | sed 's/apps\///' | sort | uniq | tee -a $FILE
+        else
+            module avail -t 2>&1 | grep -i apps/r/ | grep -v "@" | sed 's/apps\///' | sort | uniq | tee -a $FILE
+        fi
+    done
+    ```
+
 
 ## Lista aplikacji
 

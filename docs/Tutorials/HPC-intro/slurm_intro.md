@@ -79,7 +79,7 @@ Poniżej przedstawiona jest lista najczęściej używanych opcji:
 | ---      |  --mem=            | Rezerwacja pamięci per node (megabytes).                                                        |
 | ---      |  --mem-per-cpu=    | Rezerwacja pamięci per CPU (megabytes).                                                         |
 | ---      |  --mail-user=      | Adres email użytkownika, np. `--mail-user=user@somewhere.com` |
-| ---      |  --mail-type=      | Kiedy wysłać powiadomienie email (`ALL` lub `END`). Niestawienie opcji - brak powiadomienia.    |
+| ---      |  --mail-type=      | Kiedy wysłać powiadomienie email (`ALL` lub `END`). Nieustawienie opcji - brak powiadomienia.    |
 
 
 ### Przykładowe skrypty

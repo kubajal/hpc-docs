@@ -27,7 +27,7 @@ być umieszczane w [bazie grantów](http://granty.icm.edu.pl/IcmGrants/).
 
 **Uwaga: użytkownicy nie mają możliwości usuwania błędnych plików czy
 pomyłkowo dodanych sprawozdań.** Możliwe jest tylko modyfikowanie
-wprowadzonego opisu. W celu usunięcia plików należny skontaktować się z <pomoc@icm.edu.pl>.
+wprowadzonego opisu. W celu usunięcia plików należny skontaktować się z pomoc([monkey](https://en.wikipedia.org/wiki/At_sign#Names_in_other_languages))icm.edu.pl.
 
 Wszystkie publikacje związane z grantem obliczeniowym powinny być
 zamieszczane w bazie grantów oraz zawierać następującą informację:

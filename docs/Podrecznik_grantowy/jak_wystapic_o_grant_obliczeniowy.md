@@ -102,14 +102,14 @@ Po wypełnieniu formularza i wygenerowaniu formularza grantu, należy:
   - podpisać formularz grantu (podpis kierownika) oraz formularze nowych
     użytkowników (podpis użytkowników),
     
-  - odesłać skan formularza na adres <pomoc@icm.edu.pl>.
+  - odesłać skan formularza na adres  pomoc([monkey](https://en.wikipedia.org/wiki/At_sign#Names_in_other_languages))icm.edu.pl.
 
 Razem z grantem należy **przesłać formularze użytkowników** (w tym
 kierownika grantu) dodanych do grantu, które są dostępne przy oknie
 **Lista propozycji realizatorów**, przy loginach użytkowników (pliki
 **PDF**). Grant zostanie uruchomiony w ciągu 5 dni roboczych od wpłynięcia
 formularza. W celu uruchomienia dostępu do poszczególnych maszyn należy
-wysłać dodatkowo mail na adres <pomoc@icm.edu.pl>.
+wysłać dodatkowo mail na adres  pomoc([monkey](https://en.wikipedia.org/wiki/At_sign#Names_in_other_languages))icm.edu.pl.
 
 ### Jak dodać współwykonawców do grantu
 
