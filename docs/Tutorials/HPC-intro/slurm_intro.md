@@ -73,11 +73,14 @@ Poniżej przedstawiona jest lista najczęściej używanych opcji:
 | -A       |  --account=        | Numer grantu obliczeniowego użytkownika grant, np. G99-99. Używane w celach sprawozdawczych.    |
 | -c       |  --cpus-per-task=  | Liczba procesorów per proces. |
 | -J       |  --job-name=       | Ustawia nazwę zadania, domyślnie jest to nazwa skryptu. Pod taką nazwą będzie widziane zadanie w systemie, np. przy wyświetlaniu listy zadań.  |
-| -t       |  --time=hh:mm:ss   |    Maksymalna długość działania zadania od momentu jego uruchomienia <gg:mm:ss>. Po tym czasie zadanie zostanie przerwane przez system kolejkowy. |
+| -t       |  --time=`hh:mm:ss`   |    Maksymalna długość działania zadania od momentu jego uruchomienia `gg:mm:ss`. Po tym czasie zadanie zostanie przerwane przez system kolejkowy. |
 | -C       |  --constraint      | Możliwość zażądania sprzętu o konkretnych, np. typu procesora.                                  |
-| ---      |  --gres=gpu:4      | Użycie dodatkowych zasobów, np GPU (klaster Rysy).                                              |
+| ---      |  --gres=gpu:`4`      | Użycie dodatkowych zasobów, np GPU (klaster Rysy).                                              |
 | ---      |  --mem=            | Rezerwacja pamięci per node (megabytes).                                                        |
 | ---      |  --mem-per-cpu=    | Rezerwacja pamięci per CPU (megabytes).                                                         |
+| ---      |  --mail-user=      | Adres email użytkownika, np. `--mail-user=user@somewhere.com` |
+| ---      |  --mail-type=      | Kiedy wysłać powiadomienie email (`ALL` lub `END`). Niestawienie opcji - brak powiadomienia.    |
+
 
 ### Przykładowe skrypty
 

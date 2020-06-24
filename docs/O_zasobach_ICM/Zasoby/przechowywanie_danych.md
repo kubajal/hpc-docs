@@ -26,7 +26,7 @@ Gdzie:
 * `O` - węzeł obliczeniowy.
 * `/lu/tetyda/home/$USER/` jest aliasem `/lustre/tetyda/home/$USER/`.
 
-Docelowo planowany jest następujący podział:
+Docelowo **planowany** jest następujący podział:
 
 | Zasób            | Topola             | Okeanos            | Rysy              | Uwagi                                                                |
 |------------------|--------------------| -------------------| ----------------- |--------------------------------------------------------------------- |
