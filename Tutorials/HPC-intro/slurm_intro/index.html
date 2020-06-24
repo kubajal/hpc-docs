@@ -1417,8 +1417,8 @@ Poniżej przedstawiona jest lista najczęściej używanych opcji:</p>
 </tr>
 <tr>
 <td>-t</td>
-<td align="left">--time=hh<img alt="🇲🇲" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/1f1f2-1f1f2.svg" title=":mm:" />ss</td>
-<td align="left">Maksymalna długość działania zadania od momentu jego uruchomienia <gg:mm:ss>. Po tym czasie zadanie zostanie przerwane przez system kolejkowy.</td>
+<td align="left">--time=<code class="codehilite"><span class="n">hh</span><span class="o">:</span><span class="n">mm</span><span class="o">:</span><span class="n">ss</span></code></td>
+<td align="left">Maksymalna długość działania zadania od momentu jego uruchomienia <code class="codehilite"><span class="n">gg</span><span class="o">:</span><span class="n">mm</span><span class="o">:</span><span class="n">ss</span></code>. Po tym czasie zadanie zostanie przerwane przez system kolejkowy.</td>
 </tr>
 <tr>
 <td>-C</td>
@@ -1427,7 +1427,7 @@ Poniżej przedstawiona jest lista najczęściej używanych opcji:</p>
 </tr>
 <tr>
 <td>---</td>
-<td align="left">--gres=gpu:4</td>
+<td align="left">--gres=gpu:<code class="codehilite"><span class="err">4</span></code></td>
 <td align="left">Użycie dodatkowych zasobów, np GPU (klaster Rysy).</td>
 </tr>
 <tr>
@@ -1439,6 +1439,16 @@ Poniżej przedstawiona jest lista najczęściej używanych opcji:</p>
 <td>---</td>
 <td align="left">--mem-per-cpu=</td>
 <td align="left">Rezerwacja pamięci per CPU (megabytes).</td>
+</tr>
+<tr>
+<td>---</td>
+<td align="left">--mail-user=</td>
+<td align="left">Adres email użytkownika, np. <code class="codehilite"><span class="err">--mail-user=user@somewhere.com</span></code></td>
+</tr>
+<tr>
+<td>---</td>
+<td align="left">--mail-type=</td>
+<td align="left">Kiedy wysłać powiadomienie email (<code class="codehilite"><span class="err">ALL</span></code> lub <code class="codehilite"><span class="err">END</span></code>). Niestawienie opcji - brak powiadomienia.</td>
 </tr>
 </tbody>
 </table>
@@ -1565,7 +1575,7 @@ srun -A &lt;grant_name&gt; -N <span class="m">1</span> -n <span class="m">12</sp
                   <div class="md-source-date">
                     <small>
                       
-                        Last update: June 16, 2020
+                        Last update: June 24, 2020
                       
                     </small>
                   </div>
