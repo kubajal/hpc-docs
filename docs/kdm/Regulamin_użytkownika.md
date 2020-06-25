@@ -1,0 +1,1 @@
+../O_zasobach_ICM/Formalnosci/regulamin.md
