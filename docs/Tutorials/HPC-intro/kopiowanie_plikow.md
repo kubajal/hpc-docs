@@ -69,21 +69,18 @@ Uwagi:
     rsync -zarv --prune-empty-dirs --include "*/"  --include="*.csv" --exclude="*" "$FROM" "$TO"
 ```
 
-## Przechowywanie Danych
+## Kopiowanie poprzez zasób współdzielony
 
-Szczegóły zasobów dyskowych ICM dostępne są [tu](../../O_zasobach_ICM/Zasoby/przechowywanie_danych.md).
-
-### Kopiowanie poprzez zasób współdzielony
+!!! info
+    Szczegóły zasobów dyskowych ICM opisane są [tu](../../O_zasobach_ICM/Zasoby/przechowywanie_danych.md).
 
 Ponieważ część maszyn ICM'u dysponuje współdzielonymi systemami plików, na których można operować tak, jak na dysku lokalnym (kopiowanie za pomocą cp). Aktualnie do zasobów współdzielonych należą:
 
 ```.sh
-/icm/tmp (uniwersalny zasób dyskowy)
-/lu/topola (dla topoli)
-/lu/tetyda (dla okeanosa)
+/lu/tetyda/home/$USER/
 ```
 
-Katalog domowy okeanosa */lustre/tetyda/home/* jest widoczny pod scieżką */lu/tetyda/home/user_name/* z topoli.
+Katalog domowy okeanosa `/lustre/tetyda/home/` jest widoczny pod scieżką `/lu/tetyda/home/user_name/` z węzła dostępowego na topoli.
 
 ## Udzielenie dostępu do danych dla członków tego samego grantu
 
