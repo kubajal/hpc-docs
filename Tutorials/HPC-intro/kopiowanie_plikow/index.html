@@ -701,22 +701,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#przechowywanie-danych" class="md-nav__link">
-    Przechowywanie Danych
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#kopiowanie-poprzez-zasob-wspodzielony" class="md-nav__link">
     Kopiowanie poprzez zasób współdzielony
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1129,22 +1116,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#przechowywanie-danych" class="md-nav__link">
-    Przechowywanie Danych
-  </a>
-  
-    <nav class="md-nav">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
   <a href="#kopiowanie-poprzez-zasob-wspodzielony" class="md-nav__link">
     Kopiowanie poprzez zasób współdzielony
   </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1250,16 +1224,16 @@ Składnia jest taka jak przy zwykłym kopiowaniu <em>cp</em>.</p>
     rsync -zarv --prune-empty-dirs --include <span class="s2">&quot;*/&quot;</span>  --include<span class="o">=</span><span class="s2">&quot;*.csv&quot;</span> --exclude<span class="o">=</span><span class="s2">&quot;*&quot;</span> <span class="s2">&quot;</span><span class="nv">$FROM</span><span class="s2">&quot;</span> <span class="s2">&quot;</span><span class="nv">$TO</span><span class="s2">&quot;</span>
 </code></pre></div>
 
-<h2 id="przechowywanie-danych">Przechowywanie Danych</h2>
-<p>Szczegóły zasobów dyskowych ICM dostępne są <a href="../../../O_zasobach_ICM/Zasoby/przechowywanie_danych/">tu</a>.</p>
-<h3 id="kopiowanie-poprzez-zasob-wspodzielony">Kopiowanie poprzez zasób współdzielony</h3>
+<h2 id="kopiowanie-poprzez-zasob-wspodzielony">Kopiowanie poprzez zasób współdzielony</h2>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Szczegóły zasobów dyskowych ICM opisane są <a href="../../../O_zasobach_ICM/Zasoby/przechowywanie_danych/">tu</a>.</p>
+</div>
 <p>Ponieważ część maszyn ICM'u dysponuje współdzielonymi systemami plików, na których można operować tak, jak na dysku lokalnym (kopiowanie za pomocą cp). Aktualnie do zasobów współdzielonych należą:</p>
-<div class="codehilite"><pre><span></span><code>/icm/tmp <span class="o">(</span>uniwersalny zasób dyskowy<span class="o">)</span>
-/lu/topola <span class="o">(</span>dla topoli<span class="o">)</span>
-/lu/tetyda <span class="o">(</span>dla okeanosa<span class="o">)</span>
+<div class="codehilite"><pre><span></span><code>/lu/tetyda/home/<span class="nv">$USER</span>/
 </code></pre></div>
 
-<p>Katalog domowy okeanosa <em>/lustre/tetyda/home/</em> jest widoczny pod scieżką <em>/lu/tetyda/home/user_name/</em> z topoli.</p>
+<p>Katalog domowy okeanosa <code class="codehilite"><span class="err">/lustre/tetyda/home/</span></code> jest widoczny pod scieżką <code class="codehilite"><span class="err">/lu/tetyda/home/user_name/</span></code> z węzła dostępowego na topoli.</p>
 <h2 id="udzielenie-dostepu-do-danych-dla-czonkow-tego-samego-grantu">Udzielenie dostępu do danych dla członków tego samego grantu</h2>
 <p>Najlepszym sposobem na przekaznie dostępu do plików w ramach grantu jest użycie mechanizmu praw dostępu do pliku w Linux.
 W tym celu należy najpierw ustawić właściwą grupę dla plików które nas interesują,
@@ -1290,7 +1264,7 @@ a następnie prawo odczytu (i zapisu jeżeli dotyczy) dla tej grupy.</p>
                   <div class="md-source-date">
                     <small>
                       
-                        Last update: June 16, 2020
+                        Last update: June 25, 2020
                       
                     </small>
                   </div>

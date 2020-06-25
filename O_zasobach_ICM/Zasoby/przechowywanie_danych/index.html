@@ -1046,8 +1046,36 @@
                 
                   <h1>Przechowywanie danych</h1>
                 
-                <p>Poniższa tabelka prezentuje dostępne w infrastrukturze ICM zasoby służące przechowywaniu danych.</p>
-<p>Aktualna widoczność zasobów (storage) z poszczególnych systemów:</p>
+                <p>Poniższa tabelka prezentuje dostępne w infrastrukturze ICM zasoby służące przechowywaniu danych  (storage).
+Obowiązuje następujący podział:</p>
+<table>
+<thead>
+<tr>
+<th>Zasób</th>
+<th>Topola</th>
+<th>Okeanos</th>
+<th>Rysy</th>
+<th>Uwagi</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Storage globalny</td>
+<td>/lu/tetyda/$USER/</td>
+<td>/lu/tetyda/$USER/</td>
+<td>/lu/tetyda/$USER/</td>
+<td>katalog widoczny z węzłów dostępowych (do wymiany danych)</td>
+</tr>
+<tr>
+<td>Storage lokalny</td>
+<td>/lu/topola/$USER/</td>
+<td>/lu/tetyda/$USER/</td>
+<td>/lu/tetyda/$USER/</td>
+<td>katalog widoczny z węzłów dostępowych i obliczeniowych (do obliczeń)</td>
+</tr>
+</tbody>
+</table>
+<p>Widoczność zasobów (storage) z poszczególnych systemów - ze szczegółami:</p>
 <table>
 <thead>
 <tr>
@@ -1094,8 +1122,8 @@
 <td><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
 <td><img alt="✔" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2714.svg" title=":heavy_check_mark:" /></td>
 <td><img alt="✔" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2714.svg" title=":heavy_check_mark:" /></td>
-<td><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
-<td><img alt="❌" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/274c.svg" title=":x:" /></td>
+<td><img alt="✔" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2714.svg" title=":heavy_check_mark:" /></td>
+<td><img alt="✔" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/2714.svg" title=":heavy_check_mark:" /></td>
 </tr>
 <tr>
 <td>/home/$USER/</td>
@@ -1118,34 +1146,6 @@
 <li><code class="codehilite"><span class="err">O</span></code> - węzeł obliczeniowy.</li>
 <li><code class="codehilite"><span class="err">/lu/tetyda/home/$USER/</span></code> jest aliasem <code class="codehilite"><span class="err">/lustre/tetyda/home/$USER/</span></code>.</li>
 </ul>
-<p>Docelowo <strong>planowany</strong> jest następujący podział:</p>
-<table>
-<thead>
-<tr>
-<th>Zasób</th>
-<th>Topola</th>
-<th>Okeanos</th>
-<th>Rysy</th>
-<th>Uwagi</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Storage globalny</td>
-<td>/lu/tetyda/$USER/</td>
-<td>/lu/tetyda/$USER/</td>
-<td>/lu/tetyda/$USER/</td>
-<td>katalog widoczny z węzłów dostępowych (do wymiany danych)</td>
-</tr>
-<tr>
-<td>Storage lokalny</td>
-<td>/lu/topola/$USER/</td>
-<td>/lu/tetyda/$USER/</td>
-<td>/lu/tetyda/$USER/</td>
-<td>katalog widoczny z węzłów dostępowych i obliczeniowych (do obliczeń)</td>
-</tr>
-</tbody>
-</table>
 <!--
 | Zasób                  | widoczny na     | pod ścieżką       |
 |----------------------- |-----------------| ----------------- |
@@ -1178,7 +1178,7 @@
                   <div class="md-source-date">
                     <small>
                       
-                        Last update: June 24, 2020
+                        Last update: June 25, 2020
                       
                     </small>
                   </div>
