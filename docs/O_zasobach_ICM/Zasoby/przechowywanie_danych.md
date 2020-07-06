@@ -32,6 +32,10 @@ Gdzie:
 * `O` - węzeł obliczeniowy.
 * `/lu/tetyda/home/$USER/` jest aliasem `/lustre/tetyda/home/$USER/`.
 
+## Zasób grupowy ##
+
+Możliwe jest również utworzenie katalogu współdzielonego _/lu/tetyda/projects/GX-XX_ dostępnego dla wszystkich wykonawców grantu. Jeżeli taki zasób jest potrzebny prosimy o kontakt (pomoc@icm.edu.pl)
+
 
 <!--
 | Zasób                  | widoczny na     | pod ścieżką       |
