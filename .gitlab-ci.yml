@@ -1,0 +1,30 @@
+image: python:3.7
+
+cache:
+  paths:
+    - vendor/
+
+test:
+  stage: test
+  script:
+    - pip3 install virtualenv virtualenvwrapper
+    - source /usr/local/bin/virtualenvwrapper.sh
+    - mkvirtualenv --python=$(which python3) docs-env
+    - pip install -r requirements.txt
+    - mkdocs build --verbose --clean --strict
+  except:
+    - master
+
+pages:
+  stage: deploy
+  script:
+    - pip3 install virtualenv virtualenvwrapper
+    - source /usr/local/bin/virtualenvwrapper.sh
+    - mkvirtualenv --python=$(which python3) docs-env
+    - pip install -r requirements.txt
+    - mkdocs gh-deploy
+  artifacts:
+    paths:
+      - public
+  only:
+    - master
