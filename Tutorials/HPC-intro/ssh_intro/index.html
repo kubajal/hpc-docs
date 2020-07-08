@@ -1208,12 +1208,12 @@ ssh -o <span class="nv">PubkeyAuthentication</span><span class="o">=</span>no us
 <p>1. System Windows + Putty (klient ssh): Należy uruchomić program
 'regedit' (systemowa aplikacja w Windows). Następnie w panelu po lewej
 stronie wyszukać w drzewie wpis:</p>
-<div class="codehilite"><pre><span></span><code>HKEY<span class="se">\_</span>CURRENT<span class="se">\_</span>USER<span class="se">\\</span>Software<span class="se">\\</span>SimonTatham<span class="se">\\</span>PuTTY<span class="se">\\</span>SshHostKeys
+<div class="codehilite"><pre><span></span><code>HKEY_CURRENT_USER<span class="se">\S</span>oftware<span class="se">\U</span>serName<span class="se">\P</span>uTTY<span class="se">\S</span>shHostKeys
 </code></pre></div>
 
 <p>i w oknie po prawej stronie odszukać wiersz zawierający nazwę 'hpc.icm.edu.pl', a następnie go usunąć.</p>
 <p>2. System Linux: Aby usunąć stary klucz wykonujemy w terminalu komendę:</p>
-<div class="codehilite"><pre><span></span><code>ssh-keygen -f <span class="se">\$</span>HOME/.ssh/known<span class="se">\_</span>hosts -R hpc.icm.edu.pl
+<div class="codehilite"><pre><span></span><code>ssh-keygen -f <span class="nv">$HOME</span>/.ssh/known_hosts -R hpc.icm.edu.pl
 </code></pre></div>
 
 <h2 id="manager-hase">Manager haseł</h2>
@@ -1235,7 +1235,7 @@ lub kombinacją klawiszy <code class="codehilite"><span class="err">Ctrl+D</span
                   <div class="md-source-date">
                     <small>
                       
-                        Last update: June 16, 2020
+                        Last update: July 8, 2020
                       
                     </small>
                   </div>
