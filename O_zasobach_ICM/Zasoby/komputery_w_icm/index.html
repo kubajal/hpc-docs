@@ -334,6 +334,40 @@
     Maszyny obliczeniowe w ICM
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#superkomputer-okeanos" class="md-nav__link">
+    Superkomputer Okeanos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#superkomputer-topola" class="md-nav__link">
+    Superkomputer Topola
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#superkomputer-rysy" class="md-nav__link">
+    Superkomputer Rysy
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#informacje-o-systemie-hardware" class="md-nav__link">
+    Informacje o systemie (hardware)
+  </a>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1117,6 +1151,40 @@
     Maszyny obliczeniowe w ICM
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#superkomputer-okeanos" class="md-nav__link">
+    Superkomputer Okeanos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#superkomputer-topola" class="md-nav__link">
+    Superkomputer Topola
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#superkomputer-rysy" class="md-nav__link">
+    Superkomputer Rysy
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#informacje-o-systemie-hardware" class="md-nav__link">
+    Informacje o systemie (hardware)
+  </a>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1224,15 +1292,99 @@ hpc.icm.edu.pl, np. <code class="codehilite"><span class="err">ssh rysy</span></
 </tr>
 </tbody>
 </table>
+<h3 id="superkomputer-okeanos">Superkomputer Okeanos</h3>
 <p><img alt="Okeanos" src="../KomputeryImages/Okeanos_foto.jpg" /></p>
-<p><em>Superkomputer Okeanos</em></p>
-<p><strong>Informacje o systemie (hardware)</strong></p>
-<p>Poniższe komendy slurm'a pozwalają na sprawdzenie informacji o systemie:</p>
-<div class="codehilite"><pre><span></span><code>scontrol show partition &lt;nazwa_partycji&gt; <span class="c1"># właściwości partycji</span>
-scontrol show node &lt;nazwa_węzła&gt; <span class="c1"># właściwości węzła</span>
+<p>Szczegółowy opis superkomputera Okeanos</p>
+<div class="codehilite"><pre><span></span><code>Instalacja:                   Cray XC40
+Nazwa:                        Okeanos
+Typ procesora:                Intel Xeon E5-2690 v3
+Architektura:                 x86_64
+Reprezencja danych:           little-endian
+Częstotliwość taktowania:     2.6 GHz
+Liczba procesorów w węźle:    2 x 12 rdzenie (Hyperthreading x2)
+Sockets - Cores - Threads:    2-12-2
+Ilość pamięci w węźle:        128 GB
+System plików:                Lustre (rozproszony system plików)
+System operacyjny:            SUSE Linux Enterprise Server 15
+System kolejkowy:             slurm 19.05.4
+</code></pre></div>
 
-sinfo -N -l <span class="c1"># lista węzłów</span>
-smap -i <span class="m">2</span> <span class="c1"># quasi-graficzna informacja o wykorzystaniu węzłów</span>
+<h3 id="superkomputer-topola">Superkomputer Topola</h3>
+<p>Szczegółowy opis superkomputera Topola</p>
+<div class="codehilite"><pre><span></span><code>Instalacja:                   Klaster
+Nazwa:                        Topola
+Typ procesora:                Intel(R) Xeon(R) CPU E5-2650 v3
+Architektura:                 x86_64
+Reprezencja danych:           little-endian
+Częstotliwość taktowania:     2.0 - 3.1GHz
+Liczba procesorów w węźle:    28 rdzeni
+Sockets - Cores - Threads:    2-14-1
+Ilość pamięci w węźle:        64/128 GB
+System plików:                NFS/lustre/ext4
+System operacyjny:            CentOS 7
+System kolejkowy:             slurm 18.08.9
+</code></pre></div>
+
+<p>Opis węzłów klastra Topola</p>
+<table>
+<thead>
+<tr>
+<th>Model CPU</th>
+<th align="left">Taktowanie CPU</th>
+<th align="left">Sockets: Cores: Threads</th>
+<th align="left">RAM</th>
+<th align="left">Liczba węzłów</th>
+<th align="left">Nazwa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Intel(R) Xeon(R) CPU E5-2697 v3</td>
+<td align="left">2.1GHz - 3.0GHz</td>
+<td align="left">2:14:1</td>
+<td align="left">128 GB</td>
+<td align="left">60</td>
+<td align="left">t1-[1-12], t[13-15]-[1-16]</td>
+</tr>
+<tr>
+<td>Intel(R) Xeon(R) CPU E5-2697 v3</td>
+<td align="left">2.1GHz - 3.0GHz</td>
+<td align="left">2:14:1</td>
+<td align="left">64  GB</td>
+<td align="left">163</td>
+<td align="left">t1-[13-16], t[2-12]-[1-16]</td>
+</tr>
+</tbody>
+</table>
+<p>Węzły topoli różnią się tylko wielkością pamięci RAM. System kolejkowy automatycznie dobierze typ węzła w zależności od zapotrzebowania na pamięć podaną przez użytkownika</p>
+<h3 id="superkomputer-rysy">Superkomputer Rysy</h3>
+<p>Szczegółowy opis superkomputera Rysy</p>
+<div class="codehilite"><pre><span></span><code>Instalacja:                   Klaster
+Nazwa:                        Rysy
+Typ procesora:                Intel(R) Xeon(R) Gold 6154 CPU
+Architektura:                 x86_64
+Reprezencja danych:           little-endian
+Częstotliwość taktowania:     3.0 - 3.7GHz
+Liczba procesorów w węźle:    36 rdzeni
+Sockets - Cores - Threads:    2-18-1
+Ilość pamięci w węźle:        380 GB
+System plików:                nfs4
+System operacyjny:            CentOS 7
+System kolejkowy:             slurm 20.02.3
+</code></pre></div>
+
+<h2 id="informacje-o-systemie-hardware">Informacje o systemie (hardware)</h2>
+<p>Poniższe komendy slurm'a pozwalają na samodzielne sprawdzenie informacji o systemie:</p>
+<div class="codehilite"><pre><span></span><code>scontrol show partition &lt;nazwa_partycji&gt;        # właściwości partycji
+scontrol show node &lt;nazwa_węzła&gt;                # właściwości węzła
+
+cat /etc/os-release     # informacje o systemie operacyjnym
+df -Th                  # informacje o systemie plików
+
+lscpu                   # informacja o architekturze cpu (warto wykonać te komendę na węźle obliczeniowym)
+sinfo -N -l             # lista węzłów
+sinfo -l -N | awk &#39;{printf (&quot;%1s %15s %15s %15s %10s %10s \n&quot;, $1, $2, $3, $5, $6, $7)}&#39; # formatowanie kolumn
+smap -i 2               # quasi-graficzna informacja o wykorzystaniu węzłów
 </code></pre></div>
 
 <h2 id="qos-na-poszczegolnych-systemach">QOS na poszczególnych systemach</h2>
@@ -1294,7 +1446,7 @@ ocean-long  <span class="m">7</span>-00:00:00        <span class="m">750</span> 
                   <div class="md-source-date">
                     <small>
                       
-                        Last update: June 16, 2020
+                        Last update: July 8, 2020
                       
                     </small>
                   </div>
