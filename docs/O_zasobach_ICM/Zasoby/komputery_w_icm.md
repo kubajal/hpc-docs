@@ -16,28 +16,95 @@ Po zalogowaniu się przez ssh na węzeł dostępowy (hpc.icm.edu.pl) można pono
 
 | Nazwa    | Typ                           | Architektura                | Liczba węzłów obliczeniowych | Parametry węzła obliczeniowego                     |
 |----------| :-----------------------------| :---------------------------| :----------------------------| :--------------------------------------------------|
-|Okeanos   | Superkomputer                 | Intel Haswell Cray XC40     |1084                          | 24 rdzenie, 128 GB pamięci RAM                     |
-|Topola    | Klaster HPC, Klaster PL-Grid  | Intel Haswell Huawei E9000  |223                           | 28 rdzeni, 64 lub 128 GB pamięci RAM               |
-|Rysy/GPU      | Klaster GPU    | Intel Skylake, NVIDIA Volta                |6                             | 36 rdzenie, 380 GB pamięci RAM, 4 GPU              |
-|Rysy/PBaran | Komputer wektorowy, NEC Aurora A300-8    | Intel Xeon Gold 6126 / NEC SX-Aurora Tsubasa   | 1        | 24 rdzenie, 192 GB RAM / 8 x 8 rdzeni, 8 x 48 GB RAM  |
+|Okeanos   | Superkomputer                 | Intel Haswell Cray XC40     | 1084                         | 24 rdzenie, 128 GB pamięci RAM                     |
+|Topola    | Klaster HPC, Klaster PL-Grid  | Intel Haswell Huawei E9000  | 223                          | 28 rdzeni, 64 lub 128 GB pamięci RAM               |
+|Rysy/GPU  | Klaster GPU    | Intel Skylake, NVIDIA Volta                | 6                            | 36 rdzenie, 380 GB pamięci RAM, 4 GPU              |
+|Rysy/PBaran | Komputer wektorowy, NEC Aurora A300-8    | Intel Xeon Gold 6126 / NEC SX-Aurora Tsubasa | 1        | 24 rdzenie, 192 GB RAM / 8 x 8 rdzeni, 8 x 48 GB RAM  |
 
+### Superkomputer Okeanos
 
 ![Okeanos](KomputeryImages/Okeanos_foto.jpg)
 
-*Superkomputer Okeanos*
+Szczegółowy opis superkomputera Okeanos
 
-**Informacje o systemie (hardware)**
-
-Poniższe komendy slurm'a pozwalają na sprawdzenie informacji o systemie:
-
-```.slurm
-scontrol show partition <nazwa_partycji> # właściwości partycji
-scontrol show node <nazwa_węzła> # właściwości węzła
-
-sinfo -N -l # lista węzłów
-smap -i 2 # quasi-graficzna informacja o wykorzystaniu węzłów
+```text
+Instalacja:                   Cray XC40
+Nazwa:                        Okeanos
+Typ procesora:                Intel Xeon E5-2690 v3
+Architektura:                 x86_64
+Reprezencja danych:           little-endian
+Częstotliwość taktowania:     2.6 GHz
+Liczba procesorów w węźle:    2 x 12 rdzenie (Hyperthreading x2)
+Sockets - Cores - Threads:    2-12-2
+Ilość pamięci w węźle:        128 GB
+System plików:                Lustre (rozproszony system plików)
+System operacyjny:            SUSE Linux Enterprise Server 15
+System kolejkowy:             slurm 19.05.4
 ```
 
+### Superkomputer Topola
+
+Szczegółowy opis superkomputera Topola
+
+```text
+Instalacja:                   Klaster
+Nazwa:                        Topola
+Typ procesora:                Intel(R) Xeon(R) CPU E5-2650 v3
+Architektura:                 x86_64
+Reprezencja danych:           little-endian
+Częstotliwość taktowania:     2.0 - 3.1GHz
+Liczba procesorów w węźle:    28 rdzeni
+Sockets - Cores - Threads:    2-14-1
+Ilość pamięci w węźle:        64/128 GB
+System plików:                NFS/lustre/ext4
+System operacyjny:            CentOS 7
+System kolejkowy:             slurm 18.08.9
+```
+
+Opis węzłów klastra Topola
+
+| Model CPU                             | Taktowanie CPU   | Sockets: Cores: Threads | RAM    | Liczba węzłów | Nazwa                       |
+|---------------------------------------| :----------------| :---- ------------------| :------| :-------------| :---------------------------|
+|Intel(R) Xeon(R) CPU E5-2697 v3        | 2.1GHz - 3.0GHz  | 2:14:1                  | 128 GB | 60            | t1-[1-12], t[13-15]-[1-16]  |
+|Intel(R) Xeon(R) CPU E5-2697 v3        | 2.1GHz - 3.0GHz  | 2:14:1                  | 64  GB | 163           | t1-[13-16], t[2-12]-[1-16]  |
+
+Węzły topoli różnią się tylko wielkością pamięci RAM. System kolejkowy automatycznie dobierze typ węzła w zależności od zapotrzebowania na pamięć podaną przez użytkownika
+
+### Superkomputer Rysy
+
+Szczegółowy opis superkomputera Rysy
+
+```text
+Instalacja:                   Klaster
+Nazwa:                        Rysy
+Typ procesora:                Intel(R) Xeon(R) Gold 6154 CPU
+Architektura:                 x86_64
+Reprezencja danych:           little-endian
+Częstotliwość taktowania:     3.0 - 3.7GHz
+Liczba procesorów w węźle:    36 rdzeni
+Sockets - Cores - Threads:    2-18-1
+Ilość pamięci w węźle:        380 GB
+System plików:                nfs4
+System operacyjny:            CentOS 7
+System kolejkowy:             slurm 20.02.3
+```
+
+## Informacje o systemie (hardware)
+
+Poniższe komendy slurm'a pozwalają na samodzielne sprawdzenie informacji o systemie:
+
+```text
+scontrol show partition <nazwa_partycji>        # właściwości partycji
+scontrol show node <nazwa_węzła>                # właściwości węzła
+
+cat /etc/os-release     # informacje o systemie operacyjnym
+df -Th                  # informacje o systemie plików
+
+lscpu                   # informacja o architekturze cpu (warto wykonać te komendę na węźle obliczeniowym)
+sinfo -N -l             # lista węzłów
+sinfo -l -N | awk '{printf ("%1s %15s %15s %15s %10s %10s \n", $1, $2, $3, $5, $6, $7)}' # formatowanie kolumn
+smap -i 2               # quasi-graficzna informacja o wykorzystaniu węzłów
+```
 
 ## QOS na poszczególnych systemach
 
