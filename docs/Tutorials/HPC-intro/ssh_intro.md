@@ -43,7 +43,7 @@ ssh -o PubkeyAuthentication=no user@your.server.example.com
 stronie wyszukać w drzewie wpis:
 
 ```.sh
-HKEY\_CURRENT\_USER\\Software\\SimonTatham\\PuTTY\\SshHostKeys
+HKEY_CURRENT_USER\Software\UserName\PuTTY\SshHostKeys
 ```
 
 i w oknie po prawej stronie odszukać wiersz zawierający nazwę 'hpc.icm.edu.pl', a następnie go usunąć.
@@ -51,7 +51,7 @@ i w oknie po prawej stronie odszukać wiersz zawierający nazwę 'hpc.icm.edu.pl
 2\. System Linux: Aby usunąć stary klucz wykonujemy w terminalu komendę:
 
 ```.sh
-ssh-keygen -f \$HOME/.ssh/known\_hosts -R hpc.icm.edu.pl
+ssh-keygen -f $HOME/.ssh/known_hosts -R hpc.icm.edu.pl
 ```
 
 ## Manager haseł
