@@ -1,30 +1,54 @@
-image: python:3.7
+# image: python:3.7
 
-cache:
-  paths:
-    - vendor/
+# cache:
+#   paths:
+#     - vendor/
 
-test:
-  stage: test
-  script:
-    - pip3 install virtualenv virtualenvwrapper
-    - source /usr/local/bin/virtualenvwrapper.sh
-    - mkvirtualenv --python=$(which python3) docs-env
-    - pip install -r requirements.txt
-    - mkdocs build --verbose --clean --strict
-  except:
-    - master
+stages: 
+  - test
+  - deploy
 
-pages:
+test-pages:
   stage: deploy
+  tags: 
+    - www
+  when: always
   script:
-    - pip3 install virtualenv virtualenvwrapper
-    - source /usr/local/bin/virtualenvwrapper.sh
-    - mkvirtualenv --python=$(which python3) docs-env
-    - pip install -r requirements.txt
-    - mkdocs gh-deploy
-  artifacts:
-    paths:
-      - public
-  only:
-    - master
+    workon mkdocs-env
+    mkdocs build --verbose --clean --strict
+  allow_failure: false 
+
+update-pages:
+  stage: deploy
+  tags: 
+    - www
+  when: always
+  script:
+    workon mkdocs-env
+    mkdocs gh-deploy
+  allow_failure: false 
+
+# test:
+#   stage: test
+#   script:
+#     - pip3 install virtualenv virtualenvwrapper
+#     - source /usr/local/bin/virtualenvwrapper.sh
+#     - mkvirtualenv --python=$(which python3) mkdocs-env
+#     - pip install -r requirements.txt
+#     - mkdocs build --verbose --clean --strict
+#   except:
+#     - master
+
+# pages:
+#   stage: deploy
+#   script:
+#     - pip3 install virtualenv virtualenvwrapper
+#     - source /usr/local/bin/virtualenvwrapper.sh
+#     - mkvirtualenv --python=$(which python3) mkdocs-env
+#     - pip install -r requirements.txt
+#     - mkdocs gh-deploy
+#   artifacts:
+#     paths:
+#       - public
+#   only:
+#     - master
