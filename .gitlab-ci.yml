@@ -3,7 +3,7 @@ stages:
   - deploy
 
 test-pages:
-  stage: deploy
+  stage: test
   tags: 
     - www
   when: always
