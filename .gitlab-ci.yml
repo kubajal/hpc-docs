@@ -26,9 +26,7 @@ test-pages:
     - export VIRTUALENVWRAPPER_PYTHON=/bin/python3
     - export VIRTUALENVWRAPPER_VIRTUALENV=/home/gitlab-runner-nginx/.local/bin/virtualenv
     - source ~/.local/bin/virtualenvwrapper.sh
-    - echo "aaa"
     - workon mkdocs-env && echo "venv activated"
-    - echo "bbb"
     - mkdocs build --verbose --clean --strict
   allow_failure: false 
 
@@ -37,8 +35,5 @@ publish-pages:
   extends: .all
   script:
     - bash .gitlab-ci/prepare_venv.sh
-    - echo "aaa"
-    - workon $ENV_NAME && echo "venv activated"
-    - echo "bbb"
     - mkdocs gh-deploy
   allow_failure: false 

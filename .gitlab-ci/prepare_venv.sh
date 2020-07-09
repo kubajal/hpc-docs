@@ -11,6 +11,7 @@ if lsvirtualenv | grep "$ENV_NAME" >/dev/null
 then
     mkvirtualenv $ENV_NAME
 else 
-    workon $ENV_NAME
+    workon $ENV_NAME && echo "venv activated"
 fi
+
 pip install --upgrade -r requirements.txt
