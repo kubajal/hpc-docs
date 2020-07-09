@@ -19,7 +19,7 @@ test-script:
     - source .gitlab-ci/sample_script.sh && echo "ok"
     - echo $teraz
     - echo "b"
-    - source .gitlab-ci/prepare_venv.sh && echo "env prepared"
+    - source .gitlab-ci/prepare_venv.sh
     - echo "c"
 
 test-pages:
