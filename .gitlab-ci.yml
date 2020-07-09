@@ -7,8 +7,11 @@ test-pages:
   tags: 
     - www
   when: always
+  variables: 
+    ENV_NAME: "mkdocs-env"
   script:
     .gitlab-ci/prepare_venv.sh
+    workon $ENV_NAME
     mkdocs build --verbose --clean --strict
   allow_failure: false 
 
@@ -17,7 +20,10 @@ publish-pages:
   tags: 
     - www
   when: always
+  variables: 
+    ENV_NAME: "mkdocs-env"
   script:
     .gitlab-ci/prepare_venv.sh
+    workon $ENV_NAME
     mkdocs gh-deploy
   allow_failure: false 
