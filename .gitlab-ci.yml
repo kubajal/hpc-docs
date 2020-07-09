@@ -2,32 +2,43 @@ stages:
   - test
   - deploy
 
-test-pages:
-  stage: test
+.all:
   tags: 
     - www
+  artifacts:
+      untracked: true
+      paths:
+          - 'tmp'
+      expire_in: 1 week
+      when: always #on_failure
+  allow_failure: false 
   when: always
-  variables: 
+  dependencies: []    
+  variables:
     ENV_NAME: "mkdocs-env"
+
+        
+test-pages:
+  extends: .all
   script:
     # .gitlab-ci/prepare_venv.sh
     # workon $ENV_NAME
     - export VIRTUALENVWRAPPER_PYTHON=/bin/python3
     - export VIRTUALENVWRAPPER_VIRTUALENV=/home/gitlab-runner-nginx/.local/bin/virtualenv
     - source ~/.local/bin/virtualenvwrapper.sh
+    - echo "aaa"
     - workon mkdocs-env
+    - echo "bbb"
     - mkdocs build --verbose --clean --strict
   allow_failure: false 
 
 publish-pages:
   stage: deploy
-  tags: 
-    - www
-  when: always
-  variables: 
-    ENV_NAME: "mkdocs-env"
+  extends: .all
   script:
-    - .gitlab-ci/prepare_venv.sh
+    - bash .gitlab-ci/prepare_venv.sh
+    - echo "aaa"
     - workon $ENV_NAME
+    - echo "bbb"
     - mkdocs gh-deploy
   allow_failure: false 
