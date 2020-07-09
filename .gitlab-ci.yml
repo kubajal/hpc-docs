@@ -21,7 +21,7 @@ test-pages:
     expire_in: 1 week
     when: always #on_failure
   script:
-    - bash .gitlab-ci/prepare_venv.sh
+    - bash .gitlab-ci/prepare_venv.sh && echo "env prepared"
     - mkdocs build --verbose --clean --strict
   allow_failure: false 
 

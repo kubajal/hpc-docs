@@ -11,7 +11,9 @@ if lsvirtualenv | grep "$ENV_NAME" >/dev/null
 then
     mkvirtualenv $ENV_NAME
 else 
+    echo "aaa"
     workon $ENV_NAME && echo "virtualenv $ENV_NAME activated"
+    echo "bbb"
 fi
 
 pip install --upgrade -r requirements.txt
