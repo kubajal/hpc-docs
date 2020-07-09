@@ -8,7 +8,7 @@ test-pages:
     - www
   when: always
   script:
-    .gilab-ci/prepare_venv.sh
+    .gitlab-ci/prepare_venv.sh
     mkdocs build --verbose --clean --strict
   allow_failure: false 
 
@@ -18,6 +18,6 @@ publish-pages:
     - www
   when: always
   script:
-    .gilab-ci/prepare_venv.sh
+    .gitlab-ci/prepare_venv.sh
     mkdocs gh-deploy
   allow_failure: false 
