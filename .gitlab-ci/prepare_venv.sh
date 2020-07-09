@@ -8,7 +8,7 @@ source ~/.local/bin/virtualenvwrapper.sh
 
 echo "checking lsvirtualenv"
 lsvirtualenv
-if [[ ! lsvirtualenv | grep -w "$ENV_NAME" >/dev/null ]]
+if [[ ! (lsvirtualenv | grep -w "$ENV_NAME" >/dev/null) ]]
 then
     echo "mkvirtualenv $ENV_NAME"
     mkvirtualenv $ENV_NAME
