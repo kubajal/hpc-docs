@@ -10,8 +10,12 @@ test-pages:
   variables: 
     ENV_NAME: "mkdocs-env"
   script:
-    .gitlab-ci/prepare_venv.sh
-    workon $ENV_NAME
+    # .gitlab-ci/prepare_venv.sh
+    # workon $ENV_NAME
+    export VIRTUALENVWRAPPER_PYTHON=/bin/python3
+    export VIRTUALENVWRAPPER_VIRTUALENV=/home/gitlab-runner-nginx/.local/bin/virtualenv
+    source ~/.local/bin/virtualenvwrapper.sh
+    workon mkdocs-env
     mkdocs build --verbose --clean --strict
   allow_failure: false 
 
