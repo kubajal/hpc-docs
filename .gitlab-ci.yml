@@ -22,6 +22,7 @@ test-pages:
     when: always #on_failure
   script:
     - bash .gitlab-ci/prepare_venv.sh && echo "env prepared"
+    - workon $ENV_NAME && echo "virtualenv $ENV_NAME activated"
     - mkdocs build --verbose --clean --strict
   allow_failure: false 
 
@@ -30,5 +31,6 @@ publish-pages:
   extends: .all
   script:
     - bash .gitlab-ci/prepare_venv.sh
+    - workon $ENV_NAME && echo "virtualenv $ENV_NAME activated"
     - mkdocs gh-deploy
   allow_failure: false 
