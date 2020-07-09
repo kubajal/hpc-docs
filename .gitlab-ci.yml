@@ -5,12 +5,6 @@ stages:
 .all:
   tags: 
     - www
-  artifacts:
-      untracked: true
-      paths:
-          - 'tmp'
-      expire_in: 1 week
-      when: always #on_failure
   allow_failure: false 
   when: always
   dependencies: []    
@@ -20,13 +14,14 @@ stages:
         
 test-pages:
   extends: .all
+  artifacts:
+    untracked: true
+    paths:
+        - 'tmp'
+    expire_in: 1 week
+    when: always #on_failure
   script:
-    # .gitlab-ci/prepare_venv.sh
-    # workon $ENV_NAME
-    - export VIRTUALENVWRAPPER_PYTHON=/bin/python3
-    - export VIRTUALENVWRAPPER_VIRTUALENV=/home/gitlab-runner-nginx/.local/bin/virtualenv
-    - source ~/.local/bin/virtualenvwrapper.sh
-    - workon mkdocs-env && echo "venv activated"
+    - bash .gitlab-ci/prepare_venv.sh
     - mkdocs build --verbose --clean --strict
   allow_failure: false 
 
