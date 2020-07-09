@@ -31,27 +31,27 @@ $ source ~/.local/bin/virtualenvwrapper.sh
 You can lookup your pythons' distributions using `$ whereis python` or just pick the default one...
 
 ```sh
-$ mkvirtualenv --python=$(which python3) tclb-docs-env
+$ mkvirtualenv --python=$(which python3) mkdocs-env
 ```
 
-To activate `$ workon docs-env`, to deactive enter `$ deactivate`
+To activate `$ workon mkdocs-env`, to deactive enter `$ deactivate`
 
 Install dependencies:
 
 ```sh
-(docs-env) $  pip install -r requirements.txt
+(mkdocs-env) $ pip install --upgrade -r requirements.txt
 ```
 
 Run server on you local machine:
 
 ```sh
-(docs-env) $ mkdocs serve
+(mkdocs-env) $ mkdocs serve
 ```
 
 To deploy:
 
 ```sh
-(docs-env) $ mkdocs gh-deploy
+(mkdocs-env) $ mkdocs gh-deploy
 ```
 
 More questions? Visit original documentation: http://www.mkdocs.org/

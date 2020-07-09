@@ -8,7 +8,11 @@ test-pages:
     - www
   when: always
   script:
+    export VIRTUALENVWRAPPER_PYTHON=/bin/python3
+    export VIRTUALENVWRAPPER_VIRTUALENV=/home/gitlab-runner-nginx/.local/bin/virtualenv
+    source ~/.local/bin/virtualenvwrapper.sh
     workon mkdocs-env
+    pip install --upgrade -r requirements.txt
     mkdocs build --verbose --clean --strict
   allow_failure: false 
 
@@ -18,6 +22,10 @@ publish-pages:
     - www
   when: always
   script:
+    export VIRTUALENVWRAPPER_PYTHON=/bin/python3
+    export VIRTUALENVWRAPPER_VIRTUALENV=/home/gitlab-runner-nginx/.local/bin/virtualenv
+    source ~/.local/bin/virtualenvwrapper.sh
     workon mkdocs-env
+    pip install --upgrade -r requirements.txt
     mkdocs gh-deploy
   allow_failure: false 
