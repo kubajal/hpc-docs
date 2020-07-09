@@ -21,7 +21,7 @@ test-pages:
     expire_in: 1 week
     when: always #on_failure
   script:
-    - .gitlab-ci/prepare_venv.sh && echo "env prepared"
+    - source .gitlab-ci/prepare_venv.sh && echo "env prepared"
     - workon $ENV_NAME && echo "virtualenv $ENV_NAME activated"
     - mkdocs build --verbose --clean --strict
   allow_failure: false 
@@ -30,7 +30,7 @@ publish-pages:
   stage: deploy
   extends: .all
   script:
-    - .gitlab-ci/prepare_venv.sh
+    - source .gitlab-ci/prepare_venv.sh
     - workon $ENV_NAME && echo "virtualenv $ENV_NAME activated"
     - mkdocs gh-deploy
   allow_failure: false 
