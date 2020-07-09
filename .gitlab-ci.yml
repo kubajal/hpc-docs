@@ -27,7 +27,7 @@ test-pages:
     - export VIRTUALENVWRAPPER_VIRTUALENV=/home/gitlab-runner-nginx/.local/bin/virtualenv
     - source ~/.local/bin/virtualenvwrapper.sh
     - echo "aaa"
-    - workon mkdocs-env
+    - workon mkdocs-env && echo "venv activated"
     - echo "bbb"
     - mkdocs build --verbose --clean --strict
   allow_failure: false 
@@ -38,7 +38,7 @@ publish-pages:
   script:
     - bash .gitlab-ci/prepare_venv.sh
     - echo "aaa"
-    - workon $ENV_NAME
+    - workon $ENV_NAME && echo "venv activated"
     - echo "bbb"
     - mkdocs gh-deploy
   allow_failure: false 
