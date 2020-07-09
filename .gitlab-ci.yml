@@ -12,11 +12,11 @@ test-pages:
   script:
     # .gitlab-ci/prepare_venv.sh
     # workon $ENV_NAME
-    export VIRTUALENVWRAPPER_PYTHON=/bin/python3
-    export VIRTUALENVWRAPPER_VIRTUALENV=/home/gitlab-runner-nginx/.local/bin/virtualenv
-    source ~/.local/bin/virtualenvwrapper.sh
-    workon mkdocs-env
-    mkdocs build --verbose --clean --strict
+    - export VIRTUALENVWRAPPER_PYTHON=/bin/python3
+    - export VIRTUALENVWRAPPER_VIRTUALENV=/home/gitlab-runner-nginx/.local/bin/virtualenv
+    - source ~/.local/bin/virtualenvwrapper.sh
+    - workon mkdocs-env
+    - mkdocs build --verbose --clean --strict
   allow_failure: false 
 
 publish-pages:
@@ -27,7 +27,7 @@ publish-pages:
   variables: 
     ENV_NAME: "mkdocs-env"
   script:
-    .gitlab-ci/prepare_venv.sh
-    workon $ENV_NAME
-    mkdocs gh-deploy
+    - .gitlab-ci/prepare_venv.sh
+    - workon $ENV_NAME
+    - mkdocs gh-deploy
   allow_failure: false 
