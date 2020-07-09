@@ -8,12 +8,13 @@ source ~/.local/bin/virtualenvwrapper.sh
 
 echo "checking lsvirtualenv"
 lsvirtualenv
-if [[ ! (lsvirtualenv | grep -w "$ENV_NAME" >/dev/null) ]]
-then
-    echo "mkvirtualenv $ENV_NAME"
+# if [[ ! $(lsvirtualenv | grep -w "mkdocs-env") ]] ; then echo "not found" ; else echo "found" ; fi
+
+if [[ ! $(lsvirtualenv | grep -w "mkdocs-env") ]] ; then
+    echo "creating $ENV_NAME"
     mkvirtualenv $ENV_NAME
 else 
-    echo "aaa"
+    echo "found $ENV_NAME"
     workon $ENV_NAME && echo "virtualenv $ENV_NAME activated"
     echo "bbb"
 fi
