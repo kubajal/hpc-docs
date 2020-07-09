@@ -11,7 +11,13 @@ test-pages:
     export VIRTUALENVWRAPPER_PYTHON=/bin/python3
     export VIRTUALENVWRAPPER_VIRTUALENV=/home/gitlab-runner-nginx/.local/bin/virtualenv
     source ~/.local/bin/virtualenvwrapper.sh
-    workon mkdocs-env
+    ENV_NAME="mkdocs-env"
+		if lsvirtualenv | grep "$ENV_NAME" >/dev/null
+		then
+      mkvirtualenv $ENV_NAME
+    else 
+      workon $ENV_NAME
+    fi
     pip install --upgrade -r requirements.txt
     mkdocs build --verbose --clean --strict
   allow_failure: false 
@@ -25,7 +31,13 @@ publish-pages:
     export VIRTUALENVWRAPPER_PYTHON=/bin/python3
     export VIRTUALENVWRAPPER_VIRTUALENV=/home/gitlab-runner-nginx/.local/bin/virtualenv
     source ~/.local/bin/virtualenvwrapper.sh
-    workon mkdocs-env
+    ENV_NAME="mkdocs-env"
+		if lsvirtualenv | grep "$ENV_NAME" >/dev/null
+		then
+      mkvirtualenv $ENV_NAME
+    else 
+      workon $ENV_NAME
+    fi
     pip install --upgrade -r requirements.txt
     mkdocs gh-deploy
   allow_failure: false 
