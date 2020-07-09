@@ -32,27 +32,29 @@ test-pages:
     expire_in: 1 week
     when: always #on_failure
   script:
-    # - source .gitlab-ci/prepare_venv.sh && echo "env prepared"
-    - export VIRTUALENVWRAPPER_PYTHON=/bin/python3
-    - export VIRTUALENVWRAPPER_VIRTUALENV=/home/gitlab-runner-nginx/.local/bin/virtualenv
-    - source ~/.local/bin/virtualenvwrapper.sh
-    - if lsvirtualenv | grep "$ENV_NAME" >/dev/null
-      then
-          mkvirtualenv $ENV_NAME
-      else 
-          echo "aaa"
-          workon $ENV_NAME && echo "virtualenv $ENV_NAME activated"
-          echo "bbb"
-      fi
-    - pip install --upgrade -r requirements.txt
-    - workon $ENV_NAME && echo "virtualenv $ENV_NAME activated"
-    - pip install --upgrade -r requirements.txt
+    - source .gitlab-ci/prepare_venv.sh && echo "env prepared"
+    # - export VIRTUALENVWRAPPER_PYTHON=/bin/python3
+    # - export VIRTUALENVWRAPPER_VIRTUALENV=/home/gitlab-runner-nginx/.local/bin/virtualenv
+    # - source ~/.local/bin/virtualenvwrapper.sh
+    # - if lsvirtualenv | grep "$ENV_NAME" >/dev/null
+    #   then
+    #       mkvirtualenv $ENV_NAME
+    #   else 
+    #       echo "aaa"
+    #       workon $ENV_NAME && echo "virtualenv $ENV_NAME activated"
+    #       echo "bbb"
+    #   fi
+    # - pip install --upgrade -r requirements.txt
+    # - workon $ENV_NAME && echo "virtualenv $ENV_NAME activated"
+    # - pip install --upgrade -r requirements.txt
     - mkdocs build --verbose --clean --strict
   allow_failure: false 
 
 publish-pages:
   stage: deploy
   needs: [test-pages]
+  dependencies:
+    - test-pages
   extends: .all
   script:
     # - source .gitlab-ci/prepare_venv.sh
