@@ -48,3 +48,4 @@ publish-pages:
   script:
     - source .gitlab-ci/prepare_venv.sh
     - mkdocs gh-deploy
+    
