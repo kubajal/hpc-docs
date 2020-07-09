@@ -11,7 +11,16 @@ stages:
   variables:
     ENV_NAME: "mkdocs-env"
 
-        
+test-script:
+  extends: .all
+  script:
+    - echo "a"
+    - source .gitlab-ci/sample_script.sh && echo "ok"
+    - echo $teraz
+    - echo "b"
+    - source .gitlab-ci/prepare_venv.sh && echo "env prepared"
+    - echo "c"
+
 test-pages:
   extends: .all
   artifacts:
