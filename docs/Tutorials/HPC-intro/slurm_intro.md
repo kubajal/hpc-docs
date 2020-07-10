@@ -81,7 +81,6 @@ Poniżej przedstawiona jest lista najczęściej używanych opcji:
 | ---      |  --mail-user=      | Adres email użytkownika, np. `--mail-user=user@somewhere.com` |
 | ---      |  --mail-type=      | Kiedy wysłać powiadomienie email (`ALL` lub `END`). Nieustawienie opcji - brak powiadomienia.    |
 
-
 ### Przykładowe skrypty
 
 #### Partycja Topola

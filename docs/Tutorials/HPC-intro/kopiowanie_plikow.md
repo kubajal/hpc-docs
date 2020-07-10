@@ -6,10 +6,10 @@ draft: false
 
 
 Do kopiowania plików używa się komendy cp:
-`cp kopiowany\_plik ścieżka\_docelowa\`
+`cp source_file somewhere/target_dir/`
 
-Katalogi można kopiować komendą `cp` z opcją `-r`:
-`cp -r katalog ścieżka_decelowa`
+Katalogi można kopiować komendą `cp` z opcją `-r` (recursive):
+`cp -r source_dir somewhere/target_dir/`
 
 Podczas kopiowania można używać uogólnionych nazw z `\*`:
 

@@ -50,5 +50,5 @@ Zmieniane hasło nie może być: [palindromem](http://pl.wikipedia.org/wiki/Pali
 
 Wsparcie użytkowników i obsługa grantów obliczeniowych:
 
-* E-mail: pomoc([monkey](https://en.wikipedia.org/wiki/At_sign#Names_in_other_languages))icm.edu.pl
-* Telefonicznie: +48 22 8749 200
+- E-mail: pomoc([monkey](https://en.wikipedia.org/wiki/At_sign#Names_in_other_languages))icm.edu.pl
+- Telefonicznie: +48 22 8749 200

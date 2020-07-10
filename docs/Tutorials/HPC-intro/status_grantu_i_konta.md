@@ -15,6 +15,8 @@ sacctmgr show assoc format=account%25,cluster,user,QOS | grep $USER # pokaż w j
 sacctmgr show qos format=name,MaxWall,Priority,MaxTRESPU%50 # pokaż limit czasu obliczen dla poszczególnych qos
 ```
 
+Więcej informacji o na poszczegółnych systemach (topola/okeanos/rysy) znajduje się [tu](../../O_zasobach_ICM/Zasoby/komputery_w_icm.md).
+
 Inne przydatne komendy:
 
 ```.slurm
