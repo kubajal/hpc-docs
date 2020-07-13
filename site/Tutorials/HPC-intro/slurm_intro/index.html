@@ -1,0 +1,1657 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Komputery Dużej Mocy w ICM UW">
+      
+      
+      
+        <meta name="author" content="ICM">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.1, mkdocs-material-4.6.3">
+    
+    
+      
+        <title>SLURM</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.adb8469c.css">
+      
+        <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.a8b3c06d.css">
+      
+      
+        
+        
+        <meta name="theme-color" content="#546e7a">
+      
+    
+    
+      <script src="../../../assets/javascripts/modernizr.86422ebf.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
+    
+    
+      <link rel="stylesheet" href="../../../style.css">
+    
+    
+      
+    
+    
+  </head>
+  
+    
+    
+    <body dir="ltr" data-md-color-primary="blue-grey" data-md-color-accent="green">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#slurm-definicja" tabindex="0" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../../.." title="Dokumentacja ICM UW" aria-label="Dokumentacja ICM UW" class="md-header-nav__button md-logo">
+          
+            <img alt="logo" src="../../../images/Logo_icm_biale.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Dokumentacja ICM UW
+            </span>
+            <span class="md-header-nav__topic">
+              
+                SLURM
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" aria-label="search" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://git.icm.edu.pl/owu/hpc-docs/" title="Go to repository" class="md-source" data-md-source="">
+  
+  <div class="md-source__repository">
+    ICM-HPC
+  </div>
+</a>
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../../.." title="Dokumentacja ICM UW" class="md-nav__button md-logo">
+      
+        <img alt="logo" src="../../../images/Logo_icm_biale.png" width="48" height="48">
+      
+    </a>
+    Dokumentacja ICM UW
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+<a href="https://git.icm.edu.pl/owu/hpc-docs/" title="Go to repository" class="md-source" data-md-source="">
+  
+  <div class="md-source__repository">
+    ICM-HPC
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../.." title="Strona główna" class="md-nav__link">
+      Strona główna
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      Formalności
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        Formalności
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../O_zasobach_ICM/Formalnosci/uzytkownik/" title="Kto może być użytkownikiem" class="md-nav__link">
+      Kto może być użytkownikiem
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../O_zasobach_ICM/Formalnosci/warunki/" title="Warunki korzystania" class="md-nav__link">
+      Warunki korzystania
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../O_zasobach_ICM/Formalnosci/regulamin/" title="Regulamin użytkownika" class="md-nav__link">
+      Regulamin użytkownika
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Zasoby sprzętowe
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Zasoby sprzętowe
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../O_zasobach_ICM/Zasoby/komputery_w_icm/" title="Komputery" class="md-nav__link">
+      Komputery
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../O_zasobach_ICM/Zasoby/przechowywanie_danych/" title="Przechowywanie danych" class="md-nav__link">
+      Przechowywanie danych
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Aplikacje
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Aplikacje
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../O_zasobach_ICM/Aplikacje/aplikacje/" title="Dostępne oprogramowanie" class="md-nav__link">
+      Dostępne oprogramowanie
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../O_zasobach_ICM/Aplikacje/kompilatory/" title="Dostępne kompilatory" class="md-nav__link">
+      Dostępne kompilatory
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../O_zasobach_ICM/Aplikacje/ci_status/" title="CI status" class="md-nav__link">
+      CI status
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Licencje krajowe
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Licencje krajowe
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Licencje_krajowe/ansys/" title="ANSYS" class="md-nav__link">
+      ANSYS
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Licencje_krajowe/gaussian/" title="Gaussian" class="md-nav__link">
+      Gaussian
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Podręcznik grantowy
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Podręcznik grantowy
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Podrecznik_grantowy/zakladanie_konta/" title="Zakładanie konta" class="md-nav__link">
+      Zakładanie konta
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Podrecznik_grantowy/nazwa_konta_i_haslo/" title="Nazwa konta i hasło" class="md-nav__link">
+      Nazwa konta i hasło
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Podrecznik_grantowy/poczta_elektroniczna/" title="Poczta elektroniczna" class="md-nav__link">
+      Poczta elektroniczna
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Podrecznik_grantowy/jak_wystapic_o_grant_obliczeniowy/" title="Jak wystąpić o grant obliczeniowy" class="md-nav__link">
+      Jak wystąpić o grant obliczeniowy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Podrecznik_grantowy/konkurs_okeanos/" title="Konkurs Okeanos" class="md-nav__link">
+      Konkurs Okeanos
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Podrecznik_grantowy/kierownik_oraz_nowi_wspolwykonawcy_grantu/" title="Kierownik oraz współwykonawcy grantu" class="md-nav__link">
+      Kierownik oraz współwykonawcy grantu
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Podrecznik_grantowy/sprawozdania_i_publikacje_w_grancie/" title="Sprawozdania i publikacje w grancie" class="md-nav__link">
+      Sprawozdania i publikacje w grancie
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Podrecznik_grantowy/rozliczanie_grantu/" title="Rozliczanie grantu" class="md-nav__link">
+      Rozliczanie grantu
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Podrecznik_grantowy/uzytkownik_i_kilka_grantow_obliczeniowych/" title="Użytkownik i kilka grantów obliczeniowych" class="md-nav__link">
+      Użytkownik i kilka grantów obliczeniowych
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" checked>
+    
+    <label class="md-nav__link" for="nav-7">
+      Instrukcje
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        Instrukcje
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-1" type="checkbox" id="nav-7-1" checked>
+    
+    <label class="md-nav__link" for="nav-7-1">
+      Podstawy HPC
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-1">
+        Podstawy HPC
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../introduction/" title="Wstęp" class="md-nav__link">
+      Wstęp
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../bash_intro/" title="Bash i terminal" class="md-nav__link">
+      Bash i terminal
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ssh_intro/" title="Logowanie SSH" class="md-nav__link">
+      Logowanie SSH
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ssh_windows/" title="Logowanie SSH (Użytkownicy Windows)" class="md-nav__link">
+      Logowanie SSH (Użytkownicy Windows)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../kopiowanie_plikow/" title="Kopiowanie plików" class="md-nav__link">
+      Kopiowanie plików
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Zlecanie zadań do SLURM
+      </label>
+    
+    <a href="./" title="Zlecanie zadań do SLURM" class="md-nav__link md-nav__link--active">
+      Zlecanie zadań do SLURM
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#slurm-definicja" class="md-nav__link">
+    Slurm - definicja
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#podstawowe-komendy-systemu-kolejkowego" class="md-nav__link">
+    Podstawowe komendy systemu kolejkowego
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#skrypty-systemu-kolejkowego" class="md-nav__link">
+    Skrypty systemu kolejkowego
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#przykadowe-skrypty" class="md-nav__link">
+    Przykładowe skrypty
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#partycja-topola" class="md-nav__link">
+    Partycja Topola
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#partycja-okeanos" class="md-nav__link">
+    Partycja Okeanos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#partycja-rysy" class="md-nav__link">
+    Partycja Rysy
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wstawianie-zadania-do-kolejki" class="md-nav__link">
+    Wstawianie zadania do kolejki
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tryb-wsadowy" class="md-nav__link">
+    Tryb wsadowy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tryb-interaktywny" class="md-nav__link">
+    Tryb interaktywny
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#przykad-rozpoczecia-pracy-interaktywnej" class="md-nav__link">
+    Przykład rozpoczęcia pracy interaktywnej
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quality-of-service-qos" class="md-nav__link">
+    Quality of Service (QOS)
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ustawianie_srodowiska/" title="Ustawianie środowiska" class="md-nav__link">
+      Ustawianie środowiska
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../status_zadania/" title="Status zadania" class="md-nav__link">
+      Status zadania
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../status_grantu_i_konta/" title="Status grantu/konta/qos" class="md-nav__link">
+      Status grantu/konta/qos
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../ssh-tunel/" title="Tunelowanie SSH" class="md-nav__link">
+      Tunelowanie SSH
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-2" type="checkbox" id="nav-7-2">
+    
+    <label class="md-nav__link" for="nav-7-2">
+      Podstawy GPU
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-2">
+        Podstawy GPU
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GPU-intro/introduction/" title="Introduction (Cheat Sheet)" class="md-nav__link">
+      Introduction (Cheat Sheet)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GPU-intro/hello_world/" title="Hello World" class="md-nav__link">
+      Hello World
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GPU-intro/vector_add/" title="Vector Add" class="md-nav__link">
+      Vector Add
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GPU-intro/matrix_addition/" title="Element-wise Matrix Add" class="md-nav__link">
+      Element-wise Matrix Add
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../GPU-intro/parallel_reduction/" title="Parallel reduction" class="md-nav__link">
+      Parallel reduction
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-3" type="checkbox" id="nav-7-3">
+    
+    <label class="md-nav__link" for="nav-7-3">
+      Kontenery
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-3">
+        Kontenery
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../Kontenery/singularity_intro/" title="Singularity" class="md-nav__link">
+      Singularity
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-4" type="checkbox" id="nav-7-4">
+    
+    <label class="md-nav__link" for="nav-7-4">
+      NEC SX-Aurora Tsubasa
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-4">
+        NEC SX-Aurora Tsubasa
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../NEC/basic_usage/" title="Podstawy użytkowania" class="md-nav__link">
+      Podstawy użytkowania
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../NEC/sol/" title="SOL - sieci neuronowe" class="md-nav__link">
+      SOL - sieci neuronowe
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../python/" title="Python - środowisko wirtualne" class="md-nav__link">
+      Python - środowisko wirtualne
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      Szkolenia
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        Szkolenia
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Szkolenia/informacje/" title="Informacje" class="md-nav__link">
+      Informacje
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-2" type="checkbox" id="nav-8-2">
+    
+    <label class="md-nav__link" for="nav-8-2">
+      Materiały
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-8-2">
+        Materiały
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Szkolenia/intro_icm/" title="Wprowadzenie do obliczeń na komputerach ICM" class="md-nav__link">
+      Wprowadzenie do obliczeń na komputerach ICM
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Szkolenia/intro_nec/" title="Wprowadzenie do obliczeń wektorowych – NEC SX-Aurora Tsubasa" class="md-nav__link">
+      Wprowadzenie do obliczeń wektorowych – NEC SX-Aurora Tsubasa
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../Szkolenia/archiwum/" title="Archiwum" class="md-nav__link">
+      Archiwum
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../kontakt/" title="Kontakt" class="md-nav__link">
+      Kontakt
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#slurm-definicja" class="md-nav__link">
+    Slurm - definicja
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#podstawowe-komendy-systemu-kolejkowego" class="md-nav__link">
+    Podstawowe komendy systemu kolejkowego
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#skrypty-systemu-kolejkowego" class="md-nav__link">
+    Skrypty systemu kolejkowego
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#przykadowe-skrypty" class="md-nav__link">
+    Przykładowe skrypty
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#partycja-topola" class="md-nav__link">
+    Partycja Topola
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#partycja-okeanos" class="md-nav__link">
+    Partycja Okeanos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#partycja-rysy" class="md-nav__link">
+    Partycja Rysy
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#wstawianie-zadania-do-kolejki" class="md-nav__link">
+    Wstawianie zadania do kolejki
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tryb-wsadowy" class="md-nav__link">
+    Tryb wsadowy
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tryb-interaktywny" class="md-nav__link">
+    Tryb interaktywny
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#przykad-rozpoczecia-pracy-interaktywnej" class="md-nav__link">
+    Przykład rozpoczęcia pracy interaktywnej
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quality-of-service-qos" class="md-nav__link">
+    Quality of Service (QOS)
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://git.icm.edu.pl/owu/hpc-docs/edit/master/docs/Tutorials/HPC-intro/slurm_intro.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                  <h1>Zlecanie zadań do SLURM</h1>
+                
+                <h2 id="slurm-definicja">Slurm - definicja</h2>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>SLURM (dawniej <em>Simple Linux Utiliy for Resource Management</em>)
+to system kolejkowy działający na wielu komputerach z listy Top500.
+W ICM system ten obsługuje wszystkie komputery dużej mocy.</p>
+</div>
+<p>System kolejkowy to element systemu operacyjnego odpowiedzialny za zarządzanie zasobami komputera obliczeniowego i przydzielanie ich użytkownikom zgodnie z obowiązującymi zasadami.
+Pozwala na optymalne wykorzystanie mocy obliczeniowych i pamięci komputera.</p>
+<p>Kolejne zadania użytkowników zostają umieszczone w tzw. kolejce.
+Gdy zadeklarowane przez użytkowników zapotrzebowanie przekracza dostępne zasoby obliczeniowe tj. czasu procesora, pamięci operacyjnej i dyskowej, zadania kolejno oczekują na dostęp.
+Praca z systemem kolejkowym przebiega następująco:</p>
+<ol>
+<li>Użytkownik pisze tzw. skrypt, w którym określa zasoby niezbędne do przeprowadzenia obliczeń, a także sposób wykonania zadania
+użytkownik umieszcza zadanie w kolejce</li>
+<li>System kolejkowy na bieżąco sprawdza dostępność zasobów; gdy jest taka możliwość, rezerwuje zasoby według specyfikacji użytkownika, po czym uruchamia zadanie</li>
+<li>Po zakończeniu obliczeń system kolejkowy zwalnia zarezerwowane zasoby i próbuje je zarezerwować dla następnych zadań czekających w kolejce</li>
+</ol>
+<p><strong>Oficjalna dokumentacja:</strong></p>
+<p><a href="https://slurm.schedmd.com/documentation.html">https://slurm.schedmd.com/documentation.html</a></p>
+<h2 id="podstawowe-komendy-systemu-kolejkowego">Podstawowe komendy systemu kolejkowego</h2>
+<p>Za pomocą komend systemu SLURM możemy sterować przebiegiem obliczeń naszego zadania.
+Aby zaplanować zadanie, można użyć polecenia salloc, sbatch lub srun.</p>
+<ul>
+<li>
+<p><code class="codehilite"><span class="err">sbatch</span></code> zawsze tworzy nowy przydział zasobów po jego wywołaniu, wykonuje skrypt zadania na jednym z przydzielonych węzłów (master node), a następnie zwalnia przydział po zakończeniu skryptu. Dodatkową cechą sbatch jest to, że przeanalizuje skrypt w czasie przesyłania zadania - zamiast podawać argumenty z wiersza poleceń, opcje sbatch mogą zostać zapisane za pomocą linii rozpoczynających się od #SBATCH. Jeżeli poda się argumenty do wiersza poleceń to zastępią one opcje #SBATCH w skrypcie, więc można wywoływać pojedynczy skrypt wsadowy dla różnych przydziałów wielkości zadania, określając opcje -N lub -n w wierszu polecenia podczas przesyłania skryptu zadania zsbatch</p>
+</li>
+<li>
+<p><code class="codehilite"><span class="err">srun</span></code> może, ale nie musi, utworzyć alokację, w zależności od sposobu jej wywołania. Jeśli zostanie wywołany w wierszu poleceń węzła logowania, utworzy nowy przydział i wykona polecenie po srun. Jeśli zostanie wywołany w skrypcie wsadowym, po prostu uruchomi zadanie na bieżącym przydziale. Podobnie, srun może otrzymać argument --jobid, który każe mu uruchomić zadanie jako część danego 'job`a' i jego alokacji.</p>
+</li>
+<li>
+<p><code class="codehilite"><span class="err">salloc</span></code> zawsze tworzy nowy przydział zasobów, gdy jest wywoływany, ale nie musi uruchamiać żadnych zadań w przydzielonych węzłach. Typowym przykładem użycia salloc jest utworzenie przydziału w celu uruchomienia serii kolejnych poleceń srun poprzez interaktywną sesję bash lub skrypt uruchamiany z węzła logowania. Zwalnia przydział po zakończeniu sesji skryptu lub sesji bash.</p>
+</li>
+</ul>
+<p>Źródło: <a href="https://cvw.cac.cornell.edu/slurm/basics_allocation">https://cvw.cac.cornell.edu/slurm/basics_allocation</a></p>
+<h2 id="skrypty-systemu-kolejkowego">Skrypty systemu kolejkowego</h2>
+<p>Opis zadania i zapotrzebowanie na zasoby można specyfikować w specjalnym
+skrypcie - pliku tekstowym dla systemu SLURM. Skrypt tworzy użytkownik.
+Skrypt składa się z tzw. dyrektyw systemu SLURM, czyli linii zaczynające
+się od słowa <code class="codehilite"><span class="err">#SLURM</span></code> oraz instrukcji uruchamiających odpowiedni
+program.</p>
+<ul>
+<li>Pierwsza linia skryptu <strong>musi</strong> zawierać ścieżkę do interpretera
+    (shell), który ma wykonać skrypt na przydzielonym węźle
+    obliczeniowym np.
+    <code class="codehilite"><span class="ch">#!/bin/bash -l</span></code>.</li>
+<li>Kolejne linie powinny zawierać specyfikację zasobów</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Task jest rozumiany jako pojedynczy proces uruchomiony przez aplikację użytkownika.
+Rezerwacja zasobów oraz wszystkie uruchamiane komendy systemowe i programy nazywane są w skrócie zadaniem.</p>
+</div>
+<p>Większość opcji ma swoje skróty.
+W razie wątpliwości można zajrzeć do instrukcji korzystając z polecenia <code class="codehilite"><span class="err">man sbatch</span></code> lub <code class="codehilite"><span class="err">man srun</span></code>
+Poniżej przedstawiona jest lista najczęściej używanych opcji:</p>
+<table>
+<thead>
+<tr>
+<th>Skrót</th>
+<th align="left">Pełna nazwa</th>
+<th align="left">Znaczenie</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>-N</td>
+<td align="left">--nodes=</td>
+<td align="left">Liczba węzłów dostępowych do rezerwacji dla zadania.</td>
+</tr>
+<tr>
+<td>---</td>
+<td align="left">--ntasks-per-node</td>
+<td align="left">Liczba 'tasków' per węzeł. Opcja ta jest przydatna w przypadku hybrydowych aplikacji MPI / OpenMP, w której do każdego węzła należy przypisać tylko jedno „zadanie / stopień” MPI, jednocześnie umożliwiając części OpenMP wykorzystanie pozostałych procesorów dostępnych na węźle w ramach zaalokowanego zadania.</td>
+</tr>
+<tr>
+<td>-n</td>
+<td align="left">--ntasks=</td>
+<td align="left">Liczba procesów do uruchomienia. Domyśla wartość to jeden proces per węzeł.</td>
+</tr>
+<tr>
+<td>-p</td>
+<td align="left">--partition=</td>
+<td align="left">Zadanie uruchamiane będzie w dostępnej dla użytkownika partycji (np. topola, okeanos)</td>
+</tr>
+<tr>
+<td>-q</td>
+<td align="left">--qos=</td>
+<td align="left">quality of service</td>
+</tr>
+<tr>
+<td>-A</td>
+<td align="left">--account=</td>
+<td align="left">Numer grantu obliczeniowego użytkownika grant, np. G99-99. Używane w celach sprawozdawczych.</td>
+</tr>
+<tr>
+<td>-c</td>
+<td align="left">--cpus-per-task=</td>
+<td align="left">Liczba procesorów per proces.</td>
+</tr>
+<tr>
+<td>-J</td>
+<td align="left">--job-name=</td>
+<td align="left">Ustawia nazwę zadania, domyślnie jest to nazwa skryptu. Pod taką nazwą będzie widziane zadanie w systemie, np. przy wyświetlaniu listy zadań.</td>
+</tr>
+<tr>
+<td>-t</td>
+<td align="left">--time=<code class="codehilite"><span class="n">hh</span><span class="o">:</span><span class="n">mm</span><span class="o">:</span><span class="n">ss</span></code></td>
+<td align="left">Maksymalna długość działania zadania od momentu jego uruchomienia <code class="codehilite"><span class="n">gg</span><span class="o">:</span><span class="n">mm</span><span class="o">:</span><span class="n">ss</span></code>. Po tym czasie zadanie zostanie przerwane przez system kolejkowy.</td>
+</tr>
+<tr>
+<td>-C</td>
+<td align="left">--constraint</td>
+<td align="left">Możliwość zażądania sprzętu o konkretnych, np. typu procesora.</td>
+</tr>
+<tr>
+<td>---</td>
+<td align="left">--gres=gpu:<code class="codehilite"><span class="err">4</span></code></td>
+<td align="left">Użycie dodatkowych zasobów, np GPU (klaster Rysy).</td>
+</tr>
+<tr>
+<td>---</td>
+<td align="left">--mem=</td>
+<td align="left">Rezerwacja pamięci per node (megabytes).</td>
+</tr>
+<tr>
+<td>---</td>
+<td align="left">--mem-per-cpu=</td>
+<td align="left">Rezerwacja pamięci per CPU (megabytes).</td>
+</tr>
+<tr>
+<td>---</td>
+<td align="left">--mail-user=</td>
+<td align="left">Adres email użytkownika, np. <code class="codehilite"><span class="err">--mail-user=user@somewhere.com</span></code></td>
+</tr>
+<tr>
+<td>---</td>
+<td align="left">--mail-type=</td>
+<td align="left">Kiedy wysłać powiadomienie email (<code class="codehilite"><span class="err">ALL</span></code> lub <code class="codehilite"><span class="err">END</span></code>). Nieustawienie opcji - brak powiadomienia.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="przykadowe-skrypty">Przykładowe skrypty</h3>
+<h4 id="partycja-topola">Partycja Topola</h4>
+<p>Poniższy skrypt uruchamia obliczenia w programie Quantum Espresso:</p>
+<div class="codehilite"><pre><span></span><code><span class="ch">#!/bin/bash -l</span>
+<span class="kp">#SBATCH -J qe-1</span>
+<span class="kp">#SBATCH -N 1</span>
+<span class="kp">#SBATCH --ntasks-per-node 12</span>
+<span class="kp">#SBATCH --mem 5000</span>
+<span class="kp">#SBATCH --time=20:00:00</span>
+<span class="kp">#SBATCH --account=GYY-XX</span>
+<span class="kp">#SBATCH --partition=topola</span>
+<span class="kp">#SBATCH --output=&quot;qe.out&quot;</span>
+
+module load apps/espresso/6.1.0
+mpirun -n <span class="m">12</span> pw.x &lt; S.in
+</code></pre></div>
+
+<ul>
+<li>w systemie kolejkowym zadnie będzie funkcjonowało pod nazwą "qe-1"</li>
+<li>na jednym węźle obliczeniowym z wykorzystaniem 12 rdzeni
+    obliczeniowych</li>
+<li>dla zadania przydzielone zostanie 5GB pamięci operacyjnej</li>
+<li>zlecający deklaruje, że zadanie zakończy się w czasie krótszym niż
+    20 godzin (po tym czasie zadanie zostanie przerwane przez system
+    kolejkowy)</li>
+<li>zadanie zostaje przypisane do grantu o numerze GYY-XX</li>
+<li>Plik sterujący S.dat powinien być umieszczony w katalogu z którego
+    uruchamiane jest zadanie</li>
+<li>Polecenie "<em>module load apps/espresso/6.1.0</em>" ustawia środowisko
+    (dostęp do programu, zmienne środowiskowe) niezbędne do uruchomienia
+    programu.</li>
+<li>Polecenie "<em>mpirun -n 12 pw.x &lt; S.in</em>" uruchamia właściwy program
+    obliczeniowy w środowisku równoległym MPI.</li>
+</ul>
+<h3 id="partycja-okeanos">Partycja Okeanos</h3>
+<div class="codehilite"><pre><span></span><code><span class="ch">#!/bin/tcsh</span>
+<span class="kp">#SBATCH -J qe-1</span>
+<span class="kp">#SBATCH -N 1</span>
+<span class="kp">#SBATCH --ntasks-per-node 12</span>
+<span class="kp">#SBATCH --account=GYY-XX</span>
+<span class="kp">#SBATCH --partition=okeanos</span>
+<span class="kp">#SBATCH --output=&quot;qe.out&quot;</span>
+
+module swap PrgEnv-cray PrgEnv-intel
+module load espresso/6.1.0
+<span class="nb">srun</span> -n <span class="m">12</span> pw.x &lt; S.in
+</code></pre></div>
+
+<h3 id="partycja-rysy">Partycja Rysy</h3>
+<p>W celu uruchomienia aplikacji na GPU niezbędne jest podanie opcji <code class="codehilite"><span class="err">--gres=gpu:liczba_gpu</span></code>.</p>
+<div class="codehilite"><pre><span></span><code><span class="ch">#!/bin/bash -l</span>
+<span class="kp">#SBATCH -J gpu_test</span>
+<span class="kp">#SBATCH --gres=gpu:1</span>
+<span class="kp">#SBATCH --cpus-per-task=1</span>
+<span class="kp">#SBATCH --ntasks-per-node=1</span>
+<span class="kp">#SBATCH --nodes=1</span>
+<span class="kp">#SBATCH --ntasks=1</span>
+<span class="kp">#SBATCH --account=GYY-XX</span>
+<span class="kp">#SBATCH --time=01:00:00</span>
+<span class="kp">#SBATCH --qos=normal</span>
+
+<span class="nb">srun</span> hello_world_cuda
+</code></pre></div>
+
+<p>Przykładowy program <em>hello_world_cuda</em> znajduje się w sekcji <a href="../../GPU-intro/hello_world/">Podstawy GPU</a>.</p>
+<h2 id="wstawianie-zadania-do-kolejki">Wstawianie zadania do kolejki</h2>
+<p>Polecenie <code class="codehilite"><span class="err">sbatch</span></code> służy do wstawiania zadań do systemu kolejkowego.
+Wszystkie flagi, które można wyspecyfikować w tym poleceniu,
+alternatywnie podaje się w pierwszym bloku komentarza skryptu
+kolejkowego w liniach zaczynających się od <code class="codehilite"><span class="err">#SBATCH</span></code> .
+Niektóre opcje tego polecenia są specyficzne dla danego komputera.</p>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Zlecanie zadań na system <code class="codehilite"><span class="err">topola</span></code> możliwe jest <strong><em>bezpośrednio z węzła dostępowego</em></strong> <code class="codehilite"><span class="err">hpc.icm.edu.pl</span></code>.
+W przypadku pozostałych systemów możliwy/wymagany jest <strong><em>dodatkowy krok logowania</em></strong> wykonany z komputera
+hpc.icm.edu.pl, np. <code class="codehilite"><span class="err">ssh rysy</span></code>, <code class="codehilite"><span class="err">ssh okeanos</span></code>.</p>
+</div>
+<p>Więcej o komputerach dostępnych w ICM <a href="../../../O_zasobach_ICM/Zasoby/komputery_w_icm/">tutaj</a>.</p>
+<h3 id="tryb-wsadowy">Tryb wsadowy</h3>
+<p>Wstawienie do kolejki zadania opisanego skryptem <code class="codehilite"><span class="err">MojeZadanie.batch</span></code>
+wykonujemy komendą:</p>
+<div class="codehilite"><pre><span></span><code>sbatch MojeZadanie.batch
+</code></pre></div>
+
+<p>Umieści ona w systemie kolejkowym zadanie wsadowe (bez możliwości
+interakcji z wykonywanym programem). Dodatkowe opcje wykonania zadania
+możemy wprowadzać w skrypcie lub podać jako parametry polecenia
+<code class="codehilite"><span class="err">sbatch</span></code>.</p>
+<h3 id="tryb-interaktywny">Tryb interaktywny</h3>
+<p>Aby uzyskać dostęp do zasobów w trybie interaktywnym z dostępem do
+powłoki (shell), wykonujemy komendę:</p>
+<p><code class="codehilite"><span class="err">srun --cpu_bind=none -p nazwa_partycji -A G99-99 --pty bash -l</span></code></p>
+<p>Nazwa partycji (kolejki) zależy od konkretnej maszyny, na której ma być
+uruchamiane zadanie. Dla komputera hydra, spis dostępny jest
+<a href="/Hydra#Kolejki_.28partycje.29" title="wikilink">tutaj</a>. Dodatkowo wymagany
+jest numer grantu obliczeniowego, w ramach którego prowadzone są prace
+(w przykładzie G99-99)</p>
+<p>Dodatkowe opcje wykonania zadania możemy wprowadzać jedynie jako
+parametry polecenia <code class="codehilite"><span class="err">srun</span></code>, np.</p>
+<p><code class="codehilite"><span class="err">srun --partition=topola -w wn1234 -A G99-99 -N 1 --ntasks-per-node 6 --pty bash -l</span></code></p>
+<p>zadanie zostanie uruchomione na <em>jednym</em> węźle o nazwie <em>wn1234</em>, z rezerwacją na *6
+procesorów/rdzeni (per węzeł) *</p>
+<h4 id="przykad-rozpoczecia-pracy-interaktywnej">Przykład rozpoczęcia pracy interaktywnej</h4>
+<div class="codehilite"><pre><span></span><code>srun -p &lt;partition_name&gt;  -A &lt;grant_name&gt; -N <span class="m">1</span> -n <span class="m">12</span> --time<span class="o">=</span><span class="m">1</span>:00:00 --pty /bin/bash -l <span class="c1"># cluster: topola, okeanos</span>
+srun -A &lt;grant_name&gt; -N <span class="m">1</span> -n <span class="m">12</span> --time<span class="o">=</span><span class="m">1</span>:00:00 --gres<span class="o">=</span>gpu:2 --pty /bin/bash -l <span class="c1"># cluster: rysy</span>
+</code></pre></div>
+
+<h2 id="quality-of-service-qos">Quality of Service (QOS)</h2>
+<p>Parametr ten określa na jak długo możliwa jest alokacja zasobów oraz priorytet w uruchomieniu zadania.</p>
+<p>Aby przypisać zadanie do konkretnego qos'a należy ustalić zmienną:</p>
+<div class="codehilite"><pre><span></span><code>--qos<span class="o">=</span>NAZWA_QOSa
+</code></pre></div>
+
+<p>Szczegóły qos'ów dostępnych w ICM znajdują się <a href="../../../O_zasobach_ICM/Zasoby/komputery_w_icm/">tu</a>.</p>
+                
+                  
+                
+                
+                  
+                  <hr>
+                  <div class="md-source-date">
+                    <small>
+                      
+                        Last update: July 10, 2020
+                      
+                    </small>
+                  </div>
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../kopiowanie_plikow/" title="Kopiowanie plików" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Kopiowanie plików
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../ustawianie_srodowiska/" title="Ustawianie środowiska" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Ustawianie środowiska
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        powered by
+        <a href="https://www.mkdocs.org" target="_blank" rel="noopener">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/application.c33a9706.js"></script>
+      
+      <script>app.initialize({version:"1.1",url:{base:"../../.."}})</script>
+      
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      
+    
+  </body>
+</html>
