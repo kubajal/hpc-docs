@@ -53,8 +53,7 @@ test-pages:
     - cd $CLONE_DIR
     - pwd 
     - ls -la
-    - source .gitlab-ci/before_script.sh
-    - source .gitlab-ci/prepare_venv.sh && echo "env prepared"
+    - source $CLONE_DIR/.gitlab-ci/prepare_venv.sh && echo "env prepared"
     - mkdocs build --verbose --clean --strict
 
 publish-pages:
