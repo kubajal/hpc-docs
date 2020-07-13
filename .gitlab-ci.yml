@@ -16,22 +16,24 @@ stages:
     ENV_NAME: "mkdocs-env"
     GIT_STRATEGY: none
     CLONE_DIR: "temp-docs-repo-dir"
-
-
     # script:
 
+before_script:
+  - echo "hello"
+  - pwd 
+  - eval $(ssh-agent -s)
+  - ls -la /home/gitlab-runner-nginx/.ssh
+  - ssh-add -l && echo ok
+  - ssh-add /home/gitlab-runner-nginx/.ssh/appbot-2-hpc-docs_v2 <<< $'75375'&
+  - ssh-add -l && echo ok
+  - ls -la
+  - rm -rf $CLONE_DIR
+  - git clone git@git.icm.edu.pl:owu/hpc-docs.git $CLONE_DIR
+  - cd $CLONE_DIR
+  - pwd 
+  - ls -la
 
-# test-script:
-#   stage: test
-#   extends: .all
-#   script:
-#     - echo "a"
-#     - source .gitlab-ci/sample_script.sh && echo "ok"
-#     - echo $teraz
-#     - echo "b"
-#     - .gitlab-ci/prepare_venv.sh
-#     - echo "c"
-
+  
 test-pages:
   stage: test
   extends: .all
@@ -59,7 +61,7 @@ test-pages:
 
 publish-pages:
   stage: deploy
-  needs: [test-pages]  # TODO: it shall start only when test-pages stage is successful
+  needs: [test-pages]
   dependencies:
     - test-pages
   extends: .all
