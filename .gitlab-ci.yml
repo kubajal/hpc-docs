@@ -42,6 +42,8 @@ test-pages:
     expire_in: 1 week
     when: always #on_failure
   script:
+    - pwd
+    - ls -la
     - source .gitlab-ci/before_script.sh
     - source .gitlab-ci/prepare_venv.sh && echo "env prepared"
     - mkdocs build --verbose --clean --strict
