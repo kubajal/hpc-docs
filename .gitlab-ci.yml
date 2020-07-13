@@ -50,10 +50,11 @@ publish-pages:
     - git remote set-url origin git@git.icm.edu.pl:owu/hpc-docs.git
     - git branch -v
     - git remote -v
-    - ssh -vT git@git.icm.edu.pl
     - ssh-add -l
     - ssh-add -L
     - eval `ssh-agent -s`
     - ssh-add -l
+    - ls -la /home/gitlab-runner-nginx/.ssh
+    - ssh -vT git@git.icm.edu.pl
     - mkdocs gh-deploy
 
