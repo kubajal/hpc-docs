@@ -49,6 +49,7 @@ test-pages:
     - ssh-add /home/gitlab-runner-nginx/.ssh/appbot-2-hpc-docs_v2 <<< $'75375'&
     - ssh-add -l && echo ok
     - ls -la
+    - rm -rf $CLONE_DIR
     - git clone git@git.icm.edu.pl:owu/hpc-docs.git $CLONE_DIR
     - cd $CLONE_DIR
     - pwd 
