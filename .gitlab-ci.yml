@@ -14,6 +14,7 @@ stages:
   #     - web
   variables:
     ENV_NAME: "mkdocs-env"
+    GIT_STRATEGY: none
 
 # test-script:
 #   stage: test
@@ -36,6 +37,8 @@ test-pages:
     expire_in: 1 week
     when: always #on_failure
   script:
+    - eval $(ssh-agent -s)
+    - git clone git@git.icm.edu.pl:owu/hpc-docs.git
     - source .gitlab-ci/prepare_venv.sh && echo "env prepared"
     - mkdocs build --verbose --clean --strict
 
