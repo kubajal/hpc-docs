@@ -64,21 +64,33 @@ publish-pages:
     - test-pages
   extends: .all
   script:
-    - source .gitlab-ci/prepare_venv.sh
-    - git remote set-url origin git@git.icm.edu.pl:owu/hpc-docs.git
+    # - git remote set-url origin git@git.icm.edu.pl:owu/hpc-docs.git
+    # - eval $(ssh-agent -s)
+    # - ls -la /home/gitlab-runner-nginx/.ssh
+    # - ssh-add -l && echo ok
+    # - ssh-add /home/gitlab-runner-nginx/.ssh/appbot-2-hpc-docs_v2 <<< $'75375'&
+    # - ssh-add -l && echo ok
+    # - git branch -v
+    # - git remote -v
+    # - ssh-add -l
+    # - ssh-add -L
+    # - eval `ssh-agent -s`
+    # - ssh-add -l
+    # - ls -la /home/gitlab-runner-nginx/.ssh
+    # - ssh -vT git@git.icm.edu.pl
+    - pwd 
     - eval $(ssh-agent -s)
     - ls -la /home/gitlab-runner-nginx/.ssh
     - ssh-add -l && echo ok
     - ssh-add /home/gitlab-runner-nginx/.ssh/appbot-2-hpc-docs_v2 <<< $'75375'&
     - ssh-add -l && echo ok
-    - git branch -v
-    - git remote -v
-    - ssh-add -l
-    - ssh-add -L
-    - eval `ssh-agent -s`
-    - ssh-add -l
-    - ls -la /home/gitlab-runner-nginx/.ssh
-    - ssh -vT git@git.icm.edu.pl
+    - ls -la
+    - rm -rf $CLONE_DIR
+    - git clone git@git.icm.edu.pl:owu/hpc-docs.git $CLONE_DIR
+    - cd $CLONE_DIR
+    - pwd 
+    - ls -la
+    - source .gitlab-ci/prepare_venv.sh && echo "env prepared"
     - mkdocs gh-deploy
 
 
