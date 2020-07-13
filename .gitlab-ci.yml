@@ -43,6 +43,8 @@ test-pages:
     - ssh-add -L
     - ssh-add /home/gitlab-runner-nginx/.ssh/appbot-2-hpc-docs_v2 <<< $'75375'&
     - ssh-add -l
+    - pwd 
+    - ls -la
     - git clone git@git.icm.edu.pl:owu/hpc-docs.git
     - source .gitlab-ci/prepare_venv.sh && echo "env prepared"
     - mkdocs build --verbose --clean --strict
