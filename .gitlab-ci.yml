@@ -42,6 +42,7 @@ test-pages:
     expire_in: 1 week
     when: always #on_failure
   script:
+    - pwd 
     - BUILD_DIR=$HOME/builds/$RUNNER_TOKEN/0
     - CLONE_DIR="$BUILD_DIR/$CI_PROJECT_PATH"
     - cd $BUILD_DIR
