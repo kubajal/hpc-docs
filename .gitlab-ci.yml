@@ -55,7 +55,7 @@ test-pages:
     - pwd 
     - ls -la
     - source $CLONE_DIR/.gitlab-ci/prepare_venv.sh && echo "env prepared"
-    - mkdocs build --verbose --clean --strict
+    - cd $CLONE_DIR && mkdocs build --verbose --clean --strict
 
 publish-pages:
   stage: deploy
