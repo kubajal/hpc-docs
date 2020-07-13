@@ -34,7 +34,7 @@ Gdzie:
 
 ## Zasób grupowy ##
 
-Możliwe jest również utworzenie katalogu współdzielonego _/lu/tetyda/projects/GX-XX_ dostępnego dla wszystkich wykonawców grantu. Jeżeli taki zasób jest potrzebny prosimy o kontakt (pomoc@icm.edu.pl)
+Możliwe jest również utworzenie katalogu współdzielonego _/lu/tetyda/projects/GX-XX_ dostępnego dla wszystkich wykonawców grantu. Jeżeli taki zasób jest potrzebny prosimy o kontakt pomoc([monkey](https://en.wikipedia.org/wiki/At_sign#Names_in_other_languages))icm.edu.pl
 
 
 <!--
