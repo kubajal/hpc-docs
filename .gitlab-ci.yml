@@ -51,5 +51,9 @@ publish-pages:
     - git branch -v
     - git remote -v
     - ssh -vT git@git.icm.edu.pl
+    - ssh-add -l
+    - ssh-add -L
+    - eval `ssh-agent -s`
+    - ssh-add -l
     - mkdocs gh-deploy
 
