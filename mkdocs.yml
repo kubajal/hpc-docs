@@ -90,6 +90,7 @@ nav:
     - Kopiowanie plików: Tutorials/HPC-intro/kopiowanie_plikow.md
     - Zlecanie zadań do SLURM: Tutorials/HPC-intro/slurm_intro.md
     - Ustawianie środowiska: Tutorials/HPC-intro/ustawianie_srodowiska.md
+    - Instalacja nowego oprogramowania: Tutorials/HPC-intro/instalacja_oprogramowania.md
     - Status zadania: Tutorials/HPC-intro/status_zadania.md
     - Status grantu/konta/qos: Tutorials/HPC-intro/status_grantu_i_konta.md
     - Tunelowanie SSH: Tutorials/HPC-intro/ssh-tunel.md
