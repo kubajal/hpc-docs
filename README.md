@@ -8,7 +8,12 @@ HPC @ ICM UW: <http://kdm.icm.edu.pl/>
 
 Tutorials are hosted at <https://icm-uw.github.io/hpc-docs/>
 
-## How to host the tutorials
+## How to contribute - ICM internal workflow
+
+The `app-bot` runner is configure to automaticaly build, test and deploy the webpage.
+Just modify `somepage.md`, then commit changes to the master branch.
+
+## How to host the tutorials - general workflow
 
 This short tutorial will show you how to serve the webpage at you local machine and test your changes. Tested on Ubuntu.
 
@@ -98,7 +103,7 @@ Converting a web page to markdown:
 pandoc -s -r html http://www.gnu.org/software/make/ -o example_from_web.md
 ```
 
-## How to contribute
+### How to contribute  - general workflow
 
 1) Test the changes on your local machine.
 2) Make a pull request to the develop branch.
