@@ -1277,6 +1277,9 @@ Składnia jest taka jak przy zwykłym kopiowaniu <em>cp</em>.</p>
     scp -r -C -p source_folder username@hpc.icm.edu.pl:destination_folder
 <span class="c1"># Kopiowanie zawartości katalogu z ICM:</span>
     scp -r -C -p username@hpc.icm.edu.pl:source_folder destination_folder
+<span class="c1"># Kopiowanie z hpc na okeanos/rysy - nie zalecane, łatwiej poprzez zasób współdzielony</span>
+    scp -r -C -p source_folder username@okeanos:/home/username
+    scp -r -C -p source_folder username@rysy:/home/username
 </code></pre></div>
 
 <div class="admonition note">
@@ -1299,7 +1302,9 @@ Składnia jest taka jak przy zwykłym kopiowaniu <em>cp</em>.</p>
 <p class="admonition-title">Info</p>
 <p>Szczegóły zasobów dyskowych ICM opisane są <a href="../../../O_zasobach_ICM/Zasoby/przechowywanie_danych/">tu</a>.</p>
 </div>
-<p>Ponieważ część maszyn ICM'u dysponuje współdzielonymi systemami plików, na których można operować tak, jak na dysku lokalnym (kopiowanie za pomocą cp). Aktualnie do zasobów współdzielonych należą:</p>
+<p>Maszyny ICM'u dysponują współdzielonymi systemami plików.
+Można na nich operować tak, jak na dysku lokalnym (kopiowanie za pomocą cp).
+Do zasobów współdzielonych należą:</p>
 <div class="highlight"><pre><span></span><code>/lu/tetyda/home/<span class="nv">$USER</span>/
 </code></pre></div>
 
@@ -1333,7 +1338,7 @@ a następnie prawo odczytu (i zapisu jeżeli dotyczy) dla tej grupy.</p>
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 10, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 16, 2020</span>
     
   </small>
 </div>
