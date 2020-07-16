@@ -51,6 +51,9 @@ Uwagi:
     scp -r -C -p source_folder username@hpc.icm.edu.pl:destination_folder
 # Kopiowanie zawartości katalogu z ICM:
     scp -r -C -p username@hpc.icm.edu.pl:source_folder destination_folder
+# Kopiowanie z hpc na okeanos/rysy - nie zalecane, łatwiej poprzez zasób współdzielony
+    scp -r -C -p source_folder username@okeanos:/home/username
+    scp -r -C -p source_folder username@rysy:/home/username
 ```
 
 !!! Note
@@ -74,7 +77,9 @@ Uwagi:
 !!! info
     Szczegóły zasobów dyskowych ICM opisane są [tu](../../O_zasobach_ICM/Zasoby/przechowywanie_danych.md).
 
-Ponieważ część maszyn ICM'u dysponuje współdzielonymi systemami plików, na których można operować tak, jak na dysku lokalnym (kopiowanie za pomocą cp). Aktualnie do zasobów współdzielonych należą:
+Maszyny ICM'u dysponują współdzielonymi systemami plików.
+Można na nich operować tak, jak na dysku lokalnym (kopiowanie za pomocą cp).
+Do zasobów współdzielonych należą:
 
 ```.sh
 /lu/tetyda/home/$USER/

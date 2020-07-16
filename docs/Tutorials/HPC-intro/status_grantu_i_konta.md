@@ -23,7 +23,7 @@ Inne przydatne komendy:
 id $USER     # udostępnia podstawowe dane o użytkowniku
 finger $USER # udostępnia podstawowe dane o użytkowniku
 groups $USER # udostępnia listę grup, do których należy użytkownik
-getent group NAZWA_GRUPY # wypisuje użytkowników należących do danej grupy  
+getent group NAZWA_GRUPY # wypisuje użytkowników należących do danej grupy, np GRANTu
 limit # limity nałożone na procesy użytkownika
 ```
 

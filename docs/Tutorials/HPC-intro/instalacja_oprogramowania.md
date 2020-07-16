@@ -17,7 +17,7 @@ W takiej sytuacji użytkownik może zainstalować program lokalnie, na swoim kon
 
 ```.sh
 wget https://somewhere.com/archive.tar.gz
-tar -xvf archive.tar.gz
+tar -zxvf archive.tar.gz
 # lub
 git clone https://github.com/somewhere/something.git
 ```
@@ -55,7 +55,7 @@ echo "$SHELL"
 /bin/bash # rysy
 ```
 
-Jeżeli korzystamy z powłoki `bash`, to należy zmodyfikować plik `~/.bashrc`
+Przykładowo, jeżeli korzystamy z powłoki `bash`, to należy zmodyfikować plik `~/.bashrc`
 
 ```.sh
 export PATH=$PATH:$HOME/myapps/application_XYZ/place_with_the_file

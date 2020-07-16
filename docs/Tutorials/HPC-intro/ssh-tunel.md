@@ -91,6 +91,7 @@ $ mkdir $HOME/Desktop/mountDir/TOPOLA
 $ mount-topola # zdalny katalog domowy użytkownika zostanie zamontowany pod $HOME/Desktop/mountDir/TOPOLA
 ```
 
+Poprzez lokalny_folder rozumie się folder znajdujący się na lokalnym komputerze (PC) użytkownika.
 Aby funkcje `to_XXX/from_XXX, itd` były widoczne w systemie, należy je dodać do pliku `~/.bashrc`.
 
 ### ~/.bashrc
