@@ -66,7 +66,7 @@ ff02::2 ip6-allrouters
 ```
 
 !!! note
-    Aby tunel był otwarty należy zalogować się na węzeł dostępowy  `ssh username@hpc.icm.edu.pl`.
+    Aby tunel był otwarty należy zalogować się na węzeł dostępowy  `ssh nazwa_uzytkownika@hpc.icm.edu.pl`.
 
 ## Kopiowanie plików i logowanie - tips & tricks
 
@@ -101,14 +101,17 @@ Aby funkcje `to_XXX/from_XXX, itd` były widoczne w systemie, należy je dodać 
 # Plik ten jest wczytywany przy uruchomieniu systemu.
 # Aby zaktualizować środowisko (bez konieczności restartu) użyj komendy $source .bashrc
 
+export ICM_USERNAME="nazwa_uzytkownika"
+
 
 function rysy() {
     if ! ssh -O check hpc;
     then
-        ssh -N -f -M hpc
+        ssh -N -f -M  hpc
     fi
     ssh icm-rysy
 }
+
 
 function okeanos() {
     if ! ssh -O check hpc;
@@ -123,20 +126,21 @@ function mount-okeanos()
 {
    MOUNTDIR="$HOME/Desktop/mountDir/OKEANOS"
    mkdir -p $MOUNTDIR
-   sshfs nazwa_uzytkownika@icm-okeanos:/lustre/tetyda/home/nazwa_uzytkownika ${MOUNTDIR}
+   sshfs $ICM_USERNAME@icm-okeanos:/lustre/tetyda/home/$ICM_USERNAME ${MOUNTDIR}
 }
 
 function mount-topola()
 {
    MOUNTDIR="$HOME/Desktop/mountDir/TOPOLA"
    mkdir -p $MOUNTDIR
-   sshfs nazwa_uzytkownika@hpc:/icm/home/nazwa_uzytkownika ${MOUNTDIR}
+   sshfs $ICM_USERNAME@hpc:/icm/home/$ICM_USERNAME ${MOUNTDIR}
 }
 
 
 function to_host {
     LOCAL_SOURCE=$1
     REMOTE_DESTINATION_DIR=$2
+    # echo -e "Stuff to be copied to remote: $LOCAL_SOURCE \n"
 
     if ! test -z "$LOCAL_SOURCE" && ! test -z "$REMOTE_DESTINATION_DIR"
     then
@@ -147,47 +151,48 @@ function to_host {
 }
 
 function from_host {
-    SOURCE_ON_REMOTE=$1
-    LOCAL_DESTINATION_DIR=$2
+  SOURCE_ON_REMOTE=$1
+  LOCAL_DESTINATION_DIR=$2
+  # echo -e "Stuff to be copied from remote: $SOURCE_ON_REMOTE \n"
 
-    if ! test -z "$SOURCE_ON_REMOTE" && ! test -z "$LOCAL_DESTINATION_DIR"
-    then
-      rsync -avzhe ssh --progress ${REMOTE_HOME_DIR}${SOURCE_ON_REMOTE} ${LOCAL_DESTINATION_DIR}
-    else
-      echo "Usage: from_remote SOURCE_ON_REMOTE LOCAL_DESTINATION_DIR"
-    fi
+  if ! test -z "$SOURCE_ON_REMOTE" && ! test -z "$LOCAL_DESTINATION_DIR"
+  then
+    rsync -avzhe ssh --progress ${REMOTE_HOME_DIR}${SOURCE_ON_REMOTE} ${LOCAL_DESTINATION_DIR}
+  else
+    echo "Usage: from_remote SOURCE_ON_REMOTE LOCAL_DESTINATION_DIR"
+  fi
 }
 
-
 function to_hpc {
-    REMOTE_HOME_DIR="nazwa_uzytkownika@hpc:/icm/home/nazwa_uzytkownika/"
+    REMOTE_HOME_DIR="${ICM_USERNAME}@hpc:/icm/home/${ICM_USERNAME}/"
     to_host $@
 }
 
 function from_hpc {
-    REMOTE_HOME_DIR="nazwa_uzytkownika@hpc:/icm/home/nazwa_uzytkownika/"
+    REMOTE_HOME_DIR="${ICM_USERNAME}@hpc:/icm/home/${ICM_USERNAME}/"
     from_host $@
 }
 
 function to_okeanos {
-    REMOTE_HOME_DIR="nazwa_uzytkownika@icm-okeanos:/lustre/tetyda/home/nazwa_uzytkownika/"
+    REMOTE_HOME_DIR="${ICM_USERNAME}@icm-okeanos:/lustre/tetyda/home/${ICM_USERNAME}/"
     to_host $@
 }
 
 function from_okeanos {
-    REMOTE_HOME_DIR="nazwa_uzytkownika@icm-okeanos:/lustre/tetyda/home/nazwa_uzytkownika/"
+    REMOTE_HOME_DIR="${ICM_USERNAME}@icm-okeanos:/lustre/tetyda/home/${ICM_USERNAME}/"
     from_host $@
 }
 
 function to_rysy {
-    REMOTE_HOME_DIR="nazwa_uzytkownika@icm-rysy:/home/nazwa_uzytkownika/"
+    REMOTE_HOME_DIR="${ICM_USERNAME}@icm-rysy:/home/${ICM_USERNAME}/"
     to_host $@
 }
 
 function from_rysy {
-    REMOTE_HOME_DIR="nazwa_uzytkownika@icm-rysy:/home/nazwa_uzytkownika/"
+	REMOTE_HOME_DIR="${ICM_USERNAME}@icm-rysy:/home/${ICM_USERNAME}/"
     from_host $@
 }
+
 ```
 
 ## Zdalne Edytowanie plików textowych
