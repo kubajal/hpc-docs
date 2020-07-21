@@ -15,10 +15,10 @@ draft: false
 - Przy instalacji w oknie konfiguracji licencji podać:
       - ANSYS Licensing Interconnect port number - 1734
       - ANSYS FLEXlm port number - 1723
-      - jako serwer - **licenses4.icm.edu.pl**
+      - jako serwer - **ansys.licencja.icm.edu.pl**
 - Powyższe numery portów są inne niż domyślnie proponowane. Proszę zwrócić na to uwagę.
 - Zmiana ustawień serwera licencji nie wymaga reinstalacji pakietu. Zmiany wprowadza się za pomocą programu ANSLIC_ADMIN (Windows: Start> All Programs> ANSYS x.y> ANSYS Client Licensing> Client ANSLIC_ADMIN Utility x.y)
-- W przypadku problemów z dostępem do serwera licencji należy upewnić się u administratorów sieci w swojej jednostce, czy nie jest blokowany dostęp do serwera *licenses4.icm.edu.pl* na portach *1723, 1724, 1734* oraz *7242*. Jest to główna przyczyna większości problemów zgłaszanych do nas.
+- W przypadku problemów z dostępem do serwera licencji należy upewnić się u administratorów sieci w swojej jednostce, czy nie jest blokowany dostęp do serwera *ansys.licencja.icm.edu.pl* na portach *1723, 1724, 1734* oraz *7242*. Jest to główna przyczyna większości problemów zgłaszanych do nas.
 
 !!! Warning "Uwaga"
     Na komputerze, na którym uruchamiane są obliczenia, należy jednorazowo uruchomić program ANSLIC_ADMIN, wybrać zakładkę "Set License Preferences for User" i ustawić kolejność licencji, jakie będą pobierane z serwera. W zakładce Solver i PrepPost na pierwszym miejscu powinien znaleźć się Ansys Academic Research CFD (lub Ansys Academic Research POLYFLOW).
