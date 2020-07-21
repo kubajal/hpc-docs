@@ -1430,12 +1430,12 @@
 <li>Przy instalacji w oknie konfiguracji licencji podać:<ul>
 <li>ANSYS Licensing Interconnect port number - 1734</li>
 <li>ANSYS FLEXlm port number - 1723</li>
-<li>jako serwer - <strong>licenses2.icm.edu.pl</strong></li>
+<li>jako serwer - <strong>licenses4.icm.edu.pl</strong></li>
 </ul>
 </li>
 <li>Powyższe numery portów są inne niż domyślnie proponowane. Proszę zwrócić na to uwagę.</li>
 <li>Zmiana ustawień serwera licencji nie wymaga reinstalacji pakietu. Zmiany wprowadza się za pomocą programu ANSLIC_ADMIN (Windows: Start&gt; All Programs&gt; ANSYS x.y&gt; ANSYS Client Licensing&gt; Client ANSLIC_ADMIN Utility x.y)</li>
-<li>W przypadku problemów z dostępem do serwera licencji należy upewnić się u administratorów sieci w swojej jednostce, czy nie jest blokowany dostęp do serwera licenses2.icm.edu.pl na portach 1723, 1724, 1734 oraz 7242. Jest to główna przyczyna większości problemów zgłaszanych do nas.</li>
+<li>W przypadku problemów z dostępem do serwera licencji należy upewnić się u administratorów sieci w swojej jednostce, czy nie jest blokowany dostęp do serwera <em>licenses4.icm.edu.pl</em> na portach <em>1723, 1724, 1734</em> oraz <em>7242</em>. Jest to główna przyczyna większości problemów zgłaszanych do nas.</li>
 </ul>
 <div class="admonition warning">
 <p class="admonition-title">Uwaga</p>
@@ -1584,7 +1584,7 @@ yes
 <h2 id="zrownoleglanie">Zrównoleglanie</h2>
 <h3 id="przykad-skryptu-kolejkowego">Przykład skryptu kolejkowego</h3>
 <p>Przykładowy skrypt kolejkowy uruchamiający obliczenia na kilku procesorach na hydrze może wyglądać następująco:</p>
-<div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash -l </span>
+<div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash -l</span>
 <span class="c1">#SBATCH --job-name=nazwa</span>
 <span class="c1">#SBATCH -N 2</span>
 <span class="c1">#SBATCH -n 24</span>
@@ -1608,11 +1608,12 @@ fluent 3ddp -ssh -pib -t24  -g -i inputfile &gt; output
 <li>Opcja <strong>-g</strong> oznacza wyłączenie trybu graficznego.</li>
 <li><strong>-i</strong> inputfile oznacza, że komunikacja z programem Fluent będzie odbywała się za pomocą pliku inputfile, natomiast wszystkie komunikaty generowane przez Fluenta, które podczas pracy interaktywnej pojawiałyby się na konsoli, będą zapisywane do pliku output.</li>
 <li>Informacje wyróżnione kolorem w pliku skryptowym są związane z wykorzystaniem Fluenta w obliczeniach wieloprocesowych.</li>
-<li>Sposób, w jaki definiuje się liczbę procesorów, na których będzie wykonywane zadanie:
-<div class="highlight"><pre><span></span><code><span class="c1">#SBATCH -N 2</span>
-<span class="c1">#SBATCH -n 24</span>
-</code></pre></div></li>
+<li>Sposób, w jaki definiuje się liczbę procesorów, na których będzie wykonywane zadanie:</li>
 </ul>
+<div class="highlight"><pre><span></span><code><span class="kp">#SBATCH -N 2</span>
+<span class="kp">#SBATCH -n 24</span>
+</code></pre></div>
+
 <p>Powyższa przykładowa konfiguracja oznacza, że obliczenia będą wykonywane na dwóch węzłach (-N 2), sumarycznie korzystając z (-n 24) procesów. Liczba 24 pojawia się w poleceniu wywołującym Fluenta:</p>
 <div class="highlight"><pre><span></span><code>fluent 3ddp -ssh -pib -t24  -i inputfile &gt;output
 </code></pre></div>
@@ -1623,30 +1624,31 @@ fluent 3ddp -ssh -pib -t24  -g -i inputfile &gt; output
 <li>Opcja <strong>-ssh</strong> wymusza użycie ssh zamiast rsh do komunikacji wewnętrznej procesów. W większości przypadków jest to niezbędne ustawienie.</li>
 <li>Opcja <strong>-pib</strong> oznacza wykorzystanie komunikacji typu infiniband.</li>
 </ul>
-<p>Ustawienie to pojawia się również w definicji zadania w opcji:
-<div class="highlight"><pre><span></span><code><span class="c1">#SBATCH -C ib</span>
-</code></pre></div></p>
+<p>Ustawienie to pojawia się również w definicji zadania w opcji:</p>
+<div class="highlight"><pre><span></span><code><span class="kp">#SBATCH -C ib</span>
+</code></pre></div>
+
 <h3 id="system-topola">System Topola</h3>
 <p>Skrypt przeznaczony do uruchamiania zadań na Topoli wygląda analogicznie. Niewielkie zmiany są spowodowane inną architekturą tej części klastra.</p>
 <div class="admonition warning">
 <p class="admonition-title">Uwaga</p>
 <p>Dostęp do partycji <strong>topola</strong> jest przyznawany na podstawie indywidualnych zgłoszeń.</p>
 </div>
-<div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash -l </span>
-<span class="c1">#SBATCH --job-name=nazwa</span>
-<span class="c1">#SBATCH -N 2</span>
-<span class="c1">#SBATCH -n 56</span>
-<span class="c1">#SBATCH -p topola</span>
-<span class="c1">#SBATCH -A G00-00</span>
-<span class="c1">#SBATCH --time=10:00:00</span>
-<span class="c1">#SBATCH --mem=100gb</span>
+<div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash -l</span>
+<span class="kp">#SBATCH --job-name=nazwa</span>
+<span class="kp">#SBATCH -N 2</span>
+<span class="kp">#SBATCH -n 56</span>
+<span class="kp">#SBATCH -p topola</span>
+<span class="kp">#SBATCH -A G00-00</span>
+<span class="kp">#SBATCH --time=10:00:00</span>
+<span class="kp">#SBATCH --mem=100gb</span>
 <span class="c1">##</span>
 <span class="nb">echo</span> Job started&gt;raport
 <span class="nb">echo</span> <span class="s2">&quot;  &quot;</span>  at <span class="sb">`</span>date<span class="sb">`</span> &gt;&gt;raport
 <span class="nb">echo</span> <span class="s2">&quot;  &quot;</span>  on host <span class="sb">`</span>hostname<span class="sb">`</span> &gt;&gt;raport
 <span class="c1">##</span>
 module load fluent
-fluent 3ddp -pib -slurm -t56  -g -i inputfile &gt;output 
+fluent 3ddp -pib -slurm -t56  -g -i inputfile &gt;output
 <span class="c1">##</span>
 <span class="nb">echo</span> Job finished at <span class="sb">`</span>date<span class="sb">`</span> &gt;&gt;raport
 </code></pre></div>
@@ -1666,7 +1668,7 @@ fluent 3ddp -pib -slurm -t56  -g -i inputfile &gt;output
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 23, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 21, 2020</span>
     
   </small>
 </div>

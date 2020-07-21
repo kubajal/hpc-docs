@@ -1622,8 +1622,8 @@ jest numer grantu obliczeniowego, w ramach którego prowadzone są prace
 <p>Dodatkowe opcje wykonania zadania możemy wprowadzać jedynie jako
 parametry polecenia <code>srun</code>, np.</p>
 <p><code>srun --partition=topola -w wn1234 -A G99-99 -N 1 --ntasks-per-node 6 --pty bash -l</code></p>
-<p>zadanie zostanie uruchomione na <em>jednym</em> węźle o nazwie <em>wn1234</em>, z rezerwacją na *6
-procesorów/rdzeni (per węzeł) *</p>
+<p>zadanie zostanie uruchomione na <em>jednym</em> węźle o nazwie <em>wn1234</em>, z rezerwacją na <em>6
+procesorów/rdzeni (per węzeł)</em></p>
 <h4 id="przykad-rozpoczecia-pracy-interaktywnej">Przykład rozpoczęcia pracy interaktywnej</h4>
 <div class="highlight"><pre><span></span><code>srun -p &lt;partition_name&gt;  -A &lt;grant_name&gt; -N <span class="m">1</span> -n <span class="m">12</span> --time<span class="o">=</span><span class="m">1</span>:00:00 --pty /bin/bash -l <span class="c1"># cluster: topola, okeanos</span>
 srun -A &lt;grant_name&gt; -N <span class="m">1</span> -n <span class="m">12</span> --time<span class="o">=</span><span class="m">1</span>:00:00 --gres<span class="o">=</span>gpu:2 --pty /bin/bash -l <span class="c1"># cluster: rysy</span>
@@ -1644,7 +1644,7 @@ srun -A &lt;grant_name&gt; -N <span class="m">1</span> -n <span class="m">12</sp
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 10, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 21, 2020</span>
     
   </small>
 </div>
