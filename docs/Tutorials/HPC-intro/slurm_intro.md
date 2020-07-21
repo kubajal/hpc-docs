@@ -203,7 +203,7 @@ parametry polecenia `srun`, np.
 `srun --partition=topola -w wn1234 -A G99-99 -N 1 --ntasks-per-node 6 --pty bash -l`
 
 zadanie zostanie uruchomione na *jednym* węźle o nazwie *wn1234*, z rezerwacją na *6
-procesorów/rdzeni (per węzeł) *
+procesorów/rdzeni (per węzeł)*
 
 #### Przykład rozpoczęcia pracy interaktywnej
 

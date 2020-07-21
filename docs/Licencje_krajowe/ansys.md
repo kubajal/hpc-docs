@@ -15,10 +15,10 @@ draft: false
 - Przy instalacji w oknie konfiguracji licencji podać:
       - ANSYS Licensing Interconnect port number - 1734
       - ANSYS FLEXlm port number - 1723
-      - jako serwer - **licenses2.icm.edu.pl**
+      - jako serwer - **licenses4.icm.edu.pl**
 - Powyższe numery portów są inne niż domyślnie proponowane. Proszę zwrócić na to uwagę.
 - Zmiana ustawień serwera licencji nie wymaga reinstalacji pakietu. Zmiany wprowadza się za pomocą programu ANSLIC_ADMIN (Windows: Start> All Programs> ANSYS x.y> ANSYS Client Licensing> Client ANSLIC_ADMIN Utility x.y)
-- W przypadku problemów z dostępem do serwera licencji należy upewnić się u administratorów sieci w swojej jednostce, czy nie jest blokowany dostęp do serwera licenses2.icm.edu.pl na portach 1723, 1724, 1734 oraz 7242. Jest to główna przyczyna większości problemów zgłaszanych do nas.
+- W przypadku problemów z dostępem do serwera licencji należy upewnić się u administratorów sieci w swojej jednostce, czy nie jest blokowany dostęp do serwera *licenses4.icm.edu.pl* na portach *1723, 1724, 1734* oraz *7242*. Jest to główna przyczyna większości problemów zgłaszanych do nas.
 
 !!! Warning "Uwaga"
     Na komputerze, na którym uruchamiane są obliczenia, należy jednorazowo uruchomić program ANSLIC_ADMIN, wybrać zakładkę "Set License Preferences for User" i ustawić kolejność licencji, jakie będą pobierane z serwera. W zakładce Solver i PrepPost na pierwszym miejscu powinien znaleźć się Ansys Academic Research CFD (lub Ansys Academic Research POLYFLOW).
@@ -215,7 +215,7 @@ Odpowiedź na ten komunikat również musiała znaleźć się w pliku input.
 Przykładowy skrypt kolejkowy uruchamiający obliczenia na kilku procesorach na hydrze może wyglądać następująco:
 
 ```bash
-#!/bin/bash -l 
+#!/bin/bash -l
 #SBATCH --job-name=nazwa
 #SBATCH -N 2
 #SBATCH -n 24
@@ -239,7 +239,8 @@ echo Job finished at `date` >>raport
 - **-i** inputfile oznacza, że komunikacja z programem Fluent będzie odbywała się za pomocą pliku inputfile, natomiast wszystkie komunikaty generowane przez Fluenta, które podczas pracy interaktywnej pojawiałyby się na konsoli, będą zapisywane do pliku output.
 - Informacje wyróżnione kolorem w pliku skryptowym są związane z wykorzystaniem Fluenta w obliczeniach wieloprocesowych.
 - Sposób, w jaki definiuje się liczbę procesorów, na których będzie wykonywane zadanie:
-```bash
+
+```.slurm
 #SBATCH -N 2
 #SBATCH -n 24
 ```
@@ -258,7 +259,8 @@ W przypadku zadań wymagających większej pamięci/liczby węzłów należy odp
 - Opcja **-pib** oznacza wykorzystanie komunikacji typu infiniband.
 
 Ustawienie to pojawia się również w definicji zadania w opcji:
-```bash
+
+```.slurm
 #SBATCH -C ib
 ```
 
@@ -269,8 +271,8 @@ Skrypt przeznaczony do uruchamiania zadań na Topoli wygląda analogicznie. Niew
 !!! Warning "Uwaga"
     Dostęp do partycji **topola** jest przyznawany na podstawie indywidualnych zgłoszeń.
 
-```bash
-#!/bin/bash -l 
+```.slurm
+#!/bin/bash -l
 #SBATCH --job-name=nazwa
 #SBATCH -N 2
 #SBATCH -n 56
@@ -284,7 +286,7 @@ echo "  "  at `date` >>raport
 echo "  "  on host `hostname` >>raport
 ##
 module load fluent
-fluent 3ddp -pib -slurm -t56  -g -i inputfile >output 
+fluent 3ddp -pib -slurm -t56  -g -i inputfile >output
 ##
 echo Job finished at `date` >>raport
 ```
