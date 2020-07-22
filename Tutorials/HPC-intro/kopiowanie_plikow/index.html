@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#kopiowanie-plikow-ssh" class="md-skip">
+        <a href="#rozmiar-kalalogow" class="md-skip">
           Skip to content
         </a>
       
@@ -713,16 +713,29 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#rozmiar-kalalogow" class="md-nav__link">
+    Rozmiar kalalogów
+  </a>
+  
+    <nav class="md-nav" aria-label="Rozmiar kalalogów">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#kopiowanie-plikow-ssh" class="md-nav__link">
     Kopiowanie plików - SSH
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#synchronizacja-i-montowanie-katalogow" class="md-nav__link">
     Synchronizacja i montowanie katalogów
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1171,16 +1184,29 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#rozmiar-kalalogow" class="md-nav__link">
+    Rozmiar kalalogów
+  </a>
+  
+    <nav class="md-nav" aria-label="Rozmiar kalalogów">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#kopiowanie-plikow-ssh" class="md-nav__link">
     Kopiowanie plików - SSH
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#synchronizacja-i-montowanie-katalogow" class="md-nav__link">
     Synchronizacja i montowanie katalogów
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1230,8 +1256,17 @@
 <li><code>*.roz</code> – wszystkie pliki z rozszerzeniem .roz</li>
 <li><code>a*</code> – wszystkie pliki/katalogi zaczynające się od a</li>
 </ul>
-<p>Do sprawdzenia rozmiaru katalagu można użyć komendy:
-<code>du -hc katalog/</code></p>
+<h2 id="rozmiar-kalalogow">Rozmiar kalalogów</h2>
+<p>Do sprawdzenia rozmiaru katalogu można użyć komendy:</p>
+<div class="highlight"><pre><span></span><code>du -hc katalog/
+
+Do sprawdzenia zajętej przestrzeni dyskowej
+
+<span class="sb">```</span>.sh
+lfs quota -uh <span class="nv">$USER</span> /lu/tetyda/home/<span class="nv">$USER</span>
+lfs quota -uh <span class="nv">$USER</span> /lu/topola/home/<span class="nv">$USER</span>/  <span class="c1"># użytkownicy plgrid</span>
+</code></pre></div>
+
 <h3 id="kopiowanie-plikow-ssh">Kopiowanie plików - SSH</h3>
 <p>Aby przegrać pliki pomiędzy maszynami korzystamy z polecenia <em>scp</em>.
 Składnia jest taka jak przy zwykłym kopiowaniu <em>cp</em>.</p>
@@ -1338,7 +1373,7 @@ a następnie prawo odczytu (i zapisu jeżeli dotyczy) dla tej grupy.</p>
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 16, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 22, 2020</span>
     
   </small>
 </div>
