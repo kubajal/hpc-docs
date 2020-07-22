@@ -17,8 +17,19 @@ Podczas kopiowania można używać uogólnionych nazw z `\*`:
 - `*.roz` – wszystkie pliki z rozszerzeniem .roz
 - `a*` – wszystkie pliki/katalogi zaczynające się od a
 
-Do sprawdzenia rozmiaru katalagu można użyć komendy:
-`du -hc katalog/`
+## Rozmiar kalalogów
+
+Do sprawdzenia rozmiaru katalogu można użyć komendy:
+
+```.sh
+du -hc katalog/
+
+Do sprawdzenia zajętej przestrzeni dyskowej
+
+```.sh
+lfs quota -uh $USER /lu/tetyda/home/$USER
+lfs quota -uh $USER /lu/topola/home/$USER/  # użytkownicy plgrid
+```
 
 ### Kopiowanie plików - SSH
 
