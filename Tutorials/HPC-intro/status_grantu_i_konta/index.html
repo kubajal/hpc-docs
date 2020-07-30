@@ -15,7 +15,7 @@
         <meta name="author" content="ICM">
       
       <link rel="shortcut icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.4.0">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.0">
     
     
       
@@ -23,9 +23,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.fe0cca5b.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.b5d04df8.min.css">
       
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.a46bcfb3.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.9ab2c1f8.min.css">
       
       
         
@@ -1129,10 +1129,46 @@ getent group NAZWA_GRUPY <span class="c1"># wypisuje użytkowników należących
 limit <span class="c1"># limity nałożone na procesy użytkownika</span>
 </code></pre></div>
 
-<p><strong>Jak policzyć ile grantu jeszcze zostało?</strong></p>
-<div class="highlight"><pre><span></span><code>/apps/bin/chkgrantusage &lt;grant_id&gt; <span class="o">[</span>yyyy-mm-dd yyyy-mm-dd<span class="o">]</span> <span class="c1"># aktualnie zużycie</span>
-sacctmgr show assoc where <span class="nv">account</span><span class="o">=</span>&lt;grant_id&gt; <span class="nv">format</span><span class="o">=</span>user,GrpTRESMins%50  <span class="c1"># limit cpu w grancie</span>
+<p><strong>Jak sprawdzić zużycie grantu?</strong></p>
+<p>System slurm umożliwia sprawdzenie ilości zużytych zasobów.
+Należy mieć na uwadze, że na Topoli/Rysach/Okeanosie są to niezależne systemy.
+Zatem komenda zwróci ilość wykorzystanych zasobów na danej maszynie.
+Z węzła dostępowego na Topoli/Rysach/Okeanosie należy wywołać komendę:</p>
+<div class="highlight"><pre><span></span><code>icm-show-grant-usage &lt;grant_id&gt; <span class="o">[</span>yyyy-mm-dd yyyy-mm-dd<span class="o">]</span> <span class="c1"># aktualnie zużycie</span>
 </code></pre></div>
+
+<p>Przykładowo</p>
+<div class="highlight"><pre><span></span><code>alice@rysy ~ $ icm-show-grant-usage GR12-34 2020-01-01 2020-07-30
+You are on the Rysy cluster.
+Usage summary for grant app-installers (from 2020-01-01 to 2020-07-30):
+
+--------------------------------------------------------------------
+     Cluster           Login                TRES    Usage(coreh)
+--------------------------------------------------------------------
+        rysy           alice                 cpu             234
+        rysy             bob                 cpu             567
+--------------------------------------------------------------------
+                                    Total usage:             801
+--------------------------------------------------------------------
+
+
+
+Usage summary for grant GR12-34 (from 2020-01-01 to 2020-07-30):
+
+--------------------------------------------------------------------
+     Cluster           Login                TRES    Usage(coreh)
+--------------------------------------------------------------------
+        rysy           alice            gres/gpu             123
+        rysy             bob            gres/gpu             456
+--------------------------------------------------------------------
+                                    Total usage:             579
+--------------------------------------------------------------------
+</code></pre></div>
+
+<!-- 
+```.slurm
+sacctmgr show assoc where account=<grant_id> format=user,GrpTRESMins%50  # limit cpu w grancie
+``` -->
                 
                   
                     
@@ -1141,7 +1177,7 @@ sacctmgr show assoc where <span class="nv">account</span><span class="o">=</span
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 16, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 30, 2020</span>
     
   </small>
 </div>
@@ -1212,8 +1248,8 @@ sacctmgr show assoc where <span class="nv">account</span><span class="o">=</span
       
     </div>
     
-      <script src="../../../assets/javascripts/vendor.d710d30a.min.js"></script>
-      <script src="../../../assets/javascripts/bundle.b39636ac.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../../assets/javascripts/vendor.92ffa368.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.5123e3d4.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
