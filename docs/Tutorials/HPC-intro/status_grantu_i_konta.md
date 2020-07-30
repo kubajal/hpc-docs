@@ -27,9 +27,49 @@ getent group NAZWA_GRUPY # wypisuje użytkowników należących do danej grupy, 
 limit # limity nałożone na procesy użytkownika
 ```
 
-**Jak policzyć ile grantu jeszcze zostało?**
+**Jak sprawdzić zużycie grantu?**
+
+System slurm umożliwia sprawdzenie ilości zużytych zasobów.
+Należy mieć na uwadze, że na Topoli/Rysach/Okeanosie są to niezależne systemy.
+Zatem komenda zwróci ilość wykorzystanych zasobów na danej maszynie.
+Z węzła dostępowego na Topoli/Rysach/Okeanosie należy wywołać komendę:
 
 ```.slurm
-/apps/bin/chkgrantusage <grant_id> [yyyy-mm-dd yyyy-mm-dd] # aktualnie zużycie
-sacctmgr show assoc where account=<grant_id> format=user,GrpTRESMins%50  # limit cpu w grancie
+icm-show-grant-usage <grant_id> [yyyy-mm-dd yyyy-mm-dd] # aktualnie zużycie
 ```
+
+Przykładowo
+
+```.text
+alice@rysy ~ $ icm-show-grant-usage GR12-34 2020-01-01 2020-07-30
+You are on the Rysy cluster.
+Usage summary for grant app-installers (from 2020-01-01 to 2020-07-30):
+
+--------------------------------------------------------------------
+     Cluster           Login                TRES    Usage(coreh)
+--------------------------------------------------------------------
+        rysy           alice                 cpu             234
+        rysy             bob                 cpu             567
+--------------------------------------------------------------------
+                                    Total usage:             801
+--------------------------------------------------------------------
+
+
+
+Usage summary for grant GR12-34 (from 2020-01-01 to 2020-07-30):
+
+--------------------------------------------------------------------
+     Cluster           Login                TRES    Usage(coreh)
+--------------------------------------------------------------------
+        rysy           alice            gres/gpu             123
+        rysy             bob            gres/gpu             456
+--------------------------------------------------------------------
+                                    Total usage:             579
+--------------------------------------------------------------------
+
+```
+
+<!-- 
+```.slurm
+sacctmgr show assoc where account=<grant_id> format=user,GrpTRESMins%50  # limit cpu w grancie
+``` -->
