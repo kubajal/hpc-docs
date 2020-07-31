@@ -20,6 +20,7 @@ This short tutorial will show you how to serve the webpage at you local machine 
 First, it is safe to isolate your python's enviroment.
 
 Install virtual enviroment:
+
 ```sh
 $ pip3 install virtualenv virtualenvwrapper
 $ source /usr/local/bin/virtualenvwrapper.sh

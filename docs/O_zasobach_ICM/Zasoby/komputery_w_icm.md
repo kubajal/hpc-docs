@@ -14,12 +14,13 @@ Po zalogowaniu się przez ssh na węzeł dostępowy (hpc.icm.edu.pl) można pono
     W przypadku pozostałych systemów możliwy/wymagany jest ***dodatkowy krok logowania*** wykonany z komputera
     hpc.icm.edu.pl, np. `ssh rysy`, `ssh okeanos`.
 
-| Nazwa    | Typ                           | Architektura                | Liczba węzłów obliczeniowych | Parametry węzła obliczeniowego                     |
-|----------| :-----------------------------| :---------------------------| :----------------------------| :--------------------------------------------------|
-|Okeanos   | Superkomputer                 | Intel Haswell Cray XC40     | 1084                         | 24 rdzenie, 128 GB pamięci RAM                     |
-|Topola    | Klaster HPC, Klaster PL-Grid  | Intel Haswell Huawei E9000  | 223                          | 28 rdzeni, 64 lub 128 GB pamięci RAM               |
-|Rysy/GPU  | Klaster GPU    | Intel Skylake, NVIDIA Volta                | 6                            | 36 rdzenie, 380 GB pamięci RAM, 4 GPU              |
-|Rysy/PBaran | Komputer wektorowy, NEC Aurora A300-8    | Intel Xeon Gold 6126 / NEC SX-Aurora Tsubasa | 1        | 24 rdzenie, 192 GB RAM / 8 x 8 rdzeni, 8 x 48 GB RAM  |
+| Nazwa      | Typ                           | Architektura                | Liczba i nazwa węzłów obliczeniowych | Parametry węzła obliczeniowego                     |
+|----------- | :-----------------------------| :---------------------------| :----------------------------| :--------------------------------------------------|
+|Okeanos     | Superkomputer                 | Intel Haswell Cray XC40     | 1084                         | 24 rdzenie, 128 GB pamięci RAM                     |
+|Topola      | Klaster HPC, Klaster PL-Grid  | Intel Haswell Huawei E9000  | 223                          | 28 rdzeni, 64 lub 128 GB pamięci RAM               |
+|Rysy/GPU    | Klaster GPU,                  | Intel Skylake, NVIDIA Volta | 6                            | 36 rdzenie, 380 GB pamięci RAM, 4x GPU V100 32GB   |
+|Rysy/GPU    | Klaster GPU,                  | Intel Skylake, NVIDIA Volta | 1                            | 48 rdzeni, 1500 GB pamięci RAM, 8x GPU V100 16GB   |
+|Rysy/PBaran | Komputer wektorowy, NEC Aurora A300-8 | Intel Skylake, NEC SX-Aurora Tsubasa | 1           | 24 rdzenie, 192 GB RAM / 8 x 8 rdzeni, 8 x 48 GB RAM |
 
 ### Superkomputer Okeanos
 
@@ -77,17 +78,26 @@ Szczegółowy opis superkomputera Rysy
 ```text
 Instalacja:                   Klaster
 Nazwa:                        Rysy
-Typ procesora:                Intel(R) Xeon(R) Gold 6154 CPU
+Typ procesora:                Intel(R) Xeon(R) Gold 6154/6252 CPU
 Architektura:                 x86_64
 Reprezencja danych:           little-endian
-Częstotliwość taktowania:     3.0 - 3.7GHz
+Częstotliwość taktowania:     2.1/3.0 - 3.7GHz
 Liczba procesorów w węźle:    36 rdzeni
 Sockets - Cores - Threads:    2-18-1
-Ilość pamięci w węźle:        380 GB
-System plików:                nfs4
+Ilość pamięci w węźle:        380/1500 GB
+System plików:                nfs4/lustre
+GPU:                          NVIDIA Tesla V100 16/32GB
 System operacyjny:            CentOS 7
 System kolejkowy:             slurm 20.02.3
 ```
+
+Opis węzłów klastra Rysy
+
+| Model CPU                             | Taktowanie CPU   | Sockets: Cores: Threads | RAM      | GPU                    | Liczba węzłów | Nazwa            |
+|---------------------------------------| :----------------| :---- ------------------| :--------| :--------------------------| :---------| :----------------|
+|Intel(R) Xeon(R) Gold 6252             | 3.0GHz - 3.7GHz  | 2:18:1                  | 380 GB   | 4x NVIDIA Tesla V100 32GB  |  6        | rysy-n[1-6]      |
+|Intel(R) Xeon(R) Gold 6154             | 2.1GHz - 3.7GHz  | 2:24:1                  | 1500 GB  | 8x NVIDIA Tesla V100 16GB  |  1        | rysy-n7          |
+|Intel(R) Xeon(R) Gold 6126             | 2.6GHz - 3.7GHz  | 2:12:1                  | 192 GB   | 8x NEC Aurora A300-8 48GB  |  1        | pbaran           |
 
 ## Informacje o systemie (hardware)
 
