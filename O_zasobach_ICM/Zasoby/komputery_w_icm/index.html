@@ -1327,7 +1327,7 @@ hpc.icm.edu.pl, np. <code>ssh rysy</code>, <code>ssh okeanos</code>.</p>
 <th>Nazwa</th>
 <th align="left">Typ</th>
 <th align="left">Architektura</th>
-<th align="left">Liczba węzłów obliczeniowych</th>
+<th align="left">Liczba i nazwa węzłów obliczeniowych</th>
 <th align="left">Parametry węzła obliczeniowego</th>
 </tr>
 </thead>
@@ -1348,15 +1348,22 @@ hpc.icm.edu.pl, np. <code>ssh rysy</code>, <code>ssh okeanos</code>.</p>
 </tr>
 <tr>
 <td>Rysy/GPU</td>
-<td align="left">Klaster GPU</td>
+<td align="left">Klaster GPU,</td>
 <td align="left">Intel Skylake, NVIDIA Volta</td>
 <td align="left">6</td>
-<td align="left">36 rdzenie, 380 GB pamięci RAM, 4 GPU</td>
+<td align="left">36 rdzenie, 380 GB pamięci RAM, 4x GPU V100 32GB</td>
+</tr>
+<tr>
+<td>Rysy/GPU</td>
+<td align="left">Klaster GPU,</td>
+<td align="left">Intel Skylake, NVIDIA Volta</td>
+<td align="left">1</td>
+<td align="left">48 rdzeni, 1500 GB pamięci RAM, 8x GPU V100 16GB</td>
 </tr>
 <tr>
 <td>Rysy/PBaran</td>
 <td align="left">Komputer wektorowy, NEC Aurora A300-8</td>
-<td align="left">Intel Xeon Gold 6126 / NEC SX-Aurora Tsubasa</td>
+<td align="left">Intel Skylake, NEC SX-Aurora Tsubasa</td>
 <td align="left">1</td>
 <td align="left">24 rdzenie, 192 GB RAM / 8 x 8 rdzeni, 8 x 48 GB RAM</td>
 </tr>
@@ -1431,18 +1438,62 @@ System kolejkowy:             slurm 18.08.9
 <p>Szczegółowy opis superkomputera Rysy</p>
 <div class="highlight"><pre><span></span><code>Instalacja:                   Klaster
 Nazwa:                        Rysy
-Typ procesora:                Intel(R) Xeon(R) Gold 6154 CPU
+Typ procesora:                Intel(R) Xeon(R) Gold 6154/6252 CPU
 Architektura:                 x86_64
 Reprezencja danych:           little-endian
-Częstotliwość taktowania:     3.0 - 3.7GHz
+Częstotliwość taktowania:     2.1/3.0 - 3.7GHz
 Liczba procesorów w węźle:    36 rdzeni
 Sockets - Cores - Threads:    2-18-1
-Ilość pamięci w węźle:        380 GB
-System plików:                nfs4
+Ilość pamięci w węźle:        380/1500 GB
+System plików:                nfs4/lustre
+GPU:                          NVIDIA Tesla V100 16/32GB
 System operacyjny:            CentOS 7
 System kolejkowy:             slurm 20.02.3
 </code></pre></div>
 
+<p>Opis węzłów klastra Rysy</p>
+<table>
+<thead>
+<tr>
+<th>Model CPU</th>
+<th align="left">Taktowanie CPU</th>
+<th align="left">Sockets: Cores: Threads</th>
+<th align="left">RAM</th>
+<th align="left">GPU</th>
+<th align="left">Liczba węzłów</th>
+<th align="left">Nazwa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Intel(R) Xeon(R) Gold 6252</td>
+<td align="left">3.0GHz - 3.7GHz</td>
+<td align="left">2:18:1</td>
+<td align="left">380 GB</td>
+<td align="left">4x NVIDIA Tesla V100 32GB</td>
+<td align="left">6</td>
+<td align="left">rysy-n[1-6]</td>
+</tr>
+<tr>
+<td>Intel(R) Xeon(R) Gold 6154</td>
+<td align="left">2.1GHz - 3.7GHz</td>
+<td align="left">2:24:1</td>
+<td align="left">1500 GB</td>
+<td align="left">8x NVIDIA Tesla V100 16GB</td>
+<td align="left">1</td>
+<td align="left">rysy-n7</td>
+</tr>
+<tr>
+<td>Intel(R) Xeon(R) Gold 6126</td>
+<td align="left">2.6GHz - 3.7GHz</td>
+<td align="left">2:12:1</td>
+<td align="left">192 GB</td>
+<td align="left">8x NEC Aurora A300-8 48GB</td>
+<td align="left">1</td>
+<td align="left">pbaran</td>
+</tr>
+</tbody>
+</table>
 <h2 id="informacje-o-systemie-hardware">Informacje o systemie (hardware)</h2>
 <p>Poniższe komendy slurm'a pozwalają na samodzielne sprawdzenie informacji o systemie:</p>
 <div class="highlight"><pre><span></span><code>scontrol show partition &lt;nazwa_partycji&gt;        # właściwości partycji
@@ -1515,7 +1566,7 @@ ocean-long  <span class="m">7</span>-00:00:00        <span class="m">750</span> 
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 13, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 31, 2020</span>
     
   </small>
 </div>
