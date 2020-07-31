@@ -97,7 +97,7 @@ Opis węzłów klastra Rysy
 |---------------------------------------| :----------------| :---- ------------------| :--------| :--------------------------| :---------| :----------------|
 |Intel(R) Xeon(R) Gold 6252             | 3.0GHz - 3.7GHz  | 2:18:1                  | 380 GB   | 4x NVIDIA Tesla V100 32GB  |  6        | rysy-n[1-6]      |
 |Intel(R) Xeon(R) Gold 6154             | 2.1GHz - 3.7GHz  | 2:24:1                  | 1500 GB  | 8x NVIDIA Tesla V100 16GB  |  1        | rysy-n7          |
-|Intel(R) Xeon(R) Gold 6126             | 2.6GHz - 3.7GHz  | 2:12:1                  | 192 GB   | 8x NEC Aurora A300-8 48GB  |  1        | pbaran           |
+|Intel(R) Xeon(R) Gold 6126             | 2.6GHz - 3.7GHz  | 2:12:1                  | 192 GB   | 8x NEC Vector Engine Type 10B 48GB  |  1        | pbaran           |
 
 ## Informacje o systemie (hardware)
 

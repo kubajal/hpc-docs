@@ -63,23 +63,24 @@ Większość opcji ma swoje skróty.
 W razie wątpliwości można zajrzeć do instrukcji korzystając z polecenia `man sbatch` lub `man srun`
 Poniżej przedstawiona jest lista najczęściej używanych opcji:
 
-| Skrót    | Pełna nazwa             |  Znaczenie                                                                                      |
-|----------|:------------------------|:------------------------------------------------------------------------------------------------|
-| -N       |  --nodes=               | Liczba węzłów dostępowych do rezerwacji dla zadania.  |
+| Skrót    | Pełna nazwa             |  Znaczenie                                                                                       |
+|----------|:------------------------|:------------------------------------------------------------------------------------------------ |
+| -N       |  --nodes=               | Liczba węzłów dostępowych do rezerwacji dla zadania.                                             |
 | ---      |  --ntasks-per-node      | Liczba 'tasków' per węzeł. Opcja ta jest przydatna w przypadku hybrydowych aplikacji MPI / OpenMP, w której do każdego węzła należy przypisać tylko jedno „zadanie / stopień” MPI, jednocześnie umożliwiając części OpenMP wykorzystanie pozostałych procesorów dostępnych na węźle w ramach zaalokowanego zadania. |
-| -n       |  --ntasks=         | Liczba procesów do uruchomienia. Domyśla wartość to jeden proces per węzeł.                     |
-| -p       |  --partition=      | Zadanie uruchamiane będzie w dostępnej dla użytkownika partycji (np. topola, okeanos)           |
-| -q       |  --qos=            | quality of service                                                                              |
-| -A       |  --account=        | Numer grantu obliczeniowego użytkownika grant, np. G99-99. Używane w celach sprawozdawczych.    |
-| -c       |  --cpus-per-task=  | Liczba procesorów per proces. |
+| -n       |  --ntasks=         | Liczba procesów do uruchomienia. Domyśla wartość to jeden proces per węzeł.                           |
+| -p       |  --partition=      | Zadanie uruchamiane będzie w dostępnej dla użytkownika partycji (np. topola, okeanos)                 |
+| -q       |  --qos=            | quality of service                                                                                    |
+| -A       |  --account=        | Numer grantu obliczeniowego użytkownika grant, np. G99-99. Używane w celach sprawozdawczych.          |
+| -c       |  --cpus-per-task=  | Liczba procesorów per proces.                                                                         |
 | -J       |  --job-name=       | Ustawia nazwę zadania, domyślnie jest to nazwa skryptu. Pod taką nazwą będzie widziane zadanie w systemie, np. przy wyświetlaniu listy zadań.  |
-| -t       |  --time=`hh:mm:ss`   |    Maksymalna długość działania zadania od momentu jego uruchomienia `gg:mm:ss`. Po tym czasie zadanie zostanie przerwane przez system kolejkowy. |
-| -C       |  --constraint      | Możliwość zażądania sprzętu o konkretnych, np. typu procesora.                                  |
-| ---      |  --gres=gpu:`4`      | Użycie dodatkowych zasobów, np GPU (klaster Rysy).                                              |
-| ---      |  --mem=            | Rezerwacja pamięci per node (megabytes).                                                        |
-| ---      |  --mem-per-cpu=    | Rezerwacja pamięci per CPU (megabytes).                                                         |
-| ---      |  --mail-user=      | Adres email użytkownika, np. `--mail-user=user@somewhere.com` |
-| ---      |  --mail-type=      | Kiedy wysłać powiadomienie email (`ALL` lub `END`). Nieustawienie opcji - brak powiadomienia.    |
+| -t       |  --time=`hh:mm:ss` |    Maksymalna długość działania zadania od momentu jego uruchomienia `gg:mm:ss`. Po tym czasie zadanie zostanie przerwane przez system kolejkowy. |
+| -C       |  --constraint=     | Możliwość zażądania sprzętu o konkretnych, np. typu procesora.                                        |
+| -w       |  --nodelist=       | Możliwość zażądania konkretnego węzła obliczeniowego.                                                 |
+| ---      |  --gres=gpu:`4`    | Użycie dodatkowych zasobów, np GPU (klaster Rysy).                                                    |
+| ---      |  --mem=            | Rezerwacja pamięci per node (megabytes).                                                              |
+| ---      |  --mem-per-cpu=    | Rezerwacja pamięci per CPU (megabytes).                                                               |
+| ---      |  --mail-user=      | Adres email użytkownika, np. `--mail-user=user@somewhere.com`                                         |
+| ---      |  --mail-type=      | Kiedy wysłać powiadomienie email (`ALL` lub `END`). Nieustawienie opcji - brak powiadomienia.         |
 
 ### Przykładowe skrypty
 
