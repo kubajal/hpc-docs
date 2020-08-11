@@ -1,12 +1,14 @@
 
 
 
+
 <!doctype html>
 <html lang="en" class="no-js">
   <head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
       
         <meta name="description" content="Komputery Dużej Mocy w ICM UW">
       
@@ -14,8 +16,27 @@
       
         <meta name="author" content="ICM">
       
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
       <link rel="shortcut icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.0">
+      <meta name="generator" content="mkdocs-1.1, mkdocs-material-4.6.3">
     
     
       
@@ -23,9 +44,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.b5d04df8.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.adb8469c.css">
       
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.9ab2c1f8.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/application-palette.a8b3c06d.css">
       
       
         
@@ -34,13 +55,16 @@
       
     
     
+      <script src="../../../assets/javascripts/modernizr.86422ebf.js"></script>
+    
     
       
         <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
-        <style>body,input{font-family:"Roboto",-apple-system,BlinkMacSystemFont,Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono",SFMono-Regular,Consolas,Menlo,monospace}</style>
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
     
+    <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
     
     
       <link rel="stylesheet" href="../../../style.css">
@@ -51,75 +75,71 @@
     
   </head>
   
+    
+    
+    <body dir="ltr" data-md-color-primary="blue-grey" data-md-color-accent="green">
   
-    
-    
-    
-    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="blue-grey" data-md-color-accent="green">
-  
-    
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
-    <label class="md-overlay" for="__drawer"></label>
-    <div data-md-component="skip">
-      
-        
-        <a href="#slurm-definicja" class="md-skip">
-          Skip to content
-        </a>
-      
-    </div>
-    <div data-md-component="announce">
-      
-    </div>
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#slurm-definicja" tabindex="0" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
-  <nav class="md-header-nav md-grid" aria-label="Header">
-    <a href="../../.." title="Dokumentacja ICM UW" class="md-header-nav__button md-logo" aria-label="Dokumentacja ICM UW">
-      
-  <img src="../../../images/Logo_icm_biale.png" alt="logo">
-
-    </a>
-    <label class="md-header-nav__button md-icon" for="__drawer">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
-    </label>
-    <div class="md-header-nav__title" data-md-component="header-title">
-      
-        <div class="md-header-nav__ellipsis">
-          <span class="md-header-nav__topic md-ellipsis">
-            Dokumentacja ICM UW
-          </span>
-          <span class="md-header-nav__topic md-ellipsis">
-            
-              SLURM
-            
-          </span>
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../../.." title="Dokumentacja ICM UW" aria-label="Dokumentacja ICM UW" class="md-header-nav__button md-logo">
+          
+            <img alt="logo" src="../../../images/Logo_icm_biale.png" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Dokumentacja ICM UW
+            </span>
+            <span class="md-header-nav__topic">
+              
+                SLURM
+              
+            </span>
+          
         </div>
-      
-    </div>
-    
-      <label class="md-header-nav__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-      </label>
-      
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
 <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
-      <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0116 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 019.5 16 6.5 6.5 0 013 9.5 6.5 6.5 0 019.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </label>
-      <button type="reset" class="md-search__icon md-icon" aria-label="Clear" data-md-component="search-reset" tabindex="-1">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+      <input type="text" class="md-search__input" aria-label="search" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
       </button>
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="search-result">
+        <div class="md-search-result" data-md-component="result">
           <div class="md-search-result__meta">
-            Initializing search
+            Type to start searching
           </div>
           <ol class="md-search-result__list"></ol>
         </div>
@@ -127,55 +147,59 @@
     </div>
   </div>
 </div>
-    
-    
-      <div class="md-header-nav__source">
         
-<a href="https://git.icm.edu.pl/owu/hpc-docs/" title="Go to repository" class="md-source">
-  <div class="md-source__icon md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
-  </div>
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+<a href="https://git.icm.edu.pl/owu/hpc-docs/" title="Go to repository" class="md-source" data-md-source="">
+  
   <div class="md-source__repository">
     ICM-HPC
   </div>
 </a>
-      </div>
-    
+          </div>
+        </div>
+      
+    </div>
   </nav>
 </header>
     
-    <div class="md-container" data-md-component="container">
+    <div class="md-container">
       
         
       
       
-        
-      
-      <main class="md-main" data-md-component="main">
-        <div class="md-main__inner md-grid">
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
           
             
               <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
-                    <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
-  <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="Dokumentacja ICM UW" class="md-nav__button md-logo" aria-label="Dokumentacja ICM UW">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../../.." title="Dokumentacja ICM UW" class="md-nav__button md-logo">
       
-  <img src="../../../images/Logo_icm_biale.png" alt="logo">
-
+        <img alt="logo" src="../../../images/Logo_icm_biale.png" width="48" height="48">
+      
     </a>
     Dokumentacja ICM UW
   </label>
   
     <div class="md-nav__source">
       
-<a href="https://git.icm.edu.pl/owu/hpc-docs/" title="Go to repository" class="md-source">
-  <div class="md-source__icon md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05L244 40.45a28.87 28.87 0 00-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 01-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 000 40.81l195.61 195.6a28.86 28.86 0 0040.8 0l194.69-194.69a28.86 28.86 0 000-40.81z"/></svg>
-  </div>
+
+
+  
+
+<a href="https://git.icm.edu.pl/owu/hpc-docs/" title="Go to repository" class="md-source" data-md-source="">
+  
   <div class="md-source__repository">
     ICM-HPC
   </div>
@@ -203,19 +227,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
     
     <label class="md-nav__link" for="nav-2">
       Formalności
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
     </label>
-    <nav class="md-nav" aria-label="Formalności" data-md-level="1">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-2">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
         Formalności
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -269,19 +287,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
     
     <label class="md-nav__link" for="nav-3">
       Zasoby sprzętowe
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
     </label>
-    <nav class="md-nav" aria-label="Zasoby sprzętowe" data-md-level="1">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-3">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
         Zasoby sprzętowe
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -323,19 +335,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
     <label class="md-nav__link" for="nav-4">
       Aplikacje
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
     </label>
-    <nav class="md-nav" aria-label="Aplikacje" data-md-level="1">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-4">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
         Aplikacje
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -389,19 +395,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
     <label class="md-nav__link" for="nav-5">
       Licencje krajowe
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
     </label>
-    <nav class="md-nav" aria-label="Licencje krajowe" data-md-level="1">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-5">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
         Licencje krajowe
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -443,19 +443,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
     
     <label class="md-nav__link" for="nav-6">
       Podręcznik grantowy
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
     </label>
-    <nav class="md-nav" aria-label="Podręcznik grantowy" data-md-level="1">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-6">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
         Podręcznik grantowy
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -583,19 +577,13 @@
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" checked>
     
     <label class="md-nav__link" for="nav-7">
       Instrukcje
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
     </label>
-    <nav class="md-nav" aria-label="Instrukcje" data-md-level="1">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-7">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
         Instrukcje
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -610,19 +598,13 @@
 
   <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7-1" type="checkbox" id="nav-7-1" checked>
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-1" type="checkbox" id="nav-7-1" checked>
     
     <label class="md-nav__link" for="nav-7-1">
       Podstawy HPC
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
     </label>
-    <nav class="md-nav" aria-label="Podstawy HPC" data-md-level="2">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-7-1">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
         Podstawy HPC
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -697,14 +679,11 @@
 
   <li class="md-nav__item md-nav__item--active">
     
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
         Zlecanie zadań do SLURM
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 9h14V7H3v2m0 4h14v-2H3v2m0 4h14v-2H3v2m16 0h2v-2h-2v2m0-10v2h2V7h-2m0 6h2v-2h-2v2z"/></svg>
-        </span>
       </label>
     
     <a href="./" title="Zlecanie zadań do SLURM" class="md-nav__link md-nav__link--active">
@@ -712,16 +691,11 @@
     </a>
     
       
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<nav class="md-nav md-nav--secondary">
   
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
-      Table of contents
-    </label>
+    <label class="md-nav__title" for="__toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
@@ -743,7 +717,7 @@
     Skrypty systemu kolejkowego
   </a>
   
-    <nav class="md-nav" aria-label="Skrypty systemu kolejkowego">
+    <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -751,7 +725,7 @@
     Przykładowe skrypty
   </a>
   
-    <nav class="md-nav" aria-label="Przykładowe skrypty">
+    <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -790,7 +764,7 @@
     Wstawianie zadania do kolejki
   </a>
   
-    <nav class="md-nav" aria-label="Wstawianie zadania do kolejki">
+    <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -805,7 +779,7 @@
     Tryb interaktywny
   </a>
   
-    <nav class="md-nav" aria-label="Tryb interaktywny">
+    <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -831,6 +805,10 @@
   </a>
   
 </li>
+      
+      
+      
+      
       
     </ul>
   
@@ -911,19 +889,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7-2" type="checkbox" id="nav-7-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-2" type="checkbox" id="nav-7-2">
     
     <label class="md-nav__link" for="nav-7-2">
       Podstawy GPU
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
     </label>
-    <nav class="md-nav" aria-label="Podstawy GPU" data-md-level="2">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-7-2">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
         Podstawy GPU
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1001,19 +973,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7-3" type="checkbox" id="nav-7-3">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-3" type="checkbox" id="nav-7-3">
     
     <label class="md-nav__link" for="nav-7-3">
       Kontenery
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
     </label>
-    <nav class="md-nav" aria-label="Kontenery" data-md-level="2">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-7-3">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
         Kontenery
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1043,19 +1009,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7-4" type="checkbox" id="nav-7-4">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-4" type="checkbox" id="nav-7-4">
     
     <label class="md-nav__link" for="nav-7-4">
       NEC SX-Aurora Tsubasa
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
     </label>
-    <nav class="md-nav" aria-label="NEC SX-Aurora Tsubasa" data-md-level="2">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-7-4">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
         NEC SX-Aurora Tsubasa
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1114,19 +1074,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
     
     <label class="md-nav__link" for="nav-8">
       Szkolenia
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
     </label>
-    <nav class="md-nav" aria-label="Szkolenia" data-md-level="1">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
       <label class="md-nav__title" for="nav-8">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
         Szkolenia
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1151,19 +1105,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8-2" type="checkbox" id="nav-8-2">
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8-2" type="checkbox" id="nav-8-2">
     
     <label class="md-nav__link" for="nav-8-2">
       Materiały
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
-      </span>
     </label>
-    <nav class="md-nav" aria-label="Materiały" data-md-level="2">
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
       <label class="md-nav__title" for="nav-8-2">
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-        </span>
         Materiały
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
@@ -1238,16 +1186,11 @@
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+<nav class="md-nav md-nav--secondary">
   
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-      </span>
-      Table of contents
-    </label>
+    <label class="md-nav__title" for="__toc">Table of contents</label>
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
@@ -1269,7 +1212,7 @@
     Skrypty systemu kolejkowego
   </a>
   
-    <nav class="md-nav" aria-label="Skrypty systemu kolejkowego">
+    <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1277,7 +1220,7 @@
     Przykładowe skrypty
   </a>
   
-    <nav class="md-nav" aria-label="Przykładowe skrypty">
+    <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1316,7 +1259,7 @@
     Wstawianie zadania do kolejki
   </a>
   
-    <nav class="md-nav" aria-label="Wstawianie zadania do kolejki">
+    <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1331,7 +1274,7 @@
     Tryb interaktywny
   </a>
   
-    <nav class="md-nav" aria-label="Tryb interaktywny">
+    <nav class="md-nav">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1358,6 +1301,10 @@
   
 </li>
       
+      
+      
+      
+      
     </ul>
   
 </nav>
@@ -1370,12 +1317,7 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://git.icm.edu.pl/owu/hpc-docs/edit/master/docs/Tutorials/HPC-intro/slurm_intro.md" title="Edit this page" class="md-content__button md-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
-                  </a>
-                
-                
-                  
+                  <a href="https://git.icm.edu.pl/owu/hpc-docs/edit/master/docs/Tutorials/HPC-intro/slurm_intro.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
                   <h1>Zlecanie zadań do SLURM</h1>
@@ -1405,13 +1347,13 @@ użytkownik umieszcza zadanie w kolejce</li>
 Aby zaplanować zadanie, można użyć polecenia salloc, sbatch lub srun.</p>
 <ul>
 <li>
-<p><code>sbatch</code> zawsze tworzy nowy przydział zasobów po jego wywołaniu, wykonuje skrypt zadania na jednym z przydzielonych węzłów (master node), a następnie zwalnia przydział po zakończeniu skryptu. Dodatkową cechą sbatch jest to, że przeanalizuje skrypt w czasie przesyłania zadania - zamiast podawać argumenty z wiersza poleceń, opcje sbatch mogą zostać zapisane za pomocą linii rozpoczynających się od #SBATCH. Jeżeli poda się argumenty do wiersza poleceń to zastępią one opcje #SBATCH w skrypcie, więc można wywoływać pojedynczy skrypt wsadowy dla różnych przydziałów wielkości zadania, określając opcje -N lub -n w wierszu polecenia podczas przesyłania skryptu zadania zsbatch</p>
+<p><code class="codehilite"><span class="err">sbatch</span></code> zawsze tworzy nowy przydział zasobów po jego wywołaniu, wykonuje skrypt zadania na jednym z przydzielonych węzłów (master node), a następnie zwalnia przydział po zakończeniu skryptu. Dodatkową cechą sbatch jest to, że przeanalizuje skrypt w czasie przesyłania zadania - zamiast podawać argumenty z wiersza poleceń, opcje sbatch mogą zostać zapisane za pomocą linii rozpoczynających się od #SBATCH. Jeżeli poda się argumenty do wiersza poleceń to zastępią one opcje #SBATCH w skrypcie, więc można wywoływać pojedynczy skrypt wsadowy dla różnych przydziałów wielkości zadania, określając opcje -N lub -n w wierszu polecenia podczas przesyłania skryptu zadania zsbatch</p>
 </li>
 <li>
-<p><code>srun</code> może, ale nie musi, utworzyć alokację, w zależności od sposobu jej wywołania. Jeśli zostanie wywołany w wierszu poleceń węzła logowania, utworzy nowy przydział i wykona polecenie po srun. Jeśli zostanie wywołany w skrypcie wsadowym, po prostu uruchomi zadanie na bieżącym przydziale. Podobnie, srun może otrzymać argument --jobid, który każe mu uruchomić zadanie jako część danego 'job`a' i jego alokacji.</p>
+<p><code class="codehilite"><span class="err">srun</span></code> może, ale nie musi, utworzyć alokację, w zależności od sposobu jej wywołania. Jeśli zostanie wywołany w wierszu poleceń węzła logowania, utworzy nowy przydział i wykona polecenie po srun. Jeśli zostanie wywołany w skrypcie wsadowym, po prostu uruchomi zadanie na bieżącym przydziale. Podobnie, srun może otrzymać argument --jobid, który każe mu uruchomić zadanie jako część danego 'job`a' i jego alokacji.</p>
 </li>
 <li>
-<p><code>salloc</code> zawsze tworzy nowy przydział zasobów, gdy jest wywoływany, ale nie musi uruchamiać żadnych zadań w przydzielonych węzłach. Typowym przykładem użycia salloc jest utworzenie przydziału w celu uruchomienia serii kolejnych poleceń srun poprzez interaktywną sesję bash lub skrypt uruchamiany z węzła logowania. Zwalnia przydział po zakończeniu sesji skryptu lub sesji bash.</p>
+<p><code class="codehilite"><span class="err">salloc</span></code> zawsze tworzy nowy przydział zasobów, gdy jest wywoływany, ale nie musi uruchamiać żadnych zadań w przydzielonych węzłach. Typowym przykładem użycia salloc jest utworzenie przydziału w celu uruchomienia serii kolejnych poleceń srun poprzez interaktywną sesję bash lub skrypt uruchamiany z węzła logowania. Zwalnia przydział po zakończeniu sesji skryptu lub sesji bash.</p>
 </li>
 </ul>
 <p>Źródło: <a href="https://cvw.cac.cornell.edu/slurm/basics_allocation">https://cvw.cac.cornell.edu/slurm/basics_allocation</a></p>
@@ -1419,13 +1361,13 @@ Aby zaplanować zadanie, można użyć polecenia salloc, sbatch lub srun.</p>
 <p>Opis zadania i zapotrzebowanie na zasoby można specyfikować w specjalnym
 skrypcie - pliku tekstowym dla systemu SLURM. Skrypt tworzy użytkownik.
 Skrypt składa się z tzw. dyrektyw systemu SLURM, czyli linii zaczynające
-się od słowa <code>#SLURM</code> oraz instrukcji uruchamiających odpowiedni
+się od słowa <code class="codehilite"><span class="err">#SLURM</span></code> oraz instrukcji uruchamiających odpowiedni
 program.</p>
 <ul>
 <li>Pierwsza linia skryptu <strong>musi</strong> zawierać ścieżkę do interpretera
     (shell), który ma wykonać skrypt na przydzielonym węźle
     obliczeniowym np.
-    <code>#!/bin/bash -l</code>.</li>
+    <code class="codehilite"><span class="ch">#!/bin/bash -l</span></code>.</li>
 <li>Kolejne linie powinny zawierać specyfikację zasobów</li>
 </ul>
 <div class="admonition note">
@@ -1434,7 +1376,7 @@ program.</p>
 Rezerwacja zasobów oraz wszystkie uruchamiane komendy systemowe i programy nazywane są w skrócie zadaniem.</p>
 </div>
 <p>Większość opcji ma swoje skróty.
-W razie wątpliwości można zajrzeć do instrukcji korzystając z polecenia <code>man sbatch</code> lub <code>man srun</code>
+W razie wątpliwości można zajrzeć do instrukcji korzystając z polecenia <code class="codehilite"><span class="err">man sbatch</span></code> lub <code class="codehilite"><span class="err">man srun</span></code>
 Poniżej przedstawiona jest lista najczęściej używanych opcji:</p>
 <table>
 <thead>
@@ -1487,8 +1429,8 @@ Poniżej przedstawiona jest lista najczęściej używanych opcji:</p>
 </tr>
 <tr>
 <td>-t</td>
-<td align="left">--time=<code>hh:mm:ss</code></td>
-<td align="left">Maksymalna długość działania zadania od momentu jego uruchomienia <code>gg:mm:ss</code>. Po tym czasie zadanie zostanie przerwane przez system kolejkowy.</td>
+<td align="left">--time=<code class="codehilite"><span class="n">hh</span><span class="o">:</span><span class="n">mm</span><span class="o">:</span><span class="n">ss</span></code></td>
+<td align="left">Maksymalna długość działania zadania od momentu jego uruchomienia <code class="codehilite"><span class="n">gg</span><span class="o">:</span><span class="n">mm</span><span class="o">:</span><span class="n">ss</span></code>. Po tym czasie zadanie zostanie przerwane przez system kolejkowy.</td>
 </tr>
 <tr>
 <td>-C</td>
@@ -1502,7 +1444,7 @@ Poniżej przedstawiona jest lista najczęściej używanych opcji:</p>
 </tr>
 <tr>
 <td>---</td>
-<td align="left">--gres=gpu:<code>4</code></td>
+<td align="left">--gres=gpu:<code class="codehilite"><span class="err">4</span></code></td>
 <td align="left">Użycie dodatkowych zasobów, np GPU (klaster Rysy).</td>
 </tr>
 <tr>
@@ -1518,19 +1460,19 @@ Poniżej przedstawiona jest lista najczęściej używanych opcji:</p>
 <tr>
 <td>---</td>
 <td align="left">--mail-user=</td>
-<td align="left">Adres email użytkownika, np. <code>--mail-user=user@somewhere.com</code></td>
+<td align="left">Adres email użytkownika, np. <code class="codehilite"><span class="err">--mail-user=user@somewhere.com</span></code></td>
 </tr>
 <tr>
 <td>---</td>
 <td align="left">--mail-type=</td>
-<td align="left">Kiedy wysłać powiadomienie email (<code>ALL</code> lub <code>END</code>). Nieustawienie opcji - brak powiadomienia.</td>
+<td align="left">Kiedy wysłać powiadomienie email (<code class="codehilite"><span class="err">ALL</span></code> lub <code class="codehilite"><span class="err">END</span></code>). Nieustawienie opcji - brak powiadomienia.</td>
 </tr>
 </tbody>
 </table>
 <h3 id="przykadowe-skrypty">Przykładowe skrypty</h3>
 <h4 id="partycja-topola">Partycja Topola</h4>
 <p>Poniższy skrypt uruchamia obliczenia w programie Quantum Espresso:</p>
-<div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash -l</span>
+<div class="codehilite"><pre><span></span><code><span class="ch">#!/bin/bash -l</span>
 <span class="kp">#SBATCH -J qe-1</span>
 <span class="kp">#SBATCH -N 1</span>
 <span class="kp">#SBATCH --ntasks-per-node 12</span>
@@ -1562,7 +1504,7 @@ mpirun -n <span class="m">12</span> pw.x &lt; S.in
     obliczeniowy w środowisku równoległym MPI.</li>
 </ul>
 <h3 id="partycja-okeanos">Partycja Okeanos</h3>
-<div class="highlight"><pre><span></span><code><span class="ch">#!/bin/tcsh</span>
+<div class="codehilite"><pre><span></span><code><span class="ch">#!/bin/tcsh</span>
 <span class="kp">#SBATCH -J qe-1</span>
 <span class="kp">#SBATCH -N 1</span>
 <span class="kp">#SBATCH --ntasks-per-node 12</span>
@@ -1576,8 +1518,8 @@ module load espresso/6.1.0
 </code></pre></div>
 
 <h3 id="partycja-rysy">Partycja Rysy</h3>
-<p>W celu uruchomienia aplikacji na GPU niezbędne jest podanie opcji <code>--gres=gpu:liczba_gpu</code>.</p>
-<div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash -l</span>
+<p>W celu uruchomienia aplikacji na GPU niezbędne jest podanie opcji <code class="codehilite"><span class="err">--gres=gpu:liczba_gpu</span></code>.</p>
+<div class="codehilite"><pre><span></span><code><span class="ch">#!/bin/bash -l</span>
 <span class="kp">#SBATCH -J gpu_test</span>
 <span class="kp">#SBATCH --gres=gpu:1</span>
 <span class="kp">#SBATCH --cpus-per-task=1</span>
@@ -1593,67 +1535,67 @@ module load espresso/6.1.0
 
 <p>Przykładowy program <em>hello_world_cuda</em> znajduje się w sekcji <a href="../../GPU-intro/hello_world/">Podstawy GPU</a>.</p>
 <h2 id="wstawianie-zadania-do-kolejki">Wstawianie zadania do kolejki</h2>
-<p>Polecenie <code>sbatch</code> służy do wstawiania zadań do systemu kolejkowego.
+<p>Polecenie <code class="codehilite"><span class="err">sbatch</span></code> służy do wstawiania zadań do systemu kolejkowego.
 Wszystkie flagi, które można wyspecyfikować w tym poleceniu,
 alternatywnie podaje się w pierwszym bloku komentarza skryptu
-kolejkowego w liniach zaczynających się od <code>#SBATCH</code> .
+kolejkowego w liniach zaczynających się od <code class="codehilite"><span class="err">#SBATCH</span></code> .
 Niektóre opcje tego polecenia są specyficzne dla danego komputera.</p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
-<p>Zlecanie zadań na system <code>topola</code> możliwe jest <strong><em>bezpośrednio z węzła dostępowego</em></strong> <code>hpc.icm.edu.pl</code>.
+<p>Zlecanie zadań na system <code class="codehilite"><span class="err">topola</span></code> możliwe jest <strong><em>bezpośrednio z węzła dostępowego</em></strong> <code class="codehilite"><span class="err">hpc.icm.edu.pl</span></code>.
 W przypadku pozostałych systemów możliwy/wymagany jest <strong><em>dodatkowy krok logowania</em></strong> wykonany z komputera
-hpc.icm.edu.pl, np. <code>ssh rysy</code>, <code>ssh okeanos</code>.</p>
+hpc.icm.edu.pl, np. <code class="codehilite"><span class="err">ssh rysy</span></code>, <code class="codehilite"><span class="err">ssh okeanos</span></code>.</p>
 </div>
 <p>Więcej o komputerach dostępnych w ICM <a href="../../../O_zasobach_ICM/Zasoby/komputery_w_icm/">tutaj</a>.</p>
 <h3 id="tryb-wsadowy">Tryb wsadowy</h3>
-<p>Wstawienie do kolejki zadania opisanego skryptem <code>MojeZadanie.batch</code>
+<p>Wstawienie do kolejki zadania opisanego skryptem <code class="codehilite"><span class="err">MojeZadanie.batch</span></code>
 wykonujemy komendą:</p>
-<div class="highlight"><pre><span></span><code>sbatch MojeZadanie.batch
+<div class="codehilite"><pre><span></span><code>sbatch MojeZadanie.batch
 </code></pre></div>
 
 <p>Umieści ona w systemie kolejkowym zadanie wsadowe (bez możliwości
 interakcji z wykonywanym programem). Dodatkowe opcje wykonania zadania
 możemy wprowadzać w skrypcie lub podać jako parametry polecenia
-<code>sbatch</code>.</p>
+<code class="codehilite"><span class="err">sbatch</span></code>.</p>
 <h3 id="tryb-interaktywny">Tryb interaktywny</h3>
 <p>Aby uzyskać dostęp do zasobów w trybie interaktywnym z dostępem do
 powłoki (shell), wykonujemy komendę:</p>
-<p><code>srun --cpu_bind=none -p nazwa_partycji -A G99-99 --pty bash -l</code></p>
+<p><code class="codehilite"><span class="err">srun --cpu_bind=none -p nazwa_partycji -A G99-99 --pty bash -l</span></code></p>
 <p>Nazwa partycji (kolejki) zależy od konkretnej maszyny, na której ma być
 uruchamiane zadanie. Dla komputera hydra, spis dostępny jest
 <a href="/Hydra#Kolejki_.28partycje.29" title="wikilink">tutaj</a>. Dodatkowo wymagany
 jest numer grantu obliczeniowego, w ramach którego prowadzone są prace
 (w przykładzie G99-99)</p>
 <p>Dodatkowe opcje wykonania zadania możemy wprowadzać jedynie jako
-parametry polecenia <code>srun</code>, np.</p>
-<p><code>srun --partition=topola -w wn1234 -A G99-99 -N 1 --ntasks-per-node 6 --pty bash -l</code></p>
+parametry polecenia <code class="codehilite"><span class="err">srun</span></code>, np.</p>
+<p><code class="codehilite"><span class="err">srun --partition=topola -w wn1234 -A G99-99 -N 1 --ntasks-per-node 6 --pty bash -l</span></code></p>
 <p>zadanie zostanie uruchomione na <em>jednym</em> węźle o nazwie <em>wn1234</em>, z rezerwacją na <em>6
 procesorów/rdzeni (per węzeł)</em></p>
 <h4 id="przykad-rozpoczecia-pracy-interaktywnej">Przykład rozpoczęcia pracy interaktywnej</h4>
-<div class="highlight"><pre><span></span><code>srun -p &lt;partition_name&gt;  -A &lt;grant_name&gt; -N <span class="m">1</span> -n <span class="m">12</span> --time<span class="o">=</span><span class="m">1</span>:00:00 --pty /bin/bash -l <span class="c1"># cluster: topola, okeanos</span>
+<div class="codehilite"><pre><span></span><code>srun -p &lt;partition_name&gt;  -A &lt;grant_name&gt; -N <span class="m">1</span> -n <span class="m">12</span> --time<span class="o">=</span><span class="m">1</span>:00:00 --pty /bin/bash -l <span class="c1"># cluster: topola, okeanos</span>
 srun -A &lt;grant_name&gt; -N <span class="m">1</span> -n <span class="m">12</span> --time<span class="o">=</span><span class="m">1</span>:00:00 --gres<span class="o">=</span>gpu:2 --pty /bin/bash -l <span class="c1"># cluster: rysy</span>
 </code></pre></div>
 
 <h2 id="quality-of-service-qos">Quality of Service (QOS)</h2>
 <p>Parametr ten określa na jak długo możliwa jest alokacja zasobów oraz priorytet w uruchomieniu zadania.</p>
 <p>Aby przypisać zadanie do konkretnego qos'a należy ustalić zmienną:</p>
-<div class="highlight"><pre><span></span><code>--qos<span class="o">=</span>NAZWA_QOSa
+<div class="codehilite"><pre><span></span><code>--qos<span class="o">=</span>NAZWA_QOSa
 </code></pre></div>
 
 <p>Szczegóły qos'ów dostępnych w ICM znajdują się <a href="../../../O_zasobach_ICM/Zasoby/komputery_w_icm/">tu</a>.</p>
                 
                   
-                    
-
-<hr>
-<div class="md-source-date">
-  <small>
-    
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 31, 2020</span>
-    
-  </small>
-</div>
+                
+                
                   
+                  <hr>
+                  <div class="md-source-date">
+                    <small>
+                      
+                        Last update: July 31, 2020
+                      
+                    </small>
+                  </div>
                 
               
               
@@ -1670,34 +1612,34 @@ srun -A &lt;grant_name&gt; -N <span class="m">1</span> -n <span class="m">12</sp
 <footer class="md-footer">
   
     <div class="md-footer-nav">
-      <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
+      <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../kopiowanie_plikow/" title="Kopiowanie plików" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          <a href="../kopiowanie_plikow/" title="Kopiowanie plików" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
                 Kopiowanie plików
-              </div>
+              </span>
             </div>
           </a>
         
         
-          <a href="../ustawianie_srodowiska/" title="Ustawianie środowiska" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
-            <div class="md-footer-nav__title">
-              <div class="md-ellipsis">
+          <a href="../ustawianie_srodowiska/" title="Ustawianie środowiska" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
                 Ustawianie środowiska
-              </div>
+              </span>
             </div>
-            <div class="md-footer-nav__button md-icon">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
             </div>
           </a>
         
@@ -1708,10 +1650,11 @@ srun -A &lt;grant_name&gt; -N <span class="m">1</span> -n <span class="m">12</sp
     <div class="md-footer-meta__inner md-grid">
       <div class="md-footer-copyright">
         
-        Made with
+        powered by
+        <a href="https://www.mkdocs.org" target="_blank" rel="noopener">MkDocs</a>
+        and
         <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-          Material for MkDocs
-        </a>
+          Material for MkDocs</a>
       </div>
       
     </div>
@@ -1720,18 +1663,9 @@ srun -A &lt;grant_name&gt; -N <span class="m">1</span> -n <span class="m">12</sp
       
     </div>
     
-      <script src="../../../assets/javascripts/vendor.92ffa368.min.js"></script>
-      <script src="../../../assets/javascripts/bundle.5123e3d4.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../../assets/javascripts/application.c33a9706.js"></script>
       
-      <script>
-        app = initialize({
-          base: "../../..",
-          features: [],
-          search: Object.assign({
-            worker: "../../../assets/javascripts/worker/search.a68abb33.min.js"
-          }, typeof search !== "undefined" && search)
-        })
-      </script>
+      <script>app.initialize({version:"1.1",url:{base:"../../.."}})</script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
       
