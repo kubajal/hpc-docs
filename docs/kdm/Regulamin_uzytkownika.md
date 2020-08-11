@@ -1,0 +1,1 @@
+Regulamin_użytkownika.md
