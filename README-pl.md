@@ -10,7 +10,7 @@
 
 1. Klonujemy repozytorium z dokumentacją:
 ```sh
-$ git clone https://github.com/icm-uw/hpc-docs.git
+$ git clone https://git.icm.edu.pl/owu/hpc-docs.git
 ```
 
 2. Instalujemy środowisko wirtualne Pythona, aktywujemy je, a następnie instalujemy **mkdocs** wraz z zależnościami określonymi w pliku *requirements.txt*:
