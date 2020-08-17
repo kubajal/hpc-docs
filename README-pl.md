@@ -11,6 +11,9 @@
 1. Klonujemy repozytorium z dokumentacją:
 ```sh
 $ git clone https://git.icm.edu.pl/owu/hpc-docs.git
+# jeżeli użytkownik ma właczone 2FA
+username: <Login Name>
+password: <Personal Access Token> (gitlab --> profile --> access tokens)
 ```
 
 2. Instalujemy środowisko wirtualne Pythona, aktywujemy je, a następnie instalujemy **mkdocs** wraz z zależnościami określonymi w pliku *requirements.txt*:
