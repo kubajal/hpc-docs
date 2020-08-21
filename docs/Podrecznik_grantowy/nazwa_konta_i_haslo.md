@@ -25,7 +25,7 @@ Hasło wysyłane jest automatycznym mailem, w chwili skierowania konta do utworz
 
 ## Wygaśnięcie hasła
 Zmiany hasła możliwe są w każdej chwili oraz do miesiąca od wygaśnięcia hasła w portalu:
-https://haslo.icm.edu.pl/. 
+https://haslo.icm.edu.pl/. Logowanie odbywa się przy pomocy loginu (do 8 liter, nie adresu e-mail) oraz dotychczasowego hasła (w tym wygaśniętego).
 
 
 
