@@ -529,6 +529,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#wygasniecie-hasa" class="md-nav__link">
+    Wygaśnięcie hasła
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1174,6 +1181,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#wygasniecie-hasa" class="md-nav__link">
+    Wygaśnięcie hasła
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1207,29 +1221,13 @@
 <p>Na osobnych stronach można znaleźć przykłady połączeń z komputerów z systemem <a href="../../Tutorials/HPC-intro/ssh_windows/">Windows</a> oraz <a href="../../Tutorials/HPC-intro/ssh_intro/">UNIX/Linux</a>.</p>
 <p>Zlecanie zadań na systemy hydra oraz topola możliwe jest bezpośrednio z komputera <code>hpc.icm.edu.pl</code>. W przypadku pozostałych systemów wymagany jest dodatkowy krok logowania wykonany z komputera <code>hpc.icm.edu.pl</code>, np. <code>ssh okeanos</code> lub <code>ssh rysy</code>.</p>
 <h2 id="pierwsze-logowanie">Pierwsze logowanie</h2>
-<p>Przy pierwszym logowaniu użytkownik zostanie poproszony o zmianę hasła.</p>
-<p>Na ekranie pojawią się komunikaty:</p>
-<div class="highlight"><pre><span></span><code>WARNING: Your password has expired.
-You must change your password now and login again!
-Changing password <span class="k">for</span> user login_użytkownika
-
-Enter login<span class="o">(</span>LDAP<span class="o">)</span> password:                 &lt;----- wpisać hasło początkowe z maila
-New password:                               &lt;----- wpisać nowe hasło
-Retype new password:                        &lt;----- ponownie  wpisać nowe hasło
-LDAP password information changed <span class="k">for</span> username
-</code></pre></div>
-
-<ul>
-<li>
-<p><strong>Uwaga</strong>: przy wprowadzaniu hasła na ekranie <strong>nic się nie dzieje</strong> tzn. nie miga kursor ani nie pojawiają się żadne znaki ukrywające wprowadzane hasło. Po wprowadzeniu hasła należy wcisnąć enter.</p>
-</li>
-<li>
-<p>Jeśli hasło przesłane e-mailem nie dotarło do użytkownika na etapie rejestracji, wskazane jest w pierwszej kolejności sprawdzenie katalogu spam w poczcie. Jeśli pojawią się dalsze trudności prosimy o <a href="../../kontakt/">kontakt</a>.</p>
-</li>
-<li>
-<p>Zmiany hasła można dokonać ponownie posługując się poleceniem <code>passwd</code>. Zmieniane hasło nie może być: palindromem, ciągiem sąsiednich znaków z klawiatury oraz podobne do hasła poprzedniego.</p>
-</li>
-</ul>
+<p>Przed pierwszym logowaniu konieczna jest zmiana hasła na stronie 
+<a href="https://haslo.icm.edu.pl/">https://haslo.icm.edu.pl/</a>. 
+Dopiero po dokonaniu zmiany hasła odblokuje się dostęp do serwera dostępowego hpc.icm.edu.pl.
+Hasło wysyłane jest automatycznym mailem, w chwili skierowania konta do utworzenia. Login jest zgodny z podanym na formularzu użytkownika.</p>
+<h2 id="wygasniecie-hasa">Wygaśnięcie hasła</h2>
+<p>Zmiany hasła możliwe są w każdej chwili oraz do miesiąca od wygaśnięcia hasła w portalu:
+<a href="https://haslo.icm.edu.pl/">https://haslo.icm.edu.pl/</a>. </p>
                 
                   
                     
@@ -1238,7 +1236,7 @@ LDAP password information changed <span class="k">for</span> username
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 16, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 21, 2020</span>
     
   </small>
 </div>
