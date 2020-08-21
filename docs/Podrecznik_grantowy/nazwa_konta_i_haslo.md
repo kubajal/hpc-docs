@@ -1,4 +1,3 @@
-
 # Nazwa konta i hasło
 
 Nazwa konta użytkownika i hasło tworzone są w momencie [rejestracji użytkownika](./zakladanie_konta.md) w bazie grantów (dotyczy kierownika grantu) lub na etapie [dodawania współwykonawcy do grantu](./jak_wystapic_o_grant_obliczeniowy.md). Hasło wysyłane jest automatycznie e-mailem, na adres podany w formularzu rejestracyjnym.
@@ -19,23 +18,14 @@ Zlecanie zadań na systemy hydra oraz topola możliwe jest bezpośrednio z kompu
 
 ## Pierwsze logowanie
 
-Przy pierwszym logowaniu użytkownik zostanie poproszony o zmianę hasła.
+Przed pierwszym logowaniu konieczna jest zmiana hasła na stronie 
+https://haslo.icm.edu.pl/. 
+Dopiero po dokonaniu zmiany hasła odblokuje się dostęp do serwera dostępowego hpc.icm.edu.pl.
+Hasło wysyłane jest automatycznym mailem, w chwili skierowania konta do utworzenia. Login jest zgodny z podanym na formularzu użytkownika.
 
-Na ekranie pojawią się komunikaty:
+## Wygaśnięcie hasła
+Zmiany hasła możliwe są w każdej chwili oraz do miesiąca od wygaśnięcia hasła w portalu:
+https://haslo.icm.edu.pl/. 
 
-```.sh
-WARNING: Your password has expired.
-You must change your password now and login again!
-Changing password for user login_użytkownika
 
-Enter login(LDAP) password:                 <----- wpisać hasło początkowe z maila
-New password:                               <----- wpisać nowe hasło
-Retype new password:                        <----- ponownie  wpisać nowe hasło
-LDAP password information changed for username
-```
 
-- **Uwaga**: przy wprowadzaniu hasła na ekranie **nic się nie dzieje** tzn. nie miga kursor ani nie pojawiają się żadne znaki ukrywające wprowadzane hasło. Po wprowadzeniu hasła należy wcisnąć enter.
-
-- Jeśli hasło przesłane e-mailem nie dotarło do użytkownika na etapie rejestracji, wskazane jest w pierwszej kolejności sprawdzenie katalogu spam w poczcie. Jeśli pojawią się dalsze trudności prosimy o [kontakt](../kontakt.md).
-
-- Zmiany hasła można dokonać ponownie posługując się poleceniem `passwd`. Zmieniane hasło nie może być: palindromem, ciągiem sąsiednich znaków z klawiatury oraz podobne do hasła poprzedniego.
