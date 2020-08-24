@@ -3,6 +3,8 @@ site_description: Komputery Dużej Mocy w ICM UW
 site_author: ICM
 #strict: true
 
+extra_css: [css/extra.css]
+
 theme: 
   logo: 'images/Logo_icm_biale.png'
   name: 'material'
@@ -14,10 +16,6 @@ plugins:
   - search # necessary for search to work
   - git-revision-date-localized:
       type: date
-
-extra_css:
-    - style.css
-
 
 repo_name: ICM-HPC
 repo_url: https://git.icm.edu.pl/owu/hpc-docs
@@ -40,6 +38,7 @@ markdown_extensions:
     - pymdownx.mark
     - pymdownx.smartsymbols
     - pymdownx.superfences
+    - pymdownx.tabbed
     - pymdownx.tasklist:
         custom_checkbox: true
     - pymdownx.tilde
@@ -105,7 +104,9 @@ nav:
   - NEC SX-Aurora Tsubasa:
     - Podstawy użytkowania: Tutorials/NEC/basic_usage.md
     - SOL - sieci neuronowe: Tutorials/NEC/sol.md
-  - Python - środowisko wirtualne: Tutorials/python.md
+  - Środowisko wirtualne python: 
+    - python: Tutorials/python/python.md
+    - anaconda: Tutorials/python/anaconda.md
 
 - Szkolenia:
   - Informacje: Szkolenia/informacje.md

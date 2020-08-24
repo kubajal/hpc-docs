@@ -37,276 +37,279 @@ Użytkownicy mają także możliwość samodzielnej kompilacji i instalacji
 oprogramowania z wykorzystaniem dostępnych w systemach narzędzi. W tym
 przypadku również mają zastosowanie powyższe uwagi dotyczące licencji.
 
-???+ info "Wersje aplikacji"
+???+ info "Wersje Aplikacji"
     Wersje aplikacji na poszczególnych maszynach
 
-    ```Okeanos tab=
-    Generated on: wto, 23 cze 2020, 21:27:53 CEST
+    === "Okeanos"
 
-    abinit/8.10.1
-    abinit/8.10.3(default)
-    abinit/8.10.3-patch
+        ``` .sh
+        Generated on: wto, 23 cze 2020, 21:27:53 CEST
 
-    amber/14
+        abinit/8.10.1
+        abinit/8.10.3(default)
+        abinit/8.10.3-patch
 
-    ansys/17.0
-    ansys/17.1
-    ansys/19.1
+        amber/14
 
-    bedtools2/2.29.2
+        ansys/17.0
+        ansys/17.1
+        ansys/19.1
 
-    castep/19.11
+        bedtools2/2.29.2
 
-    cp2k/6.1.0(default)
+        castep/19.11
 
-    cpmd/v4
+        cp2k/6.1.0(default)
 
-    elk/5.2.14
+        cpmd/v4
 
-    espresso/6.1
-    espresso/6.1.0(default)
-    espresso/6.2.1
-    espresso/6.4
-    espresso/6.5
+        elk/5.2.14
 
-    esys-particle/2.3.5
+        espresso/6.1
+        espresso/6.1.0(default)
+        espresso/6.2.1
+        espresso/6.4
+        espresso/6.5
 
-    fluent/17.0
-    fluent/17.1
-    fluent/18.0
-    fluent/19.1
+        esys-particle/2.3.5
 
-    gromacs/2018.4-plumed
-    gromacs/2019.0
-    gromacs/2020(default)
+        fluent/17.0
+        fluent/17.1
+        fluent/18.0
+        fluent/19.1
 
-    lammps/31Mar17
-    lammps/5Jun19(default)
+        gromacs/2018.4-plumed
+        gromacs/2019.0
+        gromacs/2020(default)
 
-    ls-dyna/10.1.0(default)
-    ls-dyna/11.0.0
-    ls-dyna/8.0.0
+        lammps/31Mar17
+        lammps/5Jun19(default)
 
-    namd/2.11
-    namd/2.13(default)
+        ls-dyna/10.1.0(default)
+        ls-dyna/11.0.0
+        ls-dyna/8.0.0
 
-    ncl/6.6.2
+        namd/2.11
+        namd/2.13(default)
 
-    nwchem/6.6
-    nwchem/6.8
+        ncl/6.6.2
 
-    openfoam/1218(default)
+        nwchem/6.6
+        nwchem/6.8
 
-    phonopy/1.10.4
+        openfoam/1218(default)
 
-    r/3.4.2
+        phonopy/1.10.4
 
-    samtools/1.10
+        r/3.4.2
 
-    siesta/4.1
-    siesta/4.1-b4
+        samtools/1.10
 
-    tensorflow/1.13.0
+        siesta/4.1
+        siesta/4.1-b4
 
-    vasp/5.2.12
-    vasp/5.4.4(default)
-    vasp/5.4.4_optics
-    vasp/5.4.4_vtst
+        tensorflow/1.13.0
 
-    vtstscripts/93
+        vasp/5.2.12
+        vasp/5.4.4(default)
+        vasp/5.4.4_optics
+        vasp/5.4.4_vtst
 
-    xz/5.2.4
+        vtstscripts/93
 
-    ```
+        xz/5.2.4
+        ```
 
-    ```Topola tab=
-    Generated on: wto, 23 cze 2020, 21:36:18 CEST
+    === "Topola"
 
-    abinit/8.0.6
-    abinit/8.10.3(default)
-    abinit/8.4.4
+        ``` .sh
+        Generated on: wto, 23 cze 2020, 21:36:18 CEST
 
-    atat/3.36
+        abinit/8.0.6
+        abinit/8.10.3(default)
+        abinit/8.4.4
 
-    blastplus/2.2.28(default)
+        atat/3.36
 
-    bwa/0.7.12(default)
+        blastplus/2.2.28(default)
 
-    cfour/1.0
+        bwa/0.7.12(default)
 
-    chargemol/09.02.2017
+        cfour/1.0
 
-    cp2k/6.1.0(default)
+        chargemol/09.02.2017
 
-    cpmd/v4
+        cp2k/6.1.0(default)
 
-    dalton/2015
+        cpmd/v4
 
+        dalton/2015
 
 
-    elk/4.0.15
-    elk/4.3.6(default)
-    elk/4.3.6_libxc
 
-    espresso/4.3.2
-    espresso/5.0.2
-    espresso/5.0.3
-    espresso/5.1.1
-    espresso/5.2.0
-    espresso/5.3.0
-    espresso/6.1.0(default)
-    espresso/6.3.0
-    espresso/6.5
+        elk/4.0.15
+        elk/4.3.6(default)
+        elk/4.3.6_libxc
 
-    exciting/boron
-    exciting/nitrogen
+        espresso/4.3.2
+        espresso/5.0.2
+        espresso/5.0.3
+        espresso/5.1.1
+        espresso/5.2.0
+        espresso/5.3.0
+        espresso/6.1.0(default)
+        espresso/6.3.0
+        espresso/6.5
 
-    fluent/17.1.0
-    fluent/17.2.0
-    fluent/18.0
-    fluent/18.2(default)
-    fluent/19.0
-    fluent/20.1
+        exciting/boron
+        exciting/nitrogen
 
-    fluka/2011.2c
-    fluka/2011.2c-3
+        fluent/17.1.0
+        fluent/17.2.0
+        fluent/18.0
+        fluent/18.2(default)
+        fluent/19.0
+        fluent/20.1
 
-    freefem/3.56-1
+        fluka/2011.2c
+        fluka/2011.2c-3
 
-    gadget/2.0.7
+        freefem/3.56-1
 
-    gamess/2012.R2
+        gadget/2.0.7
 
-    gaussian/g09.B.01
-    gaussian/g09.D.01
-    gaussian/g09.E.01
-    gaussian/g16.A.01(default)
+        gamess/2012.R2
 
-    genesis/parallel/2.3.1
-    genesis/sequential/2.3
+        gaussian/g09.B.01
+        gaussian/g09.D.01
+        gaussian/g09.E.01
+        gaussian/g16.A.01(default)
 
-    gromacs/2020
-    gromacs/5.1.1(default)
+        genesis/parallel/2.3.1
+        genesis/sequential/2.3
 
-    hadoop/cdh-4.3.0
-    hadoop/cdh-tt-4.3.0
+        gromacs/2020
+        gromacs/5.1.1(default)
 
-    imb/2014
+        hadoop/cdh-4.3.0
+        hadoop/cdh-tt-4.3.0
 
-    julia/0.5.0
-    julia/0.6.2
-    julia/1.1.1
+        imb/2014
 
-    lammps/16Mar18
-    lammps/16Mar18_mpi3
-    lammps/16Mar18_mpi3_rigid
-    lammps/30Jul16
-    lammps/30Jul16_reax
-    lammps/5Jun19(default)
-    lammps/6Dec13-mkl
+        julia/0.5.0
+        julia/0.6.2
+        julia/1.1.1
 
-    mathematica/10.3
-    mathematica/11.0
+        lammps/16Mar18
+        lammps/16Mar18_mpi3
+        lammps/16Mar18_mpi3_rigid
+        lammps/30Jul16
+        lammps/30Jul16_reax
+        lammps/5Jun19(default)
+        lammps/6Dec13-mkl
 
-    matlab/R2016b(default)
+        mathematica/10.3
+        mathematica/11.0
 
-    meep/1.14
-    meep/1.2
-    meep/1.3
+        matlab/R2016b(default)
 
-    migraine/0.5
+        meep/1.14
+        meep/1.2
+        meep/1.3
 
-    mrbayes/3.2.2(default)
+        migraine/0.5
 
-    music/1.0
+        mrbayes/3.2.2(default)
 
-    namd/2.13(default)
-    namd/2.9b2
+        music/1.0
 
-    newtonx/1.4.0
+        namd/2.13(default)
+        namd/2.9b2
 
-    nwchem/6.3
-    nwchem/6.8(default)
+        newtonx/1.4.0
 
-    octave/3.8.0
+        nwchem/6.3
+        nwchem/6.8(default)
 
-    openfoam/2.1.1
-    openfoam/5.0
+        octave/3.8.0
 
-    openmx/3.7
+        openfoam/2.1.1
+        openfoam/5.0
 
-    orca/3.0.1
-    orca/3.0.3
-    orca/4.0.1
-    orca/4.2.1
+        openmx/3.7
 
-    paraview/4.1.0
+        orca/3.0.1
+        orca/3.0.3
+        orca/4.0.1
+        orca/4.2.1
 
-    patran/2012.2.2
+        paraview/4.1.0
 
-    pcj-blast/0.1.0(default)
+        patran/2012.2.2
 
-    plumed/2.2.1
+        pcj-blast/0.1.0(default)
 
-    psi4/0b5
+        plumed/2.2.1
 
-    r/3.0.2
-    r/3.1.0
-    r/3.1.2
-    r/3.5.1
+        psi4/0b5
 
-    raspa/2.0
+        r/3.0.2
+        r/3.1.0
+        r/3.1.2
+        r/3.5.1
 
-    rosetta/2013wk48-bin
-    rosetta/2013wk48-bin_single(default)
-    rosetta/2020.08.61146
+        raspa/2.0
 
-    rx/gnu/3.1.2
-    rx/gnu/3.3.1
-    rx/gnu/3.3.2
-    rx/gnu/3.3.3
-    rx/gnu/3.4.0
-    rx/intel/3.1.2
-    rx/intel/3.3.1
-    rx/intel/3.3.2
-    rx/intel/3.3.3
-    rx/intel/3.4.0(default)
+        rosetta/2013wk48-bin
+        rosetta/2013wk48-bin_single(default)
+        rosetta/2020.08.61146
 
-    shifter/16.08
+        rx/gnu/3.1.2
+        rx/gnu/3.3.1
+        rx/gnu/3.3.2
+        rx/gnu/3.3.3
+        rx/gnu/3.4.0
+        rx/intel/3.1.2
+        rx/intel/3.3.1
+        rx/intel/3.3.2
+        rx/intel/3.3.3
+        rx/intel/3.4.0(default)
 
-    siesta/4.0b
+        shifter/16.08
 
-    sire/14.3
+        siesta/4.0b
 
+        sire/14.3
 
-    wannier90/2.0.1
-    wannier90/3.0.0(default)
 
-    wannier_tools/2.4.1
+        wannier90/2.0.1
+        wannier90/3.0.0(default)
 
-    ```
+        wannier_tools/2.4.1
+        ```
 
-    ```Bash tab=
-    #!/bin/bash
+    === "Bash"
 
-    # this scripts generates a list of available applications based on modules.
+        ``` .sh
+        #!/bin/bash
 
-    FILE="list_of_apps.txt"
-    rm -f $FILE
+        # this scripts generates a list of available applications based on modules.
 
-    echo "Generated on: $(date)" >>  $FILE
-    for app in $(ls /apps/modulefiles/apps/); do
-        echo -e "================ APP: $app ==============\n"
-        echo "" >>  $FILE
-        if [ ! "$app" == "r" ]
-        then     
-            module avail -t 2>&1 | grep -i $app | grep -v "@" | sed 's/apps\///' | sort | uniq | tee -a $FILE
-        else
-            module avail -t 2>&1 | grep -i apps/r/ | grep -v "@" | sed 's/apps\///' | sort | uniq | tee -a $FILE
-        fi
-    done
-    ```
+        FILE="list_of_apps.txt"
+        rm -f $FILE
 
+        echo "Generated on: $(date)" >>  $FILE
+        for app in $(ls /apps/modulefiles/apps/); do
+            echo -e "================ APP: $app ==============\n"
+            echo "" >>  $FILE
+            if [ ! "$app" == "r" ]
+            then     
+                module avail -t 2>&1 | grep -i $app | grep -v "@" | sed 's/apps\///' | sort | uniq | tee -a $FILE
+            else
+                module avail -t 2>&1 | grep -i apps/r/ | grep -v "@" | sed 's/apps\///' | sort | uniq | tee -a $FILE
+            fi
+        done
+        ```
 
 ## Lista aplikacji
 
