@@ -12,8 +12,8 @@ Jeżeli wymagane jest użycie niedostępnych w systemie bibliotek języka
 Python, należy je zainstalować samodzielnie z wykorzystaniem
 środowiska wirtualnego. Można to zrobić według poniższej instrukcji.
 
-0. Uruchamiamy [sesję interaktywną](./HPC-intro/slurm_intro.md).
-1. Ładujemy interpreter Pythona z [dostępnego modułu](./HPC-intro/ustawianie_srodowiska.md).
+0. Uruchamiamy [sesję interaktywną](../HPC-intro/slurm_intro.md).
+1. Ładujemy interpreter Pythona z [dostępnego modułu](../HPC-intro/ustawianie_srodowiska.md).
 2. Tworzymy środowisko wirtualne (Python 3.x): `python3.6 -m venv python_venv` (gdzie `python_venv` jest nazwą nowego folderu, w którym zostanie utworzone środowisko wirtualne.
 3. Aktywujemy środowisko: `source ./python_venv/bin/activate`
 4. Aktualizujemy narzędzie: `pip install --upgrade pip`

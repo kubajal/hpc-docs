@@ -41,6 +41,17 @@ Aby zaplanować zadanie, można użyć polecenia salloc, sbatch lub srun.
 
 Źródło: <https://cvw.cac.cornell.edu/slurm/basics_allocation>
 
+### srun/mpirun/mpiexec
+
+* `srun` jest poleceniem slurm'a.
+
+* `mpirun` jest poleceniem przychodzacym razem z wybraną implementacją MPI (openMPI, intel-mpi, ibm-mpi, cray-mpi, etc. Uruchamiając `mpirun` bez slurma, należy podać parametry zadania (które węzły, ile procesów, itp).
+
+* `mpiexec` - jest zdefiniowany w standardzie MPI.
+
+<!-- Na komputerze Okeanos, konfiguracja systemu slurm umożliwia uruchomienie odpowiedniej wersji `mpirun` poprzez polecenie `srun`.
+Na komputerze Rysy/Topola -->
+
 ## Skrypty systemu kolejkowego
 
 Opis zadania i zapotrzebowanie na zasoby można specyfikować w specjalnym

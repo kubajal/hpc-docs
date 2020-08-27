@@ -21,6 +21,8 @@ repo_name: ICM-HPC
 repo_url: https://git.icm.edu.pl/owu/hpc-docs
 edit_uri: "https://git.icm.edu.pl/owu/hpc-docs/edit/master/docs/"
 
+
+# https://facelessuser.github.io/pymdown-extensions/
 markdown_extensions:
     - fenced_code
     - codehilite
