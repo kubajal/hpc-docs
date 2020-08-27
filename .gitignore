@@ -1,0 +1,17 @@
+mkdocs-venv/*
+
+site/images/*
+site/assets/*
+site/Szkolenia/*
+site/Tutorials/*
+
+site/Podrecznik_grantowy/*
+site/O_zasobach_ICM/*
+site/Licencje_krajowe/*
+site/404.html
+site/index.html
+site/kontakt/index.html
+site/search/search_index.json
+site/sitemap.xml
+site/sitemap.xml.gz
+site/style.css
