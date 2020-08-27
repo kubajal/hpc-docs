@@ -15,7 +15,7 @@
         <meta name="author" content="ICM">
       
       <link rel="shortcut icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.7">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.5.9">
     
     
       
@@ -23,14 +23,14 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.b8ac9624.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.36ee6aaa.min.css">
       
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.28f3ef9a.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.83bccb1f.min.css">
       
       
         
         
-        <meta name="theme-color" content="#546e7a">
+        <meta name="theme-color" content="#546d78">
       
     
     
@@ -43,7 +43,7 @@
     
     
     
-      <link rel="stylesheet" href="../../../style.css">
+      <link rel="stylesheet" href="../../../css/extra.css">
     
     
       
@@ -736,6 +736,19 @@
     Podstawowe komendy systemu kolejkowego
   </a>
   
+    <nav class="md-nav" aria-label="Podstawowe komendy systemu kolejkowego">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#srunmpirunmpiexec" class="md-nav__link">
+    srun/mpirun/mpiexec
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1095,10 +1108,52 @@
           
 
 
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7-5" type="checkbox" id="nav-7-5">
+    
+    <label class="md-nav__link" for="nav-7-5">
+      Środowisko wirtualne python
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.58L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.42z"/></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Środowisko wirtualne python" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-5">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        </span>
+        Środowisko wirtualne python
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
   <li class="md-nav__item">
-    <a href="../../python/" title="Python - środowisko wirtualne" class="md-nav__link">
-      Python - środowisko wirtualne
+    <a href="../../python/python/" title="python" class="md-nav__link">
+      python
     </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../python/anaconda/" title="anaconda" class="md-nav__link">
+      anaconda
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
         
@@ -1262,6 +1317,19 @@
     Podstawowe komendy systemu kolejkowego
   </a>
   
+    <nav class="md-nav" aria-label="Podstawowe komendy systemu kolejkowego">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#srunmpirunmpiexec" class="md-nav__link">
+    srun/mpirun/mpiexec
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -1415,6 +1483,21 @@ Aby zaplanować zadanie, można użyć polecenia salloc, sbatch lub srun.</p>
 </li>
 </ul>
 <p>Źródło: <a href="https://cvw.cac.cornell.edu/slurm/basics_allocation">https://cvw.cac.cornell.edu/slurm/basics_allocation</a></p>
+<h3 id="srunmpirunmpiexec">srun/mpirun/mpiexec</h3>
+<ul>
+<li>
+<p><code>srun</code> jest poleceniem slurm'a.</p>
+</li>
+<li>
+<p><code>mpirun</code> jest poleceniem przychodzacym razem z wybraną implementacją MPI (openMPI, intel-mpi, ibm-mpi, cray-mpi, etc. Uruchamiając <code>mpirun</code> bez slurma, należy podać parametry zadania (które węzły, ile procesów, itp).</p>
+</li>
+<li>
+<p><code>mpiexec</code> - jest zdefiniowany w standardzie MPI.</p>
+</li>
+</ul>
+<!-- Na komputerze Okeanos, konfiguracja systemu slurm umożliwia uruchomienie odpowiedniej wersji `mpirun` poprzez polecenie `srun`.
+Na komputerze Rysy/Topola -->
+
 <h2 id="skrypty-systemu-kolejkowego">Skrypty systemu kolejkowego</h2>
 <p>Opis zadania i zapotrzebowanie na zasoby można specyfikować w specjalnym
 skrypcie - pliku tekstowym dla systemu SLURM. Skrypt tworzy użytkownik.
@@ -1649,7 +1732,7 @@ srun -A &lt;grant_name&gt; -N <span class="m">1</span> -n <span class="m">12</sp
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 31, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 27, 2020</span>
     
   </small>
 </div>
@@ -1720,15 +1803,15 @@ srun -A &lt;grant_name&gt; -N <span class="m">1</span> -n <span class="m">12</sp
       
     </div>
     
-      <script src="../../../assets/javascripts/vendor.d1f5a259.min.js"></script>
-      <script src="../../../assets/javascripts/bundle.d5fec882.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../../assets/javascripts/vendor.df0def68.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.ba57d267.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
           base: "../../..",
           features: [],
           search: Object.assign({
-            worker: "../../../assets/javascripts/worker/search.fae956e7.min.js"
+            worker: "../../../assets/javascripts/worker/search.5eca75d3.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
