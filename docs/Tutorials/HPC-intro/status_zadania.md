@@ -35,7 +35,7 @@ scancel -u $USER # analuj wszystkie zadania należące do użytkownika
 #  %j   Job or job step name.
 #  %i   Job or job step id.
 
-squeue -o "% 16j% i"
+squeue -o "%16j %i"
 CLB: batch_HotKar 17817851
 CLB: batch_HotKar 17817852
 CLB: batch_HotKar 17817853
@@ -44,7 +44,7 @@ CLB: d3q27q7 / batc 17817944
 CLB: d3q27q7 / batc 17817945
 
 # wydrukuj drugą kolumnę
-squeue -o "% 16j% i" | grep "d3q27 *" | awk „{print 2 USD}”
+squeue -o "%16j %i" | grep "d3q27 *" | awk '{print $2}
 17817943
 17817944
 17817945
