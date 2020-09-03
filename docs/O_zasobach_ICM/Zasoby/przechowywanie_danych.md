@@ -9,8 +9,8 @@ Obowiązuje następujący podział:
 
 | Zasób            | Topola             | Okeanos            | Rysy              | Uwagi                                                                |
 |------------------|--------------------| -------------------| ----------------- |--------------------------------------------------------------------- |
-| Storage globalny | /lu/tetyda/$USER/  | /lu/tetyda/$USER/  | /lu/tetyda/$USER/ | katalog widoczny z węzłów dostępowych (do wymiany danych)            |
-| Storage lokalny  | /lu/topola/$USER/  | /lu/tetyda/$USER/  | /lu/tetyda/$USER/ | katalog widoczny z węzłów dostępowych i obliczeniowych (do obliczeń) |
+| Storage globalny | /lu/tetyda/home/$USER/  | /lu/tetyda/home/$USER/  | /lu/tetyda/home/$USER/ | katalog widoczny z węzłów dostępowych (do wymiany danych)            |
+| Storage lokalny  | /lu/topola/temp/$USER/  | /lu/tetyda/home/$USER/  | /lu/tetyda/home/$USER/ | katalog widoczny z węzłów dostępowych i obliczeniowych (do obliczeń) |
 
 Widoczność zasobów (storage) z poszczególnych systemów - ze szczegółami:
 
