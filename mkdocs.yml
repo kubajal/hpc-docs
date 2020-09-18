@@ -3,8 +3,6 @@ site_description: Komputery Dużej Mocy w ICM UW
 site_author: ICM
 #strict: true
 
-extra_css: [css/extra.css]
-
 theme: 
   logo: 'images/Logo_icm_biale.png'
   name: 'material'
@@ -17,12 +15,14 @@ plugins:
   - git-revision-date-localized:
       type: date
 
+extra_css:
+    - style.css
+
+
 repo_name: ICM-HPC
 repo_url: https://git.icm.edu.pl/owu/hpc-docs
 edit_uri: "https://git.icm.edu.pl/owu/hpc-docs/edit/master/docs/"
 
-
-# https://facelessuser.github.io/pymdown-extensions/
 markdown_extensions:
     - fenced_code
     - codehilite
@@ -40,7 +40,6 @@ markdown_extensions:
     - pymdownx.mark
     - pymdownx.smartsymbols
     - pymdownx.superfences
-    - pymdownx.tabbed
     - pymdownx.tasklist:
         custom_checkbox: true
     - pymdownx.tilde
@@ -60,6 +59,7 @@ nav:
     - Kto może być użytkownikiem: O_zasobach_ICM/Formalnosci/uzytkownik.md
     - Warunki korzystania: O_zasobach_ICM/Formalnosci/warunki.md
     - Regulamin użytkownika: O_zasobach_ICM/Formalnosci/regulamin.md
+    - (EN) Terms of Service: O_zasobach_ICM/Formalnosci/en_regulamin.md
 - Zasoby sprzętowe:
     - Komputery: O_zasobach_ICM/Zasoby/komputery_w_icm.md
     - Przechowywanie danych: O_zasobach_ICM/Zasoby/przechowywanie_danych.md
@@ -82,6 +82,16 @@ nav:
     #- Zamykanie grantu: Podrecznik_grantowy/
     - Użytkownik i kilka grantów obliczeniowych: Podrecznik_grantowy/uzytkownik_i_kilka_grantow_obliczeniowych.md
 #- Najczęściej zadawane pytania:
+
+- (EN) Grants User Guide:
+    - Creating account: Podrecznik_grantowy/en_zakladanie_konta.md
+    - Username and password: Podrecznik_grantowy/en_nazwa_konta_i_haslo.md
+    - ICM e-mail: Podrecznik_grantowy/en_poczta_elektroniczna.md
+    - Submitting grant application: Podrecznik_grantowy/en_jak_wystapic_o_grant_obliczeniowy.md
+    - Okeanos - Call for applications: Podrecznik_grantowy/en_konkurs_okeanos.md
+    - Grant owner and members: Podrecznik_grantowy/en_kierownik_oraz_nowi_wspolwykonawcy_grantu.md
+    - Reports and publications: Podrecznik_grantowy/en_sprawozdania_i_publikacje_w_grancie.md
+
 - Instrukcje:
   - Podstawy HPC:
     - Wstęp: Tutorials/HPC-intro/introduction.md
@@ -106,9 +116,7 @@ nav:
   - NEC SX-Aurora Tsubasa:
     - Podstawy użytkowania: Tutorials/NEC/basic_usage.md
     - SOL - sieci neuronowe: Tutorials/NEC/sol.md
-  - Środowisko wirtualne python: 
-    - python: Tutorials/python/python.md
-    - anaconda: Tutorials/python/anaconda.md
+  - Python - środowisko wirtualne: Tutorials/python.md
 
 - Szkolenia:
   - Informacje: Szkolenia/informacje.md
