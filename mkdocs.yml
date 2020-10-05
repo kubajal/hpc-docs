@@ -18,6 +18,7 @@ plugins:
 extra_css:
     - style.css
 
+# https://facelessuser.github.io/pymdown-extensions/
 
 repo_name: ICM-HPC
 repo_url: https://git.icm.edu.pl/owu/hpc-docs
@@ -40,6 +41,7 @@ markdown_extensions:
     - pymdownx.mark
     - pymdownx.smartsymbols
     - pymdownx.superfences
+    - pymdownx.tabbed
     - pymdownx.tasklist:
         custom_checkbox: true
     - pymdownx.tilde
@@ -116,8 +118,9 @@ nav:
   - NEC SX-Aurora Tsubasa:
     - Podstawy użytkowania: Tutorials/NEC/basic_usage.md
     - SOL - sieci neuronowe: Tutorials/NEC/sol.md
-  - Python - środowisko wirtualne: Tutorials/python.md
-
+  - Środowisko wirtualne:
+    - Python: Tutorials/python/python.md
+    - Anaconda: Tutorials/python/anaconda.md
 - Szkolenia:
   - Informacje: Szkolenia/informacje.md
   - Materiały:
