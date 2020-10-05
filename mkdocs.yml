@@ -2,6 +2,7 @@ site_name: Dokumentacja ICM UW
 site_description: Komputery Dużej Mocy w ICM UW
 site_author: ICM
 #strict: true
+# dummy comment
 
 theme: 
   logo: 'images/Logo_icm_biale.png'
