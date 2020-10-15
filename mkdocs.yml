@@ -127,6 +127,7 @@ nav:
   - Materiały:
     - Wprowadzenie do obliczeń na komputerach ICM: Szkolenia/intro_icm.md
     - Wprowadzenie do obliczeń wektorowych – NEC SX-Aurora Tsubasa: Szkolenia/intro_nec.md
+    - Effective Neural Networks Without GPU (SOL): Szkolenia/intro_sol.md
   - Archiwum: Szkolenia/archiwum.md
     
 - Kontakt: kontakt.md

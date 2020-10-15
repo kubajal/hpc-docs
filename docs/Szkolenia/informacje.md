@@ -14,7 +14,6 @@ Jeśli są Państwo zainteresowani tzw. szkoleniami podstawowymi (podstawy syste
 
 ## Najbliższe wydarzenia
 
-**Data **|**Zapisy **|**Prowadzący **|**Temat **|**Uwagi**
+Data |Zapisy |Prowadzący |Temat |Uwagi
 -----|-----|-----|-----|-----
-2019-11-15 |zamknięte |Maciej Marchwiany, Michał Hermanowicz, Maciej Szpindler | [Wprowadzenie do obliczeń na komputerach ICM](./intro_icm.md) |wymagana rejestracja 
-2020-01-15 |zamknięte |Michał Hermanowicz | [Wprowadzenie do obliczeń wektorowych: NEC SX-Aurora Tsubasa](./intro_nec.md) |wymagana rejestracja
+– | –  | – | – | –
