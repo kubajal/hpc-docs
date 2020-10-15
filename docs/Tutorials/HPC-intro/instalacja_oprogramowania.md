@@ -69,6 +69,27 @@ Aby nie logować się ponownie, wystarczy wczytać plik `~/.bashrc`.
 $ source ~/.bashrc
 ```
 
+Celem ćwiczenia, użytkownik może dodać poniższe linie do pliku  `~/.bashrc`
+
+```.sh
+alias say_something='/usr/bin/echo '
+alias say_hello_user="say_something hello ${USER}"
+```
+
+Następnie można sprawdzić działanie nowych skrótów:
+
+```.sh
+[someone@hpc ~]$ say_hello_user
+say_hello_user: Command not found.
+$ source ~/.bashrc
+... some errors - powłoka tcsh nie interpretuje niektórych komend bash'a
+[someone@hpc ~]$ bash -l
+[someone@hpc ~]$ say_something blahblah
+blahblah
+[someone@hpc ~]$ say_hello_user
+hello someone
+```
+
 Dla innych powłok procedura jest podobna.
 
 Chcąc zmienić powłokę należy wpisać `bash | tcsh | ksh ` w linii poleceń.
