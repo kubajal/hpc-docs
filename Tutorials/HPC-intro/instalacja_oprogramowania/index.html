@@ -1375,6 +1375,23 @@ Aby nie logować się ponownie, wystarczy wczytać plik <code>~/.bashrc</code>.<
 <div class="highlight"><pre><span></span><code>$ <span class="nb">source</span> ~/.bashrc
 </code></pre></div>
 
+<p>Celem ćwiczenia, użytkownik może dodać poniższe linie do pliku  <code>~/.bashrc</code></p>
+<div class="highlight"><pre><span></span><code><span class="nb">alias</span> <span class="nv">say_something</span><span class="o">=</span><span class="s1">&#39;/usr/bin/echo &#39;</span>
+<span class="nb">alias</span> <span class="nv">say_hello_user</span><span class="o">=</span><span class="s2">&quot;say_something hello </span><span class="si">${</span><span class="nv">USER</span><span class="si">}</span><span class="s2">&quot;</span>
+</code></pre></div>
+
+<p>Następnie można sprawdzić działanie nowych skrótów:</p>
+<div class="highlight"><pre><span></span><code><span class="o">[</span>someone@hpc ~<span class="o">]</span>$ say_hello_user
+say_hello_user: Command not found.
+$ <span class="nb">source</span> ~/.bashrc
+... some errors - powłoka tcsh nie interpretuje niektórych komend bash<span class="err">&#39;</span>a
+<span class="o">[</span>someone@hpc ~<span class="o">]</span>$ bash -l
+<span class="o">[</span>someone@hpc ~<span class="o">]</span>$ say_something blahblah
+blahblah
+<span class="o">[</span>someone@hpc ~<span class="o">]</span>$ say_hello_user
+hello someone
+</code></pre></div>
+
 <p>Dla innych powłok procedura jest podobna.</p>
 <p>Chcąc zmienić powłokę należy wpisać <code>bash | tcsh | ksh</code> w linii poleceń.</p>
                 
@@ -1385,7 +1402,7 @@ Aby nie logować się ponownie, wystarczy wczytać plik <code>~/.bashrc</code>.<
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 16, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 15, 2020</span>
     
   </small>
 </div>
