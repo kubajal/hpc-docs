@@ -11,7 +11,9 @@ Aby sprawdzić status grantu / konta / qos należy użyć polecenia `sacctmgr`, 
 ```.slurm
 sacctmgr show user $USER # pokaż informacje o użytkowniku
 sacctmgr show assoc where account=<grant_id> format=Cluster,Account%25,Partition%20,user,QOS,DefaultQOS,GrpTRESMins%50 # pokaż informację o grancie
-sacctmgr show assoc format=account%25,cluster,user,QOS | grep $USER # pokaż w jakich jestem grupach i do których qos mam dostęp
+sacctmgr show assoc where user=$USER format=Cluster,Account%25,Partition%20,user,QOS,DefaultQOS,GrpTRESMins%50 # pokaż w jakich jestem grantach i do których qos mam dostęp
+sacctmgr show assoc format=Cluster,Account%25,Partition%20,user,QOS,DefaultQOS,GrpTRESMins%50 | grep $USER # j.w.
+
 sacctmgr show qos format=name,MaxWall,Priority,MaxTRESPU%50 # pokaż limit czasu obliczen dla poszczególnych qos
 ```
 
