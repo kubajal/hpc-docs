@@ -1243,7 +1243,6 @@
 sacctmgr show assoc where <span class="nv">account</span><span class="o">=</span>&lt;grant_id&gt; <span class="nv">format</span><span class="o">=</span>Cluster,Account%25,Partition%20,user,QOS,DefaultQOS,GrpTRESMins%50 <span class="c1"># pokaż informację o grancie</span>
 sacctmgr show assoc where <span class="nv">user</span><span class="o">=</span><span class="nv">$USER</span> <span class="nv">format</span><span class="o">=</span>Cluster,Account%25,Partition%20,user,QOS,DefaultQOS,GrpTRESMins%50 <span class="c1"># pokaż w jakich jestem grantach i do których qos mam dostęp</span>
 sacctmgr show assoc <span class="nv">format</span><span class="o">=</span>Cluster,Account%25,Partition%20,user,QOS,DefaultQOS,GrpTRESMins%50 <span class="p">|</span> grep <span class="nv">$USER</span> <span class="c1"># j.w.</span>
-
 sacctmgr show qos <span class="nv">format</span><span class="o">=</span>name,MaxWall,Priority,MaxTRESPU%50 <span class="c1"># pokaż limit czasu obliczen dla poszczególnych qos</span>
 </code></pre></div>
 
@@ -1304,7 +1303,7 @@ sacctmgr show assoc where account=<grant_id> format=user,GrpTRESMins%50  # limit
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 20, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 22, 2020</span>
     
   </small>
 </div>
