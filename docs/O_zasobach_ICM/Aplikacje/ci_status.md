@@ -18,6 +18,7 @@ Legenda:
 <img src="../ci-icons/warning.jpg" width="25" height="25"/>  CI - work in progress
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
 <script>
 $(document).ready( function(){
       var target_url='https://owu-runners.nebula.grid.icm.edu.pl/ci-badges/';
@@ -34,4 +35,7 @@ jQuery.ajax({
 });
 </script>
 
-<p id="content_to_load">Tu powinna załadować się tabela.</p>
+<p id="content_to_load">
+Tu powinna załadować się tabela.
+Możesz ją znaleźć na `https://owu-runners.nebula.grid.icm.edu.pl/ci-badges/`
+</p>
