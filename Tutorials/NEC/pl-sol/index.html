@@ -13,18 +13,18 @@
         <meta name="author" content="ICM">
       
       <link rel="shortcut icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.0">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.2">
     
     
       
-        <title>1. Basic Usage - Dokumentacja ICM UW</title>
+        <title>SOL: sieci neuronowe - Dokumentacja ICM UW</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.bc7e593a.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.19190aaf.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab28b872.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.24b84193.min.css">
         
           
           
@@ -90,7 +90,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              1. Basic Usage
+              SOL: sieci neuronowe
             
           </span>
         </div>
@@ -1007,18 +1007,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-    <a href="./" class="md-nav__link md-nav__link--active">
-      Podstawy użytkowania
+  <li class="md-nav__item">
+    <a href="../en-basic-usage/" class="md-nav__link">
+      (EN) Basic usage
     </a>
-    
   </li>
 
         
@@ -1028,9 +1021,40 @@
 
 
   <li class="md-nav__item">
-    <a href="../sol/" class="md-nav__link">
-      SOL - sieci neuronowe
+    <a href="../en-sol/" class="md-nav__link">
+      (EN) SOL/neural networks
     </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../pl-podstawy/" class="md-nav__link">
+      (PL) Podstawy użycia
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
+      (PL) SOL/sieci neuronowe
+    </a>
+    
   </li>
 
         
@@ -1230,195 +1254,30 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://git.icm.edu.pl/owu/hpc-docs/edit/master/docs/Tutorials/NEC/basic_usage.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://git.icm.edu.pl/owu/hpc-docs/edit/master/docs/Tutorials/NEC/pl-sol.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                  <h1>Podstawy użytkowania</h1>
+                  <h1>(PL) SOL/sieci neuronowe</h1>
                 
-                <!-- <Last revision: 2020-04-30 by M. Hermanowicz <m.hermanowicz@icm.edu.pl> -->
+                <!-- <Last revision: 2020-11-05 by M. Hermanowicz <m.hermanowicz@icm.edu.pl> -->
 
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Please note that a PDF version of the materials contained herein is also <a href="../pdf/en_nec_tsubasa.pdf">available</a>.</p>
-</div>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>This document aims to provide basic information on how to use the NEC SX-Aurora Tsubasa system
-available at ICM UW computational facility. The contents herein are based on a number of documents,
-as referenced in the text, to provide a concise quick start guide and suggest further reading material for
-the ICM users.</p>
-</div>
-<p>To use the Tsubasa installation users must access the login node first
-at <code>hpc.icm.edu.pl</code> through <a href="https://en.wikipedia.org/wiki/Secure_Shell">SSH</a> and then establish a further
-connection to the Rysy cluster:</p>
-<div class="highlight"><pre><span></span><code>ssh username@hpc.icm.edu.pl
-ssh rysy
+<p><a href="http://sysml.neclab.eu/projects/sol">Projekt SOL</a> ma na celu optymalizację pracy z sieciami
+neuronowymi. Jest to oprogramowanie pośredniczące (ang. <em>middleware</em>),
+które integruje się z takimi narzędziami, jak PyTorch, TensorFlow i
+MxNet.  SOL posiada wsparcie dla architekruey NEC SX-Aurora Tsubasa,
+ale może też pracować na standardowych platformach CPU i GPU (x86,
+ARM64, NVIDIA).</p>
+<p>Oprogramowanie wraz z kopią dokumentacji znajduje się w katalogu
+<code>/apps/nec/sol</code>. SOL dostępny jest w formie pakietu Python Wheel (nie
+jest dostępny w systemie modułów) i tym samym każdy użytkownik musi
+wykonać własną, lokalną instalację za pomocą narzędzia <code>pip</code> – patrz
+poniżej. Przykłady użycia, publikacje i prezentacje dostępne są na
+<a href="http://sysml.neclab.eu/projects/sol/talks">stronie internetowej projektu</a>.</p>
+<div class="highlight"><pre><span></span><code>pip3 install --user /apps/nec/sol/sol-0.1.8-py3-none-any.whl <span class="c1"># installs SOL</span>
+pip3 install --user torch torchvision numpy <span class="c1"># installs other (example) requirements</span>
 </code></pre></div>
-
-<p>Alternatively, the <code>-J</code> command line option can be passed to the OpenSSH
-client to specify a jump host (here the <code>hpc</code> login node) through which
-the connection to Rysy will be established (issue <code>man ssh</code> command for
-details).</p>
-<p>The system runs <a href="https://slurm.schedmd.com/overview.html">Slurm Workload Manager</a> for job scheduling and
-<a href="https://modules.readthedocs.io/en/latest">Environment Modules</a> to manage software. The single compute node
-(PBaran) of the ve partition can be used interactively – as shown below
-– or as a batch job (see further in the text).</p>
-<div class="highlight"><pre><span></span><code>srun -A GRANT_ID -p ve --gres<span class="o">=</span>ve:1 --pty bash -l
-</code></pre></div>
-
-<p>Once the interactive shell session has started, the environmental
-variable <code>$VE NODE NUMBER</code> is being automatically set to control which
-VE card is to be used by the user programs. This variable can be read
-and set manually with <a href="https://en.wikipedia.org/wiki/Echo_(command)">echo</a> and <a href="https://ss64.com/bash/export.html">export</a> commands,
-respectively. The software used to operate the VEs – including
-binaries, libraries, header files, etc. – is installed in <code>/opt/nec/ve</code>
-directory. Its effective use requires modification of the
-<a href="https://en.wikipedia.org/wiki/Environment_variable">environmental variables</a>, such as <code>$PATH</code>, <code>$LD LIBRARY PATH</code> and
-others, which can be done conveniently with the <a href="https://ss64.com/bash/source.html">source</a> command:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">source</span> /opt/nec/ve/mpi/2.2.0/bin/necmpivars.sh
-</code></pre></div>
-
-<p>Sourcing the variables makes various VE tools accessible within the
-user environment. This includes the NEC compilers for C, C++, and
-Fortran languages that can be invoked by <code>ncc</code>, <code>nc++</code>, and <code>nfort</code>,
-respectively, or by their respective MPI wrappers: <code>mpincc</code>,
-<code>mpinc++</code>, and <code>mpinfort</code>. Please note that several compiler versions
-are currently installed and it might be necessary to include a version
-number in your command, e.g. <code>ncc-2.5.1</code>. The general usage is
-consistent with the GNU GCC: <code>&lt;compiler&gt; &lt;options&gt; &lt;source file&gt;</code>. The
-table below lists several standard options for the NEC compilers – see
-<a href="https://www.hpc.nec/documents/">documentation</a> for details.</p>
-<table>
-<thead>
-<tr>
-<th>Option</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>-c</code></td>
-<td>create object file</td>
-</tr>
-<tr>
-<td><code>-o</code></td>
-<td>output file name</td>
-</tr>
-<tr>
-<td><code>-I/path/to/include</code></td>
-<td>include header files</td>
-</tr>
-<tr>
-<td><code>-L/path/to/lib</code></td>
-<td>include libraries</td>
-</tr>
-<tr>
-<td><code>-g</code></td>
-<td>debugger symbols</td>
-</tr>
-<tr>
-<td><code>-Wall</code></td>
-<td>enable syntax warnings</td>
-</tr>
-<tr>
-<td><code>-Werror</code></td>
-<td>treat warnings as errors</td>
-</tr>
-<tr>
-<td><code>-O[0-4]</code></td>
-<td>optimisation levels</td>
-</tr>
-<tr>
-<td><code>-ftrace</code></td>
-<td>use the profiler</td>
-</tr>
-<tr>
-<td><code>-proginf</code></td>
-<td>enable execution analysis</td>
-</tr>
-<tr>
-<td><code>-report-all</code></td>
-<td>report diagnostics</td>
-</tr>
-<tr>
-<td><code>-traceback</code></td>
-<td>provides traceback information</td>
-</tr>
-<tr>
-<td><code>-fdiag-vector=[0-3]</code></td>
-<td>level of details for vector diagnostics</td>
-</tr>
-</tbody>
-</table>
-<p>The last four of them are used for performance analysis and allow for
-efficient software development. Some of these, apart from being used
-as command line options at compile time, also rely on dedicated
-environmental variables that need to be set at runtime. For a full
-list of performance-related options, variables, as well as their
-output description, see <a href="https://www.hpc.nec/documents/sdk/pdfs/g2at03e-PROGINF_FTRACE_User_Guide_en.pdf">PROGINF/FTRACE User’s Guide</a> and the
-compiler-specific <a href="https://www.hpc.nec/documents/">documentation</a>.</p>
-<p>The binaries can be run directly by specifying the path or by using
-the VE loader program (<code>ve exec</code>) – a few examples including parallel
-execution are listed below:</p>
-<div class="highlight"><pre><span></span><code>./program
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>ve_exec ./program
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>mpirun ./program
-</code></pre></div>
-
-<div class="highlight"><pre><span></span><code>mpirun -v -np <span class="m">2</span> -ve <span class="m">0</span>-1 ./program <span class="c1"># enables the use of VE cards 0 and 1</span>
-</code></pre></div>
-
-<p>For a full list of options available for <code>mpirun</code> see the corresponding
-<a href="https://www.open-mpi.org/doc/v4.0/man1/mpirun.1.php">manual page</a> or issue <code>mpirun -h command</code>.</p>
-<p>Full documentation for SX-Aurora Tsubasa, its hardware and software
-components, is available at the <a href="https://www.hpc.nec/documents/">NEC website</a>. An accessible
-introduction to using Tsubasa is also provided on the <a href="https://sx-aurora.github.io/posts/VE-first-steps">blog</a>.</p>
-<p>Another, non-interactive, mode of operation is a batch mode which
-requires a script to be submitted to Slurm. An example job script is
-shown below.</p>
-<div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash -l</span>
-<span class="c1">#SBATCH -J name</span>
-<span class="c1">#SBATCH -N 1</span>
-<span class="c1">#SBATCH --ntasks-per-node 1</span>
-<span class="c1">#SBATCH --mem 1000</span>
-<span class="c1">#SBATCH --time=1:00:00</span>
-<span class="c1">#SBATCH -A &lt;Grant ID&gt;</span>
-<span class="c1">#SBATCH -p ve</span>
-<span class="c1">#SBATCH --gres=ve:1</span>
-<span class="c1">#SBATCH --output=out</span>
-
-./program
-</code></pre></div>
-
-<p>It specifies the name of the job (<code>-J</code>), requested number of nodes (<code>-N</code>),
-CPUs (<code>--ntasks-per-node</code>), memory (<code>-mem</code>; here in Megabytes), wall time
-limit (<code>--time</code>), grant ID (<code>-A</code>), partition (<code>-p</code>), generic resources
-(<code>--gres</code>), output file (<code>--output</code>), and the actual commands to be
-executed once the resources are granted. See <a href="https://slurm.schedmd.com/documentation.html">Slurm documentation</a> for
-an extensive list of available options.</p>
-<p>Below are few basic example commands used to work with job scrips:
-submitting the job (<code>sbatch</code>) which returns the ID number assigned to
-the it by the queuing system, listing the user’s jobs along with their
-status (<code>squeue</code>), listing the details of the specified job
-(<code>scontrol</code>), cancelling execution of the job (<code>scancel</code>). Consult the
-<a href="https://slurm.schedmd.com/documentation.html">documentation</a> for more.</p>
-<div class="highlight"><pre><span></span><code>sbatch job.sl <span class="c1"># submits the job</span>
-squeue -u <span class="nv">$USER</span> <span class="c1"># lists the user’s current jobs</span>
-scontrol show job &lt;ID&gt; <span class="c1"># lists the details of the job specified by given &lt;ID&gt;</span>
-scancel &lt;ID&gt; <span class="c1"># cancels the job with given &lt;ID&gt;</span>
-</code></pre></div>
-
-<p>Since there’s no dedicated filesystem to be used for calculations on
-the Rysy cluster, in contrast to other ICM systems, the jobs should be
-run from within the $HOME directory. The ve partition (PBaran compute
-node) is intended for jobs utilizing VE cards, and as such it should
-not be used for intensive CPU-consuming tasks.</p>
                 
                   
                     
@@ -1427,7 +1286,7 @@ not be used for intensive CPU-consuming tasks.</p>
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 16, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 5, 2020</span>
     
   </small>
 </div>
@@ -1450,7 +1309,7 @@ not be used for intensive CPU-consuming tasks.</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../../Kontenery/singularity_intro/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../pl-podstawy/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -1459,19 +1318,19 @@ not be used for intensive CPU-consuming tasks.</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Singularity
+                (PL) Podstawy użycia
               </div>
             </div>
           </a>
         
         
-          <a href="../sol/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../python/python/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                SOL - sieci neuronowe
+                Python
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
@@ -1498,8 +1357,8 @@ not be used for intensive CPU-consuming tasks.</p>
       
     </div>
     
-      <script src="../../../assets/javascripts/vendor.6a3d08fc.min.js"></script>
-      <script src="../../../assets/javascripts/bundle.71201edf.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../../assets/javascripts/vendor.7e0ee788.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c1ccee15.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({

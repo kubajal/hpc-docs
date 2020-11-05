@@ -17,7 +17,7 @@
     
     
       
-        <title>1 Hello World - Dokumentacja ICM UW</title>
+        <title>2. SOL: Neural Networks - Dokumentacja ICM UW</title>
       
     
     
@@ -90,7 +90,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              1 Hello World
+              2. SOL: Neural Networks
             
           </span>
         </div>
@@ -860,12 +860,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8-2" type="checkbox" id="nav-8-2" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8-2" type="checkbox" id="nav-8-2">
     
     <label class="md-nav__link" for="nav-8-2">
       Podstawy GPU
@@ -885,7 +883,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../introduction/" class="md-nav__link">
+    <a href="../../GPU-intro/introduction/" class="md-nav__link">
       Introduction (Cheat Sheet)
     </a>
   </li>
@@ -895,18 +893,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-    <a href="./" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../GPU-intro/hello_world/" class="md-nav__link">
       Hello World
     </a>
-    
   </li>
 
         
@@ -916,7 +907,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../vector_add/" class="md-nav__link">
+    <a href="../../GPU-intro/vector_add/" class="md-nav__link">
       Vector Add
     </a>
   </li>
@@ -928,7 +919,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../matrix_addition/" class="md-nav__link">
+    <a href="../../GPU-intro/matrix_addition/" class="md-nav__link">
       Element-wise Matrix Add
     </a>
   </li>
@@ -940,7 +931,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../parallel_reduction/" class="md-nav__link">
+    <a href="../../GPU-intro/parallel_reduction/" class="md-nav__link">
       Parallel reduction
     </a>
   </li>
@@ -993,10 +984,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8-4" type="checkbox" id="nav-8-4">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8-4" type="checkbox" id="nav-8-4" checked>
     
     <label class="md-nav__link" for="nav-8-4">
       NEC SX-Aurora Tsubasa
@@ -1016,7 +1009,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../NEC/en-basic-usage/" class="md-nav__link">
+    <a href="../en-basic-usage/" class="md-nav__link">
       (EN) Basic usage
     </a>
   </li>
@@ -1026,11 +1019,18 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../NEC/en-sol/" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
       (EN) SOL/neural networks
     </a>
+    
   </li>
 
         
@@ -1040,7 +1040,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../NEC/pl-podstawy/" class="md-nav__link">
+    <a href="../pl-podstawy/" class="md-nav__link">
       (PL) Podstawy użycia
     </a>
   </li>
@@ -1052,7 +1052,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../NEC/pl-sol/" class="md-nav__link">
+    <a href="../pl-sol/" class="md-nav__link">
       (PL) SOL/sieci neuronowe
     </a>
   </li>
@@ -1254,46 +1254,28 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://git.icm.edu.pl/owu/hpc-docs/edit/master/docs/Tutorials/GPU-intro/hello_world.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://git.icm.edu.pl/owu/hpc-docs/edit/master/docs/Tutorials/NEC/en-sol.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                  <h1>Hello World</h1>
+                  <h1>(EN) SOL/neural networks</h1>
                 
-                <p>Write a simple <code>ex1_hello_world.cu</code> application using cuda.
-Experiment with different amount of blocks and threads per block.</p>
-<div class="highlight"><pre><span></span><code><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp"></span>
+                <!-- <Last revision: 2020-04-09 by M. Hermanowicz <m.hermanowicz@icm.edu.pl> -->
 
-<span class="kr">__global__</span> <span class="kt">void</span> <span class="nf">print_from_gpu</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
-    <span class="kt">int</span> <span class="n">tidx</span> <span class="o">=</span> <span class="nb">blockIdx</span><span class="p">.</span><span class="n">x</span><span class="o">*</span><span class="nb">blockDim</span><span class="p">.</span><span class="n">x</span><span class="o">+</span><span class="nb">threadIdx</span><span class="p">.</span><span class="n">x</span><span class="p">;</span>
-    <span class="n">printf</span><span class="p">(</span><span class="s">&quot;Hello from device! My threadId = blockIdx.x *blockDim.x + threadIdx.x &lt;=&gt; %d = %d * %d + %d </span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span>
-    <span class="n">tidx</span><span class="p">,</span> <span class="nb">blockIdx</span><span class="p">.</span><span class="n">x</span><span class="p">,</span> <span class="nb">blockDim</span><span class="p">.</span><span class="n">x</span><span class="p">,</span> <span class="nb">threadIdx</span><span class="p">.</span><span class="n">x</span><span class="p">);</span>
-<span class="p">}</span>
-
-<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">printf</span><span class="p">(</span><span class="s">&quot;Hello World from host!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-
-    <span class="n">print_from_gpu</span><span class="o">&lt;&lt;&lt;</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="o">&gt;&gt;&gt;</span><span class="p">();</span>  <span class="c1">// &lt;&lt;&lt;blocks, threads_per_block&gt;&gt;&gt;</span>
-
-    <span class="n">cudaDeviceSynchronize</span><span class="p">();</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
+<p>The <a href="http://sysml.neclab.eu/projects/sol">SOL project</a> aims at accelerating neural network
+tasks. Working as middleware, it integrates with PyTorch, TensorFlow
+and MxNet, and supports NEC SX-Aurora Tsubasa as well as standard CPU
+and GPU architectures (x86, ARM64, NVIDIA).</p>
+<p>The software, including offline documentation, is located in the
+<code>/apps/nec/sol</code> directory. SOL is provided as a Python Wheel package (no
+system module available) and needs to be installed locally (via <code>pip</code>)
+by each user:</p>
+<div class="highlight"><pre><span></span><code>pip3 install --user /apps/nec/sol/sol-0.1.8-py3-none-any.whl <span class="c1"># installs SOL</span>
+pip3 install --user torch torchvision numpy <span class="c1"># installs other (example) requirements</span>
 </code></pre></div>
 
-<p>Compile and run:</p>
-<div class="highlight"><pre><span></span><code>$ nvcc ex1_hello_world.cu -o hello_world
-$ ./hello_world
-</code></pre></div>
-
-<p>If you have an account at ICM HPC, you can use the <em>Rysy</em> cluster to run GPU jobs:</p>
-<div class="highlight"><pre><span></span><code>ssh username@hpc.icm.edu.pl
-ssh rysy
-<span class="c1"># run interactive session</span>
-srun -N1 -n4 --account<span class="o">=</span>GRANT_NAME --gres<span class="o">=</span>gpu:1 --time<span class="o">=</span><span class="m">01</span>:00:00 --pty /bin/bash -l
-<span class="c1"># prepare enviroment</span>
-module load gpu/cuda/10.2
-</code></pre></div>
+<p>Consult the project website for <a href="http://sysml.neclab.eu/projects/sol/talks">use cases, papers, and presentations</a>.</p>
                 
                   
                     
@@ -1302,7 +1284,7 @@ module load gpu/cuda/10.2
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 16, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 5, 2020</span>
     
   </small>
 </div>
@@ -1325,7 +1307,7 @@ module load gpu/cuda/10.2
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../introduction/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../en-basic-usage/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -1334,19 +1316,19 @@ module load gpu/cuda/10.2
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Introduction (Cheat Sheet)
+                (EN) Basic usage
               </div>
             </div>
           </a>
         
         
-          <a href="../vector_add/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../pl-podstawy/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Vector Add
+                (PL) Podstawy użycia
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">

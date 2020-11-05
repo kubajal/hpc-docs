@@ -13,18 +13,18 @@
         <meta name="author" content="ICM">
       
       <link rel="shortcut icon" href="../../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.0">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-6.1.2">
     
     
       
-        <title>2. SOL: Neural Networks - Dokumentacja ICM UW</title>
+        <title>[PL] Podstawy - Dokumentacja ICM UW</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.bc7e593a.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.19190aaf.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab28b872.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.24b84193.min.css">
         
           
           
@@ -90,7 +90,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              2. SOL: Neural Networks
+              [PL] Podstawy
             
           </span>
         </div>
@@ -1009,8 +1009,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../basic_usage/" class="md-nav__link">
-      Podstawy użytkowania
+    <a href="../en-basic-usage/" class="md-nav__link">
+      (EN) Basic usage
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../en-sol/" class="md-nav__link">
+      (EN) SOL/neural networks
     </a>
   </li>
 
@@ -1028,9 +1040,21 @@
     
     
     <a href="./" class="md-nav__link md-nav__link--active">
-      SOL - sieci neuronowe
+      (PL) Podstawy użycia
     </a>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../pl-sol/" class="md-nav__link">
+      (PL) SOL/sieci neuronowe
+    </a>
   </li>
 
         
@@ -1230,28 +1254,198 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://git.icm.edu.pl/owu/hpc-docs/edit/master/docs/Tutorials/NEC/sol.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://git.icm.edu.pl/owu/hpc-docs/edit/master/docs/Tutorials/NEC/pl-podstawy.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                  <h1>SOL - sieci neuronowe</h1>
+                  <h1>(PL) Podstawy użycia</h1>
                 
-                <!-- <Last revision: 2020-04-09 by M. Hermanowicz <m.hermanowicz@icm.edu.pl> -->
+                <!-- <Last revision: 2020-11-05 by M. Hermanowicz <m.hermanowicz@icm.edu.pl> -->
 
-<p>The <a href="http://sysml.neclab.eu/projects/sol">SOL project</a> aims at accelerating neural network
-tasks. Working as middleware, it integrates with PyTorch, TensorFlow
-and MxNet, and supports NEC SX-Aurora Tsubasa as well as standard CPU
-and GPU architectures (x86, ARM64, NVIDIA).</p>
-<p>The software, including offline documentation, is located in the
-<code>/apps/nec/sol</code> directory. SOL is provided as a Python Wheel package (no
-system module available) and needs to be installed locally (via <code>pip</code>)
-by each user:</p>
-<div class="highlight"><pre><span></span><code>pip3 install --user /apps/nec/sol/sol-0.1.8-py3-none-any.whl <span class="c1"># installs SOL</span>
-pip3 install --user torch torchvision numpy <span class="c1"># installs other (example) requirements</span>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Niniejszy dokument (wraz z notatką dot. SOL) jest także dostępny w
+formacie <a href="../pdf/pl_nec_tsubasa.pdf">PDF</a>.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Dokument opisuje podstawy użytkowania komputera wektorowego NEC
+SX-Aurora Tsubasa, dostępnego w centrum obliczeniowym ICM
+UW. Treść jest oparta na cytowanej w tekście dokumentacji i ma na
+celu zebranie podstawowych informacji i ich źródeł na potrzeby
+użytkowników ICM.</p>
+</div>
+<p>Użycie komputera NEC wymaga zalogowania się do klastra Rysy przez
+<a href="https://en.wikipedia.org/wiki/Secure_Shell">SSH</a> za pośrednictwem systemu dostępowego <code>hpc.icm.edu.pl</code>. Można
+wykonać tę czynność w dwóch krokach:</p>
+<div class="highlight"><pre><span></span><code>ssh username@hpc.icm.edu.pl
+ssh rysy
 </code></pre></div>
 
-<p>Consult the project website for <a href="http://sysml.neclab.eu/projects/sol/talks">use cases, papers, and presentations</a>.</p>
+<p>Alternatywnie można wywołać instrukcję <code>ssh</code> z opcją <code>-J</code> (ang. <em>jump
+host</em>), która pozwala określić host pośredniczący w połączeniu z
+systemem docelowym (szczegóły: <code>man ssh</code>).</p>
+<p>Obciążeniem klastra i zadaniami użytkowników zarządza <a href="https://slurm.schedmd.com/overview.html">Slurm</a>,
+natomiast oprogramowanie zorganizowane jest w formie
+<a href="https://modules.readthedocs.io/en/latest">modułów</a>. Pojedynczy węzeł obliczeniowy partycji <strong>ve</strong> (<em>PBaran</em>) może być
+używany interaktywnie – jak poniżej – lub wsadowo (patrz kolejne
+akapity).</p>
+<div class="highlight"><pre><span></span><code>srun -A GRANT_ID -p ve --gres<span class="o">=</span>ve:1 --pty bash -l
+</code></pre></div>
+
+<p>Po uruchomieniu sesji interaktywnej zostaje automatycznie zdefiniowana
+nowa zmienna środowiskowa <code>$VE NODE NUMBER</code>, która określa która z
+kart VE zostanie użyta przez oprogramowanie użytkownika.  Wartość tej
+zmiennej można sprawdzić i zdefiniować manualnie za pomoca instrukcji,
+odpowiednio, <a href="https://en.wikipedia.org/wiki/Echo_(command)">echo</a>, <a href="https://ss64.com/bash/export.html">export</a>. Oprogramowanie służące obsłudze kart VE
+znajduje się w katalogu <code>/opt/nec/ve</code>. Jego efektywne wykorzystanie
+wymaga modyfikacji niektórych <a href="https://en.wikipedia.org/wiki/Environment_variable">zmiennych środowiskowych</a>, takich jak
+<code>$PATH</code>, <code>$LD_LIBRARY_PATH</code> i innych, czego można w wygodny sposób dokonać
+za pomocą instrukcji <a href="https://ss64.com/bash/source.html">source</a>.</p>
+<div class="highlight"><pre><span></span><code><span class="nb">source</span> /opt/nec/ve/mpi/2.2.0/bin/necmpivars.sh
+</code></pre></div>
+
+<p>Ustawienie zmiennych środowiskowych (jak powyżej) sprawia, że
+narzędzia VE stają się dostępne dla użytkownika – wśród nich
+kompilatory NEC języków C, C++ i Fortran, które można wywołać
+instrukcjami, odpowiednio, <code>ncc</code>, <code>nc++</code> i <code>nfort</code> lub ich
+odpowiednimi wariantami MPI: <code>mpincc</code>, <code>mpinc++</code> i <code>mpinfort</code>.  Należy
+pamiętać, że w systemie dostępnych jest kilka wersji kompilatorów,
+dlatego zajść potrzeba uwzględnienia numeru wersji przy ich wywołaniu,
+np. <code>ncc-2.5.1</code>. Ogólny schemat użycia kompilatorów NEC jest zgodny ze
+standardem znanym z GNU GCC: <code>&lt;kompilator&gt; &lt;opcje&gt; &lt;plik
+źródłowy&gt;</code>. Tabela poniżej listuje zbiór kilkunastu podstawowych opcji
+kompilatorów NEC. Ostatnie cztery z nich, oznaczone czerwoną czcionką,
+pozwalają na analizę wydajności i szczegółów wektoryzacji
+programów. Ponadto, niektóre z nich wymagają dodatkowo zdefiniowania
+odpowiednich zmiennych środowiskowych. Pełna lista opcji wraz z opisem
+generowanych danych wyjściowych znajduje się w <a href="https://www.hpc.nec/documents/sdk/pdfs/g2at03e-PROGINF_FTRACE_User_Guide_en.pdf">PROGINF/FTRACE User’s
+Guide</a> oraz w <a href="https://www.hpc.nec/documents/">dokumentacji</a> poszczególnych kompilatorów.</p>
+<table>
+<thead>
+<tr>
+<th>Opcja</th>
+<th>Opis</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>-c</code></td>
+<td>tworzy plik obiektowy</td>
+</tr>
+<tr>
+<td><code>-o</code></td>
+<td>nazwa pliku wyjściowego</td>
+</tr>
+<tr>
+<td><code>-I/path/to/include</code></td>
+<td>włączenie plików nagłówkowych</td>
+</tr>
+<tr>
+<td><code>-L/path/to/lib</code></td>
+<td>włączenie bibliotek</td>
+</tr>
+<tr>
+<td><code>-g</code></td>
+<td>symbole dla debuggera</td>
+</tr>
+<tr>
+<td><code>-Wall</code></td>
+<td>ostrzeżenia o składni</td>
+</tr>
+<tr>
+<td><code>-Werror</code></td>
+<td>treat warnings as errors</td>
+</tr>
+<tr>
+<td><code>-O[0-4]</code></td>
+<td>poziomy optymalizacji</td>
+</tr>
+<tr>
+<td><code>-ftrace</code></td>
+<td>użycie <em>profilera</em></td>
+</tr>
+<tr>
+<td><code>-proginf</code></td>
+<td>włącz analizę wykonania programu</td>
+</tr>
+<tr>
+<td><code>-report-all</code></td>
+<td>raportuj diagnostyke</td>
+</tr>
+<tr>
+<td><code>-traceback</code></td>
+<td>informacje zwrotne nt. wykonania programu</td>
+</tr>
+<tr>
+<td><code>-fdiag-vector=[0-3]</code></td>
+<td>poziom szczegółów diagnostyki wektorowej</td>
+</tr>
+</tbody>
+</table>
+<p>Programy mogą być uruchamiane bezpośrednio, poprzez podanie ścieżki
+dostępu do nich, lub pośrednio poprzez użycie programu ładującego VE
+(<code>ve_exec</code>) – przykłady z uwzględnieniem MPI zestawiono poniżej. Listę
+opcji <code>mpirun</code> można uzyskać na stronie <a href="https://www.open-mpi.org/doc/v4.0/man1/mpirun.1.php">podręcznika
+systemowego</a> lub wydając polecenie <code>mpirun -h</code>.</p>
+<div class="highlight"><pre><span></span><code>./program
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>ve_exec ./program
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>mpirun ./program
+</code></pre></div>
+
+<div class="highlight"><pre><span></span><code>mpirun -v -np <span class="m">2</span> -ve <span class="m">0</span>-1 ./program <span class="c1"># enables the use of VE cards 0 and 1</span>
+</code></pre></div>
+
+<p>Pełna dokumentacja dotycząca wszystkich komponentów SX-Aurora Tsubasa
+(sprzętowych i programowych) znajduje się na <a href="https://www.hpc.nec/documents/">stronie internetowej
+NEC</a>. Przystępne dla użytkownika wprowadzenie znajduje się
+także na <a href="https://sx-aurora.github.io/posts/VE-first-steps">dedykowanym blogu</a>.</p>
+<p>Wsadowy tryb pracy VE wymaga stworzenia skryptu i zlecenia go do
+kolejki Slurm. Przykładowa treść takiego pliku znajduje się
+poniżej. Zawarte w nim opcje specyfikują nazwę zadania (<code>-J</code>), żądaną
+liczbę węzłów obliczeniowych (<code>-N</code>), rdzeni CPU (<code>--ntasks-per-node</code>),
+pamięć (<code>-mem</code>; tutaj w megabajtach), limit czasowy (<code>--time</code>),
+identyfikator grantu (<code>-A</code>), partition (<code>-p</code>), domyślne zasoby
+(<code>--gres</code>), plik wyjściowy (<code>--output</code>), a także właściwe instrukcje,
+które zostaną wykonane w ramach zadania po przyznaniu
+zasobów. Wyczerpująca lista dostępnych znajduje się w
+<a href="https://slurm.schedmd.com/documentation.html">dokumentacji</a>.</p>
+<div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash -l</span>
+<span class="c1">#SBATCH -J name</span>
+<span class="c1">#SBATCH -N 1</span>
+<span class="c1">#SBATCH --ntasks-per-node 1</span>
+<span class="c1">#SBATCH --mem 1000</span>
+<span class="c1">#SBATCH --time=1:00:00</span>
+<span class="c1">#SBATCH -A &lt;Grant ID&gt;</span>
+<span class="c1">#SBATCH -p ve</span>
+<span class="c1">#SBATCH --gres=ve:1</span>
+<span class="c1">#SBATCH --output=out</span>
+
+./program
+</code></pre></div>
+
+<p>Poniżej przedstawiono podstawowe polecenia służące pracy z zadaniami
+Slurm: zlecanie zadania do kolejki (<code>sbatch</code>), które zwraca nadany
+identyfikator, wyświetla wszystkie zadania użytkownika i ich status
+(<code>squeue</code>), zwraca szczegóły dotyczące wybranego zadania (<code>scontrol</code>),
+anuluje wykonanie zadania (<code>scancel</code>). Pełna lista dostępnych opcji
+znajduje się w <a href="https://slurm.schedmd.com/documentation.html">dokumentacji Slurm</a>.</p>
+<div class="highlight"><pre><span></span><code>sbatch job.sl <span class="c1"># zleca zadania do kolejki</span>
+squeue -u <span class="nv">$USER</span> <span class="c1"># listuje wszystkie zadania użytkownika</span>
+scontrol show job &lt;ID&gt; <span class="c1"># zwraca szczegóły zadania o danym identyfikatorze</span>
+scancel &lt;ID&gt; <span class="c1"># anuluje zadanie o danym identyfikatorze</span>
+</code></pre></div>
+
+<p>Klaster Rysy nie posiada dedykowanego systemu plików na potrzeby
+obliczeń. Oznacza to, że wszystkie obliczenia należy prowadzić w swoim
+katalogu domowym (<code>$HOME</code>). Partycja ve (węzeł PBaran) jest ponadto
+przeznaczony do zadań wykorzystujących karty VE i nie powinien być
+używany do zadań, które znacznie obciążają CPU.</p>
                 
                   
                     
@@ -1260,7 +1454,7 @@ pip3 install --user torch torchvision numpy <span class="c1"># installs other (e
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 16, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 5, 2020</span>
     
   </small>
 </div>
@@ -1283,7 +1477,7 @@ pip3 install --user torch torchvision numpy <span class="c1"># installs other (e
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../basic_usage/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../en-sol/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -1292,19 +1486,19 @@ pip3 install --user torch torchvision numpy <span class="c1"># installs other (e
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Podstawy użytkowania
+                (EN) SOL/neural networks
               </div>
             </div>
           </a>
         
         
-          <a href="../../python/python/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../pl-sol/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Python
+                (PL) SOL/sieci neuronowe
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
@@ -1331,8 +1525,8 @@ pip3 install --user torch torchvision numpy <span class="c1"># installs other (e
       
     </div>
     
-      <script src="../../../assets/javascripts/vendor.6a3d08fc.min.js"></script>
-      <script src="../../../assets/javascripts/bundle.71201edf.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
+      <script src="../../../assets/javascripts/vendor.7e0ee788.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c1ccee15.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing"}</script>
       
       <script>
         app = initialize({
