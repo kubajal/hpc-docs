@@ -1,5 +1,5 @@
 ---
-title: "1. Basic Usage"
+title: "[EN] Basic Usage"
 date: 2020-04-09
 draft: false
 ---
@@ -7,7 +7,7 @@ draft: false
 <!-- <Last revision: 2020-04-30 by M. Hermanowicz <m.hermanowicz@icm.edu.pl> -->
 
 !!! Note
-    Please note that a PDF version of the materials contained herein is also [available][en_nec_tsubasa_pdf].
+    Please note that a PDF version of the materials contained herein (including SOL) is also [available][en_nec_tsubasa_pdf].
 
 [en_nec_tsubasa_pdf]: ./pdf/en_nec_tsubasa.pdf
 

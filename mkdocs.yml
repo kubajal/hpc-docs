@@ -117,8 +117,10 @@ nav:
   - Kontenery:
     - Singularity: Tutorials/Kontenery/singularity_intro.md
   - NEC SX-Aurora Tsubasa:
-    - Podstawy użytkowania: Tutorials/NEC/basic_usage.md
-    - SOL - sieci neuronowe: Tutorials/NEC/sol.md
+    - (EN) Basic usage: Tutorials/NEC/en-basic-usage.md
+    - (EN) SOL/neural networks: Tutorials/NEC/en-sol.md
+    - (PL) Podstawy użycia: Tutorials/NEC/pl-podstawy.md
+    - (PL) SOL/sieci neuronowe: Tutorials/NEC/pl-sol.md
   - Środowisko wirtualne:
     - Python: Tutorials/python/python.md
     - Anaconda: Tutorials/python/anaconda.md
