@@ -60,4 +60,4 @@ Joanna Jędraszczyk – e-mail: Joanna.Jedraszczyk([monkey](https://en.wikipedia
 
 Marek Michalewicz – e-mail: Marek.Michalewicz([monkey](https://en.wikipedia.org/wiki/At_sign#Names_in_other_languages))icm.edu.pl
 
-**Do zobaczenia!**
+**Do zobaczenia!!!**
