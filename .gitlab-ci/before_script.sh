@@ -10,7 +10,8 @@ mkdir -p $CLONE_DIR
 eval $(ssh-agent -s)
 ls -la /home/gitlab-runner-nginx/.ssh
 ssh-add -l && echo ok
-ssh-add /home/gitlab-runner-nginx/.ssh/appbot-2-hpc-docs_v2 <<< $'75375'&
+ssh-add /home/gitlab-runner-nginx/.ssh/appbot-2-hpc-docs_v3 <<< "$appbot_2_hpc_docs_pin" &
+#ssh-add /home/gitlab-runner-nginx/.ssh/appbot-2-hpc-docs_v2 <<< $'75375'&
 ssh-add -l && echo ok
 pwd 
 ls -la
