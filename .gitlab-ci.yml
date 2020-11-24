@@ -22,7 +22,6 @@ before_script:
   - eval $(ssh-agent -s)
   - ls -latr /home/gitlab-runner-nginx/.ssh
   - ssh-add -l && echo ok
-  # - ssh-add /home/gitlab-runner-nginx/.ssh/appbot-2-hpc-docs_v2 <<< $'75375'&
   - ssh-add /home/gitlab-runner-nginx/.ssh/appbot-2-hpc-docs_v3 <<< "$appbot_2_hpc_docs_pin" &
   - ssh-add -l && echo ok
   - ls -latr
@@ -33,6 +32,9 @@ before_script:
   - ls -latr
   - ssh -vT git@git.icm.edu.pl
   - source .gitlab-ci/prepare_venv.sh && echo "env prepared"
+
+after_script:
+  - ssh-agent -k
 
 test-pages:
   stage: test
