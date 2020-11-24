@@ -34,6 +34,7 @@ before_script:
   - source .gitlab-ci/prepare_venv.sh && echo "env prepared"
 
 after_script:
+  - ssh-add -l
   - ssh-agent -k
 
 test-pages:
