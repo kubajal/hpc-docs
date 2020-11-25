@@ -59,4 +59,3 @@ Joanna Jędraszczyk – e-mail: Joanna.Jedraszczyk([monkey](https://en.wikipedia
 <!-- , telefon: 22-87-49-200 -->
 
 Marek Michalewicz – e-mail: Marek.Michalewicz([monkey](https://en.wikipedia.org/wiki/At_sign#Names_in_other_languages))icm.edu.pl
-
