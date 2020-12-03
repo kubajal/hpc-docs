@@ -9,7 +9,7 @@ draft: false
 Tegoroczna **Sesja Szkoleniowo-Sprawozdawcza Użytkowników KDM ICM** odbędzie się w formie online. Planujemy zaprosić do wystąpienia osoby, które niedawno rozpoczęły swoje obliczenia, aby podzieliły się z nami swoimi wynikami obliczeń.
 Do uczestnictwa, wysłuchania prelegentów oraz porad i dyskusji naukowych zapraszamy wszystkich naszych Użytkowników.
 
-Mamy nadzieję, że nietypowy harakter Sesji umożliwi użytkownikom tradycyjną wymianę doświadczeń, zaplanowanie wspólnych przedsięwzięć naukowych i programistycznych, jak również rozwiązanie aktualnych problemów obliczeniowych. Oprócz użytkowników w spotkaniach będą uczestniczyli przedstawiciele ICM, m.in. programiści odpowiadający za wsparcie techniczne i merytoryczne realizowanych w ICM grantów obliczeniowych oraz naukowcy ICM prezentujący swoje modele obliczeniowe.
+Mamy nadzieję, że nietypowy charakter Sesji umożliwi użytkownikom tradycyjną wymianę doświadczeń, zaplanowanie wspólnych przedsięwzięć naukowych i programistycznych, jak również rozwiązanie aktualnych problemów obliczeniowych. Oprócz użytkowników w spotkaniach będą uczestniczyli przedstawiciele ICM, m.in. programiści odpowiadający za wsparcie techniczne i merytoryczne realizowanych w ICM grantów obliczeniowych oraz naukowcy ICM prezentujący swoje modele obliczeniowe.
 
 Do udziału w Sesji zapraszamy Kierowników oraz przedstawicieli grantów realizowanych w ICM.
 
