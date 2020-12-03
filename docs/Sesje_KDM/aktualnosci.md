@@ -9,10 +9,6 @@ draft: false
 Tegoroczna Sesja Szkoleniowo Sprawozdawcza Użytkowników KDM ICM odbędzie się w formie online. Planujemy zaprosić do wystąpienia osoby, które niedawno rozpoczęły swoje obliczenia, aby podzieliły się z nami swoimi wynikami obliczeń.
 Do uczestnictwa, wysłuchania prelegentów oraz porad i dyskusji naukowych zapraszamy wszystkich naszych Użytkowników.
 
-Sesja Użytkowników ICM to okazja do prezentacji wyników prac badawczych prowadzonych przez naukowców korzystających z zasobów obliczeniowych Centrum.
-
-W 2020 roku w ICM zrealizowano ponad 300 grantów obliczeniowych. Wśród realizatorów i kierowników grantów znajdowali się reprezentanci ponad 100 polskich jednostek badawczych. W wyniku obliczeń przeprowadzonych na systemach ICM opublikowano ponad 280 prac naukowych.
-
 Mamy nadzieję, że nietypowy harakter Sesji umożliwi użytkownikom tradycyjną wymianę doświadczeń, zaplanowanie wspólnych przedsięwzięć naukowych i programistycznych, jak również rozwiązanie aktualnych problemów obliczeniowych. Oprócz użytkowników w spotkaniach będą uczestniczyli przedstawiciele ICM, m.in. programiści odpowiadający za wsparcie techniczne i merytoryczne realizowanych w ICM grantów obliczeniowych oraz naukowcy ICM prezentujący swoje modele obliczeniowe.
 
 Do udziału w Sesji zapraszamy Kierowników oraz przedstawicieli grantów realizowanych w ICM.
