@@ -1,6 +1,6 @@
 ---
 title: "XXI Sesja KDM"
-date: 2020-11-23
+date: 12-13 stycznia 2021 r.
 draft: false
 ---
 
@@ -10,31 +10,33 @@ draft: false
 
 ### O sesjach KDM
 
+Tegoroczna Sesja Szkoleniowo Sprawozdawcza Użytkowników KDM ICM odbędzie się w formie online. Planujemy zaprosić do wystąpienia osoby, które niedawno rozpoczęły swoje obliczenia, aby podzieliły się z nami swoimi wynikami obliczeń.
+Do uczestnictwa, wysłuchania prelegentów oraz porad i dyskusji naukowych zapraszamy wszystkich naszych Użytkowników.
+
 Sesja Użytkowników ICM to okazja do prezentacji wyników prac badawczych prowadzonych przez naukowców korzystających z zasobów obliczeniowych Centrum.
 
 W 2020 roku w ICM zrealizowano ponad 300 grantów obliczeniowych. Wśród realizatorów i kierowników grantów znajdowali się reprezentanci ponad 100 polskich jednostek badawczych. W wyniku obliczeń przeprowadzonych na systemach ICM opublikowano ponad 280 prac naukowych.
 
-Sesja umożliwi użytkownikom wymianę doświadczeń, zaplanowanie wspólnych przedsięwzięć naukowych i programistycznych, jak również rozwiązanie aktualnych problemów obliczeniowych. Oprócz użytkowników w spotkaniach będą uczestniczyli przedstawiciele ICM, m.in. programiści odpowiadający za wsparcie techniczne i merytoryczne realizowanych w ICM grantów obliczeniowych.
-
-Ponadto w trakcie Sesji odbędą się szkolenia i warsztaty dotyczące obsługi systemów obliczeniowych oraz wizualizacji danych, jak również prezentacje nowych ofert z zakresu oprogramowania i infrastruktury HPC.
+Mamy nadzieję, że nietypowy harakter Sesji umożliwi użytkownikom tradycyjną wymianę doświadczeń, zaplanowanie wspólnych przedsięwzięć naukowych i programistycznych, jak również rozwiązanie aktualnych problemów obliczeniowych. Oprócz użytkowników w spotkaniach będą uczestniczyli przedstawiciele ICM, m.in. programiści odpowiadający za wsparcie techniczne i merytoryczne realizowanych w ICM grantów obliczeniowych oraz naukowcy ICM prezentujący swoje modele obliczeniowe.
 
 Do udziału w Sesji zapraszamy Kierowników oraz przedstawicieli grantów realizowanych w ICM.
 
 ### Kiedy
 
-W dniach 12 – 13 stycznia 2021 r. odbędzie się XXI Sesja Użytkowników ICM.
+W dniach 12 – 13 stycznia 2021 r. odbędzie się **online** XXI Sesja Użytkowników ICM.
 
 ### Miejsce
 
 Online.
 
-Uczestnicy otrzymają link do platformy ClickMeeting za pośrednictwem której odbędzie się spotkanie.
+Uczestnicy otrzymają link do platformy **ClickMeeting** za pośrednictwem której odbędzie się spotkanie.
 
 ### Zasady Uczestnictwa
 
 Do udziału w Sesji zapraszamy Kierowników oraz przedstawicieli grantów realizowanych w ICM.
 Szczególnie zapraszamy nowych użytkowników z projektów otwartych w ostatnim czasie.
 Udział w sesji to dobra okazja do kontaktów z doświadczonymi użytkownikami i z zespołem ICM.
+Osoby dla których zaplanowaliśmy wystąpienie zaprosimy imiennie.
 
 ### Rejestracja
 
@@ -58,4 +60,3 @@ Lista posterów (LINK XXX pdf)
 Joanna Jędraszczyk – e-mail: Joanna.Jedraszczyk([monkey](https://en.wikipedia.org/wiki/At_sign#Names_in_other_languages))icm.edu.pl
 <!-- , telefon: 22-87-49-200 -->
 
-Marek Michalewicz – e-mail: Marek.Michalewicz([monkey](https://en.wikipedia.org/wiki/At_sign#Names_in_other_languages))icm.edu.pl
