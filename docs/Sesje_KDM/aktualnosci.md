@@ -30,13 +30,26 @@ Szczególnie zapraszamy nowych użytkowników z projektów otwartych w ostatnim 
 Udział w sesji to dobra okazja do kontaktów z doświadczonymi użytkownikami i z zespołem ICM.
 Osoby dla których zaplanowaliśmy wystąpienie zaprosimy imiennie.
 
+
+### Informacje dla Prelegentów
+Wszyscy prelegenci będą proszeni w odpowiednim momencie na próbne połączenia i trening podłączenia.
+Prezentacje będą 15 minutowe oraz 5 minut na pytania zadawane na czacie.
+
+Prelegentów prosimy również o przygotowanie i przesłanie do nas:
+- swojego zdjęcia
+- krótkiej informacji o sobie
+- tytułu wystąpienia
+- abstraktu wystąpienia
+Wszystkie te materiały zostaną zamieszczone na stronie sesji.
+
+
 ### Rejestracja
 
 Prosimy o zarejestrowanie się do dnia XXX.
 
 Formularz rejestracyjny dostępny jest na XXX.
 
-Na Sesję zarejestrowały się dotychczas XXX osoby (LINK XXX pdf).
+Prosimy o nadesłanie zdjęcia, abstraktu i notki o prelegencie do dnia xxx
 
 ### Program
 
@@ -44,8 +57,6 @@ Zapraszamy do zapoznania się z programem wydarzenia.
 Możliwe są niewielkie przesunięcia w programie, w zależności od możliwości czasowych prelegentów.
 
 Program Sesji (LINK XXX pdf)
-
-Lista posterów (LINK XXX pdf)
 
 ### Kontakt
 
