@@ -10,6 +10,20 @@ draft: false
     Logowanie do ICM: `ssh username@hpc.icm.edu.pl`
     W przypadku niektórych systemów możliwy/wymagany jest dodatkowy krok logowania wykonany z komputera hpc.icm.edu.pl, np. `ssh rysy`, `ssh okeanos`.
 
+!!! Info
+    Od grudnia 2020 r. logowanie za pomocą protokołu ssh wymaga autoryzacji dwu-składnikowej (2FA) z użyciem tokenów typu TOTP (Time-based One-time Password). 
+
+### SSH - autoryzacja dwu-składnikowa (2FA)
+
+Logując się przy użyciu ssh na serwer `hpc.icm.edu.pl` użytkownik podaje dane (hasło/klucz) po czym pojawia się dodatkowe zapytanie o `OTP` (one time password), czyli jednorazowy kod, indywidualny dla każdego, generowany przy użyciu specjalnej aplikacji.
+
+W celu uzyskania kodu konieczne jest zainstalowanie na swoim telefonie aplikacji obsługującej mechanizm tokenów TOTP (Time-based One-time Password algorithm), np. FreeOTP lub GoogleAuthenicator (dostępne w GooglePlay i AppStore). Aplikacje są darmowe i nie wymagają dostępu do internetu (działają w trybie offline).
+
+### 2FA - rejestracja tokenu TOTP
+
+W celu rejestracji tokenu prosimy o zalogowanie się swoimi danymi w ICM UW do serwisu `https://mfa.hpc.icm.edu.pl` i wygenerowanie tokenu bez zmiany domyślnych ustawień (enroll token). Pojawi się kod QR, który należny wskanować np. aplikacją FreeOTP. Od tej chwili system będzie oczekiwał podania aktualnej wartości tokenu wyświetlanej w aplikacji przy logowaniu się na `hpc.icm.edu.pl`.
+
+
 ## Tworzenie kluczy SSH
 
 Logowanie użytkowania może być uwierzytelnione poprzez podanie hasła lub użycie klucza kryptograficznego.
