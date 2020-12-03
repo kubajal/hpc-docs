@@ -6,10 +6,6 @@ draft: false
 
 ## XXI Sesja KDM
 
-**Strona w budowie**
-
-### O sesjach KDM
-
 Tegoroczna Sesja Szkoleniowo Sprawozdawcza Użytkowników KDM ICM odbędzie się w formie online. Planujemy zaprosić do wystąpienia osoby, które niedawno rozpoczęły swoje obliczenia, aby podzieliły się z nami swoimi wynikami obliczeń.
 Do uczestnictwa, wysłuchania prelegentów oraz porad i dyskusji naukowych zapraszamy wszystkich naszych Użytkowników.
 
