@@ -6,7 +6,7 @@ draft: false
 
 ## XXI Sesja KDM
 
-Tegoroczna Sesja Szkoleniowo Sprawozdawcza Użytkowników KDM ICM odbędzie się w formie online. Planujemy zaprosić do wystąpienia osoby, które niedawno rozpoczęły swoje obliczenia, aby podzieliły się z nami swoimi wynikami obliczeń.
+Tegoroczna **Sesja Szkoleniowo-Sprawozdawcza Użytkowników KDM ICM** odbędzie się w formie online. Planujemy zaprosić do wystąpienia osoby, które niedawno rozpoczęły swoje obliczenia, aby podzieliły się z nami swoimi wynikami obliczeń.
 Do uczestnictwa, wysłuchania prelegentów oraz porad i dyskusji naukowych zapraszamy wszystkich naszych Użytkowników.
 
 Mamy nadzieję, że nietypowy harakter Sesji umożliwi użytkownikom tradycyjną wymianę doświadczeń, zaplanowanie wspólnych przedsięwzięć naukowych i programistycznych, jak również rozwiązanie aktualnych problemów obliczeniowych. Oprócz użytkowników w spotkaniach będą uczestniczyli przedstawiciele ICM, m.in. programiści odpowiadający za wsparcie techniczne i merytoryczne realizowanych w ICM grantów obliczeniowych oraz naukowcy ICM prezentujący swoje modele obliczeniowe.
@@ -15,11 +15,11 @@ Do udziału w Sesji zapraszamy Kierowników oraz przedstawicieli grantów realiz
 
 ### Kiedy
 
-W dniach 12 – 13 stycznia 2021 r. odbędzie się **online** XXI Sesja Użytkowników ICM.
+W dniach 12 – 13 stycznia 2021 r.  **online** 
 
 ### Miejsce
 
-Online.
+**Online**
 
 Uczestnicy otrzymają link do platformy **ClickMeeting** za pośrednictwem której odbędzie się spotkanie.
 
@@ -27,12 +27,12 @@ Uczestnicy otrzymają link do platformy **ClickMeeting** za pośrednictwem któr
 
 Do udziału w Sesji zapraszamy Kierowników oraz przedstawicieli grantów realizowanych w ICM.
 Szczególnie zapraszamy nowych użytkowników z projektów otwartych w ostatnim czasie.
-Udział w sesji to dobra okazja do kontaktów z doświadczonymi użytkownikami i z zespołem ICM.
+Udział w Sesji to dobra okazja do kontaktów z doświadczonymi użytkownikami i z zespołem ICM.
 Osoby dla których zaplanowaliśmy wystąpienie zaprosimy imiennie.
 
 
 ### Informacje dla Prelegentów
-Wszyscy prelegenci będą proszeni w odpowiednim momencie na próbne połączenia i trening podłączenia.
+Wszyscy prelegenci będą proszeni w odpowiednim momencie na próbne połączenia i trening obsługi technicznej.
 Prezentacje będą 15 minutowe oraz 5 minut na pytania zadawane na czacie.
 
 Prelegentów prosimy również o przygotowanie i przesłanie do nas:
@@ -40,6 +40,7 @@ Prelegentów prosimy również o przygotowanie i przesłanie do nas:
 - krótkiej informacji o sobie
 - tytułu wystąpienia
 - abstraktu wystąpienia
+
 Wszystkie te materiały zostaną zamieszczone na stronie sesji.
 
 
@@ -57,6 +58,7 @@ Zapraszamy do zapoznania się z programem wydarzenia.
 Możliwe są niewielkie przesunięcia w programie, w zależności od możliwości czasowych prelegentów.
 
 Program Sesji (LINK XXX pdf)
+Informacje o prelegentach (LINK)
 
 ### Kontakt
 
