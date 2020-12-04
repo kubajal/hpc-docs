@@ -18,7 +18,7 @@
     
     
       
-        <title>3 Logowanie SSH - Użytkownicy Windows - Dokumentacja ICM UW</title>
+        <title>Tunelowanie SSH - Dokumentacja ICM UW</title>
       
     
     
@@ -67,7 +67,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#dostep-do-icm-z-komputera-z-systemem-windows" class="md-skip">
+        <a href="#tunelowanie-ssh" class="md-skip">
           Skip to content
         </a>
       
@@ -96,7 +96,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              3 Logowanie SSH - Użytkownicy Windows
+              Tunelowanie SSH
             
           </span>
         </div>
@@ -708,40 +708,16 @@
     
     <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8-1" type="checkbox" id="nav-8-1" checked>
     <label class="md-nav__link" for="nav-8-1">
-      Podstawy HPC
+      Logowanie
       <span class="md-nav__icon md-icon"></span>
     </label>
-    <nav class="md-nav" aria-label="Podstawy HPC" data-md-level="2">
+    <nav class="md-nav" aria-label="Logowanie" data-md-level="2">
       <label class="md-nav__title" for="nav-8-1">
         <span class="md-nav__icon md-icon"></span>
-        Podstawy HPC
+        Logowanie
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../introduction/" class="md-nav__link">
-      Wstęp
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../bash_intro/" class="md-nav__link">
-      Bash i terminal
-    </a>
-  </li>
-
         
           
           
@@ -759,6 +735,18 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../ssh_windows/" class="md-nav__link">
+      Logowanie SSH (Użytkownicy Windows)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -768,12 +756,12 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Logowanie SSH (Użytkownicy Windows)
+        Tunelowanie SSH
         <span class="md-nav__icon md-icon"></span>
       </label>
     
     <a href="./" class="md-nav__link md-nav__link--active">
-      Logowanie SSH (Użytkownicy Windows)
+      Tunelowanie SSH
     </a>
     
       
@@ -788,8 +776,55 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#dostep-do-icm-z-komputera-z-systemem-windows" class="md-nav__link">
-    Dostęp do ICM z komputera z systemem Windows
+  <a href="#tunelowanie-ssh" class="md-nav__link">
+    Tunelowanie ssh
+  </a>
+  
+    <nav class="md-nav" aria-label="Tunelowanie ssh">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sshconfig" class="md-nav__link">
+    ~/.ssh/config
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etchosts" class="md-nav__link">
+    /etc/hosts
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kopiowanie-plikow-i-logowanie-tips-tricks" class="md-nav__link">
+    Kopiowanie plików i logowanie - tips &amp; tricks
+  </a>
+  
+    <nav class="md-nav" aria-label="Kopiowanie plików i logowanie - tips &amp; tricks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bashrc" class="md-nav__link">
+    ~/.bashrc
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zdalne-edytowanie-plikow-textowych" class="md-nav__link">
+    Zdalne Edytowanie plików textowych
   </a>
   
 </li>
@@ -798,90 +833,6 @@
   
 </nav>
     
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../kopiowanie_plikow/" class="md-nav__link">
-      Kopiowanie plików
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../slurm_intro/" class="md-nav__link">
-      Zlecanie zadań do SLURM
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../ustawianie_srodowiska/" class="md-nav__link">
-      Ustawianie środowiska
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../instalacja_oprogramowania/" class="md-nav__link">
-      Instalacja nowego oprogramowania
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../status_zadania/" class="md-nav__link">
-      Status zadania
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../status_grantu_i_konta/" class="md-nav__link">
-      Status grantu/konta/qos
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../ssh-tunel/" class="md-nav__link">
-      Tunelowanie SSH
-    </a>
   </li>
 
         
@@ -899,11 +850,132 @@
     
     <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8-2" type="checkbox" id="nav-8-2" >
     <label class="md-nav__link" for="nav-8-2">
+      Podstawy HPC
+      <span class="md-nav__icon md-icon"></span>
+    </label>
+    <nav class="md-nav" aria-label="Podstawy HPC" data-md-level="2">
+      <label class="md-nav__title" for="nav-8-2">
+        <span class="md-nav__icon md-icon"></span>
+        Podstawy HPC
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../HPC-intro/introduction/" class="md-nav__link">
+      Wstęp
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../HPC-intro/bash_intro/" class="md-nav__link">
+      Bash i terminal
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../HPC-intro/kopiowanie_plikow/" class="md-nav__link">
+      Kopiowanie plików
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../HPC-intro/slurm_intro/" class="md-nav__link">
+      Zlecanie zadań do SLURM
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../HPC-intro/ustawianie_srodowiska/" class="md-nav__link">
+      Ustawianie środowiska
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../HPC-intro/instalacja_oprogramowania/" class="md-nav__link">
+      Instalacja nowego oprogramowania
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../HPC-intro/status_zadania/" class="md-nav__link">
+      Status zadania
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../HPC-intro/status_grantu_i_konta/" class="md-nav__link">
+      Status grantu/konta/qos
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8-3" type="checkbox" id="nav-8-3" >
+    <label class="md-nav__link" for="nav-8-3">
       Podstawy GPU
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Podstawy GPU" data-md-level="2">
-      <label class="md-nav__title" for="nav-8-2">
+      <label class="md-nav__title" for="nav-8-3">
         <span class="md-nav__icon md-icon"></span>
         Podstawy GPU
       </label>
@@ -982,13 +1054,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8-3" type="checkbox" id="nav-8-3" >
-    <label class="md-nav__link" for="nav-8-3">
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8-4" type="checkbox" id="nav-8-4" >
+    <label class="md-nav__link" for="nav-8-4">
       Kontenery
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Kontenery" data-md-level="2">
-      <label class="md-nav__title" for="nav-8-3">
+      <label class="md-nav__title" for="nav-8-4">
         <span class="md-nav__icon md-icon"></span>
         Kontenery
       </label>
@@ -1019,13 +1091,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8-4" type="checkbox" id="nav-8-4" >
-    <label class="md-nav__link" for="nav-8-4">
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8-5" type="checkbox" id="nav-8-5" >
+    <label class="md-nav__link" for="nav-8-5">
       NEC SX-Aurora Tsubasa
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="NEC SX-Aurora Tsubasa" data-md-level="2">
-      <label class="md-nav__title" for="nav-8-4">
+      <label class="md-nav__title" for="nav-8-5">
         <span class="md-nav__icon md-icon"></span>
         NEC SX-Aurora Tsubasa
       </label>
@@ -1092,13 +1164,13 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8-5" type="checkbox" id="nav-8-5" >
-    <label class="md-nav__link" for="nav-8-5">
+    <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8-6" type="checkbox" id="nav-8-6" >
+    <label class="md-nav__link" for="nav-8-6">
       Środowisko wirtualne
       <span class="md-nav__icon md-icon"></span>
     </label>
     <nav class="md-nav" aria-label="Środowisko wirtualne" data-md-level="2">
-      <label class="md-nav__title" for="nav-8-5">
+      <label class="md-nav__title" for="nav-8-6">
         <span class="md-nav__icon md-icon"></span>
         Środowisko wirtualne
       </label>
@@ -1332,8 +1404,55 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#dostep-do-icm-z-komputera-z-systemem-windows" class="md-nav__link">
-    Dostęp do ICM z komputera z systemem Windows
+  <a href="#tunelowanie-ssh" class="md-nav__link">
+    Tunelowanie ssh
+  </a>
+  
+    <nav class="md-nav" aria-label="Tunelowanie ssh">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sshconfig" class="md-nav__link">
+    ~/.ssh/config
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#etchosts" class="md-nav__link">
+    /etc/hosts
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#kopiowanie-plikow-i-logowanie-tips-tricks" class="md-nav__link">
+    Kopiowanie plików i logowanie - tips &amp; tricks
+  </a>
+  
+    <nav class="md-nav" aria-label="Kopiowanie plików i logowanie - tips &amp; tricks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bashrc" class="md-nav__link">
+    ~/.bashrc
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#zdalne-edytowanie-plikow-textowych" class="md-nav__link">
+    Zdalne Edytowanie plików textowych
   </a>
   
 </li>
@@ -1350,38 +1469,199 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://git.icm.edu.pl/owu/hpc-docs/edit/master/docs/Tutorials/HPC-intro/ssh_windows.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://git.icm.edu.pl/owu/hpc-docs/edit/master/docs/Tutorials/Logowanie/ssh-tunel.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                  <h1>Logowanie SSH (Użytkownicy Windows)</h1>
+                  <h1>Tunelowanie SSH</h1>
                 
-                <h2 id="dostep-do-icm-z-komputera-z-systemem-windows">Dostęp do ICM z komputera z systemem Windows</h2>
-<p>Ściągamy program PuTTY, dostępny pod adresem (jest to gotowy do
-    użycia plik wykonywalny):</p>
-<p><a href="http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe">http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe</a></p>
-<p>Uruchamiamy ściągnięty program.
-Pokazuje się okienko podobne do poniższego:</p>
-<p><center> <img alt="" src="../HPC_images/Putty.png" /> </center></p>
+                <div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Logowanie do ICM: <code>ssh username@hpc.icm.edu.pl</code>
+W przypadku niektórych systemów możliwy/wymagany jest dodatkowy krok logowania wykonany z komputera hpc.icm.edu.pl, np. <code>ssh rysy</code>, <code>ssh okeanos</code>.</p>
+</div>
+<p>Wieloetapowe logowanie bywa uciążliwe przy pracy na plikach.</p>
 <ul>
 <li>
-<p>W polu <strong>Host Name (or IP address)</strong> wpisujemy <strong>hpc.icm.edu.pl</strong>
-    (adres maszyny dostępowej) i klikamy w przycisk <strong>Open</strong>.</p>
+<p>Konieczność każdorazowego wpisywanie hasła można uprościć poprzez użycie <a href="../ssh_intro/">klucza ssh</a>.</p>
 </li>
 <li>
-<p>Przy pierwszym logowaniu pojawi się okno z komunikatem dotyczącym
-    klucza dostępu. Należy zatwierdzić klucz wybierając opcję <code>TAK</code></p>
-</li>
-<li>
-<p>Pojawia się terminal, w którym proszeni jesteśmy o podanie nazwy
-    użytkownika, a następnie hasła.</p>
+<p>Konieczność wieloetapowego logowania można uprościć poprzez tunelowanie połączenia.</p>
 </li>
 </ul>
-<p>Po wpisaniu obu wartości znajdujemy się na komputerze dostępowym <em>hpc.icm.edu.pl</em>
-(komputer ten może występować też pod nazwą <em>hpc</em>):</p>
-<p><center> <img alt="" src="../HPC_images/Login.jpg" /> </center></p>
-<p>Komputery w sieci ICM wyposażone są w systemy operacyjne z rodziny UNIX.</p>
+<h2 id="tunelowanie-ssh">Tunelowanie ssh</h2>
+<p><a href="https://pl.wikipedia.org/wiki/Tunel_(informatyka)">Tunel</a> – zestawienie połączenia między dwoma odległymi hostami tak, by stworzyć wrażenie, że są połączone bezpośrednio. - Wikipedia.</p>
+<p>W celu zkonfigurowania tunelowania połaczeń należy zedytować pliki <code>~/.ssh/config</code> oraz <code>/etc/hosts</code>.
+Wpisz swój login w miejsce <code>nazwa_uzytkownika</code>.</p>
+<h3 id="sshconfig">~/.ssh/config</h3>
+<div class="highlight"><pre><span></span><code>Host *
+  ServerAliveInterval <span class="m">100</span>
+  ServerAliveCountMax <span class="m">2</span>
+  ControlPath ~/.ssh/%r@%h:%p
+  ControlMaster auto
+  User nazwa_uzytkownika
+
+Host hpc
+  HostName hpc.icm.edu.pl
+  User nazwa_uzytkownika
+  LocalForward <span class="m">8022</span> rysy:22
+  LocalForward <span class="m">8023</span> okeanos:22
+
+
+Host icm-okeanos
+  Port <span class="m">8023</span>
+  User nazwa_uzytkownika
+
+
+Host icm-rysy
+  Port <span class="m">8022</span>
+  User nazwa_uzytkownika
+</code></pre></div>
+
+<h3 id="etchosts">/etc/hosts</h3>
+<div class="highlight"><pre><span></span><code><span class="m">127</span>.0.0.1 localhost
+<span class="m">127</span>.0.1.1 nazwa_uzytkownika_na_lokalnym_kompuerze
+<span class="m">127</span>.0.0.1 icm-rysy
+<span class="m">127</span>.0.0.1 icm-okeanos
+
+
+<span class="c1"># The following lines are desirable for IPv6 capable hosts</span>
+::1     ip6-localhost ip6-loopback
+fe00::0 ip6-localnet
+ff00::0 ip6-mcastprefix
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters
+</code></pre></div>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Aby tunel był otwarty należy zalogować się na węzeł dostępowy  <code>ssh nazwa_uzytkownika@hpc.icm.edu.pl</code>.</p>
+</div>
+<h2 id="kopiowanie-plikow-i-logowanie-tips-tricks">Kopiowanie plików i logowanie - tips &amp; tricks</h2>
+<p>Przykład użycia:</p>
+<div class="highlight"><pre><span></span><code>$ to_hpc lokalny_folder zdalny_folder_docelowy
+$ to_rysy lokalny_folder zdalny_folder_docelowy
+$ to_okeanos lokalny_folder zdalny_folder_docelowy
+
+$ to_hpc zdalny_folder_zrodlowy lokalny_folde_docelowy
+$ to_rysy zdalny_folder_zrodlowy lokalny_folde_docelowy
+$ to_okeanos zdalny_folder_zrodlowy lokalny_folde_docelowy
+
+$ rysy <span class="c1"># zaloguj się bezpośrednio na klaster rysy (jeżeli tunel nie był wcześniej otwarty, to funkcja zrobi to automatycznie).</span>
+$ okeanos <span class="c1"># zaloguj się bezpośrednio na klaster okeanos (jeżeli tunel nie był wcześniej otwarty, to funkcja zrobi to automatycznie).</span>
+
+$ mkdir <span class="nv">$HOME</span>/Desktop/mountDir/OKEANOS
+$ mount-okeanos <span class="c1"># zdalny katalog domowy użytkownika zostanie zamontowany pod $HOME/Desktop/mountDir/OKEANOS</span>
+
+$ mkdir <span class="nv">$HOME</span>/Desktop/mountDir/TOPOLA
+$ mount-topola <span class="c1"># zdalny katalog domowy użytkownika zostanie zamontowany pod $HOME/Desktop/mountDir/TOPOLA</span>
+</code></pre></div>
+
+<p>Poprzez lokalny_folder rozumie się folder znajdujący się na lokalnym komputerze (PC) użytkownika.
+Aby funkcje <code>to_XXX/from_XXX, itd</code> były widoczne w systemie, należy je dodać do pliku <code>~/.bashrc</code>.</p>
+<h3 id="bashrc">~/.bashrc</h3>
+<div class="highlight"><pre><span></span><code><span class="c1"># Dodaj poniższe linijki pod koniec pliku .bashrc</span>
+<span class="c1"># Plik ten jest wczytywany przy uruchomieniu systemu.</span>
+<span class="c1"># Aby zaktualizować środowisko (bez konieczności restartu) użyj komendy $source .bashrc</span>
+
+<span class="nb">export</span> <span class="nv">ICM_USERNAME</span><span class="o">=</span><span class="s2">&quot;nazwa_uzytkownika&quot;</span>
+
+
+<span class="k">function</span> rysy<span class="o">()</span> <span class="o">{</span>
+    <span class="k">if</span> ! ssh -O check hpc<span class="p">;</span>
+    <span class="k">then</span>
+        ssh -N -f -M  hpc
+    <span class="k">fi</span>
+    ssh icm-rysy
+<span class="o">}</span>
+
+
+<span class="k">function</span> okeanos<span class="o">()</span> <span class="o">{</span>
+    <span class="k">if</span> ! ssh -O check hpc<span class="p">;</span>
+    <span class="k">then</span>
+        ssh -N -f -M  hpc
+    <span class="k">fi</span>
+    ssh icm-okeanos
+<span class="o">}</span>
+
+
+<span class="k">function</span> mount-okeanos<span class="o">()</span>
+<span class="o">{</span>
+   <span class="nv">MOUNTDIR</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$HOME</span><span class="s2">/Desktop/mountDir/OKEANOS&quot;</span>
+   mkdir -p <span class="nv">$MOUNTDIR</span>
+   sshfs <span class="nv">$ICM_USERNAME</span>@icm-okeanos:/lustre/tetyda/home/<span class="nv">$ICM_USERNAME</span> <span class="si">${</span><span class="nv">MOUNTDIR</span><span class="si">}</span>
+<span class="o">}</span>
+
+<span class="k">function</span> mount-topola<span class="o">()</span>
+<span class="o">{</span>
+   <span class="nv">MOUNTDIR</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$HOME</span><span class="s2">/Desktop/mountDir/TOPOLA&quot;</span>
+   mkdir -p <span class="nv">$MOUNTDIR</span>
+   sshfs <span class="nv">$ICM_USERNAME</span>@hpc:/icm/home/<span class="nv">$ICM_USERNAME</span> <span class="si">${</span><span class="nv">MOUNTDIR</span><span class="si">}</span>
+<span class="o">}</span>
+
+
+<span class="k">function</span> to_host <span class="o">{</span>
+    <span class="nv">LOCAL_SOURCE</span><span class="o">=</span><span class="nv">$1</span>
+    <span class="nv">REMOTE_DESTINATION_DIR</span><span class="o">=</span><span class="nv">$2</span>
+    <span class="c1"># echo -e &quot;Stuff to be copied to remote: $LOCAL_SOURCE \n&quot;</span>
+
+    <span class="k">if</span> ! <span class="nb">test</span> -z <span class="s2">&quot;</span><span class="nv">$LOCAL_SOURCE</span><span class="s2">&quot;</span> <span class="o">&amp;&amp;</span> ! <span class="nb">test</span> -z <span class="s2">&quot;</span><span class="nv">$REMOTE_DESTINATION_DIR</span><span class="s2">&quot;</span>
+    <span class="k">then</span>
+        rsync -avzhe ssh --progress <span class="si">${</span><span class="nv">LOCAL_SOURCE</span><span class="si">}</span> <span class="si">${</span><span class="nv">REMOTE_HOME_DIR</span><span class="si">}${</span><span class="nv">REMOTE_DESTINATION_DIR</span><span class="si">}</span>
+    <span class="k">else</span>
+        <span class="nb">echo</span> <span class="s2">&quot;Usage: to_remote LOCAL_SOURCE REMOTE_DESTINATION_DIR&quot;</span>
+    <span class="k">fi</span>
+<span class="o">}</span>
+
+<span class="k">function</span> from_host <span class="o">{</span>
+  <span class="nv">SOURCE_ON_REMOTE</span><span class="o">=</span><span class="nv">$1</span>
+  <span class="nv">LOCAL_DESTINATION_DIR</span><span class="o">=</span><span class="nv">$2</span>
+  <span class="c1"># echo -e &quot;Stuff to be copied from remote: $SOURCE_ON_REMOTE \n&quot;</span>
+
+  <span class="k">if</span> ! <span class="nb">test</span> -z <span class="s2">&quot;</span><span class="nv">$SOURCE_ON_REMOTE</span><span class="s2">&quot;</span> <span class="o">&amp;&amp;</span> ! <span class="nb">test</span> -z <span class="s2">&quot;</span><span class="nv">$LOCAL_DESTINATION_DIR</span><span class="s2">&quot;</span>
+  <span class="k">then</span>
+    rsync -avzhe ssh --progress <span class="si">${</span><span class="nv">REMOTE_HOME_DIR</span><span class="si">}${</span><span class="nv">SOURCE_ON_REMOTE</span><span class="si">}</span> <span class="si">${</span><span class="nv">LOCAL_DESTINATION_DIR</span><span class="si">}</span>
+  <span class="k">else</span>
+    <span class="nb">echo</span> <span class="s2">&quot;Usage: from_remote SOURCE_ON_REMOTE LOCAL_DESTINATION_DIR&quot;</span>
+  <span class="k">fi</span>
+<span class="o">}</span>
+
+<span class="k">function</span> to_hpc <span class="o">{</span>
+    <span class="nv">REMOTE_HOME_DIR</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">ICM_USERNAME</span><span class="si">}</span><span class="s2">@hpc:/icm/home/</span><span class="si">${</span><span class="nv">ICM_USERNAME</span><span class="si">}</span><span class="s2">/&quot;</span>
+    to_host <span class="nv">$@</span>
+<span class="o">}</span>
+
+<span class="k">function</span> from_hpc <span class="o">{</span>
+    <span class="nv">REMOTE_HOME_DIR</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">ICM_USERNAME</span><span class="si">}</span><span class="s2">@hpc:/icm/home/</span><span class="si">${</span><span class="nv">ICM_USERNAME</span><span class="si">}</span><span class="s2">/&quot;</span>
+    from_host <span class="nv">$@</span>
+<span class="o">}</span>
+
+<span class="k">function</span> to_okeanos <span class="o">{</span>
+    <span class="nv">REMOTE_HOME_DIR</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">ICM_USERNAME</span><span class="si">}</span><span class="s2">@icm-okeanos:/lustre/tetyda/home/</span><span class="si">${</span><span class="nv">ICM_USERNAME</span><span class="si">}</span><span class="s2">/&quot;</span>
+    to_host <span class="nv">$@</span>
+<span class="o">}</span>
+
+<span class="k">function</span> from_okeanos <span class="o">{</span>
+    <span class="nv">REMOTE_HOME_DIR</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">ICM_USERNAME</span><span class="si">}</span><span class="s2">@icm-okeanos:/lustre/tetyda/home/</span><span class="si">${</span><span class="nv">ICM_USERNAME</span><span class="si">}</span><span class="s2">/&quot;</span>
+    from_host <span class="nv">$@</span>
+<span class="o">}</span>
+
+<span class="k">function</span> to_rysy <span class="o">{</span>
+    <span class="nv">REMOTE_HOME_DIR</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">ICM_USERNAME</span><span class="si">}</span><span class="s2">@icm-rysy:/home/</span><span class="si">${</span><span class="nv">ICM_USERNAME</span><span class="si">}</span><span class="s2">/&quot;</span>
+    to_host <span class="nv">$@</span>
+<span class="o">}</span>
+
+<span class="k">function</span> from_rysy <span class="o">{</span>
+    <span class="nv">REMOTE_HOME_DIR</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">ICM_USERNAME</span><span class="si">}</span><span class="s2">@icm-rysy:/home/</span><span class="si">${</span><span class="nv">ICM_USERNAME</span><span class="si">}</span><span class="s2">/&quot;</span>
+    from_host <span class="nv">$@</span>
+<span class="o">}</span>
+</code></pre></div>
+
+<h2 id="zdalne-edytowanie-plikow-textowych">Zdalne Edytowanie plików textowych</h2>
+<p>Użykownicy, którzy lubią edytować pliki tekstowe w środowisku graficznym mogą skorzystać z programu <code>VScode</code>.
+Posiada on wtyczkę <code>Remote-SSH</code>, która pozwala na zdalną edycję plików.
+Inną wartą uwagi wtyczką jest <code>Live Share</code> - umożliwa ona współdzielenie terminala z innym użytkownikem programu VScode.</p>
                 
                   
                     
@@ -1390,7 +1670,7 @@ Pokazuje się okienko podobne do poniższego:</p>
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 16, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 3, 2020</span>
     
   </small>
 </div>
@@ -1413,7 +1693,7 @@ Pokazuje się okienko podobne do poniższego:</p>
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../ssh_intro/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../ssh_windows/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -1422,19 +1702,19 @@ Pokazuje się okienko podobne do poniższego:</p>
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Logowanie SSH
+                Logowanie SSH (Użytkownicy Windows)
               </div>
             </div>
           </a>
         
         
-          <a href="../kopiowanie_plikow/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../HPC-intro/introduction/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Kopiowanie plików
+                Wstęp
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
