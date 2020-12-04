@@ -96,18 +96,19 @@ nav:
     - Reports and publications: Podrecznik_grantowy/en_sprawozdania_i_publikacje_w_grancie.md
 
 - Instrukcje:
+  - Logowanie:
+    - Logowanie SSH: Tutorials/Logowanie/ssh_intro.md
+    - Logowanie SSH (Użytkownicy Windows): Tutorials/Logowanie/ssh_windows.md
+    - Tunelowanie SSH: Tutorials/Logowanie/ssh-tunel.md
   - Podstawy HPC:
     - Wstęp: Tutorials/HPC-intro/introduction.md
     - Bash i terminal: Tutorials/HPC-intro/bash_intro.md
-    - Logowanie SSH: Tutorials/HPC-intro/ssh_intro.md
-    - Logowanie SSH (Użytkownicy Windows): Tutorials/HPC-intro/ssh_windows.md
     - Kopiowanie plików: Tutorials/HPC-intro/kopiowanie_plikow.md
     - Zlecanie zadań do SLURM: Tutorials/HPC-intro/slurm_intro.md
     - Ustawianie środowiska: Tutorials/HPC-intro/ustawianie_srodowiska.md
     - Instalacja nowego oprogramowania: Tutorials/HPC-intro/instalacja_oprogramowania.md
     - Status zadania: Tutorials/HPC-intro/status_zadania.md
     - Status grantu/konta/qos: Tutorials/HPC-intro/status_grantu_i_konta.md
-    - Tunelowanie SSH: Tutorials/HPC-intro/ssh-tunel.md
   - Podstawy GPU:
     - Introduction (Cheat Sheet): Tutorials/GPU-intro/introduction.md
     - Hello World: Tutorials/GPU-intro/hello_world.md
@@ -136,5 +137,3 @@ nav:
   - Archiwum: Sesje_KDM/archiwum.md
 
 - Kontakt: kontakt.md
-
-# dummy comment
