@@ -97,9 +97,9 @@ nav:
 
 - Instrukcje:
   - Logowanie:
-    - Logowanie SSH: Tutorials/HPC-intro/ssh_intro.md
-    - Logowanie SSH (Użytkownicy Windows): Tutorials/HPC-intro/ssh_windows.md
-    - Tunelowanie SSH: Tutorials/HPC-intro/ssh-tunel.md
+    - Logowanie SSH: Tutorials/Logowanie/ssh_intro.md
+    - Logowanie SSH (Użytkownicy Windows): Tutorials/Logowanie/ssh_windows.md
+    - Tunelowanie SSH: Tutorials/Logowanie/ssh-tunel.md
   - Podstawy HPC:
     - Wstęp: Tutorials/HPC-intro/introduction.md
     - Bash i terminal: Tutorials/HPC-intro/bash_intro.md
@@ -137,5 +137,3 @@ nav:
   - Archiwum: Sesje_KDM/archiwum.md
 
 - Kontakt: kontakt.md
-
-# dummy comment

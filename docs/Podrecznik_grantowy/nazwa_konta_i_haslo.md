@@ -12,20 +12,17 @@ W razie trudności z uzyskaniem prawidłowego hasła do konta prosimy o wysłani
 
 Aby móc korzystać z zasobów obliczeniowych ICM, należy zalogować się na komputer dostępowy `login.icm.edu.pl` za pomocą protokołu SSH, przy użyciu nazwy konta, jakie założyliśmy w systemie grantowym (do logowania nie używamy adresu e-mail!).
 
-Na osobnych stronach można znaleźć przykłady połączeń z komputerów z systemem [Windows](../Tutorials/HPC-intro/ssh_windows.md) oraz [UNIX/Linux](../Tutorials/HPC-intro/ssh_intro.md).
+Na osobnych stronach można znaleźć przykłady połączeń z komputerów z systemem [Windows](../Tutorials/Logowanie/ssh_windows.md) oraz [UNIX/Linux](../Tutorials/Logowanie/ssh_intro.md).
 
 Zlecanie zadań na systemy hydra oraz topola możliwe jest bezpośrednio z komputera `hpc.icm.edu.pl`. W przypadku pozostałych systemów wymagany jest dodatkowy krok logowania wykonany z komputera `hpc.icm.edu.pl`, np. `ssh okeanos` lub `ssh rysy`.
 
 ## Pierwsze logowanie
 
-Przed pierwszym logowaniu konieczna jest zmiana hasła na stronie 
-https://haslo.icm.edu.pl/. 
+Przed pierwszym logowaniu konieczna jest zmiana hasła na stronie <https://haslo.icm.edu.pl/>.
 Dopiero po dokonaniu zmiany hasła odblokuje się dostęp do serwera dostępowego hpc.icm.edu.pl.
 Hasło wysyłane jest automatycznym mailem, w chwili skierowania konta do utworzenia. Login jest zgodny z podanym na formularzu użytkownika.
 
 ## Wygaśnięcie hasła
+
 Zmiany hasła możliwe są w każdej chwili oraz do miesiąca od wygaśnięcia hasła w portalu:
 https://haslo.icm.edu.pl/. Logowanie odbywa się przy pomocy loginu (do 8 liter, nie adresu e-mail) oraz dotychczasowego hasła (w tym wygaśniętego).
-
-
-

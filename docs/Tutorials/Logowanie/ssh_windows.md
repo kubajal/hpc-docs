@@ -14,7 +14,7 @@ draft: false
 Uruchamiamy ściągnięty program.
 Pokazuje się okienko podobne do poniższego:
 
-<center> ![](HPC_images/Putty.png) </center>
+<center> ![](logowanie_images/Putty.png) </center>
 
 - W polu **Host Name (or IP address)** wpisujemy **hpc.icm.edu.pl**
     (adres maszyny dostępowej) i klikamy w przycisk **Open**.
@@ -28,6 +28,6 @@ Pokazuje się okienko podobne do poniższego:
 Po wpisaniu obu wartości znajdujemy się na komputerze dostępowym *hpc.icm.edu.pl*
 (komputer ten może występować też pod nazwą *hpc*):
 
-<center> ![](HPC_images/Login.jpg) </center>
+<center> ![](logowanie_images/Login.jpg) </center>
 
 Komputery w sieci ICM wyposażone są w systemy operacyjne z rodziny UNIX.
