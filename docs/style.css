@@ -11,3 +11,10 @@
 .md-nav__link.md-nav__link--active {
     font-weight: bold;
 }
+
+img[src*="#prelegent"] {
+  float: left;
+  width:200px;
+  height:250px;
+  margin-right: 1em;
+}

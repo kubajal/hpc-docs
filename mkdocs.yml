@@ -97,9 +97,9 @@ nav:
 
 - Instrukcje:
   - Logowanie:
-    - Logowanie SSH: Tutorials/HPC-intro/ssh_intro.md
-    - Logowanie SSH (Użytkownicy Windows): Tutorials/HPC-intro/ssh_windows.md
-    - Tunelowanie SSH: Tutorials/HPC-intro/ssh-tunel.md
+    - Logowanie SSH: Tutorials/Logowanie/ssh_intro.md
+    - Logowanie SSH (Użytkownicy Windows): Tutorials/Logowanie/ssh_windows.md
+    - Tunelowanie SSH: Tutorials/Logowanie/ssh-tunel.md
   - Podstawy HPC:
     - Wstęp: Tutorials/HPC-intro/introduction.md
     - Bash i terminal: Tutorials/HPC-intro/bash_intro.md
@@ -134,8 +134,9 @@ nav:
   - Archiwum: Szkolenia/archiwum.md
 - Sesje KDM:
   - Aktualności: Sesje_KDM/aktualnosci.md
+  - Sesja 2021: 
+    - Informacje: Sesje_KDM/sesja2021/sesja2021.md
+    - Prelegenci: Sesje_KDM/sesja2021/prelegenci.md
   - Archiwum: Sesje_KDM/archiwum.md
 
 - Kontakt: kontakt.md
-
-# dummy comment
