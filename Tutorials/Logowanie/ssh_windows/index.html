@@ -768,6 +768,26 @@
     Dostęp do ICM z komputera z systemem Windows
   </a>
   
+    <nav class="md-nav" aria-label="Dostęp do ICM z komputera z systemem Windows">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#logowanie-z-poziomu-terminala" class="md-nav__link">
+    Logowanie z poziomu terminala
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#klient-graficzny-putty" class="md-nav__link">
+    Klient graficzny (PuTTY)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1410,6 +1430,26 @@
     Dostęp do ICM z komputera z systemem Windows
   </a>
   
+    <nav class="md-nav" aria-label="Dostęp do ICM z komputera z systemem Windows">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#logowanie-z-poziomu-terminala" class="md-nav__link">
+    Logowanie z poziomu terminala
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#klient-graficzny-putty" class="md-nav__link">
+    Klient graficzny (PuTTY)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -1432,6 +1472,9 @@
                   <h1>Logowanie SSH (Użytkownicy Windows)</h1>
                 
                 <h2 id="dostep-do-icm-z-komputera-z-systemem-windows">Dostęp do ICM z komputera z systemem Windows</h2>
+<h3 id="logowanie-z-poziomu-terminala">Logowanie z poziomu terminala</h3>
+<p>Współczesne wersje systemu Windows 10 udostępniają klient ssh z poziomu PowerShell (interpreter poleceń) w trybie tekstowym. Po uruchomieniu okna PowerShell wykonujemy komendę <code>ssh hpc.icm.edu.pl</code> i dalej postępujemy zgodnie z instrukcją ze strony <a href="../ssh/">Logowanie SSH</a>.</p>
+<h3 id="klient-graficzny-putty">Klient graficzny (PuTTY)</h3>
 <p>Ściągamy program PuTTY, dostępny pod adresem (jest to gotowy do
     użycia plik wykonywalny):</p>
 <p><a href="http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe">http://the.earth.li/~sgtatham/putty/latest/x86/putty.exe</a></p>
@@ -1451,7 +1494,7 @@ Pokazuje się okienko podobne do poniższego:</p>
 <p>Autoryzacja jest dwu-składnikowa (2FA). Pojawia się terminal, w którym proszeni jesteśmy o podanie:</p>
 <ul>
 <li>nazwy użytkownika i hasła</li>
-<li><a href="../ssh/">OTP</a> (one time password)</li>
+<li><a href="../ssh/">OTP</a> (one time password, patrz <a href="../ssh/">autoryzacja dwu-składnikowa</a>)</li>
 </ul>
 <p><center> <img alt="" src="../logowanie_images/otp.jpg" /> </center></p>
 <p>Po wpisaniu obu wartości znajdujemy się na komputerze dostępowym <em>hpc.icm.edu.pl</em>
