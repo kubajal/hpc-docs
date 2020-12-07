@@ -97,7 +97,7 @@ nav:
 
 - Instrukcje:
   - Logowanie:
-    - Logowanie SSH: Tutorials/Logowanie/ssh_intro.md
+    - Logowanie SSH: Tutorials/Logowanie/ssh.md
     - Logowanie SSH (Użytkownicy Windows): Tutorials/Logowanie/ssh_windows.md
     - Tunelowanie SSH: Tutorials/Logowanie/ssh-tunel.md
   - Podstawy HPC:
