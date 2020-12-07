@@ -6,6 +6,11 @@ draft: false
 
 ## Dostęp do ICM z komputera z systemem Windows
 
+### Logowanie z poziomu terminala
+
+Współczesne wersje systemu Windows 10 udostępniają klient ssh z poziomu PowerShell (interpreter poleceń) w trybie tekstowym. Po uruchomieniu okna PowerShell wykonujemy komendę `ssh hpc.icm.edu.pl` i dalej postępujemy zgodnie z instrukcją ze strony [Logowanie SSH](./ssh.md).
+
+### Klient graficzny (PuTTY)
 Ściągamy program PuTTY, dostępny pod adresem (jest to gotowy do
     użycia plik wykonywalny):
 
@@ -25,7 +30,7 @@ Pokazuje się okienko podobne do poniższego:
 Autoryzacja jest dwu-składnikowa (2FA). Pojawia się terminal, w którym proszeni jesteśmy o podanie:
 
 - nazwy użytkownika i hasła
-- [OTP](ssh.md) (one time password)
+- [OTP](ssh.md) (one time password, patrz [autoryzacja dwu-składnikowa](./ssh.md))
 
 <center> ![](logowanie_images/otp.jpg) </center>
 
