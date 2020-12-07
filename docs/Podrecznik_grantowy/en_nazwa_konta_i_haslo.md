@@ -13,7 +13,7 @@ In case of any difficulties obtaining the account's password - please [contact u
 
 To use the ICM computational infrastructure, please log into the access node at `hpc.icm.edu.pl` via SSH using the created account name (do not use your e-mail address).
 
-For more information on connecting – plase see examples for [MS Windows](../Tutorials/Logowanie/ssh_windows.md) and [UNIX/GNU/Linux](../Tutorials/Logowanie/ssh_intro.md).
+For more information on connecting – plase see examples for [MS Windows](../Tutorials/Logowanie/ssh_windows.md) and [UNIX/GNU/Linux](../Tutorials/Logowanie/ssh.md).
 
 Submitting tasks to `hydra` and `topola` is possible directly from the `hpc.icm.edu.pl` access node. To submit tasks to other systems, it is necessary to log in further, e.g. `ssh okeanos` or `ssh rysy`.
 

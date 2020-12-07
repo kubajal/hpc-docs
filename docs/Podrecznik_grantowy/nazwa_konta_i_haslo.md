@@ -12,7 +12,7 @@ W razie trudności z uzyskaniem prawidłowego hasła do konta prosimy o wysłani
 
 Aby móc korzystać z zasobów obliczeniowych ICM, należy zalogować się na komputer dostępowy `login.icm.edu.pl` za pomocą protokołu SSH, przy użyciu nazwy konta, jakie założyliśmy w systemie grantowym (do logowania nie używamy adresu e-mail!).
 
-Na osobnych stronach można znaleźć przykłady połączeń z komputerów z systemem [Windows](../Tutorials/Logowanie/ssh_windows.md) oraz [UNIX/Linux](../Tutorials/Logowanie/ssh_intro.md).
+Na osobnych stronach można znaleźć przykłady połączeń z komputerów z systemem [Windows](../Tutorials/Logowanie/ssh_windows.md) oraz [UNIX/Linux](../Tutorials/Logowanie/ssh.md).
 
 Zlecanie zadań na systemy hydra oraz topola możliwe jest bezpośrednio z komputera `hpc.icm.edu.pl`. W przypadku pozostałych systemów wymagany jest dodatkowy krok logowania wykonany z komputera `hpc.icm.edu.pl`, np. `ssh okeanos` lub `ssh rysy`.
 

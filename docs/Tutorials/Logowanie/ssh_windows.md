@@ -22,12 +22,16 @@ Pokazuje się okienko podobne do poniższego:
 - Przy pierwszym logowaniu pojawi się okno z komunikatem dotyczącym
     klucza dostępu. Należy zatwierdzić klucz wybierając opcję `TAK`
 
-- Pojawia się terminal, w którym proszeni jesteśmy o podanie nazwy
-    użytkownika, a następnie hasła.
+Autoryzacja jest dwu-składnikowa (2FA). Pojawia się terminal, w którym proszeni jesteśmy o podanie:
+
+- nazwy użytkownika i hasła
+- [OTP](ssh.md) (one time password)
+
+<center> ![](logowanie_images/otp.jpg) </center>
 
 Po wpisaniu obu wartości znajdujemy się na komputerze dostępowym *hpc.icm.edu.pl*
 (komputer ten może występować też pod nazwą *hpc*):
 
-<center> ![](logowanie_images/Login.jpg) </center>
+<center> ![](logowanie_images/po_zalogowaniu-z_otp.jpg) </center>
 
 Komputery w sieci ICM wyposażone są w systemy operacyjne z rodziny UNIX.
