@@ -39,7 +39,7 @@ Prezentacje będą 15 minutowe oraz 5 minut na pytania zadawane na czacie.
 
 Prosimy o zarejestrowanie się do dnia XXX.
 
-Formularz rejestracyjny dostępny jest na XXX.
+Formularz rejestracyjny dostępny jest [tutaj](https://docs.google.com/forms/d/e/1FAIpQLSccGyxrxnjWv3yHeOx2qpCRQLKgtFYqCT6E5eHogJA3voNmYw/viewform).
 
 Prelegentów prosimy również o przygotowanie i przesłanie do nas (do dnia xxx):
 
