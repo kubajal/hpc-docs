@@ -1565,7 +1565,7 @@ W przypadku niektórych systemów możliwy/wymagany jest dodatkowy krok logowani
 <p>Logując się przy użyciu ssh na serwer <code>hpc.icm.edu.pl</code> użytkownik podaje dane (hasło/klucz) po czym pojawia się dodatkowe zapytanie o <strong>OTP</strong> (one time password), czyli jednorazowy kod, indywidualny dla każdego, generowany przy użyciu specjalnej aplikacji.</p>
 <p>W celu uzyskania kodu konieczne jest zainstalowanie na swoim telefonie aplikacji obsługującej mechanizm tokenów <strong>TOTP</strong> (Time-based One-time Password algorithm), np. FreeOTP lub GoogleAuthenicator (dostępne w GooglePlay i AppStore). Aplikacje są darmowe i nie wymagają dostępu do internetu (działają w trybie offline).</p>
 <h3 id="2fa-rejestracja-tokenu-totp">2FA - rejestracja tokenu TOTP</h3>
-<p>W celu rejestracji tokenu prosimy o zalogowanie się swoimi danymi w ICM UW do serwisu <code>https://mfa.hpc.icm.edu.pl</code> i wygenerowanie tokenu bez zmiany domyślnych ustawień (enroll token). Pojawi się kod QR, który należny wskanować np. aplikacją FreeOTP. Od tej chwili system będzie oczekiwał podania aktualnej wartości tokenu wyświetlanej w aplikacji przy logowaniu się na <code>hpc.icm.edu.pl</code>.</p>
+<p>W celu rejestracji tokenu prosimy o zalogowanie się swoimi danymi w ICM UW do serwisu <code>https://mfa.hpc.icm.edu.pl</code> i wygenerowanie tokenu bez zmiany domyślnych ustawień (enroll token). Pojawi się kod QR, który należny wskanować np. aplikacją FreeOTP. System będzie oczekiwał podania aktualnej wartości tokenu wyświetlanej w aplikacji przy logowaniu się na <code>hpc.icm.edu.pl</code>, nawet jeśli dotychczas nie został on wygenerowany.</p>
 <h2 id="tworzenie-kluczy-ssh">Tworzenie kluczy SSH</h2>
 <p>Logowanie użytkowania może być uwierzytelnione poprzez podanie hasła lub użycie klucza kryptograficznego.
 Klucze są bezpieczniejsze (i wygodniejsze - nie trzeba za każdym razem wpisywać hasła).</p>
@@ -1618,7 +1618,7 @@ lub kombinacją klawiszy <code>Ctrl+D</code>.</p>
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 7, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 10, 2020</span>
     
   </small>
 </div>
