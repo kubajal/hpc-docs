@@ -21,7 +21,7 @@ W celu uzyskania kodu konieczne jest zainstalowanie na swoim telefonie aplikacji
 
 ### 2FA - rejestracja tokenu TOTP
 
-W celu rejestracji tokenu prosimy o zalogowanie się swoimi danymi w ICM UW do serwisu `https://mfa.hpc.icm.edu.pl` i wygenerowanie tokenu bez zmiany domyślnych ustawień (enroll token). Pojawi się kod QR, który należny wskanować np. aplikacją FreeOTP. Od tej chwili system będzie oczekiwał podania aktualnej wartości tokenu wyświetlanej w aplikacji przy logowaniu się na `hpc.icm.edu.pl`.
+W celu rejestracji tokenu prosimy o zalogowanie się swoimi danymi w ICM UW do serwisu `https://mfa.hpc.icm.edu.pl` i wygenerowanie tokenu bez zmiany domyślnych ustawień (enroll token). Pojawi się kod QR, który należny wskanować np. aplikacją FreeOTP. System będzie oczekiwał podania aktualnej wartości tokenu wyświetlanej w aplikacji przy logowaniu się na `hpc.icm.edu.pl`, nawet jeśli dotychczas nie został on wygenerowany.
 
 ## Tworzenie kluczy SSH
 
