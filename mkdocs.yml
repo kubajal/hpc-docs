@@ -117,6 +117,7 @@ nav:
     - Vector Add: Tutorials/GPU-intro/vector_add.md
     - Element-wise Matrix Add: Tutorials/GPU-intro/matrix_addition.md
     - Parallel reduction: Tutorials/GPU-intro/parallel_reduction.md
+    - Thrust library: Tutorials/GPU-intro/thrust.md
   - Kontenery:
     - Singularity: Tutorials/Kontenery/singularity_intro.md
   - NEC SX-Aurora Tsubasa:
