@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+#define MAX_THREADS_IN_BLOCK 1024
+
 void cpu_add_matrix_elementwise (float *a, float *b, float  *c, int N)
 {
     int index;
@@ -31,7 +33,7 @@ void print_matrix(float *Matrix, const int N)
         for (int j=0; j <N; ++j)
         {
             int index = i + j*N;
-            printf(" %f ", Matrix[index]);
+            printf(" %.2f ", Matrix[index]);
         }
     }  
 }
@@ -93,7 +95,12 @@ void GPU_version_wrapper(const int N)
     cudaMemcpy(d_a, h_a, mem_size, cudaMemcpyHostToDevice);
     cudaMemcpy(d_b, h_b, mem_size, cudaMemcpyHostToDevice);
 
-    const int blockSize = 16;
+    int blockSize; 
+    if (N < MAX_THREADS_IN_BLOCK)
+        blockSize = N;
+    else
+        blockSize = MAX_THREADS_IN_BLOCK;
+
     dim3 dimBlock(blockSize, blockSize); // This variable describes number of threads in the block in each dimension.
     int gridSize = (N + blockSize-1) / blockSize;
     dim3 dimGrid(gridSize, gridSize);    // This variable describes number of blocks in the grid in each dimension.      

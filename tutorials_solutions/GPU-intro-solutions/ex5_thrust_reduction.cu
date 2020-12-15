@@ -12,15 +12,14 @@ void cpu_sum(int *x, int n)
 
 void gpu_sum(int *x, int n)
 {
-
     thrust::device_vector<int> d_vec(n,0); // initialize all n integers of a device_vector to 0
 
-    for(unsigned int i = 0; i < n; ++i)
-    {
+    for(unsigned int i = 0; i < n; ++i){
         d_vec[i] = x[i];
     }
 
     int t_sum = thrust::reduce(d_vec.begin(), d_vec.end(), (int) 0, thrust::plus<int>());
+    // int t_sum = thrust::reduce(d_vec.begin(), d_vec.begin() + 3, (int) 0, thrust::plus<int>()); // reduce from frist to third element of the array;
     printf("GPU (thrust) Sum is %d \n", t_sum);
 }
 
