@@ -42,5 +42,25 @@ ssh rysy
 # run interactive session
 srun -N1 -n4 --account=GRANT_NAME --gres=gpu:1 --time=01:00:00 --pty /bin/bash -l
 # prepare enviroment
-module load gpu/cuda/10.2
+module load gpu/cuda/11.1
+```
+
+Or schedule the job to the queue:
+
+```.slurm
+#!/bin/bash -l
+#SBATCH -J gpu_test
+#SBATCH --gres=gpu:1
+#SBATCH --cpus-per-task=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --nodes=1 
+#SBATCH --account=GRANT_NAME
+#SBATCH --time=01:00:00 
+#SBATCH --qos=normal
+
+
+module load gpu/cuda/11.1  
+cd /home/$USER/rysy/folder_with_your_cuda_exercises
+nvcc ex1_hello_world.cu -o ex1_hello_world
+srun ex1_hello_world
 ```

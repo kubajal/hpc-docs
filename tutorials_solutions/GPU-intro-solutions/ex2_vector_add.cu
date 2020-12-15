@@ -54,7 +54,7 @@ void CPU_version_wrapper(const int N)
         assert(fabs(h_out[i] - h_a[i] - h_b[i]) < MAX_ERR);
     }
     printf("CPU assertion PASSED\n");
-    printf("CPU Last element in the array: out[%d] = %f\n\n",N-1,  h_out[N-1]);
+    printf("CPU Last element in the array: out[%d] = %.2f\n\n",N-1,  h_out[N-1]);
 
     free(h_a);
     free(h_b);
@@ -87,7 +87,7 @@ void GPU_version_wrapper(const int N)
     cudaMemcpy(d_b, h_b, sizeof(float) * N, cudaMemcpyHostToDevice);
 
     // Main function
-    gpu_vector_add<<<1,1024>>>(d_out, d_a, d_b, N);//  <<<blocks, threads_per_block>>>
+    gpu_vector_add<<<1,MAX_THREADS_IN_BLOCK>>>(d_out, d_a, d_b, N);//  <<<blocks, threads_per_block>>>
 
     // if N is a friendly multiplier of THREADS_PER_BLOCK
     // gpu_vector_add<<<N/MAX_THREADS_IN_BLOCK,MAX_THREADS_IN_BLOCK>>>(d_out, d_a, d_b, N);
@@ -101,7 +101,7 @@ void GPU_version_wrapper(const int N)
     // Copy begins when all preceding CUDA calls have completed
 
     // Verification
-    printf("GPU Last element in the array: out[%d] = %f\n",N-1,  h_out[N-1]);
+    printf("GPU Last element in the array: out[%d] = %.2f\n",N-1,  h_out[N-1]);
     for(int i = 0; i < N; i++){
         assert(fabs(h_out[i] - h_a[i] - h_b[i]) < MAX_ERR);
     }

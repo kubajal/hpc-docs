@@ -15,7 +15,7 @@ __global__ void sum(int *x)
     // printf("Hello from device! My threadId = blockIdx.x *blockDim.x + threadIdx.x <=> %d = %d * %d + %d \n",
     // tidx blockIdx.x, blockDim.x, threadIdx.x);
 
-    // Reduction #1: Interleaved Addressing
+    // Reduction #1: Interleaved Addressing - using for loop
     // for(unsigned int s=1; s < blockDim.x; s *= 2) {
     //     if (tid % (2*s) == 0) {
     //         printf("x[%d] = %d \n", tid,x[tid] );
@@ -24,7 +24,7 @@ __global__ void sum(int *x)
     //     __syncthreads();
     // }
     
-    // Reduction #2: Interleaved Addressing
+    // Reduction #1: Interleaved Addressing - using while loop
     // int step  = 1;
     // while (step < blockDim.x)
     // {
@@ -37,10 +37,19 @@ __global__ void sum(int *x)
     //     step *= 2;
     // }
 
+    // // Reduction #2: Interleaved Addressing
+    // for (unsigned int s=1; s < blockDim.x; s *= 2) {
+    //     int index = 2*s*tid;
+    //     if (index < blockDim.x) {
+    //         x[index] += x[index + s];
+    //     }
+    //     __syncthreads();
+    // }
+
     // Reduction #3: Sequential Addressing
     for (unsigned int s=blockDim.x/2; s>0; s>>=1) {
         if (tid < s) {
-        x[tid] += x[tid + s];
+            x[tid] += x[tid + s];
         }
         __syncthreads();
     }

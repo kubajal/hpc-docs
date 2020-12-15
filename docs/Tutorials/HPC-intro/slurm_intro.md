@@ -157,7 +157,6 @@ W celu uruchomienia aplikacji na GPU niezbędne jest podanie opcji `--gres=gpu:l
 #SBATCH --cpus-per-task=1
 #SBATCH --ntasks-per-node=1
 #SBATCH --nodes=1
-#SBATCH --ntasks=1
 #SBATCH --account=GYY-XX
 #SBATCH --time=01:00:00
 #SBATCH --qos=normal
