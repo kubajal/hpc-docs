@@ -1569,7 +1569,7 @@ It is a function in the standard Basic Linear Algebra Subroutines (BLAS)library.
 <span class="kt">void</span> <span class="nf">saxpy_fast</span><span class="p">(</span><span class="kt">float</span> <span class="n">A</span><span class="p">,</span> <span class="n">thrust</span><span class="o">::</span><span class="n">device_vector</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">&gt;&amp;</span> <span class="n">X</span><span class="p">,</span> <span class="n">thrust</span><span class="o">::</span><span class="n">device_vector</span><span class="o">&lt;</span><span class="kt">float</span><span class="o">&gt;&amp;</span> <span class="n">Y</span><span class="p">)</span>
 <span class="p">{</span>
     <span class="c1">// Y &lt;- A * X + Y</span>
-    <span class="n">thrust</span><span class="o">::</span><span class="n">transform</span><span class="p">(</span><span class="n">X</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">X</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span> <span class="n">Y</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">Y</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">saxpy_functor</span><span class="p">(</span><span class="n">A</span><span class="p">));</span>
+    <span class="n">thrust</span><span class="o">::</span><span class="n">transform</span><span class="p">(</span><span class="n">X</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">X</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span> <span class="n">Y</span><span class="p">.</span><span class="n">begin</span><span class="p">(),</span> <span class="n">Y</span><span class="p">.</span><span class="n">end</span><span class="p">(),</span> <span class="n">saxpy_functor</span><span class="p">(</span><span class="n">A</span><span class="p">));</span>
 <span class="p">}</span>
 
 <span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
@@ -1607,7 +1607,7 @@ It is a function in the standard Basic Linear Algebra Subroutines (BLAS)library.
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 12, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 15, 2020</span>
     
   </small>
 </div>

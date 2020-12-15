@@ -1426,7 +1426,25 @@ ssh rysy
 <span class="c1"># run interactive session</span>
 srun -N1 -n4 --account<span class="o">=</span>GRANT_NAME --gres<span class="o">=</span>gpu:1 --time<span class="o">=</span><span class="m">01</span>:00:00 --pty /bin/bash -l
 <span class="c1"># prepare enviroment</span>
-module load gpu/cuda/10.2
+module load gpu/cuda/11.1
+</code></pre></div>
+
+<p>Or schedule the job to the queue:</p>
+<div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash -l</span>
+<span class="kp">#SBATCH -J gpu_test</span>
+<span class="kp">#SBATCH --gres=gpu:1</span>
+<span class="kp">#SBATCH --cpus-per-task=1</span>
+<span class="kp">#SBATCH --ntasks-per-node=1</span>
+<span class="kp">#SBATCH --nodes=1 </span>
+<span class="kp">#SBATCH --account=GRANT_NAME</span>
+<span class="kp">#SBATCH --time=01:00:00 </span>
+<span class="kp">#SBATCH --qos=normal</span>
+
+
+module load gpu/cuda/11.1  
+<span class="nb">cd</span> /home/<span class="nv">$USER</span>/rysy/folder_with_your_cuda_exercises
+nvcc ex1_hello_world.cu -o ex1_hello_world
+<span class="nb">srun</span> ex1_hello_world
 </code></pre></div>
                 
                   
@@ -1436,7 +1454,7 @@ module load gpu/cuda/10.2
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 16, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 15, 2020</span>
     
   </small>
 </div>
