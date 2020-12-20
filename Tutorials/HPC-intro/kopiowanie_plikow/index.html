@@ -889,6 +889,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#klient-ftp" class="md-nav__link">
+    Klient FTP
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1504,6 +1511,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#klient-ftp" class="md-nav__link">
+    Klient FTP
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1594,10 +1608,6 @@ Składnia jest taka jak przy zwykłym kopiowaniu <em>cp</em>.</p>
     scp -r -C -p source_folder username@rysy:/home/username
 </code></pre></div>
 
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Użytkownicy Windowsa mogą skorzystać z darmowej aplikacji <code>WinScp</code> lub <code>Filezilla</code> (dostępna też do Linuxem).</p>
-</div>
 <h3 id="synchronizacja-i-montowanie-katalogow">Synchronizacja i montowanie katalogów</h3>
 <div class="highlight"><pre><span></span><code><span class="c1"># Zamontowanie zdalnego folderu na lokalnej maszynie</span>
     sshfs user@your.server.example.com:/source_folder destination_folder
@@ -1642,6 +1652,19 @@ a następnie prawo odczytu (i zapisu jeżeli dotyczy) dla tej grupy.</p>
 <p><code>$ chmod g+w nazwa_pliku # zapis</code></p>
 </li>
 </ol>
+<h2 id="klient-ftp">Klient FTP</h2>
+<p>Do transferu plików można wykorzystać (darmową) aplikacje, np <code>FileZilla</code>.</p>
+<p>W trakcie dwu etapowej autoryzacji (2FA) wymagane jest podanie hasła <a href="../../Logowanie/ssh/">OTP</a>.</p>
+<p>W kliencie FTP konieczne jest ustawienie logowania w trybie interaktywnym.</p>
+<p>Przykładowo, dla aplikacji <code>FileZilla</code> konfiguracja wygląda następująco:</p>
+<ul>
+<li>W lewym górnym rogu kliknij <code>File</code> &rarr; <code>Site Manager...</code></li>
+</ul>
+<p><img alt="sftp_2fa_site_manager" src="../images/sftp_2fa_site_manager.png" /></p>
+<ul>
+<li>Wpisz hasło <a href="../../Logowanie/ssh/">OTP</a></li>
+</ul>
+<p><img alt="sftp_enter_2fa" src="../images/sftp_enter_2fa.png" /></p>
                 
                   
                     
@@ -1650,7 +1673,7 @@ a następnie prawo odczytu (i zapisu jeżeli dotyczy) dla tej grupy.</p>
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 22, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 20, 2020</span>
     
   </small>
 </div>
