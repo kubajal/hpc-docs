@@ -24,7 +24,7 @@ W celu uzyskania kodu konieczne jest zainstalowanie na swoim telefonie aplikacji
 W celu rejestracji tokenu prosimy o zalogowanie się swoimi danymi w ICM UW do serwisu `https://mfa.hpc.icm.edu.pl` i wygenerowanie tokenu bez zmiany domyślnych ustawień (enroll token). Pojawi się kod QR, który należny wskanować np. aplikacją FreeOTP. System będzie oczekiwał podania aktualnej wartości tokenu wyświetlanej w aplikacji przy logowaniu się na `hpc.icm.edu.pl`, nawet jeśli dotychczas nie został on wygenerowany.
 
 !!! Warning
-    Po usunięciu tokenu z aplikacji w telefonie nie ma możliwości jego odzyskania.
+    Po usunięciu tokenu z aplikacji w telefonie nie ma możliwości jego odzyskania (tylko reset).
 
 ## Tworzenie kluczy SSH
 
@@ -50,7 +50,6 @@ ssh -o IdentitiesOnly=yes -i ~/.ssh/example_rsa user@your.server.example.com
 # logowanie z użyciem hasła (zamiast klucza)
 ssh -o PubkeyAuthentication=no user@your.server.example.com
 ```
-
 
 ### Zmiana kluczy
 

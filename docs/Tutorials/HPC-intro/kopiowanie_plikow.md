@@ -67,9 +67,6 @@ Uwagi:
     scp -r -C -p source_folder username@rysy:/home/username
 ```
 
-!!! Note
-    Użytkownicy Windowsa mogą skorzystać z darmowej aplikacji `WinScp` lub `Filezilla` (dostępna też do Linuxem).
-
 ### Synchronizacja i montowanie katalogów
 
 ```.sh
@@ -121,3 +118,21 @@ Przykładowo, jeżeli grant ma numer `GBXX-YY`,
     `$ chmod g+r nazwa_pliku # odczyt`
 
     `$ chmod g+w nazwa_pliku # zapis`
+
+## Klient FTP
+
+Do transferu plików można wykorzystać (darmową) aplikacje, np `FileZilla`.
+
+W trakcie dwu etapowej autoryzacji (2FA) wymagane jest podanie hasła [OTP](../Logowanie/ssh.md).
+
+W kliencie FTP konieczne jest ustawienie logowania w trybie interaktywnym.
+
+Przykładowo, dla aplikacji `FileZilla` konfiguracja wygląda następująco:
+
+- W lewym górnym rogu kliknij `File` --> `Site Manager...`
+
+![sftp_2fa_site_manager](./images/sftp_2fa_site_manager.png)
+
+- Wpisz hasło [OTP](../Logowanie/ssh.md)
+
+![sftp_enter_2fa](./images/sftp_enter_2fa.png)

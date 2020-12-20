@@ -1,6 +1,6 @@
 ---
 title: "XXI Sesja KDM"
-date: 12-13 stycznia 2021 r.
+date: 26-27 stycznia 2021 r.
 draft: false
 ---
 
@@ -15,7 +15,7 @@ Do udziału w Sesji zapraszamy Kierowników oraz przedstawicieli grantów realiz
 
 ### Kiedy
 
-W dniach 12 – 13 stycznia 2021 r.  **online**
+W dniach 26 – 27 stycznia 2021 r.  **online**
 
 ### Miejsce
 
