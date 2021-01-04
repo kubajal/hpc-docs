@@ -1,8 +1,6 @@
 site_name: Dokumentacja ICM UW
 site_description: Komputery Dużej Mocy w ICM UW
 site_author: ICM
-#strict: true
-# dummy comment
 
 theme: 
   logo: 'images/Logo_icm_biale.png'
@@ -11,6 +9,8 @@ theme:
   palette:
     primary: 'blue-grey'
     accent: 'green'
+  features:
+    - search.highlight
 
 plugins:
   - search # necessary for search to work
