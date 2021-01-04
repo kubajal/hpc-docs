@@ -18,7 +18,7 @@
     
     
       
-        <title>1 Hello World - Dokumentacja ICM UW</title>
+        <title>Instalacja Oprogramowania - spack - Dokumentacja ICM UW</title>
       
     
     
@@ -67,6 +67,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#przykad" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -94,7 +99,7 @@
         <div class="md-header-nav__topic">
           <span class="md-ellipsis">
             
-              1 Hello World
+              Instalacja Oprogramowania - spack
             
           </span>
         </div>
@@ -841,12 +846,14 @@
           
 
 
+  
+
 
   
-  <li class="md-nav__item md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8-2" type="checkbox" id="nav-8-2" >
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8-2" type="checkbox" id="nav-8-2" checked>
     
     <label class="md-nav__link" for="nav-8-2">
       Podstawy HPC
@@ -867,7 +874,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../HPC-intro/introduction/" class="md-nav__link">
+    <a href="../introduction/" class="md-nav__link">
       Wstęp
     </a>
   </li>
@@ -880,7 +887,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../HPC-intro/bash_intro/" class="md-nav__link">
+    <a href="../bash_intro/" class="md-nav__link">
       Bash i terminal
     </a>
   </li>
@@ -893,7 +900,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../HPC-intro/kopiowanie_plikow/" class="md-nav__link">
+    <a href="../kopiowanie_plikow/" class="md-nav__link">
       Kopiowanie plików
     </a>
   </li>
@@ -906,7 +913,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../HPC-intro/slurm_intro/" class="md-nav__link">
+    <a href="../slurm_intro/" class="md-nav__link">
       Zlecanie zadań do SLURM
     </a>
   </li>
@@ -919,7 +926,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../HPC-intro/ustawianie_srodowiska/" class="md-nav__link">
+    <a href="../ustawianie_srodowiska/" class="md-nav__link">
       Ustawianie środowiska
     </a>
   </li>
@@ -932,7 +939,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../HPC-intro/instalacja_oprogramowania/" class="md-nav__link">
+    <a href="../instalacja_oprogramowania/" class="md-nav__link">
       Instalacja nowego oprogramowania
     </a>
   </li>
@@ -943,11 +950,72 @@
           
 
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../HPC-intro/instalacja_oprogramowania_spack/" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Instalacja oprogramowania - spack
+        <span class="md-nav__icon md-icon"></span>
+      </label>
+    
+    <a href="./" class="md-nav__link md-nav__link--active">
       Instalacja oprogramowania - spack
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#przykad" class="md-nav__link">
+    Przykład
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#przydatne-polecenia" class="md-nav__link">
+    Przydatne polecenia
+  </a>
+  
+    <nav class="md-nav" aria-label="Przydatne polecenia">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#przygotowanie-do-instalacji" class="md-nav__link">
+    Przygotowanie do instalacji
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inne" class="md-nav__link">
+    Inne
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -958,7 +1026,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../HPC-intro/status_zadania/" class="md-nav__link">
+    <a href="../status_zadania/" class="md-nav__link">
       Status zadania
     </a>
   </li>
@@ -971,7 +1039,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../HPC-intro/status_grantu_i_konta/" class="md-nav__link">
+    <a href="../status_grantu_i_konta/" class="md-nav__link">
       Status grantu/konta/qos
     </a>
   </li>
@@ -987,14 +1055,12 @@
           
 
 
-  
-
 
   
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8-3" type="checkbox" id="nav-8-3" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8-3" type="checkbox" id="nav-8-3" >
     
     <label class="md-nav__link" for="nav-8-3">
       Podstawy GPU
@@ -1015,7 +1081,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../introduction/" class="md-nav__link">
+    <a href="../../GPU-intro/introduction/" class="md-nav__link">
       Introduction (Cheat Sheet)
     </a>
   </li>
@@ -1026,18 +1092,11 @@
           
 
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-    <a href="./" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../GPU-intro/hello_world/" class="md-nav__link">
       Hello World
     </a>
-    
   </li>
 
         
@@ -1048,7 +1107,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../vector_add/" class="md-nav__link">
+    <a href="../../GPU-intro/vector_add/" class="md-nav__link">
       Vector Add
     </a>
   </li>
@@ -1061,7 +1120,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../matrix_addition/" class="md-nav__link">
+    <a href="../../GPU-intro/matrix_addition/" class="md-nav__link">
       Element-wise Matrix Add
     </a>
   </li>
@@ -1074,7 +1133,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../parallel_reduction/" class="md-nav__link">
+    <a href="../../GPU-intro/parallel_reduction/" class="md-nav__link">
       Parallel reduction
     </a>
   </li>
@@ -1087,7 +1146,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../thrust/" class="md-nav__link">
+    <a href="../../GPU-intro/thrust/" class="md-nav__link">
       Thrust library
     </a>
   </li>
@@ -1534,68 +1593,218 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#przykad" class="md-nav__link">
+    Przykład
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#przydatne-polecenia" class="md-nav__link">
+    Przydatne polecenia
+  </a>
+  
+    <nav class="md-nav" aria-label="Przydatne polecenia">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#przygotowanie-do-instalacji" class="md-nav__link">
+    Przygotowanie do instalacji
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inne" class="md-nav__link">
+    Inne
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://git.icm.edu.pl/owu/hpc-docs/edit/master/docs/Tutorials/GPU-intro/hello_world.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://git.icm.edu.pl/owu/hpc-docs/edit/master/docs/Tutorials/HPC-intro/instalacja_oprogramowania_spack.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                  <h1>Hello World</h1>
+                  <h1>Instalacja oprogramowania - spack</h1>
                 
-                <p>Write a simple <code>ex1_hello_world.cu</code> application using cuda.
-Experiment with different amount of blocks and threads per block.</p>
-<div class="highlight"><pre><span></span><code><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp"></span>
-
-<span class="kr">__global__</span> <span class="kt">void</span> <span class="nf">print_from_gpu</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
-    <span class="kt">int</span> <span class="n">tidx</span> <span class="o">=</span> <span class="nb">blockIdx</span><span class="p">.</span><span class="n">x</span><span class="o">*</span><span class="nb">blockDim</span><span class="p">.</span><span class="n">x</span><span class="o">+</span><span class="nb">threadIdx</span><span class="p">.</span><span class="n">x</span><span class="p">;</span>
-    <span class="n">printf</span><span class="p">(</span><span class="s">&quot;Hello from device! My threadId = blockIdx.x *blockDim.x + threadIdx.x &lt;=&gt; %d = %d * %d + %d </span><span class="se">\n</span><span class="s">&quot;</span><span class="p">,</span>
-    <span class="n">tidx</span><span class="p">,</span> <span class="nb">blockIdx</span><span class="p">.</span><span class="n">x</span><span class="p">,</span> <span class="nb">blockDim</span><span class="p">.</span><span class="n">x</span><span class="p">,</span> <span class="nb">threadIdx</span><span class="p">.</span><span class="n">x</span><span class="p">);</span>
-<span class="p">}</span>
-
-<span class="kt">int</span> <span class="nf">main</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span> <span class="p">{</span>
-    <span class="n">printf</span><span class="p">(</span><span class="s">&quot;Hello World from host!</span><span class="se">\n</span><span class="s">&quot;</span><span class="p">);</span>
-
-    <span class="n">print_from_gpu</span><span class="o">&lt;&lt;&lt;</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="o">&gt;&gt;&gt;</span><span class="p">();</span>  <span class="c1">// &lt;&lt;&lt;blocks, threads_per_block&gt;&gt;&gt;</span>
-
-    <span class="n">cudaDeviceSynchronize</span><span class="p">();</span>
-    <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
-<span class="p">}</span>
+                <div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Spack to menedżer pakietów dla superkomputerów. 
+<strong>Ułatwia</strong> instalację oprogramowania naukowego. 
+Spack nie jest powiązany z konkretnym językiem; 
+pozwala zbudować stos oprogramowania w Pythonie lub R, 
+link'ować biblioteki napisane w C, C++ lub Fortran'ie. 
+Ponadta można łatwo zmieniać kompilatory lub celować w określone mikroarchitektury.</p>
+</div>
+<p>Źródła:</p>
+<ul>
+<li><a href="https://spack.io/">https://spack.io/</a></li>
+<li><a href="https://spack.readthedocs.io/en/latest/">https://spack.readthedocs.io/en/latest/</a></li>
+<li><a href="https://www.youtube.com/watch?v=z7ZdnCkaPCY&amp;ab_channel=InsideHPCReport">https://www.youtube.com/watch?v=z7ZdnCkaPCY&amp;ab_channel=InsideHPCReport</a></li>
+</ul>
+<p>W repozytorium <a href="https://git.icm.edu.pl/owu-public">https://git.icm.edu.pl/owu-public</a> znajduje się
+folder <code>spack-icm-base</code> z wersją spacka, używanej w ICMie oraz zestaw paczek (namespace <code>icm</code>).</p>
+<p>Kolejne dwa repozytoria to <code>spack-icm-topola</code> i <code>spack-icm-okeanos</code> będące fork-ami <code>base</code>. 
+Zawierające one specyficzne konfiguracje dla poszczególnych systemów.</p>
+<h2 id="przykad">Przykład</h2>
+<p>Poniżej przedstawione są komendy pozwalające zbudować program <a href="https://www.openfoam.com/">OpenFOAM</a> na komputerze Topola.</p>
+<ol>
+<li>
+<p>Klonujemy projekt <code>spack-icm-topola</code> z git:</p>
+<div class="highlight"><pre><span></span><code>    $ git clone https://git.icm.edu.pl/owu-public/spack-icm-topola.git<span class="sb">`</span>
 </code></pre></div>
 
-<p>Compile and run:</p>
-<div class="highlight"><pre><span></span><code>$ nvcc ex1_hello_world.cu -o hello_world
-$ ./hello_world
+</li>
+<li>
+<p>Wchodzimy na węzeł obliczeniowy (to ważne, spack nie chce działać z tcsh):</p>
+<div class="highlight"><pre><span></span><code>    $ srun -N1 -n10 --partition<span class="o">=</span>topola --account<span class="o">=</span>GRANT_NAME --qos<span class="o">=</span>hpc --time<span class="o">=</span><span class="m">08</span>:00:00 --pty /bin/bash -l
 </code></pre></div>
 
-<p>If you have an account at ICM HPC, you can use the <em>Rysy</em> cluster to run GPU jobs:</p>
-<div class="highlight"><pre><span></span><code>ssh username@hpc.icm.edu.pl
-ssh rysy
-<span class="c1"># run interactive session</span>
-srun -N1 -n4 --account<span class="o">=</span>GRANT_NAME --gres<span class="o">=</span>gpu:1 --time<span class="o">=</span><span class="m">01</span>:00:00 --pty /bin/bash -l
-<span class="c1"># prepare enviroment</span>
-module load gpu/cuda/11.1
+</li>
+<li>
+<p>Ustawiamy środowisko dla spack-a:</p>
+<div class="highlight"><pre><span></span><code>    $ module load common/spack/0.15.4
+    $ <span class="nb">source</span> ./spack-icm-topola/etc/spack/setup-env.sh
 </code></pre></div>
 
-<p>Or schedule the job to the queue:</p>
-<div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash -l</span>
-<span class="kp">#SBATCH -J gpu_test</span>
-<span class="kp">#SBATCH --gres=gpu:1</span>
-<span class="kp">#SBATCH --cpus-per-task=1</span>
-<span class="kp">#SBATCH --ntasks-per-node=1</span>
-<span class="kp">#SBATCH --nodes=1 </span>
-<span class="kp">#SBATCH --account=GRANT_NAME</span>
-<span class="kp">#SBATCH --time=01:00:00 </span>
-<span class="kp">#SBATCH --qos=normal</span>
+</li>
+<li>
+<p>Sprawdzamy środowisko spack-a:</p>
+<div class="highlight"><pre><span></span><code>    $ spack find -L
+    <span class="o">==</span>&gt; XXX installed packages
+    ....
+</code></pre></div>
+
+</li>
+<li>
+<p>Specyfikujemy aplikację którą chcemy zainstalować</p>
+<div class="highlight"><pre><span></span><code>    $ spack spec -LI openfoam@2006^/brej2ys
+</code></pre></div>
+
+<p>Ogólne oznaczenia wersji i zależności:</p>
+<div class="highlight"><pre><span></span><code>    xxx@wersja_1234
+    xxx^/zaleznosc_np_openmpi
+    xxx~bez_tej_zaleznosci
+</code></pre></div>
+
+<p>Na komputerze topola zależność <code>^/brej2ys</code> wskazuje na openmpi (dla mpich-a to <code>^/xtz6bcc</code>).
+W przypadku openfoam'a należy wybrać openmpi.</p>
+</li>
+<li>
+<p>Instalujemy</p>
+<div class="highlight"><pre><span></span><code>    $ spack install openfoam@2006^/brej2ys
+</code></pre></div>
+
+<p>Możemy sprawdzić szczegóły instalacji</p>
+<div class="highlight"><pre><span></span><code>    $ spack find --deps --long openfoam@2006^openmpi
+
+    <span class="o">==</span>&gt; <span class="m">1</span> installed package
+    -- linux-centos7-haswell / gcc@4.8.5 ----------------------------
+    ...
+</code></pre></div>
+
+</li>
+<li>
+<p>Ładujemy moduł z openfoam'em przygotowany przez spack'a.
+   Moduł i instalacja jest specyficzna dla użytkownika który je wykonywał.</p>
+<div class="highlight"><pre><span></span><code>    $ module avail
+    ------------------------------------------
+    /icm/home/user_name/ICM/spack-icm-topola/share/spack/modules/linux-centos7-haswell
+     -------------------------------------------
+    openfoam-2006-gcc-4.8.5-abcdefg
+
+    $ module load openfoam-2006-gcc-4.8.5-abcdefg
+</code></pre></div>
+
+</li>
+<li>
+<p>Uruchamiamy openfoam'a</p>
+<div class="highlight"><pre><span></span><code>    $ <span class="nv">TESTDIR</span><span class="o">=</span>katalog_roboczy
+    $ cp -r <span class="si">${</span><span class="nv">FOAM_TUTORIALS</span><span class="si">}</span>/multiphase/interFoam/laminar/damBreak <span class="nv">$TESTDIR</span>
+    $ <span class="nb">cd</span> <span class="nv">$TESTDIR</span>
+    $ ./Allclean
+    $ ./Allrun
+
+    <span class="c1">#Sprawdzamy logi:</span>
+    $ cat damBreakFine/log.interFoam
+</code></pre></div>
+
+</li>
+</ol>
+<p>Dla Okeanos'a procedura jest analogiczna.</p>
+<h2 id="przydatne-polecenia">Przydatne polecenia</h2>
+<div class="highlight"><pre><span></span><code>spack find xxx - pokazuje jakie paczki udało sie spackowi już zainstalować
+spack find --long xxx - pokazuje hashe
+spack find --deps xxx - pokazuje jakie zależności dla danej paczki
+spack list xxx - pokazuje co umie zainstalować
+spack info xxx - pokazuje w jakich wersje i zależności dla danej paczki
+spack external find - aktulalizuje wiedze o paczkach obecnych w
+systemie <span class="o">(</span>np. zainstalowanych bez pomocy spacka<span class="o">)</span>
+</code></pre></div>
+
+<h3 id="przygotowanie-do-instalacji">Przygotowanie do instalacji</h3>
+<div class="highlight"><pre><span></span><code><span class="o">[</span>user@t7-4 ICM<span class="o">]</span>$ <span class="nb">source</span> spack-icm-topola/share/spack/setup-env.sh
+<span class="o">[</span>user@t7-4 ICM<span class="o">]</span>$ <span class="nb">cd</span> spack-icm-topola/
+<span class="o">[</span>user@t7-4 spack-icm-topola<span class="o">]</span>$ spack spec -LI openfoam
 
 
-module load gpu/cuda/11.1  
-<span class="nb">cd</span> /home/<span class="nv">$USER</span>/rysy/folder_with_your_cuda_exercises
-nvcc ex1_hello_world.cu -o ex1_hello_world
-<span class="nb">srun</span> ex1_hello_world
+xxx@wersja_1234
+xxx^zaleznosc_np_openmpi
+xxx~bez_tej_zaleznosci
+
+spack install xxx@wersja_1234^zaleznosc_np_openmpi
+</code></pre></div>
+
+<h3 id="inne">Inne</h3>
+<div class="highlight"><pre><span></span><code><span class="o">[</span>user@t7-4 ICM<span class="o">]</span>$ find spack-icm-* -type f -name <span class="s2">&quot;*setup-env.sh&quot;</span>
+spack-icm-base/share/spack/setup-env.sh
+spack-icm-topola/share/spack/setup-env.sh
+
+<span class="c1"># definicje budowalnych/preinstalowanych paczek w systemie</span>
+cat spack-icm-topola/etc/spack/packages.yaml 
+
+<span class="c1"># definicje zależności dla programu openfoam</span>
+cat spack-icm-topola/var/spack/repos/builtin/packages/openfoam-org/package.py 
+
+<span class="c1"># denicje paczek mpich i openmpi dostosowane do topoli</span>
+cat spack-icm-topola/var/spack/repos/icm-edu-pl/packages/ 
+
+<span class="c1"># logi z budowy</span>
+/lu/topola.temp/spack-stage/moja_paczka 
 </code></pre></div>
                 
                   
@@ -1605,7 +1814,7 @@ nvcc ex1_hello_world.cu -o ex1_hello_world
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 15, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 4, 2021</span>
     
   </small>
 </div>
@@ -1628,7 +1837,7 @@ nvcc ex1_hello_world.cu -o ex1_hello_world
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="Footer">
         
-          <a href="../introduction/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../instalacja_oprogramowania/" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
             </div>
@@ -1637,19 +1846,19 @@ nvcc ex1_hello_world.cu -o ex1_hello_world
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Introduction (Cheat Sheet)
+                Instalacja nowego oprogramowania
               </div>
             </div>
           </a>
         
         
-          <a href="../vector_add/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../status_zadania/" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                Vector Add
+                Status zadania
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
