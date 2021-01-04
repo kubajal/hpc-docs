@@ -2,6 +2,8 @@
 
 {% block scripts %}
 
+{{ super() }} <!-- inherite from the parent template instead of overriding-->
+
 <!-- Cookie Consent by https://jakwylaczyccookie.pl/darmowy-notyfikator-cookie/ -->
 <div id="simplecookienotification_v01" style="display: block; z-index: 99999; min-height: 35px; width: 100%; position: fixed; background: rgb(31, 31, 31); border-image: initial; border-top: 1px solid rgb(198, 198, 198); text-align: center; color: rgb(119, 119, 119); left: 0px; bottom: 0px; right: 0px; border-right-color: rgb(198, 198, 198); border-bottom-color: rgb(198, 198, 198); border-left-color: rgb(198, 198, 198);">
     <div style="padding:10px; margin-left:15px; margin-right:15px; font-size:14px; font-weight:normal;">
