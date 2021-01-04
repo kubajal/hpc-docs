@@ -53,9 +53,10 @@ ssh -o PubkeyAuthentication=no user@your.server.example.com
 
 ### Zmiana kluczy
 
-1\. System Windows + Putty (klient ssh): Należy uruchomić program
-'regedit' (systemowa aplikacja w Windows). Następnie w panelu po lewej
-stronie wyszukać w drzewie wpis:
+#### System Windows
+
+Należy uruchomić program `regedit` (systemowa aplikacja w Windows). 
+Następnie w panelu po lewej stronie wyszukać w drzewie wpis:
 
 ```.sh
 HKEY_CURRENT_USER\Software\UserName\PuTTY\SshHostKeys
@@ -63,7 +64,9 @@ HKEY_CURRENT_USER\Software\UserName\PuTTY\SshHostKeys
 
 i w oknie po prawej stronie odszukać wiersz zawierający nazwę 'hpc.icm.edu.pl', a następnie go usunąć.
 
-2\. System Linux: Aby usunąć stary klucz wykonujemy w terminalu komendę:
+#### System Linux
+
+Aby usunąć stary klucz wykonujemy w terminalu komendę:
 
 ```.sh
 ssh-keygen -f $HOME/.ssh/known_hosts -R hpc.icm.edu.pl
