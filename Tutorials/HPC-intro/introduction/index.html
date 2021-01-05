@@ -67,11 +67,6 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
-        
-        <a href="#konto-i-haso" class="md-skip">
-          Skip to content
-        </a>
-      
     </div>
     <div data-md-component="announce">
       
@@ -880,63 +875,9 @@
     <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
     
     
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Wstęp
-        <span class="md-nav__icon md-icon"></span>
-      </label>
-    
     <a href="./" class="md-nav__link md-nav__link--active">
       Wstęp
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#konto-i-haso" class="md-nav__link">
-    Konto i hasło
-  </a>
-  
-    <nav class="md-nav" aria-label="Konto i hasło">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#zmiana-hasa" class="md-nav__link">
-    Zmiana hasła
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pierwsze-logowanie" class="md-nav__link">
-    Pierwsze logowanie
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#support" class="md-nav__link">
-    Support
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
     
   </li>
 
@@ -1606,62 +1547,6 @@
               </div>
             
             
-              
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc" >
-                <div class="md-sidebar__scrollwrap">
-                  <div class="md-sidebar__inner">
-                    
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#konto-i-haso" class="md-nav__link">
-    Konto i hasło
-  </a>
-  
-    <nav class="md-nav" aria-label="Konto i hasło">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#zmiana-hasa" class="md-nav__link">
-    Zmiana hasła
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#pierwsze-logowanie" class="md-nav__link">
-    Pierwsze logowanie
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#support" class="md-nav__link">
-    Support
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-                  </div>
-                </div>
-              </div>
-            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -1678,42 +1563,6 @@
 At ICM UW we decided that there is no reason in preparing 'yet another compilation of...'.
 Instead, we would like to facilitate the first HPC steps for those who are polish speaking only.
 As a result, most of the materials are given in polish.</p>
-<h2 id="konto-i-haso">Konto i hasło</h2>
-<p>Nazwa konta użytkownika i hasło tworzone są w momencie rejestracji użytkownika w bazie grantów (dotyczy kierownika grantu) lub na etapie dodawania współwykonawcy do grantu.</p>
-<div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>Powstaje nowy serwis do obsługi rejestracji i kont użytkowników.
-Szczegóły niebawem.</p>
-</div>
-<h3 id="zmiana-hasa">Zmiana hasła</h3>
-<p>Zmiana hasła możliwa jest pod adresem <a href="https://haslo.icm.edu.pl/">https://haslo.icm.edu.pl/</a></p>
-<h2 id="pierwsze-logowanie">Pierwsze logowanie</h2>
-<p>Przy pierwszym logowaniu użytkownik zostanie poproszony o zmianę hasła. Nowe hasło powinno składać się z minimum 8 znaków oraz zawierać z trzech z czterech klas (cyfry, małe litery, wielkie litery, inne znaki).</p>
-<p>Na ekranie pojawią się komunikaty:</p>
-<div class="highlight"><pre><span></span><code>WARNING: Your password has expired.
-You must change your password now and login again!
-Changing password for user login_użytkownika
-Enter login(LDAP) password:               &lt;----- wpisać hasło początkowe z maila
-New password:                             &lt;----- wpisać nowe hasło
-Retype new password:                      &lt;----- ponownie wpisać nowe hasło
-LDAP password information changed for username
-</code></pre></div>
-
-<ul>
-<li>Przy wprowadzaniu hasła na ekranie <strong>nic się nie dzieje</strong> tzn. nie miga kursor ani nie pojawiają się żadne znaki ukrywające wprowadzane hasło.
-Po wprowadzeniu hasła należy wcisnąć enter.</li>
-<li>Jeśli hasło przesłane mailem nie dotarło do użytkownika na etapie rejestracji,
-wskazane jest w pierwszej kolejności sprawdzenie katalogu <em>spam</em> w poczcie.
-Jeśli pojawią się dalsze trudności prosimy o wysłanie maila na adres pomoc(<a href="https://en.wikipedia.org/wiki/At_sign#Names_in_other_languages">monkey</a>)icm.edu.pl.</li>
-<li>Zmiany hasła można dokonać ponownie posługując się poleceniem <code>passwd</code>.
-Zmieniane hasło nie może być: <a href="http://pl.wikipedia.org/wiki/Palindrom">palindromem</a>, ciągiem sąsiednich znaków z klawiatury oraz podobne do hasła poprzedniego.</li>
-</ul>
-<h2 id="support">Support</h2>
-<p>Wsparcie użytkowników i obsługa grantów obliczeniowych:</p>
-<ul>
-<li>E-mail: pomoc(<a href="https://en.wikipedia.org/wiki/At_sign#Names_in_other_languages">monkey</a>)icm.edu.pl</li>
-<li>Telefonicznie: +48 22 8749 200</li>
-</ul>
                 
                   
                     
@@ -1722,7 +1571,7 @@ Zmieniane hasło nie może być: <a href="http://pl.wikipedia.org/wiki/Palindrom
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 10, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 5, 2021</span>
     
   </small>
 </div>
