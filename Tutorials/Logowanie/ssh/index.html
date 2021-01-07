@@ -881,6 +881,47 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#aplikacje-do-obsugi-tokenow-totp" class="md-nav__link">
+    Aplikacje do obsługi tokenów TOTP
+  </a>
+  
+    <nav class="md-nav" aria-label="Aplikacje do obsługi tokenów TOTP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pl-gnulinux" class="md-nav__link">
+    [PL] GNU/Linux
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#en-gnulinux" class="md-nav__link">
+    [EN] GNU/Linux
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pl-ms-windows" class="md-nav__link">
+    [PL] MS Windows
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#en-ms-windows" class="md-nav__link">
+    [EN] MS Windows
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1751,6 +1792,47 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#aplikacje-do-obsugi-tokenow-totp" class="md-nav__link">
+    Aplikacje do obsługi tokenów TOTP
+  </a>
+  
+    <nav class="md-nav" aria-label="Aplikacje do obsługi tokenów TOTP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pl-gnulinux" class="md-nav__link">
+    [PL] GNU/Linux
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#en-gnulinux" class="md-nav__link">
+    [EN] GNU/Linux
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pl-ms-windows" class="md-nav__link">
+    [PL] MS Windows
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#en-ms-windows" class="md-nav__link">
+    [EN] MS Windows
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1883,6 +1965,229 @@ System będzie oczekiwał podania aktualnej wartości tokenu wyświetlanej w apl
 <p class="admonition-title">Warning</p>
 <p>Po usunięciu tokenu z aplikacji w telefonie nie ma możliwości jego odzyskania (tylko reset wykonany przez administratora).</p>
 </div>
+<h3 id="aplikacje-do-obsugi-tokenow-totp">Aplikacje do obsługi tokenów TOTP</h3>
+<h4 id="pl-gnulinux">[PL] GNU/Linux</h4>
+<p>Rejestracja tokenu TOTP przy pomocy aplikacji "pass" w systemie
+operacyjnym GNU/Linux:</p>
+<ol>
+<li>
+<p>Instalujemy aplikację "pass". Najwygodniej jest to zrobić za pośrednictwem repozytorium pakietów właściwego dla naszej dystrybucji systemu. Alternatywnie - program można pobrać ze strony: <a href="https://github.com/tadfisher/pass-otp">https://github.com/tadfisher/pass-otp</a></p>
+</li>
+<li>
+<p>Program "pass" przechowuje hasła w postaci zaszyfrowanej, dlatego konieczne będzie zainstalowanie pakietu "gnupg" (z repozytorium pakietów systemu) i wygenerowanie klucza GPG, który będzie służył do szyfrowania naszych danych. Można to zrobić wydając instrukcję:</p>
+<p><code>gpg --full-gen-key</code></p>
+<p>i postępując zgodnie z wyświetlanymi na ekranie poleceniami
+(a w razie wątpliwości akceptując domyślne parametry).</p>
+<p>Dalej inicjujemy bazę haseł programu "pass":</p>
+<p><code>pass init &lt;gpg-id lub adres e-mail klucza GPG&gt;</code></p>
+</li>
+<li>
+<p>Wchodzimy w przeglądarce internetowej na stronę
+ <a href="https://mfa.hpc.icm.edu.pl">https://mfa.hpc.icm.edu.pl</a> i logujemy się do serwisu przy użyciu
+ dotychczasowej nazwy użytkownika i hasła.</p>
+</li>
+<li>
+<p>Wybieramy opcję "Enroll Token" i bez zmiany domyślnych parametrów
+   wybieramy "Enroll".</p>
+<p><em>Uwaga: Tu musimy działać powoli, zbyt szybkie
+         przejście dalej spowoduje niemożliwość wykorzystania
+         wygenerowanego tokenu.</em></p>
+<p>Pojawi się nowa strona z obrazem kodu QR
+ odpowiadającemu tokenowi. Obok kodu jest dostępny
+ link (pokolorowane "here"). Kopiujemy adres, na który
+ wskazuje link do schowka lub do dowolnego edytora
+ tekstu.</p>
+</li>
+<li>
+<p>W terminalu wykonujemy instrukcję:</p>
+<p><code>pass otp insert icm</code></p>
+<p>Program poprosi nas o podanie "otpauth://". W tym miejscu
+ wklejamy w całości skopiowany wcześniej link.</p>
+</li>
+<li>
+<p>Gotowe. Można już zamknąć stronę internetową rejestracji tokenu, a
+link nie będzie już potrzebny. Żeby wygenerować token, wystarczy wydać
+w terminalu polecenie:</p>
+<p><code>pass otp icm</code></p>
+<p>Program zapyta nas o hasło – UWAGA: nie jest to hasło ICM, ale
+hasło klucza GPG, który wygenerowaliśmy w punkcie 1.</p>
+<p>Proces wpisywanie tokenu podczas sesji SSH można nieco uprościć -
+wydając polecenie:</p>
+<p><code>pass otp -c icm</code></p>
+<p>Wówczas token nie zostanie wyświetlony na ekranie, ale
+automatycznie umieszczony w schowku -- można natychmiast wkleić go
+do sesji SSH.</p>
+<p>Opcjonalnie, żeby proces logowania do systemów ICM był
+wygodniejszy, można utworzyć następujący alias (i umieścić
+poniższą linię w pliku ~/.bashrc) - dla powłoki Bash:</p>
+<p><code>alias sshicm='pass otp -c icm &amp;&amp; ssh 213.135.51.79'</code></p>
+<p>Chcąc zalogować się do systemu ICM wystarczy wówczas napisać w
+terminalu:</p>
+<p><code>sshicm</code></p>
+<p>Program wygeneruje token (prosząc jedynie o hasło klucza GPG),
+umieści go w schowku i połączy się z systemem dostępowym ICM,
+gdzie możemy natychmiast wkleić token ze schowka.</p>
+</li>
+</ol>
+<h4 id="en-gnulinux">[EN] GNU/Linux</h4>
+<p>TOTP token registration with "pass" for GNU/Linux operating system:</p>
+<ol>
+<li>
+<p>Install the "pass" application. It is convenient to use the
+official package repository for your distribution. Alternatively - you
+can download it from: <a href="https://github.com/tadfisher/pass-otp">https://github.com/tadfisher/pass-otp</a></p>
+</li>
+<li>
+<p>"Pass" stores the passwords in an encrypted form which requires the
+"gnupg" package to be installed as well (use the package
+repository). Once "gnupg" is installed, it is necessary to generate
+the GPG key pair - this can be done with the command:</p>
+<p><code>gpg --full-gen-key</code></p>
+<p>Please follow the instructions and, if not sure, accept the
+default parameters.</p>
+<p>Initialize the "pass" database with:</p>
+<p><code>pass init &lt;gpg-id or e-mail used for GPG key&gt;</code></p>
+</li>
+<li>
+<p>Start your Internet browser, navigate to <a href="https://mfa.hpc.icm.edu.pl">https://mfa.hpc.icm.edu.pl</a>
+and log in with your credentials.</p>
+</li>
+<li>
+<p>Choose "Enroll Token" option and confirm the default parameters by
+"Enroll".</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Be careful! If you run through the process quickly,
+    you might lose the newly created token.</p>
+</div>
+<p>You are automatically redirected to a website containing a QR code
+corresponding to your token. There is also a link of the form:</p>
+<p><code>otpauth://totp/?secret=AAABBBCCCDDDEEFFFGGGGHHH&amp;algorithm=SHA1&amp;digits=6&amp;period=30</code></p>
+<p>Copy the link's address into the clipboard or any text editor.</p>
+</li>
+<li>
+<p>In the terminal, use the command:</p>
+<p><code>pass otp insert icm</code></p>
+<p>You will be asked to provide "otpauth://". Paste the link you
+have just copied.</p>
+</li>
+<li>
+<p>Done. You can now close the token registration website and discard the
+link. To use the token, issue the command:</p>
+<p><code>pass otp icm</code></p>
+<p>You will be asked for password – NOTE: this is the GPG key
+  password you have created in (1).</p>
+<p>You can make the process more convenient with the "-c" option:</p>
+<p><code>pass otp -c icm</code></p>
+<p>Then, the token will not be displayed, but copied into your
+  clipboard instead - you can paste it directly into your SSH
+  session.</p>
+<p>Optionally, to make the process even more convenient, you can create
+  the following alias (and put it into your ~/.bashrc) - for Bash shell:</p>
+<p><code>alias sshicm='pass otp -c icm &amp;&amp; ssh &lt;USERNAME&gt;@213.135.51.79'</code></p>
+<p>(replacing the <USERNAME> string accordingly).</p>
+<p>To log into the ICM system, you can then use the command:</p>
+<p><code>sshicm</code></p>
+<p>It will generate a token (asking only for the GPG
+   password), place it in the clipboard, and connect you to
+   ICM where you can directly paste the OTP token from your
+   clipboard.</p>
+</li>
+</ol>
+<h4 id="pl-ms-windows">[PL] MS Windows</h4>
+<p>Rejestracja tokenu TOTP przy pomocy aplikacji "OTP Manager" w Windows
+10 (do pobrania z Windows Store):</p>
+<ol>
+<li>
+<p>Instalujemy aplikację OTP Manager.</p>
+</li>
+<li>
+<p>Uruchamiamy aplikację i wybieramy manualne dodanie nowego tokenu.</p>
+</li>
+<li>
+<p>Wchodzimy w przeglądarce internetowej na stronę
+<a href="https://mfa.hpc.icm.edu.pl">https://mfa.hpc.icm.edu.pl</a> i logujemy się do serwisu przy użyciu
+dotychczasowej nazwy użytkownika i hasła.</p>
+</li>
+<li>
+<p>Wybieramy opcję "Enroll Token" i bez zmiany domyślnych parametrów
+wybieramy "Enroll".</p>
+<p>Uwaga! Tu musimy działać powoli, zbyt szybkie przejście
+  dalej spowoduje niemożliwość wykorzystania wygenerowanego
+  tokenu.</p>
+</li>
+<li>
+<p>Pojawi się nowa strona z obrazkiem kodu QR odpowiadającemu
+tokenowi. Obok kodu jest dostępny link (pokolorowane
+"here"). Kopiujemy adres na który wskazuje link do notatnika lub
+innego edytora tekstowego. Adres ma postać:</p>
+<p><code>otpauth://totp/?secret=AAABBBCCCDDDEEFFFGGGGHHH&amp;algorithm=SHA1&amp;digits=6&amp;period=30</code></p>
+</li>
+<li>
+<p>Kopiujemy ciąg znaków zaczynający się po "secret=" i kończący się
+przed znakiem "&amp;" (w przykładzie powyżej:
+AAABBBCCCDDDEEFFFGGGGHHH). To nasz sekretny klucz tokenu. Powinniśmy
+go chronić lub po zakończeniu rejestracji zapomnieć.</p>
+</li>
+<li>
+<p>Wklejamy sekretny klucz do aplikacji OTP Manager w polu "Secret", a
+pozostałe nazwy możemy wypełnić dowolnie. Zapisujemy token za pomocą
+ikony dyskietki w górnej listwie aplikacji.</p>
+</li>
+<li>
+<p>W tym momencie OTP Manager powinien wyświetlać 6 cyfrowy kod OTP do
+wpisania przy logowaniu do ICM. Możemy go przetestować.</p>
+</li>
+<li>
+<p>Możemy zamknąć stronę rejestracji tokenu i zapomnieć sekretny klucz.</p>
+</li>
+</ol>
+<h4 id="en-ms-windows">[EN] MS Windows</h4>
+<p>TOTP token registration with "OTP Manager" for MS Windows 10
+(available from Windows Store):</p>
+<ol>
+<li>
+<p>Install OTP Manager for Windows.</p>
+</li>
+<li>
+<p>Start the application and choose to manually add new token.</p>
+</li>
+<li>
+<p>Start your Internet browser, navigate to <a href="https://mfa.hpc.icm.edu.pl">https://mfa.hpc.icm.edu.pl</a>
+   and log in with your credentials.</p>
+</li>
+<li>
+<p>Choose "Enroll Token" option and confirm the default parameters by
+   "Enroll".</p>
+<p><em>Note: Be careful! If you run through the process quickly, you might lose the newly created token.</em></p>
+</li>
+<li>
+<p>You are automatically redirected to a website containing a QR code
+   corresponding to your token. There is also a link of the form:</p>
+<p><code>otpauth://totp/?secret=AAABBBCCCDDDEEFFFGGGGHHH&amp;algorithm=SHA1&amp;digits=6&amp;period=30</code></p>
+<p>Copy the link's address into any text editor.</p>
+</li>
+<li>
+<p>Copy the text starting after "secret=" and ending before "&amp;" sign
+   (e.g. AAABBBCCCDDDEEFFFGGGGHHH). It is the secret token key which
+      should be protected or forgotten when the registration procedure is
+         done.</p>
+</li>
+<li>
+<p>Paste the secret key into the OPT Manager application ("Secret"
+   field). Feel free to fill in the remaining fields according to your
+      preferences. Save the token with the diskette icon on the
+         application toolbar.</p>
+</li>
+<li>
+<p>OTP Manager should generate a 6-digit OTP code which you can insert
+   directly in your ICM SSH session upon login.</p>
+</li>
+<li>
+<p>At this point, the token registration website can be closed and the
+   secret key forgotten.</p>
+</li>
+</ol>
 <h2 id="tworzenie-kluczy-ssh">Tworzenie kluczy SSH</h2>
 <p>Logowanie użytkowania może być uwierzytelnione poprzez podanie hasła lub użycie klucza kryptograficznego.
 Klucze są bezpieczniejsze (i wygodniejsze - nie trzeba za każdym razem wpisywać hasła).</p>
@@ -1954,7 +2259,7 @@ lub kombinacją klawiszy <code>Ctrl+D</code>.</p>
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 5, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 7, 2021</span>
     
   </small>
 </div>
