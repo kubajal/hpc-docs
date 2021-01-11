@@ -15,7 +15,7 @@ Do udziału w Sesji zapraszamy Kierowników oraz przedstawicieli grantów realiz
 
 ### Kiedy
 
-W dniach 26 – 27 stycznia 2021 r.  **online**
+W dniach 2–3 II 2021r.  **online**
 
 ### Miejsce
 

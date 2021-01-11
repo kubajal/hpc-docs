@@ -6,7 +6,7 @@ draft: false
 
 ## XXI Sesja KDM
 
-Tegoroczna **Sesja Szkoleniowo-Sprawozdawcza Użytkowników KDM ICM** odbędzie się w formie online w dniach 12 – 13 stycznia 2021 r.
+Tegoroczna **Sesja Szkoleniowo-Sprawozdawcza Użytkowników KDM ICM** odbędzie się w formie online w dniach 2–3 II 2021r.
 Planujemy zaprosić do wystąpienia osoby, które niedawno rozpoczęły swoje obliczenia, aby podzieliły się z nami swoimi wynikami obliczeń.
 Do uczestnictwa, wysłuchania prelegentów oraz porad i dyskusji naukowych zapraszamy wszystkich naszych Użytkowników.
 
