@@ -73,13 +73,13 @@ ff02::2 ip6-allrouters
 Przykład użycia:
 
 ```.sh
-$ to_hpc lokalny_folder zdalny_folder_docelowy
-$ to_rysy lokalny_folder zdalny_folder_docelowy
-$ to_okeanos lokalny_folder zdalny_folder_docelowy
+$ to_hpc lokalny_folder_zrodlowy zdalny_folder_docelowy
+$ to_rysy lokalny_folder_zrodlowy zdalny_folder_docelowy
+$ to_okeanos lokalny_folder_zrodlowy zdalny_folder_docelowy
 
-$ to_hpc zdalny_folder_zrodlowy lokalny_folde_docelowy
-$ to_rysy zdalny_folder_zrodlowy lokalny_folde_docelowy
-$ to_okeanos zdalny_folder_zrodlowy lokalny_folde_docelowy
+$ from_hpc zdalny_folder_zrodlowy lokalny_folde_docelowy
+$ from_rysy zdalny_folder_zrodlowy lokalny_folde_docelowy
+$ from_okeanos zdalny_folder_zrodlowy lokalny_folde_docelowy
 
 $ rysy # zaloguj się bezpośrednio na klaster rysy (jeżeli tunel nie był wcześniej otwarty, to funkcja zrobi to automatycznie).
 $ okeanos # zaloguj się bezpośrednio na klaster okeanos (jeżeli tunel nie był wcześniej otwarty, to funkcja zrobi to automatycznie).
