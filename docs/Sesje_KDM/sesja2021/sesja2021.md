@@ -1,6 +1,6 @@
 ---
 title: "XXI Sesja KDM"
-date: 26-27 stycznia 2021 r.
+date: 2-3 luty 2021 r.
 draft: false
 ---
 
@@ -15,7 +15,7 @@ Do udziału w Sesji zapraszamy Kierowników oraz przedstawicieli grantów realiz
 
 ### Kiedy
 
-W dniach 2–3 II 2021r.  **online**
+W dniach 2–3 lutego 2021r.  **online**
 
 ### Miejsce
 
@@ -56,8 +56,8 @@ Zapraszamy do zapoznania się z programem wydarzenia.
 Możliwe są niewielkie przesunięcia w programie, w zależności od możliwości czasowych prelegentów.
 
 - Program Sesji:
-    * [dzien I](./sesja2020_granty_lista_v3_do_pdf_dzien1.pdf)
-    * [dzien II](./sesja2020_granty_lista_v3_do_pdf_dzien2.pdf)
+    * [dzien I](./sesja2020_granty_lista_v4_do_pdf_dzien1.pdf)
+    * [dzien II](./sesja2020_granty_lista_v4_do_pdf_dzien2.pdf)
 - Informacje o prelegentach dostępne są w zakładce [prelegenci](prelegenci.md)
 
 ### Kontakt
