@@ -1,44 +1,15 @@
 
 # Informacje o prelegentach
+## prof. Krzysztof Rządca
+### Uniwersytet Warszawski, Google
 
-## prof. Alicja Kowalska
+![image](./zdjecia_prelegentow/krz-portret.png#prelegent)
 
-### Uniwersytet XXX - Wydział Nauk Specjalnych
+Krzysztof Rządca jest profesorem w Instytucie Informatyki UW oraz naukowcem danych (data science lead) w Google. W 2004 roku ukończył Politechnikę Warszawską. W 2008 roku doktoryzował się wspólnie na Politechnice w Grenoble i w Polsko-Japońskiej Wyższej Szkole Technik Komputerowych. Podczas studiów doktoranckich był stypendystą rządu francuskiego (program co-tutelle). W latach 2008-2010 pracował jako post-doc w Nanyang Technological University (NTU) w Singapurze. Uzyskał granty z Narodowego Centrum Nauki, Fundacji na rzecz Nauki Polskiej oraz z Google'a. Pracuje nad alokacją zasobów i szeregowaniem w systemach rozproszonych dużej skali, takich jak superkomputery i chmury obliczeniowe.
+Zdjęcie załączam.
 
-![image](./zdjecia_prelegentow/avatar_she.png#prelegent)
+**Abstrakt:**
 
-Pellentesque quis malesuada ante, ut vestibulum ipsum. 
-Donec convallis elit vitae ipsum porta auctor. 
-Quisque efficitur vel purus et molestie. 
-Proin fringilla velit vel metus ullamcorper, vel luctus nisi sodales. 
-Etiam sed elementum dui. 
-Vivamus vitae velit ut metus ullamcorper vulputate non at risus. 
-Fusce hendrerit mauris a quam ultricies, id placerat odio pellentesque. 
-Integer iaculis ipsum et sodales vulputate. Etiam tempor efficitur accumsan. 
-Duis feugiat mauris vel lorem elementum, id lobortis arcu pretium. 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-Etiam vitae urna ut felis congue egestas et quis erat. 
-Cras ut eros eget est varius placerat quis quis augue. 
-Vivamus quis euismod ipsum, sed mollis ex. 
-Mauris mollis massa dolor, ut scelerisque neque vestibulum sit amet.
+Dlaczego moje zadanie ciągle czeka w kolejce? I dlaczego, wysyłając je, muszę podać nie tylko ilość maszyn, ale również szacować czas trwania moich obliczeń?
 
-## dr Jan Kowalski
-
-### Kowalski Lab S.A. - dyrektor ds. rozwoju
-
-![image](./zdjecia_prelegentow/avatar_he.png#prelegent)
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Donec pulvinar vestibulum justo a tristique. 
-Quisque pellentesque augue sed eros aliquet elementum vel at neque. 
-Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
-Quisque scelerisque purus vel imperdiet rutrum. 
-In hac habitasse platea dictumst. 
-In arcu dolor, posuere et porta vel, faucibus fringilla eros. 
-Integer posuere efficitur bibendum. 
-Nam congue eros in lacinia dignissim. 
-Nulla eget enim euismod, gravida lectus sit amet, pharetra purus. 
-Quisque vel laoreet ex. 
-Nam eu facilisis lectus. 
-Aliquam sagittis finibus ex nec rutrum. 
-Pellentesque pretium lorem quis maximus tempus.
+Dostęp do ogromnych mocy obliczeniowych współczesnych superkomputerów regulowany jest przez systemy kolejkowe: oprogramowanie planistów, które odpowiada za kolejkowanie wysłanych przez nas zadań, oraz za przypisanie zadaniom konkretnych maszyn (węzłów superkomputera). Podczas prezentacji opowiem o podstawowych algorytmach używanych przez planistów; poradzę, co robić, by czekać jak najkrócej (i dobrze żyć z administratorami!); oraz przedstawię kilka ciekawych kierunków badań współczesnych planistów - badań łączących algorytmikę, badania operacyjne, systemowe i analizę danych.
