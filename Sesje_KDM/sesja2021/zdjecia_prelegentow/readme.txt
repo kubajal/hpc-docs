@@ -1,0 +1,1 @@
+convert image.jpg -resize 250x250! output.jpg
