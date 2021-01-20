@@ -21,30 +21,6 @@ Nazwa konta użytkownika i hasło tworzone są w momencie rejestracji użytkowni
 
 Zmiana hasła możliwa jest pod adresem <https://haslo.icm.edu.pl/>
 
-## Pierwsze logowanie
-
-Przy pierwszym logowaniu użytkownik zostanie poproszony o zmianę hasła. Nowe hasło powinno składać się z minimum 8 znaków oraz zawierać z trzech z czterech klas (cyfry, małe litery, wielkie litery, inne znaki).
-
-Na ekranie pojawią się komunikaty:
-
-```.txt
-WARNING: Your password has expired.
-You must change your password now and login again!
-Changing password for user login_użytkownika
-Enter login(LDAP) password:               <----- wpisać hasło początkowe z maila
-New password:                             <----- wpisać nowe hasło
-Retype new password:                      <----- ponownie wpisać nowe hasło
-LDAP password information changed for username
-```
-
-- Przy wprowadzaniu hasła na ekranie **nic się nie dzieje** tzn. nie miga kursor ani nie pojawiają się żadne znaki ukrywające wprowadzane hasło.
-Po wprowadzeniu hasła należy wcisnąć enter.
-- Jeśli hasło przesłane mailem nie dotarło do użytkownika na etapie rejestracji,
-wskazane jest w pierwszej kolejności sprawdzenie katalogu *spam* w poczcie.
-Jeśli pojawią się dalsze trudności prosimy o wysłanie maila na adres pomoc([monkey](https://en.wikipedia.org/wiki/At_sign#Names_in_other_languages))icm.edu.pl.
-- Zmiany hasła można dokonać ponownie posługując się poleceniem `passwd`.
-Zmieniane hasło nie może być: [palindromem](http://pl.wikipedia.org/wiki/Palindrom), ciągiem sąsiednich znaków z klawiatury oraz podobne do hasła poprzedniego.
-
 ## Autoryzacja dwu-składnikowa (2FA)
 
 Logując się przy użyciu ssh na serwer `hpc.icm.edu.pl` użytkownik podaje dane (hasło/klucz) po czym pojawia się dodatkowe zapytanie o **OTP** (one time password), czyli jednorazowy kod, indywidualny dla każdego, generowany przy użyciu specjalnej aplikacji.
