@@ -121,23 +121,24 @@ Opracowany model wykorzystany został do analizy stopu W38Ta36Cr15V11, wytworzon
 
 [2] O. El-Atwani, N. Li, M. Li, A. Devaraj, J. K. S. Baldwin, M. M. Schneider, D. Sobieraj, J. S. Wróbel, D. Nguyen-Manh, S. A. Maloy, E. Martinez, Outstanding radiation resistance of tungsten-based high-entropy alloys. Sci. Adv. 5, eaav2002, 2019
 
-## Dr O. Volnianska
+## Dr Oksana  Volnianska
 
 **Adiunkt w Instytucie Fizyki PAN**
 
-<!--
-Dr O. Volnianska pracuje jako  adiunkt w Instytucie Fizyki PAN. Zajmuje 
+![image](./zdjecia_prelegentow/OVolnianska_ICM.jpg#prelegent)
+
+Dr Oksana Volnianska pracuje jako adiunkt w Instytucie Fizyki PAN. Zajmuje 
 się teoria magnetyzmu indukowanego przez domieszki metali
 przejściowych w półprzewodnikach. Bada wpływ domieszek na
 strukturę pasmowa nanokrysztalów półprzewodnikowych
 wykorzystując obliczenia z pierwszych zasad.
--->
 
 **Abstrakt**
 
 Struktura elektronowa domieszek metali przejściowych w ZnO i GaN
 
-Zbadana została struktura elektronowa jonów metali przejściowych (TM) w szerokoprzerwowych półprzewodnikach II-VI i III-V. Obliczenia wykonano używając teorii funkcjonału gęstości w przybliżeniu lokalnej gęstości, uwzględniając człony +U (metoda LGA+U). Uwzględnienie członów +U dla stanów p(N), p(O) i d(Zn) prowadzi do poprawnych wartości przerw wzbronionych. 
+Zbadana została struktura elektronowa jonów metali przejściowych (TM) w szerokoprzerwowych półprzewodnikach II-VI i III-V. Obliczenia wykonano używając teorii funkcjonału gęstości w przybliżeniu lokalnej gęstości, uwzględniając człony +U (metoda LDA+U). Uwzględnienie członów +U dla stanów p(N), p(O) i d(Zn) prowadzi do poprawnych wartości przerw wzbronionych. 
+
 Wyniki charakteryzuje silna zależność poziomów domieszkowych od stanu ładunkowego domieszki, czyli od energii Fermiego, co jest związane z silnym oddziaływaniem kulombowskim między elektronami d(TM).  Przeprowadzono analizę energii przejść optycznych, zarówno wewnątrz-centrowych jak i jonizacyjnych, dla jonów TM w ZnO i GaN. Obliczono też odpowiednie reguły wyboru. Dobra zgodność z doświadczeniem pozwoliła na potwierdzenie proponowanych w literaturze identyfikacji obserwowanych przejść, lub na zaproponowanie odmiennych identyfikacji. Dokładne porównanie teorii z doświadczeniem omówione zostanie na przykładzie Cu w ZnO.  
 Obliczenia dotyczą struktur  objętościowych oraz  nanokryształów.
 Grant G16-11: Piotr Bogusławski,  O.V., Tomasz Zakrzewski. 
@@ -155,4 +156,70 @@ Rational Design of Bio-Organic Systems for Biomimetic Applications
 
 In recent years, research effort has been devoted to the generation of hybrid materials which change the electronic properties of one constituent by changing the optoelectronic properties of the other one. The most appealing and commonly used approach to design such novel materials relies on combining organic materials or metals with biological systems like redox-active proteins. Such hybrid systems can be used e.g. as bio-sensors, bio-fuel cells, biohybrid photoelectrochemical cells and nanosctuctured photoelectronic devices. Although experimental efforts have already resulted in the generation of a number of hybrid bio-organic materials, the main bottleneck of this technology is the formation of a stable and efficient (in terms of electronic communication) interface between the biological and the organic/metal counterparts. In particular, the efficiency of the final devices is usually very low due to two main problems related to the interfacing of such different components: charge recombination at the interface and the high possibility of losing the function of the biological component, which leads to the inactivation of the entire device.
 Here, we present a multiscale computational design which allows the study of complex interfaces for stable and highly efficient hybrid materials for biomimetic application, consisting of single layer graphene (SLG) as organic material/metal and small light harvesting protein complex as biological counterpart, linked together via a self-assembly monolayer (SAM), in order to create novel biomimetic materials for solar-to-fuel, bio-transistors or bioorganic electronic applications.
+
+## Dr Maciej Szudarek
+
+**Politechnika Warszawska**
+
+![image](./zdjecia_prelegentow/MSzudarek_resized.png#prelegent)
+
+Maciej Szudarek zajmuje się metrologią przepływów i numeryczną mechaniką płynów. Jest asystentem w Instytucie Metrologii i Inżynierii Biomedycznej na Wydziale Mechatroniki Politechniki Warszawskiej. W Laboratorium Przepływów należącym do Instytutu prowadzi badania dla przemysłu, wzorcowania i doradztwo w aspektach metrologicznych przy opracowywaniu prototypów nowych przepływomierzy.
+
+**Abstract**
+
+Modelowanie numeryczne przepływomierzy wibracyjnych
+
+W ramach pracy opracowano model numeryczny przepływomierza wibracyjnego i wykonano jego walidację. Model numeryczny wymagał zastosowania siatek dynamicznych - w każdym kroku czasowym niezbędne było wyznaczenie rozkładu sił działających na oscylator, obliczenie jego przemieszczenia, nowego położenia i wygenerowanie nowej siatki opartej na nowym położeniu. Głównym celem było zwiększenie zakresu stosowalności tych urządzeń poprzez rozwój stanu wiedzy oraz weryfikację dotychczasowych modeli i założeń. Cel został osiągnięty, model dostarczył szereg informacji dotyczących działania przepływomierza.
+
+
+## Paweł Gora
+
+**Uniwersytet Warszawski**
+
+![image](./zdjecia_prelegentow/PGora.jpg#prelegent)
+
+Doktorant informatyki i nauczyciel akademicki na Wydziale Matematyki, Informatyki i Mechaniki Uniwersytetu Warszawskiego. Interesuje się nowymi technologiami (np. sztuczna inteligencja, informatyka kwantowa) oraz ich zastosowaniami, m.in. w transporcie, medycynie i e-commerce. Jest twórcą i liderem grupy badawczej TensorCell zajmującej się optymalizacją złożonych procesów (m.in. ruchu drogowego, leczenia nowotworu) oraz twórcą programu do symulacji i analizy ruchu drogowego Traffic Simulation Framework. Autor prac naukowych publikowanych na najlepszych konferencjach informatycznych i transportowych (m.in. NeurIPS, MT-ITS), jego prace było wielokrotnie cytowane i nagradzane, m.in. nagrodami "LIDER ITS" w 2015 i 2017 roku za najlepszą w Polsce pracę badawczo-rozwojową w obszarze inteligentnych systemów transportowych, "Doktoraty dla Mazowsza", "Nowoczesny Uniwersytet". W 2017 roku został wyróżniony w gronie "Top 10 Polish Talents" w konkursie "MIT Innovator Under 35" oraz znalazł się na liście "New Europe 100" w gronie 100 wybitnych innowatorów w Europie Wschodniej. W przeszłości pracował jako inżynier i naukowiec m.in. w Microsoft, Google, CERN i IBM Research. Obecnie współpracuje jako mentor/doradca z polskimi startupami, m.in. Broomee Technologies. Współorganizuje cykl spotkań Warsaw.ai oraz Warsaw Quantum Computing Group, jest również członkiem Rady ds. Cyfryzacji oraz przedstawicielem Polski w Komitecie Zarządzającym akcji COST WISE-ACT dotyczącej badania wpływu w dużej skali pojazdów autonomicznych i komunikujących się. Zajmuje się również wspieraniem edukacji i badań w obszarze nowych technologii (przede wszystkim AI i informatyki kwantowej) w ramach inicjatyw QWorld i QPoland oraz "Fundacji Quantum AI", której jest Fundatorem i Prezesem.
+
+Podczas prezentacji przedstawię techniki obliczeniowe stosowane w modelowaniu rozwoju guzów linii komórkowej EMT6/Ro i  w poszukiwaniu optymalnych wielodniowych protokołów radioterapeutycznych. Oryginalny model (wykorzystujący automaty komórkowe), zaimplementowany w programie MATLAB, został ponownie zaimplementowany przy użyciu języka  C++. Dodatkowo obliczenia zostały zrównoleglone przy wykorzystaniu  kart graficznych, co pozwoliło na znaczne przyspieszenie symulacji i umożliwiło przeszukiwanie znacząco większej, wieloparametrowej przestrzeni możliwych protokołów. Ponadto, w ramach ponownej implementacji algorytmów genetycznych zdefiniowaliśmy nowe operatory selekcji, krzyżowania i mutacji, dostosowane do przeszukiwania zwiększonej przestrzeni stanów. Rozwiązania te zaowocowały uzyskaniem 760-krotnego przyspieszenia wykonywania obliczeń w architekturze ICM w porównaniu z architekturą oryginalnego modelu oraz umożliwiły znajdowanie bardziej efektywnych (o ok. 6-8% w stosunku do tych wyznaczonych we wcześniejszych badaniach) protokołów radioterapii. Pod koniec prezentacji omówię istniejące wyzwania i przyszłe kierunki badań.
+
+## Maciej Szary
+
+**Asystent w Instytucie Fizyki Politechniki Poznańskiej**
+
+![image](./zdjecia_prelegentow/mszary.png#prelegent)
+
+**Abstrakt**
+
+Rezystancyjne czujniki gazu oparte na warstwach MoS2 osiągają doskonałą czułość i wysoką selektywność dla molekuł NO2 i NH3. Jednakże ze względu na niską zdolność detekcji innych cząsteczek, liczba kompatybilnych analitów jest mała. Stosując obliczenia DFT, projekt rozważył domieszkowanie MoS2 w celu optymalizacji detekcji molekuł H2S. Badania oparte zostały na eksperymentalnym modelu domieszkowania wspomaganego promieniowaniem elektronowym [PRL 109 (2012) 035503]. Jako atomy domieszki wybrano P, Cl i Ge.  W celu określenia selektywności adsorpcji wpływ efektów modyfikacji warstwy zbadany został dla H2S, N2 i O2. Wyniki pokazały, że domieszkowanie Ge i Cl nie wpływają korzystnie na detekcję H2S. Natomiast P zwiększa transfer ładunku po adsorpcji H2S o 354% w porównaniu z niedomieszkowanym MoS2. Jednocześnie energia adsorpcji H2S na P-MoS2 jest stosunkowo niska, a dynamika molekularna pokazuje, że domieszkowanie nie utrudnia zwolnienia miejsca adsorpcyjnego w temperaturze pokojowej. Ponadto adsorpcja H2S jest energetycznie faworyzowana względem  O2 i N2, co powinno zapewnić molekułom analitu łatwiejszy dostęp do miejsc adsorpcyjnych z atomem P.
+
+
+## Stanisław Dunin-Horkawicz
+
+**Laboratorium Bioinformatyki Strukturalnej w Centrum Nowych Technologii**
+
+![image](./zdjecia_prelegentow/SDunin-Horkawicz.jpg#prelegent)
+
+Stanisław Dunin-Horkawicz jest kierownikiem Laboratorium Bioinformatyki Strukturalnej w Centrum Nowych Technologii Uniwersytetu Warszawskiego (https://lbs.cent.uw.edu.pl). Ukończył studia na Wydziale Biologii Uniwersytetu Warszawskiego, pracę magisterską realizował w Międzynarodowym Instytucie Biologii Molekularnej i Komórkowej w Warszawie, a tytuł doktora został mu nadany przez Uniwersytet w Tybindze. Jego głównym obszarem zainteresowań jest ewolucja struktur białkowych oraz rozwój i zastosowanie metod uczenia maszynowego służących do ich badania.
+
+**Abstrakt**
+
+W trakcie swojej prezentacji przedstawię prace realizowane m.in. dzięki grantom obliczeniowym Interdyscyplinarnego Centrum Modelowania Matematycznego i Obliczeniowego. W szczególności skupię się na rozwijanych w naszym zespole narzędziach opartych o techniki uczenia maszynowego (SVM, Deep Learning) służących do przewidywania właściwości strukturalnych białek na podstawie ich sekwencji oraz na tym, w jaki sposób narzędzia te mogą być wykorzystywane w celu lepszego zrozumienia, w jaki sposób sekwencja determinuje strukturę białka.
+
+## Dr Karolina Z. Milowska
+
+**University of Cambridge**
+
+![image](./zdjecia_prelegentow/photo_KZM.png#prelegent)
+
+Dr Karolina Z. Milowska uzyskała z wyróżnieniem tytuł magistra w zakresie fizyki doświadczalnej (materia skondensowana), a także tytuł magistra biofizyki na Uniwersytecie Jagiellońskim, w 2008r. W grudniu 2013r. obroniła doktorat w zakresie nauk fizycznych w Instytucie Fizyki Teoretycznej Uniwersytetu Warszawskiego. Jej praca doktorska dotycząca funkcjonalizacji nanorurek węglowych i grafenu do zastosowań w kompozytach i nanourządzeniach została wyróżniona przez Radę wydziału Fizyki Uniwersytetu Warszawskiego. Jej badania prowadzone podczas studiów doktoranckich w zakresie nanoelektroniki materiałów dwuwymiarowych zostały nagrodzone przez Ministra Nauki i Szkolnictwa Wyższego. W 2012r. otrzymała jedną ze stu prestiżowych nagród, przyznanych we wszystkich dyscyplinach, za wybitne osiągnięcia. Swój pierwszy staż postdoktorski (lipiec 2013-wrzesień 2015) odbyła na Uniwersytecie w Monachium (Ludwig-Maximilians Universität München), gdzie była zaangażowana w modelowanie kontrolowanej samoorganizacji nanocząstek, procesów fotokatalitycznych, a także zjawisk optoelektronicznych. Następnie, w 2016r., dołączyła na krótko do Wydziału Materiałoznawstwa i Metalurgii na Uniwersytecie w Cambridge, aby badać własności termoelektryczne materiałów kompozytowych zawierających nanorurki węglowe i typowe metale. Od listopada 2017r. pracuje wraz z prof. Mike Payne'm nad niskowymiarowymi materiałami, głównie stosując metody ab-initio, w Grupie Teorii Materii Skondensowanej na Wydziale Fizyki (Cavendish Laboratory), na Uniwersytecie w Cambridge.
+
+**Abstrakt**
+
+Jak poprawić własności elektryczne przewodów opartych o nanorurki węglowe?
+
+Nisko wymiarowe formy węgla, takie jak nanorurki węglowe czy grafen, w dalszym ciągu przyciągają wiele uwagi ze względu na swoje zadziwiające własności. Zaliczają się one do najwytrzymalszych, termicznie i elektrycznie najlepiej przewodzących materiałów na Ziemi. Jednakże, mimo upływu lat od ich odkrycia bądź eksperymentalnego udowodnienia ich istnienia, ich komercjalizacja nie dokonała się w pełni. Jest jeszcze wiele aspektów, które należy ustraprawnić bądź poprawić  w celu pełnego wykorzystania własności tych materiałów. Włókna nanorurkowe, które są utworzone przez uporządkowane pojedyncze nanorurki są obecnie w wielu dziedzinach, a w szczególności w elektronice i inżynierii elektrycznej jako połączenia czy przewody elektryczne. W niniejszej prezentacji skupię się nad domieszkowaniem halogenami takich włókien w celu poprawy ich własności elektrycznych. Omówię również rolę płatków grafenowych w zwiększeniu ich przewodności.
+
+[1] D. Janas, K. Z. Milowska, P.D. Bristowe, K.K.K. Koziol "Improving the electrical properties of carbon nanotubes with interhalogen compounds", Nanoscale, 9, 3212-3221 (2017),
+
+[2] S. Lepak-Kuc, K. Z. Milowska, S. Boncel, M. Szybowicz, A. Dychalska, I. Jozwik, K. K. Koziol, M. Jakubowska, A. Lekawa-Raus, "Highly Conductive Doped Hybrid Carbon Nanotube-Graphene Wires", ACS App. Mater. Int., 11 (36), 33207-33220 (2019).
 
