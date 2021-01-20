@@ -851,13 +851,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#pierwsze-logowanie" class="md-nav__link">
-    Pierwsze logowanie
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#autoryzacja-dwu-skadnikowa-2fa" class="md-nav__link">
     Autoryzacja dwu-składnikowa (2FA)
   </a>
@@ -1733,13 +1726,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#pierwsze-logowanie" class="md-nav__link">
-    Pierwsze logowanie
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#autoryzacja-dwu-skadnikowa-2fa" class="md-nav__link">
     Autoryzacja dwu-składnikowa (2FA)
   </a>
@@ -1894,27 +1880,6 @@ W przypadku niektórych systemów możliwy/wymagany jest dodatkowy krok logowani
 <p>Nazwa konta użytkownika i hasło tworzone są w momencie rejestracji użytkownika w bazie grantów (dotyczy kierownika grantu) lub na etapie dodawania współwykonawcy do grantu.</p>
 <h3 id="zmiana-hasa">Zmiana hasła</h3>
 <p>Zmiana hasła możliwa jest pod adresem <a href="https://haslo.icm.edu.pl/">https://haslo.icm.edu.pl/</a></p>
-<h2 id="pierwsze-logowanie">Pierwsze logowanie</h2>
-<p>Przy pierwszym logowaniu użytkownik zostanie poproszony o zmianę hasła. Nowe hasło powinno składać się z minimum 8 znaków oraz zawierać z trzech z czterech klas (cyfry, małe litery, wielkie litery, inne znaki).</p>
-<p>Na ekranie pojawią się komunikaty:</p>
-<div class="highlight"><pre><span></span><code>WARNING: Your password has expired.
-You must change your password now and login again!
-Changing password for user login_użytkownika
-Enter login(LDAP) password:               &lt;----- wpisać hasło początkowe z maila
-New password:                             &lt;----- wpisać nowe hasło
-Retype new password:                      &lt;----- ponownie wpisać nowe hasło
-LDAP password information changed for username
-</code></pre></div>
-
-<ul>
-<li>Przy wprowadzaniu hasła na ekranie <strong>nic się nie dzieje</strong> tzn. nie miga kursor ani nie pojawiają się żadne znaki ukrywające wprowadzane hasło.
-Po wprowadzeniu hasła należy wcisnąć enter.</li>
-<li>Jeśli hasło przesłane mailem nie dotarło do użytkownika na etapie rejestracji,
-wskazane jest w pierwszej kolejności sprawdzenie katalogu <em>spam</em> w poczcie.
-Jeśli pojawią się dalsze trudności prosimy o wysłanie maila na adres pomoc(<a href="https://en.wikipedia.org/wiki/At_sign#Names_in_other_languages">monkey</a>)icm.edu.pl.</li>
-<li>Zmiany hasła można dokonać ponownie posługując się poleceniem <code>passwd</code>.
-Zmieniane hasło nie może być: <a href="http://pl.wikipedia.org/wiki/Palindrom">palindromem</a>, ciągiem sąsiednich znaków z klawiatury oraz podobne do hasła poprzedniego.</li>
-</ul>
 <h2 id="autoryzacja-dwu-skadnikowa-2fa">Autoryzacja dwu-składnikowa (2FA)</h2>
 <p>Logując się przy użyciu ssh na serwer <code>hpc.icm.edu.pl</code> użytkownik podaje dane (hasło/klucz) po czym pojawia się dodatkowe zapytanie o <strong>OTP</strong> (one time password), czyli jednorazowy kod, indywidualny dla każdego, generowany przy użyciu specjalnej aplikacji.</p>
 <p>W celu uzyskania kodu konieczne jest zainstalowanie na swoim telefonie aplikacji obsługującej mechanizm tokenów <strong>TOTP</strong> (Time-based One-time Password algorithm), np. FreeOTP lub GoogleAuthenicator (dostępne w GooglePlay i AppStore). Aplikacje są darmowe i nie wymagają dostępu do internetu (działają w trybie offline).</p>
@@ -2221,7 +2186,7 @@ lub kombinacją klawiszy <code>Ctrl+D</code>.</p>
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 7, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 20, 2021</span>
     
   </small>
 </div>
