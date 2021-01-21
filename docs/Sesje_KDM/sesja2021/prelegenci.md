@@ -6,7 +6,6 @@
 ![image](./zdjecia_prelegentow/krz-portret.png#prelegent)
 
 Krzysztof Rządca jest profesorem w Instytucie Informatyki UW oraz naukowcem danych (data science lead) w Google. W 2004 roku ukończył Politechnikę Warszawską. W 2008 roku doktoryzował się wspólnie na Politechnice w Grenoble i w Polsko-Japońskiej Wyższej Szkole Technik Komputerowych. Podczas studiów doktoranckich był stypendystą rządu francuskiego (program co-tutelle). W latach 2008-2010 pracował jako post-doc w Nanyang Technological University (NTU) w Singapurze. Uzyskał granty z Narodowego Centrum Nauki, Fundacji na rzecz Nauki Polskiej oraz z Google'a. Pracuje nad alokacją zasobów i szeregowaniem w systemach rozproszonych dużej skali, takich jak superkomputery i chmury obliczeniowe.
-Zdjęcie załączam.
 
 **Abstrakt:**
 
