@@ -223,3 +223,38 @@ Nisko wymiarowe formy węgla, takie jak nanorurki węglowe czy grafen, w dalszym
 
 [2] S. Lepak-Kuc, K. Z. Milowska, S. Boncel, M. Szybowicz, A. Dychalska, I. Jozwik, K. K. Koziol, M. Jakubowska, A. Lekawa-Raus, "Highly Conductive Doped Hybrid Carbon Nanotube-Graphene Wires", ACS App. Mater. Int., 11 (36), 33207-33220 (2019).
 
+## Yevgen Melikhov
+
+**Instytut Podstawowych Problemów Techniki PAN**
+
+![image](./zdjecia_prelegentow/YM_image.png#prelegent)
+
+**Abstrakt**
+
+A potential simultaneous use of the ferromagnetic and semiconductors properties in spintronics has attracted a great interest to diluted magnetic semiconductors (DMS) with the most studied material being (Ga,Mn)As. With the optimized MBE growth and post growth annealing procedures nowadays (Ga,Mn)As layers have achieved the Curie temperature, TC, as high as about 200 K. This is remarkably high as for DMS, but still too low in view of potential application in spintronics devices. Studies on the influence of microstructure and its inhomogeneities upon material’s properties, as well as studies on transformation processes of local atomic structure around Mn ions which occur in (Ga,Mn)As during growth and post growth annealing should lead to an improved understanding of the microstructure evolution and could potentially lead to a further progress in reaching larger TC in (Ga,Mn)As. X-ray Absorption Spectroscopy is one of the essential tools to study local atomic/electronic structure and, with extended theoretical support, is widely used in scientific community.
+Here, the structural properties of (Ga,Mn)As system were investigated using an integrated approach that combines EXAFS spectroscopy and molecular dynamics (MD) simulations. A quantitative analysis of the Mn K-edge EXAFS spectrum of (Ga,Mn)As films has been carried out starting from the structural information on the system derived from the Quantum ESPRESSO calculations and MD simulation. This combined approach allows one to reduce the number of correlated model parameters required in the fitting of the experimental EXAFS data and to increase the reliability of the EXAFS data analysis that represents a non-trivial task when dealing with disordered systems.
+
+## Dr Joanna Panecka-Hofman
+
+**Uniwersytet Warszawski**
+
+**Abstrakt**
+
+Dynamika oddziaływań homotetramerycznego enzymu reduktazy pterydynowej 1 z wybranymi ligandami.
+
+Reduktaza pterydynowa 1 (PTR1) jest enzymem występującym u chorobotwórczych świdrowców, którego inhibicja jest jednym z ostatnio rozwijanych kierunków projektowania leków. Z drugiej strony wiadomo, że dynamika enzymów jest bardzo istotna dla ich funkcji. Mimo istnienia badań strukturalnych dotyczących PTR1, dynamika tego enzymu w kontekście jego oddziaływań z substratami i lekami jest słabo poznana na poziomie molekularnym. Poza tym, są pewne dane wskazujące na znaczenie allosterii dla funkcji PTR1. Aby to zbadać, przeprowadzono symulacje dynamiki molekularnej i przyspieszonego próbkowania kompleksów enzymu PTR1 z substratami, produktami reakcji enzymatycznej i inhibitorem metotreksatem. Analiza dotychczas dostępnych danych wskazuje na pewne różnice w konformacjach miejsc wiążących homotetramerycznego enzymu w zależności od rodzaju ligandu i poziomu zapełnienia tych miejsc ligandami.
+
+## Michał Kochman
+
+**Instytut Chemii Fizycznej PAN**
+
+![image](./zdjecia_prelegentow/MKochman_zdjecie.png#prelegent)
+
+Absolwent Wydziału Chemii Uniwersytetu w Edynburgu. 
+Obecnie adiunkt w zespole Cooperative Catalysis w Instytucie Chemii Fizycznej PAN.
+
+**Abstrakt**
+
+Pirouettes in molasses. Simulations of molecular motors in aqueous solution
+
+Molecular machines are artificial (man-made) molecules which produce mechanical action in response to specific external stimuli. A subclass of molecular machines are molecular motors, whose mode of action consists of repeatable unidirectional rotation. The ideal source of energy to power their operation is light, which has the advantage of not requiring a physical connection to the molecular motor, and affords fine spatial and temporal control. In most designs to date, the mechanism of rotation is based on E-Z photoisomerization around a double bond, and the directionality is controlled by the presence of an adjacent stereogenic center. Molecular motors of this type are built around organic chromophores with extended conjugated π-bonding systems, and consequently, they tend to be relatively large. Because of the steric bulkiness of typical molecular motors, their isomerization reactions can be expected to be strongly affected by mechanical interactions with the surrounding medium, such as a solvent. Clearly, the isomerization of a molecular motor must involve a substantial change in the shape of its solvent cage. Furthermore, collisions with the surrounding solvent molecules will give rise to friction against the solvent. In the present contribution, we quantify these effects by carrying out molecular dynamics simulations of the photoisomerization reactions of a prototypical molecular motor in aqueous solution.
