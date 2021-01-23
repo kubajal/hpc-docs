@@ -44,7 +44,7 @@ Poniżej przedstawione są komendy pozwalające zbudować program [OpenFOAM](htt
 
     ```.sh
         $ module load common/spack/0.15.4
-        $ source ./spack-icm-topola/etc/spack/setup-env.sh
+        $ source ./spack-icm-topola/share/spack/setup-env.sh
     ```
 
 4. Sprawdzamy środowisko spack-a:
