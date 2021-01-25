@@ -334,6 +334,21 @@ Zostaną przedstawione wyniki badań obliczeniowych w ramach teorii funkcjonału
 (1) struktury elektronowej pasmowej oraz domieszkowanych kryształów ZnO-Al, w tym efektywnej masy elektronów, oraz jej zależności od koncentracji nośników.
 (2) właściwości elektronowych, fononowych i termoelektrycznych kryształów Cu7PS6, Cu7PSe6 i Cu7PS3Se3. Struktura pasmowa kryształów charakteryzuje się stosunkowo dużą wartością współczynnika Seebecka  ~ 1 mVK-1, co może świadczyć o dużej efektywności termoelektrycznej. Nieliniowe właściwości drgań atomów miedzi w Cu7PS6 znacznie przewyższają podobne właściwości dla fosforu siarki i selenu. Duża nieliniowość drgań znalezionych atomów miedzi może powodować stosunkowo niski współczynnik przewodności cieplnej, co z kolei sprzyja dużej wielkości współczynnika dobroci termoelektrycznej.
 
+### Dr hab. Dominik Kurzydłowski
+
+14:00-14:15
+
+**Uniwersytet Kardynała Stefana Wyszyńskiego w Warszawie**
+
+![image](./zdjecia_prelegentow/DKurzydlowski.jpg#prelegent)
+
+Dominik Kurzydłowski jest profesorem w Instytucie Nauk Chemicznych Uniwersytetu Kardynała Stefana Wyszyńskiego w Warszawie (UKSW). W 2008 ukończył studia magisterskie na Wydziale Chemii Uniwersytetu Warszawskiego. W 2013 doktoryzował się w tej samej jednostce. W latach 2013 – 2014 odbył staż podoktorski w Max Planck Institut für Chemie w ramach programu Mobilność Plus. Laureat stypendium Ministra Nauki i Szkolnictwa Wyższego dla wybitnych młodych naukowców. Kierownik grantów NCN (Sonata, Opus, Sonata BIS). Jego praca badawcza skoncentrowana jest wokół badań nad wpływem wysokiego ciśnienia (przekraczającego 10 000 atm) na właściwości i reaktywność związków nieorganicznych.
+
+**Abstrakt**
+
+In my presentation I will show how Density Functional (DFT) modelling can be used as efficient tool in the interpretation of experimental measurements conducted for solids compressed to pressures exceeding 10 000 atm.
+
+
 ### Dr Agata Podsiadły-Paszkowska
 
 14:15-14:30
