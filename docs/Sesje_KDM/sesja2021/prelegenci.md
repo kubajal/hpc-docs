@@ -35,6 +35,22 @@ Stanisław Dunin-Horkawicz jest kierownikiem Laboratorium Bioinformatyki Struktu
 
 W trakcie swojej prezentacji przedstawię prace realizowane m.in. dzięki grantom obliczeniowym Interdyscyplinarnego Centrum Modelowania Matematycznego i Obliczeniowego. W szczególności skupię się na rozwijanych w naszym zespole narzędziach opartych o techniki uczenia maszynowego (SVM, Deep Learning) służących do przewidywania właściwości strukturalnych białek na podstawie ich sekwencji oraz na tym, w jaki sposób narzędzia te mogą być wykorzystywane w celu lepszego zrozumienia, w jaki sposób sekwencja determinuje strukturę białka.
 
+
+### Anna Karnkowska
+
+10:20-10:35
+
+**Instytut Biologii Ewolucyjnej, Wydział Biologii, Uniwersytet Warszawski**
+
+![image](./zdjecia_prelegentow/Anna_Karnkowska_photo.png#prelegent)
+
+Anna Karnkowska jest adiunktem w Instytucie Biologii Ewolucyjnej na Wydziale Biologii Uniwersytetu Warszawskiego. Ukończyła studia i obroniła pracę doktorską na Wydziale Biologii Uniwersytetu Warszawskiego, a następnie rozwijała swoje zainteresowania badawcze w trakcie staży na Uniwersytecie Karola w Pradze (2013-2015) i Uniwersytecie Kolumbii Brytyjskiej w Vancouver (2016). Aktualnie kieruje grupą badawczą, która zajmuje się ekologią, ewolucją i genomiką mikroorganizmów eukariotycznych. 
+
+**Abstrakt**
+
+W swojej prezentacji przedstawię wyzwania i możliwości w badaniach genomicznych i metagenomicznych mikroorganizmów eukariotycznych, które realizujemy między innymi z wykorzystaniem zasobów obliczeniowych Interdyscyplinarnego Centrum Modelowania Matematycznego i Obliczeniowego. Skupię się na ścieżkach postępowania, które wykorzystujemy do analizy danych genomowych, aby lepiej zrozumieć ewolucję komórki eukariotycznej, a w szczególności ewolucję organelli endosymbiotycznego pochodzenia. Drugim omawianym kierunkiem badań będą rozwijane w naszym zespole narzędzia i podejścia umożliwiające analizę danych metagenomowych, które mają na celu identyfikację taksonomiczną i funkcjonalną mikroorganizmów eukariotycznych i zrozumienie ich roli w ekosystemach wodnych.
+
+
 ### Dr Joanna Panecka-Hofman
 
 11:45-12:00
@@ -121,6 +137,32 @@ Błony lipidowe odgrywają ważną rolę w wielu procesach biologicznych. Są on
 Doktorant informatyki i nauczyciel akademicki na Wydziale Matematyki, Informatyki i Mechaniki Uniwersytetu Warszawskiego. Interesuje się nowymi technologiami (np. sztuczna inteligencja, informatyka kwantowa) oraz ich zastosowaniami, m.in. w transporcie, medycynie i e-commerce. Jest twórcą i liderem grupy badawczej TensorCell zajmującej się optymalizacją złożonych procesów (m.in. ruchu drogowego, leczenia nowotworu) oraz twórcą programu do symulacji i analizy ruchu drogowego Traffic Simulation Framework. Autor prac naukowych publikowanych na najlepszych konferencjach informatycznych i transportowych (m.in. NeurIPS, MT-ITS), jego prace było wielokrotnie cytowane i nagradzane, m.in. nagrodami "LIDER ITS" w 2015 i 2017 roku za najlepszą w Polsce pracę badawczo-rozwojową w obszarze inteligentnych systemów transportowych, "Doktoraty dla Mazowsza", "Nowoczesny Uniwersytet". W 2017 roku został wyróżniony w gronie "Top 10 Polish Talents" w konkursie "MIT Innovator Under 35" oraz znalazł się na liście "New Europe 100" w gronie 100 wybitnych innowatorów w Europie Wschodniej. W przeszłości pracował jako inżynier i naukowiec m.in. w Microsoft, Google, CERN i IBM Research. Obecnie współpracuje jako mentor/doradca z polskimi startupami, m.in. Broomee Technologies. Współorganizuje cykl spotkań Warsaw.ai oraz Warsaw Quantum Computing Group, jest również członkiem Rady ds. Cyfryzacji oraz przedstawicielem Polski w Komitecie Zarządzającym akcji COST WISE-ACT dotyczącej badania wpływu w dużej skali pojazdów autonomicznych i komunikujących się. Zajmuje się również wspieraniem edukacji i badań w obszarze nowych technologii (przede wszystkim AI i informatyki kwantowej) w ramach inicjatyw QWorld i QPoland oraz "Fundacji Quantum AI", której jest Fundatorem i Prezesem.
 
 Podczas prezentacji przedstawię techniki obliczeniowe stosowane w modelowaniu rozwoju guzów linii komórkowej EMT6/Ro i  w poszukiwaniu optymalnych wielodniowych protokołów radioterapeutycznych. Oryginalny model (wykorzystujący automaty komórkowe), zaimplementowany w programie MATLAB, został ponownie zaimplementowany przy użyciu języka  C++. Dodatkowo obliczenia zostały zrównoleglone przy wykorzystaniu  kart graficznych, co pozwoliło na znaczne przyspieszenie symulacji i umożliwiło przeszukiwanie znacząco większej, wieloparametrowej przestrzeni możliwych protokołów. Ponadto, w ramach ponownej implementacji algorytmów genetycznych zdefiniowaliśmy nowe operatory selekcji, krzyżowania i mutacji, dostosowane do przeszukiwania zwiększonej przestrzeni stanów. Rozwiązania te zaowocowały uzyskaniem 760-krotnego przyspieszenia wykonywania obliczeń w architekturze ICM w porównaniu z architekturą oryginalnego modelu oraz umożliwiły znajdowanie bardziej efektywnych (o ok. 6-8% w stosunku do tych wyznaczonych we wcześniejszych badaniach) protokołów radioterapii. Pod koniec prezentacji omówię istniejące wyzwania i przyszłe kierunki badań.
+
+
+### Michał Jagielski
+
+14:00-14:15
+
+**Uniwersytet Warszawski**
+
+![image](./zdjecia_prelegentow/MJagielski.png#prelegent)
+
+Specjalista badawczo-techniczny w Instytucie Fizyki Plazmy i
+Laserowej Mikrosyntezy. Z zasobów ICM korzysta w celu ukończenia pracy
+magisterskiej na Wydziale Fizyki Uniwersytetu Warszawskiego w dziedzinie
+hydrodynamiki kwantowej.
+
+**Abstrakt**
+
+Interesującym aspektem ośrodków nadciekłych jest dynamika
+zdyskretyzowanych wirów. W najprostszy sposób ośrodek taki można
+modelować równaniem Grossa-Pitajewskiego w którym układ opisujemy
+pojedynczą zespoloną funkcją falową kondensatu. Do modelowania
+turbulencji potrzebne są duże siatki obliczeniowe. Przy regularnych
+siatkach istnieje możliwość zwektoryzowania obliczeń. W tym projekcie
+testowano architekturę NEC Tsubasa dla symulacji układów wirowych w
+ośrodkach nadciekłych. Wyniki symulacji poddane zostaną analizie pod
+kątem geometrii i topologii krzywych wirowych.
 
 ### Dr Łukasz Górski
 
@@ -335,8 +377,3 @@ Dr hab. inż. Maciej Śmiechowski uzyskał stopień doktora nauk chemicznych w 
 Wodór cząsteczkowy jako minimalny model hydratacji hydrofobowej.
 
 Hydratacja hydrofobowa cząsteczki wodoru w wodzie została zbadana na poziomie molekularnym w oparciu o symulacje metodą dynamiki molekularnej ab initio ze strukturą elektronową opisywaną teorią funkcjonału gęstości. Cząsteczka H2 i jej chwilowe otoczenie solwatacyjne („klatka”) dyfundują poprzez mechanizm dyfuzji strukturalnej, tzn. znacznie szybciej od samego rozpuszczalnika. Cząsteczkowy mechanizm leżący u podstaw tego procesu można powiązać z chwilowymi fluktuacjami objętości klatki wokół obu atomów H cząsteczki H2, prowadzącymi do specyficznych przypadków otwarcia klatki, które mogą być powiązane z intensywnymi sygnałami widmowymi widocznymi w zakresie terahercowym (THz) widma oscylacyjnego.
-
-
-
-
-
