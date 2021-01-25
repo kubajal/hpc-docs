@@ -3,7 +3,7 @@ Informacje o prelegentach, wg kolejności wystąpień.
 
 ## Dzień I
 
-### Profesor Krzysztof Rządca
+### Dr hab. Krzysztof Rządca, prof. UW
 
 09:20-09:50
 
@@ -21,7 +21,7 @@ Dlaczego moje zadanie ciągle czeka w kolejce? I dlaczego, wysyłając je, musz�
 Dostęp do ogromnych mocy obliczeniowych współczesnych superkomputerów regulowany jest przez systemy kolejkowe: oprogramowanie planistów, które odpowiada za kolejkowanie wysłanych przez nas zadań, oraz za przypisanie zadaniom konkretnych maszyn (węzłów superkomputera). Podczas prezentacji opowiem o podstawowych algorytmach używanych przez planistów; poradzę, co robić, by czekać jak najkrócej (i dobrze żyć z administratorami!); oraz przedstawię kilka ciekawych kierunków badań współczesnych planistów - badań łączących algorytmikę, badania operacyjne, systemowe i analizę danych.
 
 
-### Stanisław Dunin-Horkawicz
+### Dr Stanisław Dunin-Horkawicz
 
 10:05-10:20
 
@@ -36,7 +36,7 @@ Stanisław Dunin-Horkawicz jest kierownikiem Laboratorium Bioinformatyki Struktu
 W trakcie swojej prezentacji przedstawię prace realizowane m.in. dzięki grantom obliczeniowym Interdyscyplinarnego Centrum Modelowania Matematycznego i Obliczeniowego. W szczególności skupię się na rozwijanych w naszym zespole narzędziach opartych o techniki uczenia maszynowego (SVM, Deep Learning) służących do przewidywania właściwości strukturalnych białek na podstawie ich sekwencji oraz na tym, w jaki sposób narzędzia te mogą być wykorzystywane w celu lepszego zrozumienia, w jaki sposób sekwencja determinuje strukturę białka.
 
 
-### Anna Karnkowska
+### Dr Anna Karnkowska
 
 10:20-10:35
 
@@ -80,7 +80,7 @@ Modeling of RNA and RNA-protein complexes
 
 Three-dimensional structures of RNA and RNA-protein complexes (RNPs) provide essential insights into the molecular mechanisms of their functions and interactions. Using the computing facilities, we modeled the structured elements in the SARS-CoV-2 genome to identify druggable pockets on SARS-CoV-2 RNA. Besides, the resources were used to model and study the dynamics of constrained peptides binding to pre-miR21, mimics viral suppressor, and are useful for designing bioactive RNA-targeting ligands. Moreover, we also studied the interactions of G-quadruplexes with the Platform-PAZ-Connector helix cassette of human Dicer, the region responsible for anchoring microRNA precursors (pre-miRNAs).
 
-### Joanna Miszkiewicz
+### mgr Joanna Miszkiewicz
 
 12:15-12:30
 
@@ -96,7 +96,7 @@ Odtworzenie eksperymentalnej krzywej topnienia dupleksów RNA metodą dynamiki m
 
 Dynamika molekularna stanowi ważne narzędzie do przewidywania zmian konformacyjnych biomolekuł. Symulacje dynamiki molekularnej są wykonywane przeważnie w temperaturach pokojowych lub 37°C, gdyż parametry pól siłowych zostały opracowane dla takiego zakresu temperatur. Jednak w niektórych doświadczeniach celowo zwiększa się lub zmniejsza temperaturę badanej próbki, aby otrzymać własności termodynamiczne układu, np. badanie przebiegu topnienia dupleksów kwasów rybonukleinowych (RNA) i peptydonukleinowych (PNA). Jeśli chcielibyśmy projektować sekwencje, które będą odpowiednio zmieniać strukturę w zależności od temperatury to musimy potrafić symulować takie zjawiska. Celem projektu było jakościowe odtworzenie otrzymanych z eksperymentów przeprowadzonych w Laboratorium Maszyn Biomolekularnych krzywych topnienia dupleksów zawierających RNA i PNA rozszerzając tym samym możliwości zastosowania dynamiki molekularnej w podwyższonych temperaturach. Przeprowadzając symulacje w reprezentacji pełnoatomowej i w różnych temperaturach sprawdziliśmy, czy zaprojektowane układy docelowo zwiększają podobieństwo ich krzywych topnienia do wyników eksperymentalnych, a następnie zanalizowaliśmy liczbę wiązań wodorowych i oddziaływania stackingowe w funkcji temperatury.
 
-### Assistant Professor Silvio Osella
+### Dr Silvio Osella
 
 12:30-12:45
 
@@ -112,7 +112,7 @@ Rational Design of Bio-Organic Systems for Biomimetic Applications
 In recent years, research effort has been devoted to the generation of hybrid materials which change the electronic properties of one constituent by changing the optoelectronic properties of the other one. The most appealing and commonly used approach to design such novel materials relies on combining organic materials or metals with biological systems like redox-active proteins. Such hybrid systems can be used e.g. as bio-sensors, bio-fuel cells, biohybrid photoelectrochemical cells and nanosctuctured photoelectronic devices. Although experimental efforts have already resulted in the generation of a number of hybrid bio-organic materials, the main bottleneck of this technology is the formation of a stable and efficient (in terms of electronic communication) interface between the biological and the organic/metal counterparts. In particular, the efficiency of the final devices is usually very low due to two main problems related to the interfacing of such different components: charge recombination at the interface and the high possibility of losing the function of the biological component, which leads to the inactivation of the entire device.
 Here, we present a multiscale computational design which allows the study of complex interfaces for stable and highly efficient hybrid materials for biomimetic application, consisting of single layer graphene (SLG) as organic material/metal and small light harvesting protein complex as biological counterpart, linked together via a self-assembly monolayer (SAM), in order to create novel biomimetic materials for solar-to-fuel, bio-transistors or bioorganic electronic applications.
 
-### Profesor Adam Sieradzan 
+### Dr hab. Adam Sieradzan, prof UG 
 
 13:30-13:45
 
@@ -126,7 +126,7 @@ Adam Sieradzan jest profesorem uczelni pracującym na Wydziale Chemii Uniwersyte
 
 Błony lipidowe odgrywają ważną rolę w wielu procesach biologicznych. Są one odpowiedzialne m.in. za magazynowanie energii, ochronę od świata zewnętrznego czy nadawanie odpowiedniego kształtu komórkom. Komórki komunikują się ze światem zewnętrznym za pomocą białek umieszczonych w błonie. Badanie tych białek eksperymentalnie jest niezwykle skomplikowane, z pomocą przychodzą metody teoretyczne, obliczeniowe. W prezentacji opowiem, jak rozwinęliśmy program do symulacji białek (UNRES) w reprezentacji gruboziarnistej, sparametryzowaliśmy go by móc symulować białka błonowe oraz użyliśmy do badani białka wirusa opryszczki.
 
-### Paweł Gora
+### mgr Paweł Gora
 
 13:45-14:00
 
@@ -139,7 +139,7 @@ Doktorant informatyki i nauczyciel akademicki na Wydziale Matematyki, Informatyk
 Podczas prezentacji przedstawię techniki obliczeniowe stosowane w modelowaniu rozwoju guzów linii komórkowej EMT6/Ro i  w poszukiwaniu optymalnych wielodniowych protokołów radioterapeutycznych. Oryginalny model (wykorzystujący automaty komórkowe), zaimplementowany w programie MATLAB, został ponownie zaimplementowany przy użyciu języka  C++. Dodatkowo obliczenia zostały zrównoleglone przy wykorzystaniu  kart graficznych, co pozwoliło na znaczne przyspieszenie symulacji i umożliwiło przeszukiwanie znacząco większej, wieloparametrowej przestrzeni możliwych protokołów. Ponadto, w ramach ponownej implementacji algorytmów genetycznych zdefiniowaliśmy nowe operatory selekcji, krzyżowania i mutacji, dostosowane do przeszukiwania zwiększonej przestrzeni stanów. Rozwiązania te zaowocowały uzyskaniem 760-krotnego przyspieszenia wykonywania obliczeń w architekturze ICM w porównaniu z architekturą oryginalnego modelu oraz umożliwiły znajdowanie bardziej efektywnych (o ok. 6-8% w stosunku do tych wyznaczonych we wcześniejszych badaniach) protokołów radioterapii. Pod koniec prezentacji omówię istniejące wyzwania i przyszłe kierunki badań.
 
 
-### Michał Jagielski
+### lic. Michał Jagielski
 
 14:00-14:15
 
@@ -178,7 +178,7 @@ Adiunkt w Interdyscyplinarnym Centrum Modelowania Matematycznego i Komputerowego
 
 Celem omawianych prac badawczych było zbadanie właściwości różnych modeli językowych (word2vec i BERT) w zastosowaniach związanych z informatyką prawniczą, zwłaszcza w kontekście wyjaśnialności. W tym celu wykorzystano modele wytrenowane na zbiorach danych o charakterze ogólnym (np. wikipedia), jak i specjalistycznym (baza orzecznictwa amerykańskich sądów - system Courtlistener) oraz przeanalizowano ich wpływ - z wykorzystaniem metody GradCAM - na predykcje konwolucyjnej sieci neuronowej. Wykorzystano następujące zbiory danych jako przedmiot klasyfikacji: h VetClaims-JSON (https://github.com/LLTLab/VetClaims-JSON; klasyfikacja ról retorycznych, jakie pełnią poszczególne zdania w uzasadnieniach decyzji dotyczących spraw weteranów) oraz Statury Interpretation Data set (https://github.com/jsavelka/statutory_interpretation; przydatność poszczególnych fragmentów orzeczeń dla wykładni zadanego przepisu prawa). W trakcie wystąpienia omówiony zostanie proces treningu (przeprowadzony z wykorzystaniem klastra GPU rysy) oraz uzyskane wyniki i wprowadzone metryki porównawcze.
 
-### Damian Sobieraj
+### mgr Damian Sobieraj
 
 15:45-16:00
 
@@ -200,7 +200,7 @@ Opracowany model wykorzystany został do analizy stopu W38Ta36Cr15V11, wytworzon
 
 ## Dzień II
 
-### Yevgen Melikhov
+### Dr Yevgen Melikhov
 
 09:15-09:30
 
@@ -265,7 +265,7 @@ Modelowanie numeryczne przepływomierzy wibracyjnych
 
 W ramach pracy opracowano model numeryczny przepływomierza wibracyjnego i wykonano jego walidację. Model numeryczny wymagał zastosowania siatek dynamicznych - w każdym kroku czasowym niezbędne było wyznaczenie rozkładu sił działających na oscylator, obliczenie jego przemieszczenia, nowego położenia i wygenerowanie nowej siatki opartej na nowym położeniu. Głównym celem było zwiększenie zakresu stosowalności tych urządzeń poprzez rozwój stanu wiedzy oraz weryfikację dotychczasowych modeli i założeń. Cel został osiągnięty, model dostarczył szereg informacji dotyczących działania przepływomierza.
 
-### Maciej Szary
+### mgr Maciej Szary
 
 11:45-12:00
 
@@ -316,7 +316,7 @@ Obliczenia dotyczą struktur  objętościowych oraz  nanokryształów.
 Grant G16-11: Piotr Bogusławski,  O.V., Tomasz Zakrzewski. 
 
 
-### Profesor Bohdan Andriyevskyy
+### Prof. dr hab. Bohdan Andriyevskyy
 
 13:45-14:00
 
@@ -345,7 +345,7 @@ Zostaną przedstawione wyniki badań obliczeniowych w ramach teorii funkcjonału
 Hematite (α-Fe2O3) is one of the most widely studied semiconductor for photo-electrochemical water-splitting, as its bulk band gap (2.0-2.2eV) permits the absorption of visible light. It is also cheap, abundant and stable in water. Despite intensive research, the hematite-based devices have not yet achieved the theoretically predicted efficiency of 12.7–16.8%. On the one hand, this indicates the need for in-depth research on the water-splitting process itself on the hematite surface, as such incompatibility with theoretical predictions suggests incomplete understanding and incorrect prediction of the processes. On the other hand, one should consider the possibility of using a co-catalyst that would affect the optical properties of the hematite, possibly increasing the water-splitting efficiency.
 Using density functional theory we calculate the energetics of the (110) surface of hematite. We propose using Ti, Co, and Ni atoms as co-catalysts and analyze how these atoms affect the atomic and electronic structure of the surface and the magnetic ordering. We also show how the presence of a co-catalyst atom and the resulting charge redistribution and magnetic moments ordering influence stabilization of intermediates of water-splitting reaction.
 
-### Michał Kochman
+### Dr Michał Kochman
 
 14:30-14:45
 
