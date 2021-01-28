@@ -98,6 +98,12 @@ Podziękowania: We acknowledge financial support by the National Science Center 
 **Abstrakt**
 
 Student Claster Competition
+
+
+```.txt
+11:05-11:30 PRZERWA
+```
+
 ### Dr Michał Boniecki
 
 **Międzynarodowy Instytut Biologii Molekularnej i Komórkowej**
@@ -178,6 +184,9 @@ Rational Design of Bio-Organic Systems for Biomimetic Applications
 In recent years, research effort has been devoted to the generation of hybrid materials which change the electronic properties of one constituent by changing the optoelectronic properties of the other one. The most appealing and commonly used approach to design such novel materials relies on combining organic materials or metals with biological systems like redox-active proteins. Such hybrid systems can be used e.g. as bio-sensors, bio-fuel cells, biohybrid photoelectrochemical cells and nanosctuctured photoelectronic devices. Although experimental efforts have already resulted in the generation of a number of hybrid bio-organic materials, the main bottleneck of this technology is the formation of a stable and efficient (in terms of electronic communication) interface between the biological and the organic/metal counterparts. In particular, the efficiency of the final devices is usually very low due to two main problems related to the interfacing of such different components: charge recombination at the interface and the high possibility of losing the function of the biological component, which leads to the inactivation of the entire device.
 Here, we present a multiscale computational design which allows the study of complex interfaces for stable and highly efficient hybrid materials for biomimetic application, consisting of single layer graphene (SLG) as organic material/metal and small light harvesting protein complex as biological counterpart, linked together via a self-assembly monolayer (SAM), in order to create novel biomimetic materials for solar-to-fuel, bio-transistors or bioorganic electronic applications.
 
+```.txt
+12:45-13:30 PRZERWA
+```
 ### Dr hab. Adam Sieradzan, prof UG
 
 **Uniwersytet Gdański**
@@ -254,6 +263,9 @@ Wyjaśnialność i modele językowe w informatyce prawniczej
 
 Celem omawianych prac badawczych było zbadanie właściwości różnych modeli językowych (word2vec i BERT) w zastosowaniach związanych z informatyką prawniczą, zwłaszcza w kontekście wyjaśnialności. W tym celu wykorzystano modele wytrenowane na zbiorach danych o charakterze ogólnym (np. wikipedia), jak i specjalistycznym (baza orzecznictwa amerykańskich sądów - system Courtlistener) oraz przeanalizowano ich wpływ - z wykorzystaniem metody GradCAM - na predykcje konwolucyjnej sieci neuronowej. Wykorzystano następujące zbiory danych jako przedmiot klasyfikacji: h VetClaims-JSON (https://github.com/LLTLab/VetClaims-JSON; klasyfikacja ról retorycznych, jakie pełnią poszczególne zdania w uzasadnieniach decyzji dotyczących spraw weteranów) oraz Statury Interpretation Data set (https://github.com/jsavelka/statutory_interpretation; przydatność poszczególnych fragmentów orzeczeń dla wykładni zadanego przepisu prawa). W trakcie wystąpienia omówiony zostanie proces treningu (przeprowadzony z wykorzystaniem klastra GPU rysy) oraz uzyskane wyniki i wprowadzone metryki porównawcze.
 
+```.txt
+14:45-15:15 PRZERWA
+```
 ### Dr Piotr Śpiewak
 
 **Politechnika Warszawska**
@@ -420,6 +432,11 @@ Struktura elektronowa wybranych materiałów d-
 elektronowych pod kątem badań podstawowych i
 aplikacji w spintronice
 
+
+```.txt
+11:00-14:30 PRZERWA
+```
+
 ### Dr Maciej Szudarek
 
 **Politechnika Warszawska**
@@ -487,6 +504,10 @@ Analiza wpływu wirującego wału wirnika Darrieusa na obciążenia aerodynamicz
 
 Aerodynamika siłowni wiatrowej Darrieusa jest ekstremalnie trudnym zagadnieniem wymagającym zastosowania zaawansowanych metod numerycznych mechaniki płynów. Dodatkowe elementy konstrukcyjne wirnika, takie jak np. wirujący wał, wsporniki łopat, odciągi jeszcze bardziej zaburzają przepływ. Głównym celem prezentowanych badań jest analiza wpływu wirującego wału wirnika Darrieusa na obciążenia aerodynamiczne jego łopat wykorzystując dobrze znane podejście Unsteady Reynolds Averaged Navier–Stokes (URANS) a także przemysłowy dwu-równaniowy model turbulencji shear stress transport (SST) k-ω. Badania numeryczne przeprowadzono dla wirnika o średnicy 1m pracującego przy wyróżniku szybkobieżności 4,5. W pracy analizowano również nieustalone pola prędkości w obszarze wirnika oraz w cieniu aerodynamicznym wirującego wału. Otrzymane charakterystyki aerodynamiczne wirnika porównano z wynikami badań eksperymentalnych uzyskanych techniką PIV. Badania pokazały, że moc wirnika wyposażonego w wirujący wał jest o 2,5% niższa w porównaniu z „czystym” wirnikiem. 
 
+
+```.txt
+12:45-13:30 PRZERWA
+```
 ### Dr Oksana Volnianska
 
 **Adiunkt w Instytucie Fizyki PAN**
@@ -577,6 +598,10 @@ Pirouettes in molasses. Simulations of molecular motors in aqueous solution
 
 Molecular machines are artificial (man-made) molecules which produce mechanical action in response to specific external stimuli. A subclass of molecular machines are molecular motors, whose mode of action consists of repeatable unidirectional rotation. The ideal source of energy to power their operation is light, which has the advantage of not requiring a physical connection to the molecular motor, and affords fine spatial and temporal control. In most designs to date, the mechanism of rotation is based on E-Z photoisomerization around a double bond, and the directionality is controlled by the presence of an adjacent stereogenic center. Molecular motors of this type are built around organic chromophores with extended conjugated π-bonding systems, and consequently, they tend to be relatively large. Because of the steric bulkiness of typical molecular motors, their isomerization reactions can be expected to be strongly affected by mechanical interactions with the surrounding medium, such as a solvent. Clearly, the isomerization of a molecular motor must involve a substantial change in the shape of its solvent cage. Furthermore, collisions with the surrounding solvent molecules will give rise to friction against the solvent. In the present contribution, we quantify these effects by carrying out molecular dynamics simulations of the photoisomerization reactions of a prototypical molecular motor in aqueous solution.
 
+
+```.txt
+14:45-15:15 PRZERWA
+```
 ### Dr Marek Graff
 
 **Instytut Chemii i Techniki Jądrowej, PAN**
