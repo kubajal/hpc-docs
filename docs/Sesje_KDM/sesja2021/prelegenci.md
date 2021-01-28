@@ -5,9 +5,9 @@ Informacje o prelegentach, wg kolejności wystąpień.
 
 ### Dr hab. Krzysztof Rządca, prof. UW
 
-09:20-09:50
-
 **Uniwersytet Warszawski, Google**
+
+09:20-09:50
 
 ![image](./zdjecia_prelegentow/krz-portret.png#prelegent)
 
@@ -20,12 +20,27 @@ Dlaczego moje zadanie ciągle czeka w kolejce? I dlaczego, wysyłając je, musz�
 
 Dostęp do ogromnych mocy obliczeniowych współczesnych superkomputerów regulowany jest przez systemy kolejkowe: oprogramowanie planistów, które odpowiada za kolejkowanie wysłanych przez nas zadań, oraz za przypisanie zadaniom konkretnych maszyn (węzłów superkomputera). Podczas prezentacji opowiem o podstawowych algorytmach używanych przez planistów; poradzę, co robić, by czekać jak najkrócej (i dobrze żyć z administratorami!); oraz przedstawię kilka ciekawych kierunków badań współczesnych planistów - badań łączących algorytmikę, badania operacyjne, systemowe i analizę danych.
 
+### Dr Piotr Setny  
+
+**Uniwersytet Warszawski**
+
+09:50-10:05
+
+![image](./zdjecia_prelegentow/P_Setny.jpg#prelegent)
+
+Piotr Setny jest kierownikiem Laboratorium Modelowania Biomolekularnego w Centrum Nowych Technologii Uniwersytetu Warszawskiego (https://biomod.cent.uw.edu.pl). Jest absolwentem Warszawskiego Uniwersytetu Medycznego oraz Wydziału Fizyki UW, gdzie uzyskał również tytuł doktora. W obszarze jego zainteresowań leżą oddziaływania pomiędzy środowiskiem wodnym i molekułami biologicznymi oraz rozwój metod ich opisu, badanie zależności pomiędzy strukturą,  dynamiką i funkcją białek, jak również oddziaływanie peptydów z błonami lipidowymi.
+
+**Abstrakt**
+
+Oddziaływanie peptydów fuzyjnych wirusa grypy z błonami lipidowymi
+
+Grypa pozostaje jednym z głównych ogólnoświatowych zagrożeń epidemicznych. Wniknięcie wirusa grypy do komórki gospodarza wymaga fuzji ich błon lipidowych. Wiadomo, że proces ten inicjowany jest przez tzw. peptydy fuzyjne wirusa, ale molekularne podstawy ich funkcjonowania pozostają niezbadane. Ich poznanie jest istotne zarówno z punktu widzenia ogólnych badań nad procesem fuzji błon jak również może otworzyć drogę dla nowych strategii terapeutycznych. W trakcie wykładu przedstawione zostaną wyniki symulacji komputerowych mających na celu zbadanie sposobu oddziaływania peptydów fuzyjnych z błonami lipidowymi, ustalenie mechanizmu prowadzącego do inicjacji fuzji błon oraz wyjaśnienie w jaki sposób specyficzne mutacje aminokwasowe w obrębie peptydów prowadzą do utraty ich zdolności fuzyjnych.
 
 ### Dr Stanisław Dunin-Horkawicz
 
-10:05-10:20
-
 **Laboratorium Bioinformatyki Strukturalnej w Centrum Nowych Technologii**
+
+10:05-10:20
 
 ![image](./zdjecia_prelegentow/SDunin-Horkawicz.jpg#prelegent)
 
@@ -33,14 +48,16 @@ Stanisław Dunin-Horkawicz jest kierownikiem Laboratorium Bioinformatyki Struktu
 
 **Abstrakt**
 
+Sequence-structure relationships in highly-regular proteins
+
 W trakcie swojej prezentacji przedstawię prace realizowane m.in. dzięki grantom obliczeniowym Interdyscyplinarnego Centrum Modelowania Matematycznego i Obliczeniowego. W szczególności skupię się na rozwijanych w naszym zespole narzędziach opartych o techniki uczenia maszynowego (SVM, Deep Learning) służących do przewidywania właściwości strukturalnych białek na podstawie ich sekwencji oraz na tym, w jaki sposób narzędzia te mogą być wykorzystywane w celu lepszego zrozumienia, w jaki sposób sekwencja determinuje strukturę białka.
 
 
 ### Dr Anna Karnkowska
 
-10:20-10:35
-
 **Instytut Biologii Ewolucyjnej, Wydział Biologii, Uniwersytet Warszawski**
+
+10:20-10:35
 
 ![image](./zdjecia_prelegentow/Anna_Karnkowska_photo.png#prelegent)
 
@@ -48,14 +65,61 @@ Anna Karnkowska jest adiunktem w Instytucie Biologii Ewolucyjnej na Wydziale Bio
 
 **Abstrakt**
 
+Genomika i metagenomika mikroorganizmów eukariotycznych
+
 W swojej prezentacji przedstawię wyzwania i możliwości w badaniach genomicznych i metagenomicznych mikroorganizmów eukariotycznych, które realizujemy między innymi z wykorzystaniem zasobów obliczeniowych Interdyscyplinarnego Centrum Modelowania Matematycznego i Obliczeniowego. Skupię się na ścieżkach postępowania, które wykorzystujemy do analizy danych genomowych, aby lepiej zrozumieć ewolucję komórki eukariotycznej, a w szczególności ewolucję organelli endosymbiotycznego pochodzenia. Drugim omawianym kierunkiem badań będą rozwijane w naszym zespole narzędzia i podejścia umożliwiające analizę danych metagenomowych, które mają na celu identyfikację taksonomiczną i funkcjonalną mikroorganizmów eukariotycznych i zrozumienie ich roli w ekosystemach wodnych.
 
+### Prof. dr Wiesław Nowak
+
+**Uniwersytet Mikołaja Kopernika**
+
+10:35-10:50
+
+![image](./zdjecia_prelegentow/Wieslaw_Nowak_umk.jpg#prelegent)
+
+Prof. dr Wiesław Nowak ukończył studia z chemii teoretycznej na UMK, doktorat uzyskał z fizyki teoretycznej w 1989 roku w Instytucie Fizyki UMK. W roku 2000 habilitował się w dziedzinie nauk fizycznych, dyscyplinie biofizyka molekularna, zaś w roku 2009 został profesorem.  Odbył staże długoterminowe w UIC (Chicago, USA), Duke Univ. (USA), Ecole Polytechnique (Francja), Kyoto University (JSPS Fellow) oraz wiele wizyt w różnych ośrodkach naukowych. Jest współautorem ok 100 publikacji. Obecnie jest kierownikiem Katedry Biofizyki Instytutu Fizyki UMK w Toruniu oraz dyrektorem Szkoły Doktorskiej AST UMK.  Zajmuje się głównie modelowaniem białek o znaczeniu medycznym oraz białek fotoaktywnych , obliczeniami kwantowochemicznymi, nanomechaniką białek  i technikami spektroskopii sił AFM.   Od 20 lat organizuje międzynarodowe warsztaty „BioInformatics in Toruń” (BIT). Należy do Biophysical Society, Polskiego Towarzystwa Fizycznego, Polskiego Towarzystwa Bioinformatycznego i Polskiego Towarzystwa Biofizycznego.   
+
+**Abstrakt**
+
+Badania metodami dynamiki molekularnej struktury kanału potasowego Kir6.2/SUR1 odpowiedzialnego za wydzielanie insuliny 
+
+Cukrzyca jest chorobą trapiącą miliony ludzi na świecie, szacuje się, że co dziesiąty Warszawiak ma problemy związane z metabolizmem cukrów. W cukrzycy typu II zaburzone jest wydzielanie insuliny z komórek beta trzustki w odpowiedzi na podwyższony poziom glukozy we krwi. Ważnym elementem szlaku sygnałowego jest regulowane otwieranie/zamykanie dużego kanału potasowego Kir6.2/SUR1, odbywające się z udziałem ATP/ADP. Mechanizm działania i sterowania tego kanału nie jest znany. W projekcie zbudowaliśmy model pełnowymiarowy kompleksu 4x(Kir6.2+SUR) i wykonaliśmy symulacje dynamiki molekularnej tego układu (1 300 000 atomów) w skali 200 ns, korzystając z superkomputera OKEANOS. Na mniejszym modelu 4xKir6.1+1SUR1 poznaliśmy jakie zmiany strukturalne towarzyszą przejściom of formy otwartej do zamkniętej oraz jaką rolę odgrywa specyficzny ogon części Kir6.2 kanału oddziałujący z wnęką na powierzchni SUR1 [1]. Bardzo zaawansowane są badania dynamiki leków fotoaktywnych, zawierających azobenzen a imitujących działanie sulfonomoczników (JB253), zadokowanych do specyficznego miejsca w części SUR1 badanego układu. Dzięki pełnoatomowemu modelowaniu dynamiki SUR1/lek (234 000 atomów, program GROMACS, pole siłowe CHARMM36, własne parametry) w skali 2.5 μs uzyskano po raz pierwszy unikatowe dane na temat mechanizmu działania ważnych leków przeciwcukrzycowych. Poznano strukturalne determinanty wydzielania insuliny. Wyniki projektu są zachęcające i mają charakter ogólny, gdyż pokazują jak modelowanie może być wykorzystane w fotofarmakologii.  
+Podziękowania: We acknowledge financial support by the National Science Center grant 2016/23/B/ST4/01770. This research was carried out with the support of the Interdisciplinary Centre for Mathematical and Computational Modelling (ICM) University of Warsaw under grant nr GA76-10. 
+
+[1] K. Walczewska-Szewc, W. Nowak, Structural Determinants of Insulin Release: Disordered N-Terminal Tail of Kir6.2 Affects Potassium Channel Dynamics Through Interactions With Sulfonylurea Binding Region in a SUR1 Partner, J. Phys. Chem. B, 124, (29) (2020) 6198-6211.
+
+### TBD
+
+**Interdyscyplinarne Centrum Modelowania Matematycznego i Komputerowego Uniwersytetu Warszawskiego**
+
+10:50 11:05
+
+**Abstrakt**
+
+Student Claster Competition
+### Dr Michał Boniecki
+
+**Międzynarodowy Instytut Biologii Molekularnej i Komórkowej**
+
+11:30-11:45
+
+![image](./zdjecia_prelegentow/foto_MichalBoniecki_02.png#prelegent)
+
+Od lat związany z laboratorium prof. Janusza Bujnickiego w Międzynarodowym Instytucie Biologii  Molekularnej i Komórkowej w Warszawie. Jego praca skupiała się przede wszystkim na opracowywaniu metod do modelowania trójwymiarowego i symulacji biocząsteczek, w tym białek, RNA oraz kompleksów RNA-białko. Jego największym osiągnięciem ostatnich lat było opracowanie metody do modelowania RNA o nazwie SimRNA, która plasuje się wśród najlepszych istniejących metod do modelowania struktury przestrzennej RNA. Był wykonawcą grantu ERC prof. Bujnickiego. W roku 2017 dostał grant NCN Opus, w kategorii ST-6, który był na pierwszy na liście rankingowej w tamtym konkursie. Grant dotyczył implementacji nowatorskiego pomysłu umożliwiającego poprawę precyzji przewidywań tzw. parowań niekanonicznych pomiędzy zasadami nukleinowymi w strukturach RNA. W ramach doktoratu pod kierunkiem prof. Andrzeja Kolińskiego opracował metodę do modelowania struktury białka o nazwie Refiner. W czasie studiów doktoranckich odbywał staże w ramach współpracy z laboratorium prof. J. Skolnicka w Stanach Zjednoczonych. Studiował na Uniwersytecie Warszawskim w trybie Międzywydziałowych Studiów Matematyczno-Przyrodniczych. Dodatkowe zainteresowania to muzyka, grafika, prezentacja sceniczna, tłumaczenie zagadnień, popularyzacja nauki. Nagroda Specjalna Ministra Nauki i Szkolnictwa Wyższego w konkursie FameLab 2019.
+
+**Abstrakt**
+
+Simulations of the formation of protein-RNA complexes using a coarse grain model (SimRNP)
+
+Zagadnienia przewidywania i symulacji trójwymiarowej struktury biocząsteczek należą do największych wyzwań bioinformatyki strukturalnej. Jednym z nurtów jest zastosowanie metod opartych o funkcje energii (pola siłowe), które wiążą aspekty strukturalne z wartością energii (potencjalnej / swobodnej). Funkcja energii wraz z mechanizmem próbkowania przestrzeni konformacyjnej „prowadzi” symulację, w kierunku globalnego minimum energii, które powinno odpowiadać minimum energii dla danego układu molekularnego.
+Nawet nieduże układy molekularne (biocząsteczki lub ich kompleksy, wraz z otoczeniem) składają się z tysięcy atomów. W celu redukcji złożoności obliczeniowej, zmniejszenia liczby stopni swobody tworzy się modele uproszone.
+W ostatnich latach opracowaliśmy sprytny model uproszczony, który pomimo uproszczeń, pozwala na modelowanie RNA ze znaczną precyzją. Zostało to osiągnięte przez zastąpienie sztywnych fragmentów układu (zasad nukleinowych) przez 3 atomy, na których oparte są lokalne układy współrzędnych, które z kolei rozpinają trójwymiarowe siatki zawierające oddziaływania z daną grupą chemiczną. Metoda ta została nazwana SimRNA. Zastosowane podejście pozwoliło na wyprowadzenie statystycznej funkcji energii, która modeluje oddziaływania całych (sztywnych) grup chemicznych, zawierających informacje o wszystkich atomach danej grupy, pomimo tego, że są one reprezentowane przez 3 punkty/atomy. Jako metodę próbkowania zastosowaliśmy metodę Monte Carlo. Sprawdzone pomysły zastosowaliśmy również w metodzie do modelowania kompleksów RNA-białko. Parametryzacja oddziaływania RNA-białko została uzyskana przez umieszczenie lokalnych układów współrzędnych, jak również trójwymiarowych siatek zawierających oddziaływania, na atomach łańcucha głównego RNA oraz zasadach nukleinowych, w kontekście oddziaływania RNA-białko. Opracowane metody pozwalają na symulację i przewidywanie struktury RNA oraz kompleksów RNA białko, w tym dokowanie ze zmianą konformacji (tzw. giętkie dokowanie).
 
 ### Dr Joanna Panecka-Hofman
 
-11:45-12:00
-
 **Uniwersytet Warszawski**
+
+11:45-12:00
 
 **Abstrakt**
 
@@ -66,9 +130,9 @@ Reduktaza pterydynowa 1 (PTR1) jest enzymem występującym u chorobotwórczych �
 
 ### Dr Nithin Chandran
 
-12:00-12:15
-
 **International Institute of Molecular and Cell Biology in Warsaw**
+
+12:00-12:15
 
 ![image](./zdjecia_prelegentow/Nithin_Chandran.jpg#prelegent)
 
@@ -82,9 +146,9 @@ Three-dimensional structures of RNA and RNA-protein complexes (RNPs) provide ess
 
 ### mgr Joanna Miszkiewicz
 
-12:15-12:30
-
 **Centrum Nowych Technologii, Uniwersytet Warszawski**
+
+12:15-12:30
 
 ![image](./zdjecia_prelegentow/JMiszkiewicz_250x250.png#prelegent)
 
@@ -98,31 +162,34 @@ Dynamika molekularna stanowi ważne narzędzie do przewidywania zmian konformacy
 
 ### Dr Silvio Osella
 
-12:30-12:45
-
 **Centre of New Technologies, University of Warsaw**
+
+12:30-12:45
 
 ![image](./zdjecia_prelegentow/Osella_Pic.jpg#prelegent)
 
 Silvio Osella is an assistant professor at the Centre of New Technologies, University of Warsaw, in the  Chemical and Biological Systems Simulation Lab headed by Dr Hab. Bartosz Trzaskowski. He obtained his PhD in 2014 at the University of Mons (Belgium) under the supervision of Prof David Beljonne. His research focuses on the computational study of the opto-electronical properties of graphene and its derivatives (i.e. Nanoribbons, Nanoclusters) and of photoswitchable and fluorophore molecules when (but not limited to) inserted into biological environments. Three main research lines are followed. The first concern the study of fluorophores embedded in lipid membranes and proteins,  the second on the formation and study of hybrid organic-biological materials that can be of interest for bio-organic electronics, and the third the study of low dimensional materials based on carbon for organic electronics applications.
 
 **Abstract**
+
 Rational Design of Bio-Organic Systems for Biomimetic Applications
 
 In recent years, research effort has been devoted to the generation of hybrid materials which change the electronic properties of one constituent by changing the optoelectronic properties of the other one. The most appealing and commonly used approach to design such novel materials relies on combining organic materials or metals with biological systems like redox-active proteins. Such hybrid systems can be used e.g. as bio-sensors, bio-fuel cells, biohybrid photoelectrochemical cells and nanosctuctured photoelectronic devices. Although experimental efforts have already resulted in the generation of a number of hybrid bio-organic materials, the main bottleneck of this technology is the formation of a stable and efficient (in terms of electronic communication) interface between the biological and the organic/metal counterparts. In particular, the efficiency of the final devices is usually very low due to two main problems related to the interfacing of such different components: charge recombination at the interface and the high possibility of losing the function of the biological component, which leads to the inactivation of the entire device.
 Here, we present a multiscale computational design which allows the study of complex interfaces for stable and highly efficient hybrid materials for biomimetic application, consisting of single layer graphene (SLG) as organic material/metal and small light harvesting protein complex as biological counterpart, linked together via a self-assembly monolayer (SAM), in order to create novel biomimetic materials for solar-to-fuel, bio-transistors or bioorganic electronic applications.
 
-### Dr hab. Adam Sieradzan, prof UG 
-
-13:30-13:45
+### Dr hab. Adam Sieradzan, prof UG
 
 **Uniwersytet Gdański**
+
+13:30-13:45
 
 ![image](./zdjecia_prelegentow/adam_sieradzan.png#prelegent)
 
 Adam Sieradzan jest profesorem uczelni pracującym na Wydziale Chemii Uniwersytetu Gdańskiego, tam też zrobił doktorat w 2013 roku i habilitował się w 2019. W 2014 roku odbył staż podoktorski w Uppsala University. Oprócz stażu podoktorskiego odbył liczne staże krótko terminowe w Stanach Zjednoczonych, Chinach, Brazylii i Korei Południowej. Wielokrotnie uzyskał finansowanie na badania z Narodowego Centrum Nauki i był Stypendystą MNiSW oraz Fundacji na rzecz Nauki Polskiej. Prowadzi badania nad dynamiką i zwijaniem białek oraz kwasów nukleinowych.
 
 **Abstrakt**
+
+Wprowadzanie błony lipidowej do gruboziarnistego pola siłowego UNRES
 
 Błony lipidowe odgrywają ważną rolę w wielu procesach biologicznych. Są one odpowiedzialne m.in. za magazynowanie energii, ochronę od świata zewnętrznego czy nadawanie odpowiedniego kształtu komórkom. Komórki komunikują się ze światem zewnętrznym za pomocą białek umieszczonych w błonie. Badanie tych białek eksperymentalnie jest niezwykle skomplikowane, z pomocą przychodzą metody teoretyczne, obliczeniowe. W prezentacji opowiem, jak rozwinęliśmy program do symulacji białek (UNRES) w reprezentacji gruboziarnistej, sparametryzowaliśmy go by móc symulować białka błonowe oraz użyliśmy do badani białka wirusa opryszczki.
 
@@ -135,6 +202,10 @@ Błony lipidowe odgrywają ważną rolę w wielu procesach biologicznych. Są on
 ![image](./zdjecia_prelegentow/PGora.jpg#prelegent)
 
 Doktorant informatyki i nauczyciel akademicki na Wydziale Matematyki, Informatyki i Mechaniki Uniwersytetu Warszawskiego. Interesuje się nowymi technologiami (np. sztuczna inteligencja, informatyka kwantowa) oraz ich zastosowaniami, m.in. w transporcie, medycynie i e-commerce. Jest twórcą i liderem grupy badawczej TensorCell zajmującej się optymalizacją złożonych procesów (m.in. ruchu drogowego, leczenia nowotworu) oraz twórcą programu do symulacji i analizy ruchu drogowego Traffic Simulation Framework. Autor prac naukowych publikowanych na najlepszych konferencjach informatycznych i transportowych (m.in. NeurIPS, MT-ITS), jego prace było wielokrotnie cytowane i nagradzane, m.in. nagrodami "LIDER ITS" w 2015 i 2017 roku za najlepszą w Polsce pracę badawczo-rozwojową w obszarze inteligentnych systemów transportowych, "Doktoraty dla Mazowsza", "Nowoczesny Uniwersytet". W 2017 roku został wyróżniony w gronie "Top 10 Polish Talents" w konkursie "MIT Innovator Under 35" oraz znalazł się na liście "New Europe 100" w gronie 100 wybitnych innowatorów w Europie Wschodniej. W przeszłości pracował jako inżynier i naukowiec m.in. w Microsoft, Google, CERN i IBM Research. Obecnie współpracuje jako mentor/doradca z polskimi startupami, m.in. Broomee Technologies. Współorganizuje cykl spotkań Warsaw.ai oraz Warsaw Quantum Computing Group, jest również członkiem Rady ds. Cyfryzacji oraz przedstawicielem Polski w Komitecie Zarządzającym akcji COST WISE-ACT dotyczącej badania wpływu w dużej skali pojazdów autonomicznych i komunikujących się. Zajmuje się również wspieraniem edukacji i badań w obszarze nowych technologii (przede wszystkim AI i informatyki kwantowej) w ramach inicjatyw QWorld i QPoland oraz "Fundacji Quantum AI", której jest Fundatorem i Prezesem.
+
+**Abstrakt**
+
+Optymalizacja leczenia nowotworu
 
 Podczas prezentacji przedstawię techniki obliczeniowe stosowane w modelowaniu rozwoju guzów linii komórkowej EMT6/Ro i  w poszukiwaniu optymalnych wielodniowych protokołów radioterapeutycznych. Oryginalny model (wykorzystujący automaty komórkowe), zaimplementowany w programie MATLAB, został ponownie zaimplementowany przy użyciu języka  C++. Dodatkowo obliczenia zostały zrównoleglone przy wykorzystaniu  kart graficznych, co pozwoliło na znaczne przyspieszenie symulacji i umożliwiło przeszukiwanie znacząco większej, wieloparametrowej przestrzeni możliwych protokołów. Ponadto, w ramach ponownej implementacji algorytmów genetycznych zdefiniowaliśmy nowe operatory selekcji, krzyżowania i mutacji, dostosowane do przeszukiwania zwiększonej przestrzeni stanów. Rozwiązania te zaowocowały uzyskaniem 760-krotnego przyspieszenia wykonywania obliczeń w architekturze ICM w porównaniu z architekturą oryginalnego modelu oraz umożliwiły znajdowanie bardziej efektywnych (o ok. 6-8% w stosunku do tych wyznaczonych we wcześniejszych badaniach) protokołów radioterapii. Pod koniec prezentacji omówię istniejące wyzwania i przyszłe kierunki badań.
 
@@ -154,6 +225,8 @@ hydrodynamiki kwantowej.
 
 **Abstrakt**
 
+Modelowanie nadciekłej turbulencji na maszynie wektorowej NEC
+
 Interesującym aspektem ośrodków nadciekłych jest dynamika
 zdyskretyzowanych wirów. W najprostszy sposób ośrodek taki można
 modelować równaniem Grossa-Pitajewskiego w którym układ opisujemy
@@ -166,9 +239,9 @@ kątem geometrii i topologii krzywych wirowych.
 
 ### Dr Łukasz Górski
 
-14:15-14:30
-
 **Adiunkt w Interdyscyplinarnym Centrum Modelowania Matematycznego i Komputerowego Uniwersytetu Warszawskiego**
+
+14:15-14:30
 
 ![image](./zdjecia_prelegentow/LGorski250x250.png#prelegent)
 
@@ -176,19 +249,57 @@ Adiunkt w Interdyscyplinarnym Centrum Modelowania Matematycznego i Komputerowego
 
 **Abstrakt**
 
+Wyjaśnialność i modele językowe w informatyce prawniczej
+
 Celem omawianych prac badawczych było zbadanie właściwości różnych modeli językowych (word2vec i BERT) w zastosowaniach związanych z informatyką prawniczą, zwłaszcza w kontekście wyjaśnialności. W tym celu wykorzystano modele wytrenowane na zbiorach danych o charakterze ogólnym (np. wikipedia), jak i specjalistycznym (baza orzecznictwa amerykańskich sądów - system Courtlistener) oraz przeanalizowano ich wpływ - z wykorzystaniem metody GradCAM - na predykcje konwolucyjnej sieci neuronowej. Wykorzystano następujące zbiory danych jako przedmiot klasyfikacji: h VetClaims-JSON (https://github.com/LLTLab/VetClaims-JSON; klasyfikacja ról retorycznych, jakie pełnią poszczególne zdania w uzasadnieniach decyzji dotyczących spraw weteranów) oraz Statury Interpretation Data set (https://github.com/jsavelka/statutory_interpretation; przydatność poszczególnych fragmentów orzeczeń dla wykładni zadanego przepisu prawa). W trakcie wystąpienia omówiony zostanie proces treningu (przeprowadzony z wykorzystaniem klastra GPU rysy) oraz uzyskane wyniki i wprowadzone metryki porównawcze.
+
+### Dr Piotr Śpiewak
+
+**Politechnika Warszawska**
+
+14:30-14:45
+
+**Abstrakt**
+
+Modelowanie ab initio właściwości transportowych w
+materiałach termoelektrycznych z wykorzystaniem
+funkcjonałów hybrydowych
+
+
+### Dr Paweł Szarek
+
+**Uniwersytet Warszawski, CENT**
+
+15:15-15:30
+
+**Abstrakt**
+
+Kompleksy metali przejściowych w roli urządzeń dla
+elektroniki molekularnej.
+
+### mgr Marcin Zemła
+
+**Politechnika Warszawska**
+
+15:30 15:45
+
+**Abstrakt**
+
+He w Fe
 
 ### mgr Damian Sobieraj
 
-15:45-16:00
-
 **Politechnika Warszawska**
+
+15:45-16:00
 
 ![image](./zdjecia_prelegentow/DSobieraj.jpg#prelegent)
 
 Damian Sobieraj jest doktorantem w Zakładzie Projektowania Materiałów na Wydziale Inżynierii Materiałowej Politechniki Warszawskiej. Pod opieką prof. Krzysztofa Kurzydłowskiego i dr Jana Wróbla bada właściwości stopów o wysokiej entropii łącząc metody eksperymentalne z obliczeniowymi.
 
 **Abstrakt**
+
+Modelowanie stabilności fazowej i właściwości stopów o wysokiej entropii
 
 Stopy metali o wysokiej entropii (HEA – z ang. high entropy alloys) są nową klasą materiałów o wyjątkowej mikrostrukturze i właściwościach. Stopy te składają się z 4 lub więcej składników o zbliżonym stężeniu. Wysoka entropia konfiguracyjna (czyli duży stopień nieuporządkowania atomów) związana z obecnością różnych rodzajów pierwiastków hamuje tworzenie się kruchych faz międzymetalicznych i promuje nieuporządkowane wieloskładnikowe roztwory stałe, które posiadają unikalne właściwości. Ze względu na olbrzymią liczbę kombinacji zarówno doboru pierwiastków jak również ich stężeń, eksperymentalne przebadanie wszystkich kombinacji stopów jest niemożliwe.
 Celem przeprowadzonych badań było zrozumienie, przy użyciu modelowania ab-initio, w jaki sposób uporządkowanie atomowe, entropia konfiguracyjna oraz podstawowe właściwości stopów o wysokiej entropii z układu W-Ta-Ti-Cr-V zależą od stężeń poszczególnych pierwiastków oraz temperatury. Do przeprowadzenia symulacji wykorzystano metody DFT (z ang. Density Functional Theory), Cluster Expansion oraz Monte Carlo. Wykazano, iż połączenie tych metod może być z powodzeniem wykorzystane do modelowania stopów o wysokiej entropii, określania ich stabilności fazowej a także stopnia uporządkowania bliskiego zasięgu. Stopy W-Ta-Ti-V charakteryzowały się najniższą temperaturą zaniku uporządkowania bliskiego zasięgu – 700 K. Oznacza to, iż formują nieuporządkowany roztwór stały w najniższej temperaturze spośród wszystkich stopów z układu W-Ta-Ti-Cr-V [1].
@@ -202,13 +313,15 @@ Opracowany model wykorzystany został do analizy stopu W38Ta36Cr15V11, wytworzon
 
 ### Dr Yevgen Melikhov
 
-09:15-09:30
-
 **Instytut Podstawowych Problemów Techniki PAN**
+
+09:15-09:30
 
 ![image](./zdjecia_prelegentow/YM_image.png#prelegent)
 
 **Abstrakt**
+
+Theoretical support to facilitate analysis of X-ray Absorption Spectroscopy data obtained for (Ga,Mn) as thin films
 
 A potential simultaneous use of the ferromagnetic and semiconductors properties in spintronics has attracted a great interest to diluted magnetic semiconductors (DMS) with the most studied material being (Ga,Mn)As. With the optimized MBE growth and post growth annealing procedures nowadays (Ga,Mn)As layers have achieved the Curie temperature, TC, as high as about 200 K. This is remarkably high as for DMS, but still too low in view of potential application in spintronics devices. Studies on the influence of microstructure and its inhomogeneities upon material’s properties, as well as studies on transformation processes of local atomic structure around Mn ions which occur in (Ga,Mn)As during growth and post growth annealing should lead to an improved understanding of the microstructure evolution and could potentially lead to a further progress in reaching larger TC in (Ga,Mn)As. X-ray Absorption Spectroscopy is one of the essential tools to study local atomic/electronic structure and, with extended theoretical support, is widely used in scientific community.
 Here, the structural properties of (Ga,Mn)As system were investigated using an integrated approach that combines EXAFS spectroscopy and molecular dynamics (MD) simulations. A quantitative analysis of the Mn K-edge EXAFS spectrum of (Ga,Mn)As films has been carried out starting from the structural information on the system derived from the Quantum ESPRESSO calculations and MD simulation. This combined approach allows one to reduce the number of correlated model parameters required in the fitting of the experimental EXAFS data and to increase the reliability of the EXAFS data analysis that represents a non-trivial task when dealing with disordered systems.
@@ -216,9 +329,9 @@ Here, the structural properties of (Ga,Mn)As system were investigated using an i
 
 ### Dr Karolina Z. Milowska
 
-09:30-09:45
-
 **University of Cambridge**
+
+09:30-09:45
 
 ![image](./zdjecia_prelegentow/photo_KZM.png#prelegent)
 
@@ -234,46 +347,126 @@ Nisko wymiarowe formy węgla, takie jak nanorurki węglowe czy grafen, w dalszym
 
 [2] S. Lepak-Kuc, K. Z. Milowska, S. Boncel, M. Szybowicz, A. Dychalska, I. Jozwik, K. K. Koziol, M. Jakubowska, A. Lekawa-Raus, "Highly Conductive Doped Hybrid Carbon Nanotube-Graphene Wires", ACS App. Mater. Int., 11 (36), 33207-33220 (2019).
 
+### mgr Vadim Zhuravlev
+
+**Interdyscyplinarne Centrum Modelowania Matematycznego i Komputerowego Uniwersytetu Warszawskiego**
+
+![image](./zdjecia_prelegentow/VadimZhuravlev.jpg#prelegent)
+
+09:45-10:00
+
+Vadim Zhuravlev jest członkiem Laboratorium Aktywacji Małych Cząsteczek w Centrum Nowych Technologii Uniwersytetu Warszawskiego prowadzonym przez dra Przemysława Malinowskiego. Jest laureatem Diamentowego Grantu Ministerstwa Nauki i Szkolnictwa Wyższego. Z zasobów ICM korzystał dla napisania pracy magisterskiej na prowadzonym w ICM kierunku studiów Inżynieria Obliczeniowa.
+
+**Abstrakt**
+
+Obliczenia kwantowo-mechaniczne dla 250 milionów atomów dwutlenku tytanu
+
+W trakcie prezentacji zostaną przedstawione wyniki obliczeń struktury elektronowej złożonych układów rutylu TiO(2-x) z dużą ilością wakansów tlenowych opartych na metodzie równania ruchu z użyciem funkcji Greena [1]. Podstawą przeprowadzonych obliczeń jest program, który był wcześniej używany na superkomputerach wektorowych wcześniejszych generacji, takich jak Cray-2, Cray C90, NEC SX-4 i innych, i pozwalał na przeprowadzenie tego typu obliczeń dla układów zawierających 10^6 atomów [2]. Po odpowiednich modyfikacjach uruchomiono ten program na najnowszej architekturze komputera wektorowego NEC SX-Aurora TSUBASA, który jest częścią klastra rysy ICM, przy czym największy układ, dla którego udało się przeprowadzić takie obliczenia na danym komputerze, zawierał 244.93 milionów atomów (co odpowiada próbce rutylu TiO2 o wymiarze 159.4 nm x 156.1 nm x 102.4 nm).  Podczas prezentacji zostanie również krótko omówiona architektura NEC SX-Aurora TSUBASA i zaprezentowane ogólne założenia i implementacja stosowanej metody. 
+
+[1]. J. W. Halley, M. Michalewicz, N. Tit, Physical review. B, 1990, 41(14), 10165–10170
+
+[2]. M. T. Michalewicz, P. Nyberg, Aust. J. Phys., 1999, 52, 919–27
+
 ### Dr Aleksandra Siklitskaya
 
-10:00-10:15
-
 **Instytut Chemii Fizycznej PAN**
+
+10:00-10:15
 
 ![image](./zdjecia_prelegentow/ASiklitskaya.jpg#prelegent)
 
 Dr. Siklitskaya defended her Ph.D. thesis on condensed matter physics in 2015, Ioffe Institute in St. Petersburg. She've been a visiting researcher in Loughborough University (Liecestershire, UK) and Institute of Material Chemistry(Strasbourg, France). Her scientific interests are: various allotropic forms of carbon and phase transitions between them, condensed matter physics and heterogeneous catalysis.
 
+
 **Abstrakt**
+
+**Ab-initio insights into the CO2 adsorption**
 
 XXI century brings us to the era of computational heaven with its developed software and technologies. In my talk I would like to focus on the importance of building the relevant model based on theoretical physics and chemistry before setting up the computational experiments. This step allows to save incredible amount of energy and computational resourses.
 Ab-initio molecular dynamics is an incredible tool for getting a qualitative insight into the structural properties of the system as well as getting a first guess of a chemical reaction mechanism. We've checked the possible routes of CO2 sequestration into various materials including calcite and carbon spiroids.
 
-### Dr Maciej Szudarek
 
-11:30-11:45
+### Dr Marcin Kryński
 
 **Politechnika Warszawska**
+
+10:15-10:30
+
+**Abstrakt**
+
+Modelowanie właściwości elektrycznych przewodników jonów tlenu opartych na Bi2O3
+
+### dr hab Wacław Kuś, prof. Pol.Śl.
+
+**Politechnika Śląska**
+
+10:30-10:45
+
+**Abstrakt**
+
+Projektowanie materiałów 2D o zadanych
+własnościach mechanicznych
+
+### Przemyslaw Swiatek
+
+**INTiBS PAN**
+
+10:45-11:00
+
+**Abstrakt**
+
+Struktura elektronowa wybranych materiałów d-
+elektronowych pod kątem badań podstawowych i
+aplikacji w spintronice
+
+### Dr Maciej Szudarek
+
+**Politechnika Warszawska**
+
+11:30-11:45
 
 ![image](./zdjecia_prelegentow/MSzudarek_resized.png#prelegent)
 
 Maciej Szudarek zajmuje się metrologią przepływów i numeryczną mechaniką płynów. Jest asystentem w Instytucie Metrologii i Inżynierii Biomedycznej na Wydziale Mechatroniki Politechniki Warszawskiej. W Laboratorium Przepływów należącym do Instytutu prowadzi badania dla przemysłu, wzorcowania i doradztwo w aspektach metrologicznych przy opracowywaniu prototypów nowych przepływomierzy.
 
-**Abstract**
+**Abstrakt**
 
 Modelowanie numeryczne przepływomierzy wibracyjnych
 
 W ramach pracy opracowano model numeryczny przepływomierza wibracyjnego i wykonano jego walidację. Model numeryczny wymagał zastosowania siatek dynamicznych - w każdym kroku czasowym niezbędne było wyznaczenie rozkładu sił działających na oscylator, obliczenie jego przemieszczenia, nowego położenia i wygenerowanie nowej siatki opartej na nowym położeniu. Głównym celem było zwiększenie zakresu stosowalności tych urządzeń poprzez rozwój stanu wiedzy oraz weryfikację dotychczasowych modeli i założeń. Cel został osiągnięty, model dostarczył szereg informacji dotyczących działania przepływomierza.
 
+### Dr Carmine Autieri
+
+**Instytut Fizyki, PAN**
+
+12:00-12:15
+
+**Abstrakt**
+
+Magnetic impurities IN TOPological materials
+
+### Dr hab. Piotr Korcyl
+
+**Uniwersytet Jagieloński**
+
+12:15-12:30
+
+**Abstrakt**
+
+Determination of the strong coupling constant
+from Lattice QCD Monte Carlo simulations
+
 ### mgr Maciej Szary
 
-11:45-12:00
+**Politechnika Poznańska**
 
-**Asystent w Instytucie Fizyki Politechniki Poznańskiej**
+11:45-12:00
 
 ![image](./zdjecia_prelegentow/mszary.png#prelegent)
 
 **Abstrakt**
+
+Domieszkowany MoS2 jako materiał do detekcji H2S
 
 Rezystancyjne czujniki gazu oparte na warstwach MoS2 osiągają doskonałą czułość i wysoką selektywność dla molekuł NO2 i NH3. Jednakże ze względu na niską zdolność detekcji innych cząsteczek, liczba kompatybilnych analitów jest mała. Stosując obliczenia DFT, projekt rozważył domieszkowanie MoS2 w celu optymalizacji detekcji molekuł H2S. Badania oparte zostały na eksperymentalnym modelu domieszkowania wspomaganego promieniowaniem elektronowym [PRL 109 (2012) 035503]. Jako atomy domieszki wybrano P, Cl i Ge.  W celu określenia selektywności adsorpcji wpływ efektów modyfikacji warstwy zbadany został dla H2S, N2 i O2. Wyniki pokazały, że domieszkowanie Ge i Cl nie wpływają korzystnie na detekcję H2S. Natomiast P zwiększa transfer ładunku po adsorpcji H2S o 354% w porównaniu z niedomieszkowanym MoS2. Jednocześnie energia adsorpcji H2S na P-MoS2 jest stosunkowo niska, a dynamika molekularna pokazuje, że domieszkowanie nie utrudnia zwolnienia miejsca adsorpcyjnego w temperaturze pokojowej. Ponadto adsorpcja H2S jest energetycznie faworyzowana względem  O2 i N2, co powinno zapewnić molekułom analitu łatwiejszy dostęp do miejsc adsorpcyjnych z atomem P.
 
@@ -285,17 +478,19 @@ Rezystancyjne czujniki gazu oparte na warstwach MoS2 osiągają doskonałą czu�
 
 ![image](./zdjecia_prelegentow/KRogowski.png#prelegent)
 
-Krzysztof Rogowski jest adiunktem w Instytucie Techniki Lotniczej i Mechaniki Stosowanej Politechniki Warszawskiej. Jego zainteresowania naukowe obejmują głównie metody numeryczne mechaniki płynów oraz siłownie wiatrowe (w szczególności siłownie wiatrowe Darrieusa). W 2014 roku Krzysztof Rogowski uzyskał stopień naukowy doktora nauk technicznych w dyscyplinie mechanika (tytuł rozprawy doktorskiej Analysis of Performance of the Darrieus Wind Turbines). W sierpniu 2020 roku Krzysztof Rogowski złożył wniosek o nadanie stopnia doktora habilitowanego. Głównym osiągnięciem habilitanta jest cykl publikacji naukowych pod tytułem „Modelowanie siłowni wiatrowych o pionowej osi obrotu wykorzystując metody numeryczne mechaniki płynów” Cykl publikacji obejmuje 8 publikacji z listy JCR, dwa artykuły z czasopism spoza listy JCR ujętych w bazie Web od Science oraz dwie publikacje konferencyjne widoczne w bazie WoS.   
+Krzysztof Rogowski jest adiunktem w Instytucie Techniki Lotniczej i Mechaniki Stosowanej Politechniki Warszawskiej. Jego zainteresowania naukowe obejmują głównie metody numeryczne mechaniki płynów oraz siłownie wiatrowe (w szczególności siłownie wiatrowe Darrieusa). W 2014 roku Krzysztof Rogowski uzyskał stopień naukowy doktora nauk technicznych w dyscyplinie mechanika (tytuł rozprawy doktorskiej Analysis of Performance of the Darrieus Wind Turbines). W sierpniu 2020 roku Krzysztof Rogowski złożył wniosek o nadanie stopnia doktora habilitowanego. Głównym osiągnięciem habilitanta jest cykl publikacji naukowych pod tytułem „Modelowanie siłowni wiatrowych o pionowej osi obrotu wykorzystując metody numeryczne mechaniki płynów” Cykl publikacji obejmuje 8 publikacji z listy JCR, dwa artykuły z czasopism spoza listy JCR ujętych w bazie Web od Science oraz dwie publikacje konferencyjne widoczne w bazie WoS.
 
 **Abstrakt**
+
+Analiza wpływu wirującego wału wirnika Darrieusa na obciążenia aerodynamiczne łopat wirnika
 
 Aerodynamika siłowni wiatrowej Darrieusa jest ekstremalnie trudnym zagadnieniem wymagającym zastosowania zaawansowanych metod numerycznych mechaniki płynów. Dodatkowe elementy konstrukcyjne wirnika, takie jak np. wirujący wał, wsporniki łopat, odciągi jeszcze bardziej zaburzają przepływ. Głównym celem prezentowanych badań jest analiza wpływu wirującego wału wirnika Darrieusa na obciążenia aerodynamiczne jego łopat wykorzystując dobrze znane podejście Unsteady Reynolds Averaged Navier–Stokes (URANS) a także przemysłowy dwu-równaniowy model turbulencji shear stress transport (SST) k-ω. Badania numeryczne przeprowadzono dla wirnika o średnicy 1m pracującego przy wyróżniku szybkobieżności 4,5. W pracy analizowano również nieustalone pola prędkości w obszarze wirnika oraz w cieniu aerodynamicznym wirującego wału. Otrzymane charakterystyki aerodynamiczne wirnika porównano z wynikami badań eksperymentalnych uzyskanych techniką PIV. Badania pokazały, że moc wirnika wyposażonego w wirujący wał jest o 2,5% niższa w porównaniu z „czystym” wirnikiem. 
 
 ### Dr Oksana Volnianska
 
-13:30-13:45
-
 **Adiunkt w Instytucie Fizyki PAN**
+
+13:30-13:45
 
 ![image](./zdjecia_prelegentow/OVolnianska_ICM.jpg#prelegent)
 
@@ -318,9 +513,9 @@ Grant G16-11: Piotr Bogusławski,  O.V., Tomasz Zakrzewski.
 
 ### Prof. dr hab. Bohdan Andriyevskyy
 
-13:45-14:00
-
 **Politechnika Koszalińska**
+
+13:45-14:00
 
 ![image](./zdjecia_prelegentow/BAndriyevskyy.jpg#prelegent)
 
@@ -336,9 +531,9 @@ Zostaną przedstawione wyniki badań obliczeniowych w ramach teorii funkcjonału
 
 ### Dr hab. Dominik Kurzydłowski
 
-14:00-14:15
-
 **Uniwersytet Kardynała Stefana Wyszyńskiego w Warszawie**
+
+14:00-14:15
 
 ![image](./zdjecia_prelegentow/DKurzydlowski.jpg#prelegent)
 
@@ -346,25 +541,29 @@ Dominik Kurzydłowski jest profesorem w Instytucie Nauk Chemicznych Uniwersytetu
 
 **Abstrakt**
 
+Wpływ wysokich ciśnień na właściwości związków bogatych we fluor
+
 In my presentation I will show how Density Functional (DFT) modelling can be used as efficient tool in the interpretation of experimental measurements conducted for solids compressed to pressures exceeding 10 000 atm.
 
 
 ### Dr Agata Podsiadły-Paszkowska
 
-14:15-14:30
-
 **Adiunkt na Wydziale Chemicznym Politechniki Wrocławskiej**
 
+14:15-14:30
+
 **Abstrakt**
+
+Stabilizacja półproduktów reakcji rozszczepiania wody na powierzchni hematytu
 
 Hematite (α-Fe2O3) is one of the most widely studied semiconductor for photo-electrochemical water-splitting, as its bulk band gap (2.0-2.2eV) permits the absorption of visible light. It is also cheap, abundant and stable in water. Despite intensive research, the hematite-based devices have not yet achieved the theoretically predicted efficiency of 12.7–16.8%. On the one hand, this indicates the need for in-depth research on the water-splitting process itself on the hematite surface, as such incompatibility with theoretical predictions suggests incomplete understanding and incorrect prediction of the processes. On the other hand, one should consider the possibility of using a co-catalyst that would affect the optical properties of the hematite, possibly increasing the water-splitting efficiency.
 Using density functional theory we calculate the energetics of the (110) surface of hematite. We propose using Ti, Co, and Ni atoms as co-catalysts and analyze how these atoms affect the atomic and electronic structure of the surface and the magnetic ordering. We also show how the presence of a co-catalyst atom and the resulting charge redistribution and magnetic moments ordering influence stabilization of intermediates of water-splitting reaction.
 
 ### Dr Michał Kochman
 
-14:30-14:45
-
 **Instytut Chemii Fizycznej PAN**
+
+14:30-14:45
 
 ![image](./zdjecia_prelegentow/MKochman_zdjecie.png#prelegent)
 
@@ -377,11 +576,33 @@ Pirouettes in molasses. Simulations of molecular motors in aqueous solution
 
 Molecular machines are artificial (man-made) molecules which produce mechanical action in response to specific external stimuli. A subclass of molecular machines are molecular motors, whose mode of action consists of repeatable unidirectional rotation. The ideal source of energy to power their operation is light, which has the advantage of not requiring a physical connection to the molecular motor, and affords fine spatial and temporal control. In most designs to date, the mechanism of rotation is based on E-Z photoisomerization around a double bond, and the directionality is controlled by the presence of an adjacent stereogenic center. Molecular motors of this type are built around organic chromophores with extended conjugated π-bonding systems, and consequently, they tend to be relatively large. Because of the steric bulkiness of typical molecular motors, their isomerization reactions can be expected to be strongly affected by mechanical interactions with the surrounding medium, such as a solvent. Clearly, the isomerization of a molecular motor must involve a substantial change in the shape of its solvent cage. Furthermore, collisions with the surrounding solvent molecules will give rise to friction against the solvent. In the present contribution, we quantify these effects by carrying out molecular dynamics simulations of the photoisomerization reactions of a prototypical molecular motor in aqueous solution.
 
+### Dr Marek Graff
+
+**Instytut Chemii i Techniki Jądrowej, PAN**
+
+15:15-15:30
+
+**Abstrakt**
+
+Wpływ podstawników oraz izomerii
+i Techniki
+geometrycznej na aromatyczność HOMA polienów
+
+### Dr Michał Lesiuk
+
+**Uniwersytet Warszawski**
+
+15:30-15:45
+
+**Abstrakt**
+
+Techniki dekompozycji tensorow w teorii coupled cluster
+
 ### Dr hab. inż. Maciej Śmiechowski
 
-15:45-16:00
-
 **Politechnika Gdańska**
+
+15:45-16:00
 
 ![image](./zdjecia_prelegentow/Foto_Smiechowski_ICM.png#prelegent)
 

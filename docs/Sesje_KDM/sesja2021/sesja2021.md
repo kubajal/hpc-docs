@@ -9,13 +9,13 @@ draft: false
 Tegoroczna **Sesja Użytkowników Komputerów Dużej Mocy ICM** odbędzie się w formie online. Planujemy zaprosić do wystąpienia osoby, które niedawno rozpoczęły swoje obliczenia, aby podzieliły się z nami swoimi wynikami obliczeń.
 Do uczestnictwa, wysłuchania prelegentów oraz porad i dyskusji naukowych zapraszamy wszystkich naszych Użytkowników.
 
-Mamy nadzieję, że nietypowy charakter Sesji umożliwi użytkownikom tradycyjną wymianę doświadczeń, zaplanowanie wspólnych przedsięwzięć naukowych i programistycznych, jak również rozwiązanie aktualnych problemów obliczeniowych. Oprócz użytkowników w spotkaniach będą uczestniczyli przedstawiciele ICM, m.in. programiści odpowiadający za wsparcie techniczne i merytoryczne realizowanych w ICM grantów obliczeniowych oraz naukowcy ICM prezentujący swoje modele obliczeniowe.
+Mamy nadzieję, że nietypowy charakter Sesji umożliwi użytkownikom tradycyjną wymianę doświadczeń, zaplanowanie wspólnych przedsięwzięć naukowych i programistycznych, jak również rozwiązanie aktualnych problemów obliczeniowych. Oprócz użytkowników w spotkaniach będą uczestniczyli pracownicy ICM, m.in. programiści odpowiadający za wsparcie techniczne i merytoryczne realizowanych w ICM grantów obliczeniowych oraz naukowcy ICM prezentujący swoje modele obliczeniowe.
 
-Do udziału w Sesji zapraszamy Kierowników oraz przedstawicieli grantów realizowanych w ICM.
+Do udziału w Sesji zapraszamy Kierowników oraz uczestników grantów realizowanych w ICM.
 
 ### Kiedy
 
-W dniach 2–3 lutego 2021r.  **online**
+W dniach 2–3 lutego 2021r.  **online** w godzinach 09:00-16:30.
 
 ### Miejsce
 
@@ -25,7 +25,7 @@ Uczestnicy otrzymają link do platformy **ClickMeeting** za pośrednictwem któr
 
 ### Zasady Uczestnictwa
 
-Do udziału w Sesji zapraszamy Kierowników oraz przedstawicieli grantów realizowanych w ICM.
+Do udziału w Sesji zapraszamy Kierowników oraz uczestników grantów realizowanych w ICM.
 Szczególnie zapraszamy nowych użytkowników z projektów otwartych w ostatnim czasie.
 Udział w Sesji to dobra okazja do kontaktów z doświadczonymi użytkownikami i z zespołem ICM.
 Osoby dla których zaplanowaliśmy wystąpienie zaprosimy imiennie.
@@ -56,8 +56,8 @@ Zapraszamy do zapoznania się z programem wydarzenia.
 Możliwe są niewielkie przesunięcia w programie, w zależności od możliwości czasowych prelegentów.
 
 - Program Sesji:
-    * [dzien I](./sesja2020_granty_lista_v8_dzien1.pdf)
-    * [dzien II](./sesja2020_granty_lista_v8_dzien2.pdf)
+    * [dzien I](./sesja2020_granty_lista_v9_dzien1.pdf)
+    * [dzien II](./sesja2020_granty_lista_v9_dzien2.pdf)
 - Informacje o prelegentach dostępne są w zakładce [prelegenci](prelegenci.md)
 
 ### Kontakt
