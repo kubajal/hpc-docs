@@ -99,6 +99,8 @@ Podziękowania: We acknowledge financial support by the National Science Center 
 
 Student Claster Competition
 
+<https://icm.edu.pl/en/warsaw-team-2019-route-en/>
+
 
 ```.txt
 11:05-11:30 PRZERWA
@@ -639,3 +641,20 @@ Dr hab. inż. Maciej Śmiechowski uzyskał stopień doktora nauk chemicznych w 
 Wodór cząsteczkowy jako minimalny model hydratacji hydrofobowej.
 
 Hydratacja hydrofobowa cząsteczki wodoru w wodzie została zbadana na poziomie molekularnym w oparciu o symulacje metodą dynamiki molekularnej ab initio ze strukturą elektronową opisywaną teorią funkcjonału gęstości. Cząsteczka H2 i jej chwilowe otoczenie solwatacyjne („klatka”) dyfundują poprzez mechanizm dyfuzji strukturalnej, tzn. znacznie szybciej od samego rozpuszczalnika. Cząsteczkowy mechanizm leżący u podstaw tego procesu można powiązać z chwilowymi fluktuacjami objętości klatki wokół obu atomów H cząsteczki H2, prowadzącymi do specyficznych przypadków otwarcia klatki, które mogą być powiązane z intensywnymi sygnałami widmowymi widocznymi w zakresie terahercowym (THz) widma oscylacyjnego.
+
+
+### Dr Zuzanna Szymańska
+
+**Interdyscyplinarne Centrum Modelowania Matematycznego i Komputerowego Uniwersytetu Warszawskiego**
+
+16:00-16:20
+
+![image](./zdjecia_prelegentow/ZSzymanska.jpg#prelegent)
+
+Dr Zuzanna Szymańska jest absolwentką Wydziału Matematyki, Informatyki i Mechaniki Uniwersytetu Warszawskiego. W 2010 roku w Polskiej Akademii Nauk uzyskała stopień naukowy doktora z wyróżnieniem w dziedzinie biologii ze specjalnością biofizyka. Jest adiunktem w Interdyscyplinarnym Centrum Modelowania Matematycznego i Komputerowego (ICM) Uniwersytetu Warszawskiego. Jej głównym obszarem badań jest tworzenie wieloskalowych modeli matematycznych dotyczących wzrostu i rozprzestrzeniania się raka.
+
+**Abstrakt**
+
+Większość modeli matematycznych zjawisk fizjologicznych (i patofizjologicznych) powstaje w oparciu o znajomość procesów biofizycznych. Dzięki temu dostajemy ogólną strukturę równań, jednakże najczęściej brakuje nam informacji na temat wielkości poszczególnych parametrów układu. Fakt ten pociąga za sobą znaczne ograniczenia stosowalności takich modeli. Szczątkowe dane literaturowe dotyczą zwykle specyficznych reżimów eksperymentalnych, często nieodpowiadających modelowanym sytuacjom. Co więcej, proces gromadzenia danych jest obarczony błędami i faktycznie otrzymujemy rozkłady prawdopodobieństwa szukanych współczynników. Dlatego bardzo ważny jest rozwój nie tylko modeli matematycznych, które ułatwiają zrozumienie procesów chorobowych, ale także metod matematycznych, które umożliwiają właściwe skalibrowanie tych modeli. Dopiero takie połączenie pozwala na uzyskiwanie kluczowych informacji ilościowych o badanym procesie.
+
+Mając powyższe na uwadze, proponujemy nowy, nielokalny model proliferacji komórek wraz z wnioskiem bayesowskim o parametrach układu w oparciu o dane eksperymentalne. Dyskutujemy zakres stosowalności modelu i przedstawiamy dowód stabilności rozkładów a posteriori.
