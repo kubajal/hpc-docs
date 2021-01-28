@@ -4,9 +4,9 @@ date: 2-3 luty 2021 r.
 draft: false
 ---
 
-## XXI Sesja KDM
+## XXI Sesja Użytkowników Komputerów Dużej Mocy ICM
 
-Tegoroczna **Sesja Szkoleniowo-Sprawozdawcza Użytkowników KDM ICM** odbędzie się w formie online w dniach 2–3 luty 2021r.
+Tegoroczna **Sesja Użytkowników Komputerów Dużej Mocy ICM** odbędzie się w formie online w dniach 2–3 luty 2021r.
 Planujemy zaprosić do wystąpienia osoby, które niedawno rozpoczęły swoje obliczenia, aby podzieliły się z nami swoimi wynikami obliczeń.
 Do uczestnictwa, wysłuchania prelegentów oraz porad i dyskusji naukowych zapraszamy wszystkich naszych Użytkowników.
 
