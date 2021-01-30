@@ -118,7 +118,7 @@ Od lat związany z laboratorium prof. Janusza Bujnickiego w Międzynarodowym Ins
 
 **Abstrakt**
 
-Simulations of the formation of protein-RNA complexes using a coarse grain model (SimRNP)
+Gruboziarniste metody do modelowania struktury przestrzennej RNA i kompleksów RNA-białko.
 
 Zagadnienia przewidywania i symulacji trójwymiarowej struktury biocząsteczek należą do największych wyzwań bioinformatyki strukturalnej. Jednym z nurtów jest zastosowanie metod opartych o funkcje energii (pola siłowe), które wiążą aspekty strukturalne z wartością energii (potencjalnej / swobodnej). Funkcja energii wraz z mechanizmem próbkowania przestrzeni konformacyjnej „prowadzi” symulację, w kierunku globalnego minimum energii, które powinno odpowiadać minimum energii dla danego układu molekularnego.
 Nawet nieduże układy molekularne (biocząsteczki lub ich kompleksy, wraz z otoczeniem) składają się z tysięcy atomów. W celu redukcji złożoności obliczeniowej, zmniejszenia liczby stopni swobody tworzy się modele uproszone.
@@ -334,6 +334,8 @@ Opracowany model wykorzystany został do analizy stopu W38Ta36Cr15V11, wytworzon
 
 ![image](./zdjecia_prelegentow/YM_image.png#prelegent)
 
+Dr. Yevgen Melikhov received his PhD degree from Charles University in Prague. He currently holds a position of a Researcher at Institute of Fundamental Technological Research Polish Academy of Sciences, here in Warsaw and a Lecturer at Cardiff University, Wales. His scientific interests are within the field of condensed matter (magnetics) and soft matter (fluid dynamics).
+
 **Abstrakt**
 
 Theoretical support to facilitate analysis of X-ray Absorption Spectroscopy data obtained for (Ga,Mn) as thin films
@@ -417,10 +419,18 @@ Modelowanie właściwości elektrycznych przewodników jonów tlenu opartych na 
 
 10:30-10:45
 
+![image](./zdjecia_prelegentow/WKus_kwadrat.png#prelegent)
+
+
+Wacław Kuś jest pracownikiem Katedry Mechaniki i Inżynierii Obliczeniowej Politechniki Śląskiej. Jego prace skupiają się na rozwoju i zastosowaniach równoległych algorytmów optymalizacji w zagadnieniach z pogranicza mechaniki, biomechaniki i inżynierii materiałowej. Jest członkiem International Society for Structural and Multidisciplinary Optimization, Polskiego Towarzystwa Metod Komputerowych oraz American Institute of Aeronautics and Astronautics.
+
+
 **Abstrakt**
 
 Projektowanie materiałów 2D o zadanych
 własnościach mechanicznych
+
+Materiały dwuwymiarowe zdobyły bardzo dużą popularność w ostatnich latach. Potrafimy je syntezować, wykorzystywać jako składniki kompozytów. Celem prezentacji jest przedstawienie metody projektowania materiałów dwuwymiarowych o nowej nanostrukturze a zarazem posiadających z góry założone własności materiałowe. Optymalizacja prowadzona jest w oparciu o wielopopulacyjne algorytmy optymalizacji, a wartości funkcji celu obliczane są z użyciem wyników zadań bezpośrednich rozwiązanych dynamiką molekularną. Zastosowana metoda optymalizacji wymaga rozwiązania bardzo dużej liczby zadań bezpośrednich, co byłoby niemożliwe z użyciem komputera PC. W przykładowych, przedstawionych podczas prezentacji obliczeniach, użyty został superkomputer Okeanos.
 
 ### Przemyslaw Swiatek
 
@@ -471,10 +481,15 @@ Magnetic impurities IN TOPological materials
 
 12:15-12:30
 
+![image](./zdjecia_prelegentow/PKorcyl.jpg#prelegent)
+
+Adiukt w Zakładzie Teorii Cząstek Instytutu Fizyki Teoretycznej UJ na Wydziale Fizyki, Astronomii i Informatyki Stosowanej w Krakowie. Obroniłem doktorat z fizyki teoretycznej na Uniwersytecie Jagiellońskim po czym pracowałem w grupach zajmujących się numerycznymi symulacjami teorii oddziaływań fundamentalnych w DESY Zeuthen (Niemcy), Columbia University (USA), Uniwersytet w Ratyzbonie (Niemcy), Uniwersytet Tor Vergata w Rzymie (Włochy). Jestem stypendystą Fundacji Fulbrighta oraz Narodowej Agencji Wymiany Akademickiej.  Interesuję się problemami związanymi z teoretyczną fizyką cząstek elementarnych. Korzystając z zaawansowanych metod obliczeniowych staram sie przygotować przewidywania teoretyczne dla obecnych i przyszłym eksperymentów fizyki wysokich energii, takich jak np. w CERN lub w Brookhaven National Laboratory. Prowadzone przeze mnie obliczenia wielokrotnie wymagają wykorzystania wielkich instalacji komputerowych, superkomputerów, zarówno polskich, europejskich czy amerykańskich. Duża część pracy poświęcona jest rozwijaniu nowych metod programistycznych równoległych i rozproszonych, efektywniejszych algorytmów, innowacyjnych podejść wykorzystujących popularne ostatnio uczenie maszynowe. W efekcie pozwala mi to otrzymać precyzyjne wyniki dla interesujących wielkości fizycznych które następnie mogą być porównane z rezultatami pochodzącymi z analiz danych eksperymentalnych. Tematy nad którymi obecnie pracuję to (między innymi): wyznaczenie wartości stałej sprzężenia oddziaływań silnych, analiza rozwinięcia OPE w porównaniu z danymi nieperturbacyjnymi dla funkcji korelacji prądów elektro-słabych, rozwijanie numerycznego podejścia do rozwiązań równania JIMWLK opisującego partonowe rozkłady prawdopodobieństwa w hadronach, niepertubacyjne metody obliczania hadronowych funkcji struktury, wykorzystanie sieci neuronowych do poprawy efektywności symulacji Monte Carlo, symulacje modeli fizycznych z wyższymi grupami symetrii cechowania czy badania zastosowań reprogramowalnych procesorów FPGA do akceleracji sprzętowej symulacji Monte Carlo Chromodynamiki Kwantowej.
+
 **Abstrakt**
 
-Determination of the strong coupling constant
-from Lattice QCD Monte Carlo simulations
+Wyznaczenie silnej stałej sprzężenia z symulacji Monte Carlo Chromodynamiki Kwantowej na siatkach
+
+W opisie oddziaływań cząstek elementarnych przy wysokich energiach główną rolę grają oddziaływania silne (ang. strong interactions) których siła opisywana jest przez stałą sprzężenia alpha_s (ang. strong coupling constant). Mimo że wielkość ta z nazywy jest stała, tak naprawdę jej wartość zależy od skali energii procesu w którym jest mierzona. Dokładna znajomość tej zależności jest kluczowa przy analizie i interpretacji wszystkich wyników z aktualnie działających eksperymentów fizyki wysokich energii, np. w CERNie lub BNL. W referacie opiszę propozycję nowej metody wyznaczania silnej stałej sprzężenia przy użyciu zaawansowanych metod symulacji Monte Carlo wraz z wynikami oraz porównaniem z dotyczasowymi rezultatami. Referat oparty jest o wyniki opublikowane w Phys. Rev. Lett.
 
 ### mgr Maciej Szary
 
