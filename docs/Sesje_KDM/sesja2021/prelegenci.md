@@ -297,9 +297,9 @@ Problem ten został rozwiązany poprzez możliwość transformacji funkcji Bloch
 14:45-15:15 PRZERWA
 ```
 
-### mgr Marcin Zemła
+**Abstrakt**
 
-**Politechnika Warszawska**
+He w Fe
 
 15:15 15:30
 
@@ -307,9 +307,8 @@ Problem ten został rozwiązany poprzez możliwość transformacji funkcji Bloch
 
 Marcin Zemła jest doktorantem na Wydziale Inżynierii Materiałowej PW, gdzie zajmuje się modelowaniem oddziaływania helu z granicami ziaren w stopach Fe-Cr. Nad swoim doktoratem pracuje pod opieką prof. Tomasza Wejrzanowskiego oraz dra Jana Wróbla. W ramach pracy magisterskiej na Wydziale Fizyki UW, pod opieką prof. Jacka Majewskiego, bada właściwości struktur hybrydowych złożonych z dwuwymiarowych materiałów (np. grafenu) oraz jednomolekułowych magnesów. W swoich badaniach stosuje obliczenia w ramach teorii funkcjonału gęstości (DFT) oraz symulacje Dynamiki Molekularnej (MD) i Monte Carlo (MC). W wolnych chwilach czyta książki (najczęściej o historii nauki oraz pop-naukowe) i wychowuje swoją suczkę golden retrievera. 
 
-**Abstrakt**
+Działanie reaktora termojądrowego wymaga zastosowania materiałów odpornych na podwyższoną temperaturę, korozję helową i wodorową, czy napromieniowanie wysokoenergetycznymi neutronami. Szczególną uwagę należy zwrócić na segregację helu na granicach ziaren, bowiem ten proces prowadzi do powstania nanometrycznych pęcherzy helowych, co skutkuje kruchością oraz znacznym skróceniem żywotności takiego materiału. Empiryczne badanie tych procesów jest niezwykle trudne ze względu na skale atomową, w której zachodzi kinetyka tych reakcji, jak również ze względu na obecność nieuchwytnego dla większości metod helu. Dlatego, przy projektowaniu materiałów do takich zastosowań, ważne jest zrozumienie procesów zachodzących w strukturze krystalicznej.
 
-He w Fe
 
 Od połowy zeszłego wieku ludzkość z powodzeniem wykorzystuje elektrownie jądrowe, gdzie około 0,09% pierwotnej masy ciężkich jąder przekształcana jest w energię na drodze rozpadu. Kolejnym krokiem, na miarę XXI wieku, jest wykorzystanie lekkich pierwiastków w reakcji termojądrowej. Synteza termonuklearna, przekształcająca nawet ok. 1% masy w energię, jest przedmiotem badań od kilkudziesięciu lat.
 
@@ -515,7 +514,7 @@ W ramach pracy opracowano model numeryczny przepływomierza wibracyjnego i wykon
 ![image](./zdjecia_prelegentow/Carmine-Autieri.png#prelegent)
 
 
-Dr hab Carmine Autieri is "Doctors with Advanced Research and Development Experience" at the
+Dr hab. Carmine Autieri is "Doctors with Advanced Research and Development Experience" at the
 International Centre for Interfacing Magnetism and Superconductivity with Topological Matter (MagTop),
 Division ON-6 of Institute of Physics, Polish Academy of Sciences (IF PAN) in Warsaw.
 The website of the MagTop division is available at http://www.magtop.ifpan.edu.pl
