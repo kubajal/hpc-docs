@@ -342,15 +342,14 @@ Opracowany model wykorzystany został do analizy stopu W38Ta36Cr15V11, wytworzon
 Symulacje COVID-19 - model ICM
 
 
-### Maciej Szpindler
+### mgr Maciej Szpindler
 
 **Interdyscyplinarne Centrum Modelowania Matematycznego i Komputerowego Uniwersytetu Warszawskiego**
 
 16:15-16:30
 
-**Abstrakt**
+**Podsumowanie obliczeń w ICM w latach 2018-2020**
 
-Podsumowanie obliczeń w ICM w latach 2018-2020
 
 ## Dzień II
 
