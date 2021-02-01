@@ -4,7 +4,7 @@ Informacje o prelegentach, wg kolejności wystąpień.
 ## Dzień I
 
 
-### Profesor Grzegorz Chałasiński, Dr Marek Michalewicz
+### prof. Grzegorz Chałasiński, dr Marek Michalewicz
 
 **Interdyscyplinarne Centrum Modelowania Matematycznego i Komputerowego Uniwersytetu Warszawskiego**
 
@@ -12,7 +12,7 @@ Informacje o prelegentach, wg kolejności wystąpień.
 
 **Powitanie**
 
-### Dr hab. Krzysztof Rządca, prof. UW
+### dr hab. Krzysztof Rządca, prof. UW
 
 **Uniwersytet Warszawski, Google**
 
@@ -30,7 +30,7 @@ Dlaczego moje zadanie ciągle czeka w kolejce? I dlaczego, wysyłając je, musz�
 
 Dostęp do ogromnych mocy obliczeniowych współczesnych superkomputerów regulowany jest przez systemy kolejkowe: oprogramowanie planistów, które odpowiada za kolejkowanie wysłanych przez nas zadań, oraz za przypisanie zadaniom konkretnych maszyn (węzłów superkomputera). Podczas prezentacji opowiem o podstawowych algorytmach używanych przez planistów; poradzę, co robić, by czekać jak najkrócej (i dobrze żyć z administratorami!); oraz przedstawię kilka ciekawych kierunków badań współczesnych planistów - badań łączących algorytmikę, badania operacyjne, systemowe i analizę danych.
 
-### Dr Piotr Setny  
+### dr Piotr Setny  
 
 **Uniwersytet Warszawski**
 
@@ -46,7 +46,7 @@ Oddziaływanie peptydów fuzyjnych wirusa grypy z błonami lipidowymi
 
 Grypa pozostaje jednym z głównych ogólnoświatowych zagrożeń epidemicznych. Wniknięcie wirusa grypy do komórki gospodarza wymaga fuzji ich błon lipidowych. Wiadomo, że proces ten inicjowany jest przez tzw. peptydy fuzyjne wirusa, ale molekularne podstawy ich funkcjonowania pozostają niezbadane. Ich poznanie jest istotne zarówno z punktu widzenia ogólnych badań nad procesem fuzji błon jak również może otworzyć drogę dla nowych strategii terapeutycznych. W trakcie wykładu przedstawione zostaną wyniki symulacji komputerowych mających na celu zbadanie sposobu oddziaływania peptydów fuzyjnych z błonami lipidowymi, ustalenie mechanizmu prowadzącego do inicjacji fuzji błon oraz wyjaśnienie w jaki sposób specyficzne mutacje aminokwasowe w obrębie peptydów prowadzą do utraty ich zdolności fuzyjnych.
 
-### Dr Stanisław Dunin-Horkawicz
+### dr Stanisław Dunin-Horkawicz
 
 **Laboratorium Bioinformatyki Strukturalnej w Centrum Nowych Technologii**
 
@@ -63,7 +63,7 @@ Sequence-structure relationships in highly-regular proteins
 W trakcie swojej prezentacji przedstawię prace realizowane m.in. dzięki grantom obliczeniowym Interdyscyplinarnego Centrum Modelowania Matematycznego i Obliczeniowego. W szczególności skupię się na rozwijanych w naszym zespole narzędziach opartych o techniki uczenia maszynowego (SVM, Deep Learning) służących do przewidywania właściwości strukturalnych białek na podstawie ich sekwencji oraz na tym, w jaki sposób narzędzia te mogą być wykorzystywane w celu lepszego zrozumienia, w jaki sposób sekwencja determinuje strukturę białka.
 
 
-### Dr Anna Karnkowska
+### dr Anna Karnkowska
 
 **Instytut Biologii Ewolucyjnej, Wydział Biologii, Uniwersytet Warszawski**
 
@@ -79,7 +79,7 @@ Genomika i metagenomika mikroorganizmów eukariotycznych
 
 W swojej prezentacji przedstawię wyzwania i możliwości w badaniach genomicznych i metagenomicznych mikroorganizmów eukariotycznych, które realizujemy między innymi z wykorzystaniem zasobów obliczeniowych Interdyscyplinarnego Centrum Modelowania Matematycznego i Obliczeniowego. Skupię się na ścieżkach postępowania, które wykorzystujemy do analizy danych genomowych, aby lepiej zrozumieć ewolucję komórki eukariotycznej, a w szczególności ewolucję organelli endosymbiotycznego pochodzenia. Drugim omawianym kierunkiem badań będą rozwijane w naszym zespole narzędzia i podejścia umożliwiające analizę danych metagenomowych, które mają na celu identyfikację taksonomiczną i funkcjonalną mikroorganizmów eukariotycznych i zrozumienie ich roli w ekosystemach wodnych.
 
-### Prof. dr Wiesław Nowak
+### prof. dr Wiesław Nowak
 
 **Uniwersytet Mikołaja Kopernika**
 
@@ -115,7 +115,7 @@ Student Claster Competition
 11:05-11:30 PRZERWA
 ```
 
-### Dr Michał Boniecki
+### dr Michał Boniecki
 
 **Międzynarodowy Instytut Biologii Molekularnej i Komórkowej**
 
@@ -133,7 +133,7 @@ Zagadnienia przewidywania i symulacji trójwymiarowej struktury biocząsteczek n
 Nawet nieduże układy molekularne (biocząsteczki lub ich kompleksy, wraz z otoczeniem) składają się z tysięcy atomów. W celu redukcji złożoności obliczeniowej, zmniejszenia liczby stopni swobody tworzy się modele uproszone.
 W ostatnich latach opracowaliśmy sprytny model uproszczony, który pomimo uproszczeń, pozwala na modelowanie RNA ze znaczną precyzją. Zostało to osiągnięte przez zastąpienie sztywnych fragmentów układu (zasad nukleinowych) przez 3 atomy, na których oparte są lokalne układy współrzędnych, które z kolei rozpinają trójwymiarowe siatki zawierające oddziaływania z daną grupą chemiczną. Metoda ta została nazwana SimRNA. Zastosowane podejście pozwoliło na wyprowadzenie statystycznej funkcji energii, która modeluje oddziaływania całych (sztywnych) grup chemicznych, zawierających informacje o wszystkich atomach danej grupy, pomimo tego, że są one reprezentowane przez 3 punkty/atomy. Jako metodę próbkowania zastosowaliśmy metodę Monte Carlo. Sprawdzone pomysły zastosowaliśmy również w metodzie do modelowania kompleksów RNA-białko. Parametryzacja oddziaływania RNA-białko została uzyskana przez umieszczenie lokalnych układów współrzędnych, jak również trójwymiarowych siatek zawierających oddziaływania, na atomach łańcucha głównego RNA oraz zasadach nukleinowych, w kontekście oddziaływania RNA-białko. Opracowane metody pozwalają na symulację i przewidywanie struktury RNA oraz kompleksów RNA białko, w tym dokowanie ze zmianą konformacji (tzw. giętkie dokowanie).
 
-### Dr Joanna Panecka-Hofman
+### dr Joanna Panecka-Hofman
 
 **Uniwersytet Warszawski**
 
@@ -146,7 +146,7 @@ Dynamika oddziaływań homotetramerycznego enzymu reduktazy pterydynowej 1 z wyb
 Reduktaza pterydynowa 1 (PTR1) jest enzymem występującym u chorobotwórczych świdrowców, którego inhibicja jest jednym z ostatnio rozwijanych kierunków projektowania leków. Z drugiej strony wiadomo, że dynamika enzymów jest bardzo istotna dla ich funkcji. Mimo istnienia badań strukturalnych dotyczących PTR1, dynamika tego enzymu w kontekście jego oddziaływań z substratami i lekami jest słabo poznana na poziomie molekularnym. Poza tym, są pewne dane wskazujące na znaczenie allosterii dla funkcji PTR1. Aby to zbadać, przeprowadzono symulacje dynamiki molekularnej i przyspieszonego próbkowania kompleksów enzymu PTR1 z substratami, produktami reakcji enzymatycznej i inhibitorem metotreksatem. Analiza dotychczas dostępnych danych wskazuje na pewne różnice w konformacjach miejsc wiążących homotetramerycznego enzymu w zależności od rodzaju ligandu i poziomu zapełnienia tych miejsc ligandami.
 
 
-### Dr Nithin Chandran
+### dr Nithin Chandran
 
 **International Institute of Molecular and Cell Biology in Warsaw**
 
@@ -154,7 +154,7 @@ Reduktaza pterydynowa 1 (PTR1) jest enzymem występującym u chorobotwórczych �
 
 ![image](./zdjecia_prelegentow/Nithin_Chandran.jpg#prelegent)
 
-Dr. Nithin Chandran is a postdoc at the Laboratory of Bioinformatics and Protein Engineering (Bujnicki Lab), International Institute of Molecular and Cell Biology in Warsaw. His main area of research is the study of protein-RNA complexes and RNAs by computational analysis. He currently works in the NCN MAESTRO grant on 'Integrative modeling and structure determination of macromolecular complexes comprising RNA and proteins.' He did his Ph.D. in Bioinformatics and Computational Biology from the Indian Institute of Technology Kharagpur, India. His Ph.D. studies were on 'sequence and structural analysis of RNAs and their interactions with proteins.'
+Dr Nithin Chandran is a postdoc at the Laboratory of Bioinformatics and Protein Engineering (Bujnicki Lab), International Institute of Molecular and Cell Biology in Warsaw. His main area of research is the study of protein-RNA complexes and RNAs by computational analysis. He currently works in the NCN MAESTRO grant on 'Integrative modeling and structure determination of macromolecular complexes comprising RNA and proteins.' He did his Ph.D. in Bioinformatics and Computational Biology from the Indian Institute of Technology Kharagpur, India. His Ph.D. studies were on 'sequence and structural analysis of RNAs and their interactions with proteins.'
 
 **Abstrakt**
 
@@ -178,7 +178,7 @@ Odtworzenie eksperymentalnej krzywej topnienia dupleksów RNA metodą dynamiki m
 
 Dynamika molekularna stanowi ważne narzędzie do przewidywania zmian konformacyjnych biomolekuł. Symulacje dynamiki molekularnej są wykonywane przeważnie w temperaturach pokojowych lub 37°C, gdyż parametry pól siłowych zostały opracowane dla takiego zakresu temperatur. Jednak w niektórych doświadczeniach celowo zwiększa się lub zmniejsza temperaturę badanej próbki, aby otrzymać własności termodynamiczne układu, np. badanie przebiegu topnienia dupleksów kwasów rybonukleinowych (RNA) i peptydonukleinowych (PNA). Jeśli chcielibyśmy projektować sekwencje, które będą odpowiednio zmieniać strukturę w zależności od temperatury to musimy potrafić symulować takie zjawiska. Celem projektu było jakościowe odtworzenie otrzymanych z eksperymentów przeprowadzonych w Laboratorium Maszyn Biomolekularnych krzywych topnienia dupleksów zawierających RNA i PNA rozszerzając tym samym możliwości zastosowania dynamiki molekularnej w podwyższonych temperaturach. Przeprowadzając symulacje w reprezentacji pełnoatomowej i w różnych temperaturach sprawdziliśmy, czy zaprojektowane układy docelowo zwiększają podobieństwo ich krzywych topnienia do wyników eksperymentalnych, a następnie zanalizowaliśmy liczbę wiązań wodorowych i oddziaływania stackingowe w funkcji temperatury.
 
-### Dr Silvio Osella
+### dr Silvio Osella
 
 **Centre of New Technologies, University of Warsaw**
 
@@ -186,7 +186,7 @@ Dynamika molekularna stanowi ważne narzędzie do przewidywania zmian konformacy
 
 ![image](./zdjecia_prelegentow/Osella_Pic.jpg#prelegent)
 
-Silvio Osella is an assistant professor at the Centre of New Technologies, University of Warsaw, in the  Chemical and Biological Systems Simulation Lab headed by Dr Hab. Bartosz Trzaskowski. He obtained his PhD in 2014 at the University of Mons (Belgium) under the supervision of Prof David Beljonne. His research focuses on the computational study of the opto-electronical properties of graphene and its derivatives (i.e. Nanoribbons, Nanoclusters) and of photoswitchable and fluorophore molecules when (but not limited to) inserted into biological environments. Three main research lines are followed. The first concern the study of fluorophores embedded in lipid membranes and proteins,  the second on the formation and study of hybrid organic-biological materials that can be of interest for bio-organic electronics, and the third the study of low dimensional materials based on carbon for organic electronics applications.
+Silvio Osella is an assistant professor at the Centre of New Technologies, University of Warsaw, in the  Chemical and Biological Systems Simulation Lab headed by dr hab Bartosz Trzaskowski. He obtained his PhD in 2014 at the University of Mons (Belgium) under the supervision of prof. David Beljonne. His research focuses on the computational study of the opto-electronical properties of graphene and its derivatives (i.e. Nanoribbons, Nanoclusters) and of photoswitchable and fluorophore molecules when (but not limited to) inserted into biological environments. Three main research lines are followed. The first concern the study of fluorophores embedded in lipid membranes and proteins,  the second on the formation and study of hybrid organic-biological materials that can be of interest for bio-organic electronics, and the third the study of low dimensional materials based on carbon for organic electronics applications.
 
 **Abstract**
 
@@ -198,7 +198,7 @@ Here, we present a multiscale computational design which allows the study of com
 ```.txt
 12:45-13:30 PRZERWA
 ```
-### Dr hab. Adam Sieradzan, prof UG
+### dr hab. Adam Sieradzan, prof UG
 
 **Uniwersytet Gdański**
 
@@ -258,7 +258,7 @@ testowano architekturę NEC Tsubasa dla symulacji układów wirowych w
 ośrodkach nadciekłych. Wyniki symulacji poddane zostaną analizie pod
 kątem geometrii i topologii krzywych wirowych.
 
-### Dr Łukasz Górski
+### dr Łukasz Górski
 
 **Adiunkt w Interdyscyplinarnym Centrum Modelowania Matematycznego i Komputerowego Uniwersytetu Warszawskiego**
 
@@ -274,25 +274,32 @@ Wyjaśnialność i modele językowe w informatyce prawniczej
 
 Celem omawianych prac badawczych było zbadanie właściwości różnych modeli językowych (word2vec i BERT) w zastosowaniach związanych z informatyką prawniczą, zwłaszcza w kontekście wyjaśnialności. W tym celu wykorzystano modele wytrenowane na zbiorach danych o charakterze ogólnym (np. wikipedia), jak i specjalistycznym (baza orzecznictwa amerykańskich sądów - system Courtlistener) oraz przeanalizowano ich wpływ - z wykorzystaniem metody GradCAM - na predykcje konwolucyjnej sieci neuronowej. Wykorzystano następujące zbiory danych jako przedmiot klasyfikacji: h VetClaims-JSON (https://github.com/LLTLab/VetClaims-JSON; klasyfikacja ról retorycznych, jakie pełnią poszczególne zdania w uzasadnieniach decyzji dotyczących spraw weteranów) oraz Statury Interpretation Data set (https://github.com/jsavelka/statutory_interpretation; przydatność poszczególnych fragmentów orzeczeń dla wykładni zadanego przepisu prawa). W trakcie wystąpienia omówiony zostanie proces treningu (przeprowadzony z wykorzystaniem klastra GPU rysy) oraz uzyskane wyniki i wprowadzone metryki porównawcze.
 
-### Dr Piotr Śpiewak
+### dr Piotr Śpiewak
 
 **Politechnika Warszawska**
 
 14:30-14:45
 
+![image](./zdjecia_prelegentow/Piotr_Spiewak.jpg#prelegent)
+
+Dr inż. Piotr Śpiewak, ekspert w zakresie modelowania materiałów funkcjonalnych z 8-letnim doświadczeniem badawczo-rozwojowym w przemyśle (Umicore Electro-Optic Materials) i 10-letnim doświadczeniem w realizacji akademickich projektów badawczych (Politechnika Warszawska). Obecnie pracuje na Wydziale Inżynierii Materiałowej PW oraz Centrum Cyfrowej Nauki i Technologii UKSW. Jego praca koncentruje się na materiałach dla energii odnawialnej (fotowoltaika i termoelektryka), w szczególności zajmuje się badaniami struktury elektronowej i dynamiki defektów punktowych w materiałach półprzewodnikowych, mikrodefektach, właściwościach transportowych, inżynierii cieplnej elektroniki wysokiej mocy oraz modelowaniu wieloskalowym. 
+
 **Abstrakt**
 
-Modelowanie ab initio właściwości transportowych w
-materiałach termoelektrycznych z wykorzystaniem
-funkcjonałów hybrydowych
+Modelowanie ab initio właściwości transportowych w materiałach termoelektrycznych z wykorzystaniem funkcjonałów hybrydowych
+
+Modelowanie zjawiska transportu elektronów w ciałach stałych jest niezbędne do oszacowania tzw. współczynnika efektywności materiałów termoelektrycznych, zdefiniowanego jako ZT = σS2T/k, gdzie σ to przewodnictwo elektryczne, S współczynnik Seebecka, T temperatura bezwzględna i k przewodność cieplna. Zadanie to realizowane jest poprzez rozwiązanie równania transportu Boltzmanna w oparciu o strukturę elektronową wyznaczoną w ramach teorii funkcjonałów gęstości (DFT - ang. Density Functional Theory).
+Standardowy algorytm wyznaczania właściwości transportowych elektronów opiera się na obliczeniu struktury elektronowej w programie VASP (lub innym programie DFT) na bazie, której przeprowadzane są obliczenia współczynnika Seebecka, przewodności elektrycznej oraz elektronowej przewodności cieplnej w programie BoltzTraP. W przypadku funkcjonałów hybrydowych, konieczność uwzględnienia sprzężenia spin-orbita wraz z problematycznym wyznaczaniem wartości własnych Hamiltonianu w obliczeniach hybrydowych okazały się niemożliwe do wykonania dla gęstych siatek całkowania (powyżej 216 punktów całkowania w superkomórce zawierającej 64 atomy).
+Problem ten został rozwiązany poprzez możliwość transformacji funkcji Blocha na funkcje Wanniera. Obliczenia właściwości transportowych elektronów łatwiej jest wykonać w tzw. „dokładnym modelu ciasnego wiązania” wyznaczonym w programie Wannier90 z obliczeń DFT w przybliżeniu hybrydowym.
+
 
 ```.txt
 14:45-15:15 PRZERWA
 ```
 
-### mgr Marcin Zemła
+**Abstrakt**
 
-**Politechnika Warszawska**
+He w Fe
 
 15:15 15:30
 
@@ -300,9 +307,8 @@ funkcjonałów hybrydowych
 
 Marcin Zemła jest doktorantem na Wydziale Inżynierii Materiałowej PW, gdzie zajmuje się modelowaniem oddziaływania helu z granicami ziaren w stopach Fe-Cr. Nad swoim doktoratem pracuje pod opieką prof. Tomasza Wejrzanowskiego oraz dra Jana Wróbla. W ramach pracy magisterskiej na Wydziale Fizyki UW, pod opieką prof. Jacka Majewskiego, bada właściwości struktur hybrydowych złożonych z dwuwymiarowych materiałów (np. grafenu) oraz jednomolekułowych magnesów. W swoich badaniach stosuje obliczenia w ramach teorii funkcjonału gęstości (DFT) oraz symulacje Dynamiki Molekularnej (MD) i Monte Carlo (MC). W wolnych chwilach czyta książki (najczęściej o historii nauki oraz pop-naukowe) i wychowuje swoją suczkę golden retrievera. 
 
-**Abstrakt**
+Działanie reaktora termojądrowego wymaga zastosowania materiałów odpornych na podwyższoną temperaturę, korozję helową i wodorową, czy napromieniowanie wysokoenergetycznymi neutronami. Szczególną uwagę należy zwrócić na segregację helu na granicach ziaren, bowiem ten proces prowadzi do powstania nanometrycznych pęcherzy helowych, co skutkuje kruchością oraz znacznym skróceniem żywotności takiego materiału. Empiryczne badanie tych procesów jest niezwykle trudne ze względu na skale atomową, w której zachodzi kinetyka tych reakcji, jak również ze względu na obecność nieuchwytnego dla większości metod helu. Dlatego, przy projektowaniu materiałów do takich zastosowań, ważne jest zrozumienie procesów zachodzących w strukturze krystalicznej.
 
-He w Fe
 
 Od połowy zeszłego wieku ludzkość z powodzeniem wykorzystuje elektrownie jądrowe, gdzie około 0,09% pierwotnej masy ciężkich jąder przekształcana jest w energię na drodze rozpadu. Kolejnym krokiem, na miarę XXI wieku, jest wykorzystanie lekkich pierwiastków w reakcji termojądrowej. Synteza termonuklearna, przekształcająca nawet ok. 1% masy w energię, jest przedmiotem badań od kilkudziesięciu lat.
 
@@ -331,7 +337,7 @@ Opracowany model wykorzystany został do analizy stopu W38Ta36Cr15V11, wytworzon
 
 [2] O. El-Atwani, N. Li, M. Li, A. Devaraj, J. K. S. Baldwin, M. M. Schneider, D. Sobieraj, J. S. Wróbel, D. Nguyen-Manh, S. A. Maloy, E. Martinez, Outstanding radiation resistance of tungsten-based high-entropy alloys. Sci. Adv. 5, eaav2002, 2019
 
-### Dr Franciszek Rakowski
+### dr Franciszek Rakowski
 
 **Interdyscyplinarne Centrum Modelowania Matematycznego i Komputerowego Uniwersytetu Warszawskiego**
 
@@ -360,7 +366,7 @@ Symulacje COVID-19 - model ICM
 09:00-09:15
 
 **Jak rozszyfrować 2FA, NEC, singularity i inne czyli o nowościach w HPC ICM?**
-### Dr Yevgen Melikhov
+### dr Yevgen Melikhov
 
 **Instytut Podstawowych Problemów Techniki PAN**
 
@@ -368,7 +374,7 @@ Symulacje COVID-19 - model ICM
 
 ![image](./zdjecia_prelegentow/YM_image.png#prelegent)
 
-Dr. Yevgen Melikhov received his PhD degree from Charles University in Prague. He currently holds a position of a Researcher at Institute of Fundamental Technological Research Polish Academy of Sciences, here in Warsaw and a Lecturer at Cardiff University, Wales. His scientific interests are within the field of condensed matter (magnetics) and soft matter (fluid dynamics).
+Dr Yevgen Melikhov received his PhD degree from Charles University in Prague. He currently holds a position of a Researcher at Institute of Fundamental Technological Research Polish Academy of Sciences, here in Warsaw and a Lecturer at Cardiff University, Wales. His scientific interests are within the field of condensed matter (magnetics) and soft matter (fluid dynamics).
 
 **Abstrakt**
 
@@ -378,7 +384,7 @@ A potential simultaneous use of the ferromagnetic and semiconductors properties 
 Here, the structural properties of (Ga,Mn)As system were investigated using an integrated approach that combines EXAFS spectroscopy and molecular dynamics (MD) simulations. A quantitative analysis of the Mn K-edge EXAFS spectrum of (Ga,Mn)As films has been carried out starting from the structural information on the system derived from the Quantum ESPRESSO calculations and MD simulation. This combined approach allows one to reduce the number of correlated model parameters required in the fitting of the experimental EXAFS data and to increase the reliability of the EXAFS data analysis that represents a non-trivial task when dealing with disordered systems.
 
 
-### Dr Karolina Z. Milowska
+### dr Karolina Z. Milowska
 
 **University of Cambridge**
 
@@ -418,7 +424,7 @@ W trakcie prezentacji zostaną przedstawione wyniki obliczeń struktury elektron
 
 [2]. M. T. Michalewicz, P. Nyberg, Aust. J. Phys., 1999, 52, 919–27
 
-### Dr Aleksandra Siklitskaya
+### dr Aleksandra Siklitskaya
 
 **Instytut Chemii Fizycznej PAN**
 
@@ -426,7 +432,7 @@ W trakcie prezentacji zostaną przedstawione wyniki obliczeń struktury elektron
 
 ![image](./zdjecia_prelegentow/ASiklitskaya.jpg#prelegent)
 
-Dr. Siklitskaya defended her Ph.D. thesis on condensed matter physics in 2015, Ioffe Institute in St. Petersburg. She've been a visiting researcher in Loughborough University (Liecestershire, UK) and Institute of Material Chemistry(Strasbourg, France). Her scientific interests are: various allotropic forms of carbon and phase transitions between them, condensed matter physics and heterogeneous catalysis.
+Dr Siklitskaya defended her Ph.D. thesis on condensed matter physics in 2015, Ioffe Institute in St. Petersburg. She've been a visiting researcher in Loughborough University (Liecestershire, UK) and Institute of Material Chemistry(Strasbourg, France). Her scientific interests are: various allotropic forms of carbon and phase transitions between them, condensed matter physics and heterogeneous catalysis.
 
 
 **Abstrakt**
@@ -436,7 +442,7 @@ Dr. Siklitskaya defended her Ph.D. thesis on condensed matter physics in 2015, I
 XXI century brings us to the era of computational heaven with its developed software and technologies. In my talk I would like to focus on the importance of building the relevant model based on theoretical physics and chemistry before setting up the computational experiments. This step allows to save incredible amount of energy and computational resourses.
 Ab-initio molecular dynamics is an incredible tool for getting a qualitative insight into the structural properties of the system as well as getting a first guess of a chemical reaction mechanism. We've checked the possible routes of CO2 sequestration into various materials including calcite and carbon spiroids.
 
-### Dr Marcin Kryński
+### dr Marcin Kryński
 
 **Politechnika Warszawska**
 
@@ -483,7 +489,7 @@ Materiały dwuwymiarowe zdobyły bardzo dużą popularność w ostatnich latach.
 11:00-11:30 PRZERWA
 ```
 
-### Dr Maciej Szudarek
+### dr Maciej Szudarek
 
 **Politechnika Warszawska**
 
@@ -499,7 +505,7 @@ Modelowanie numeryczne przepływomierzy wibracyjnych
 
 W ramach pracy opracowano model numeryczny przepływomierza wibracyjnego i wykonano jego walidację. Model numeryczny wymagał zastosowania siatek dynamicznych - w każdym kroku czasowym niezbędne było wyznaczenie rozkładu sił działających na oscylator, obliczenie jego przemieszczenia, nowego położenia i wygenerowanie nowej siatki opartej na nowym położeniu. Głównym celem było zwiększenie zakresu stosowalności tych urządzeń poprzez rozwój stanu wiedzy oraz weryfikację dotychczasowych modeli i założeń. Cel został osiągnięty, model dostarczył szereg informacji dotyczących działania przepływomierza.
 
-### Dr Carmine Autieri
+### dr Carmine Autieri
 
 **Instytut Fizyki, PAN**
 
@@ -508,7 +514,7 @@ W ramach pracy opracowano model numeryczny przepływomierza wibracyjnego i wykon
 ![image](./zdjecia_prelegentow/Carmine-Autieri.png#prelegent)
 
 
-Dr. hab. Carmine Autieri is "Doctors with Advanced Research and Development Experience" at the
+Dr hab. Carmine Autieri is "Doctors with Advanced Research and Development Experience" at the
 International Centre for Interfacing Magnetism and Superconductivity with Topological Matter (MagTop),
 Division ON-6 of Institute of Physics, Polish Academy of Sciences (IF PAN) in Warsaw.
 The website of the MagTop division is available at http://www.magtop.ifpan.edu.pl
@@ -528,7 +534,7 @@ Magnetic impurities IN TOPological materials
 Exchange coupling between localized spins and band or topological states accounts for giant magnetotransport and magnetooptical effects as well as determines spin-spin interactions in magnetic insulators and semiconductors. However, even in archetypical dilute magnetic semiconductors such as Cd1−xMnxTe and Hg1−xMnxTe the evolution of this coupling with the wave vector is not understood. A series of experiments have demonstrated that exchange-induced splitting of magnetooptical spectra of Cd1−xMnxTe and Zn1−xMnxTe at the L points of the Brillouin zone is, in contradiction to the existing theories, more than one order of magnitude smaller compared to its value at the zone center and can show an unexpected sign of the effective Landé factors. The origin of these findings we elucidate quantitatively by combining: (i) relativistic first-principles density functional calculations; (ii) a tight-binding approach that takes carefully into account k-dependence of the potential and kinetic sp-d exchange interactions; (iii) a theory of magnetic circular dichroism (MCD) for E1 and E1 + Δ1 optical transitions, developed here within the envelope function kp formalism for the L point of the Brillouin zone in zinc-blende crystals. This combination of methods leads to the conclusion that the physics of MCD at the boundary of the Brillouin zone is strongly affected by the strength of two relativistic effects in particular compounds: (i) the mass-velocity term that controls the distance of the conduction band at the L point to the upper Hubbard band of Mn ions and, thus, a relative magnitude and sign of the exchange splittings in the conduction and valence bands; (ii) the spin-momentum locking by spin-orbit coupling that reduces exchange splitting depending on the orientation of particular L valleys with respect to the magnetization direction.
 
 
-### Dr hab. Piotr Korcyl
+### dr hab. Piotr Korcyl
 
 **Uniwersytet Jagieloński**
 
@@ -558,7 +564,7 @@ Domieszkowany MoS2 jako materiał do detekcji H2S
 
 Rezystancyjne czujniki gazu oparte na warstwach MoS2 osiągają doskonałą czułość i wysoką selektywność dla molekuł NO2 i NH3. Jednakże ze względu na niską zdolność detekcji innych cząsteczek, liczba kompatybilnych analitów jest mała. Stosując obliczenia DFT, projekt rozważył domieszkowanie MoS2 w celu optymalizacji detekcji molekuł H2S. Badania oparte zostały na eksperymentalnym modelu domieszkowania wspomaganego promieniowaniem elektronowym [PRL 109 (2012) 035503]. Jako atomy domieszki wybrano P, Cl i Ge.  W celu określenia selektywności adsorpcji wpływ efektów modyfikacji warstwy zbadany został dla H2S, N2 i O2. Wyniki pokazały, że domieszkowanie Ge i Cl nie wpływają korzystnie na detekcję H2S. Natomiast P zwiększa transfer ładunku po adsorpcji H2S o 354% w porównaniu z niedomieszkowanym MoS2. Jednocześnie energia adsorpcji H2S na P-MoS2 jest stosunkowo niska, a dynamika molekularna pokazuje, że domieszkowanie nie utrudnia zwolnienia miejsca adsorpcyjnego w temperaturze pokojowej. Ponadto adsorpcja H2S jest energetycznie faworyzowana względem  O2 i N2, co powinno zapewnić molekułom analitu łatwiejszy dostęp do miejsc adsorpcyjnych z atomem P.
 
-### Dr Krzysztof Rogowski
+### dr Krzysztof Rogowski
 
 12:30-12:45
 
@@ -578,7 +584,7 @@ Aerodynamika siłowni wiatrowej Darrieusa jest ekstremalnie trudnym zagadnieniem
 ```.txt
 12:45-13:30 PRZERWA
 ```
-### Dr Oksana Volnianska
+### dr Oksana Volnianska
 
 **Adiunkt w Instytucie Fizyki PAN**
 
@@ -603,7 +609,7 @@ Obliczenia dotyczą struktur  objętościowych oraz  nanokryształów.
 Grant G16-11: Piotr Bogusławski,  O.V., Tomasz Zakrzewski. 
 
 
-### Prof. dr hab. Bohdan Andriyevskyy
+### prof dr hab. Bohdan Andriyevskyy
 
 **Politechnika Koszalińska**
 
@@ -621,7 +627,7 @@ Zostaną przedstawione wyniki badań obliczeniowych w ramach teorii funkcjonału
 (1) struktury elektronowej pasmowej oraz domieszkowanych kryształów ZnO-Al, w tym efektywnej masy elektronów, oraz jej zależności od koncentracji nośników.
 (2) właściwości elektronowych, fononowych i termoelektrycznych kryształów Cu7PS6, Cu7PSe6 i Cu7PS3Se3. Struktura pasmowa kryształów charakteryzuje się stosunkowo dużą wartością współczynnika Seebecka  ~ 1 mVK-1, co może świadczyć o dużej efektywności termoelektrycznej. Nieliniowe właściwości drgań atomów miedzi w Cu7PS6 znacznie przewyższają podobne właściwości dla fosforu siarki i selenu. Duża nieliniowość drgań znalezionych atomów miedzi może powodować stosunkowo niski współczynnik przewodności cieplnej, co z kolei sprzyja dużej wielkości współczynnika dobroci termoelektrycznej.
 
-### Dr hab. Dominik Kurzydłowski
+### dr hab. Dominik Kurzydłowski
 
 **Uniwersytet Kardynała Stefana Wyszyńskiego w Warszawie**
 
@@ -638,7 +644,7 @@ Wpływ wysokich ciśnień na właściwości związków bogatych we fluor
 In my presentation I will show how Density Functional (DFT) modelling can be used as efficient tool in the interpretation of experimental measurements conducted for solids compressed to pressures exceeding 10 000 atm.
 
 
-### Dr Agata Podsiadły-Paszkowska
+### dr Agata Podsiadły-Paszkowska
 
 **Adiunkt na Wydziale Chemicznym Politechniki Wrocławskiej**
 
@@ -651,7 +657,7 @@ Stabilizacja półproduktów reakcji rozszczepiania wody na powierzchni hematytu
 Hematite (α-Fe2O3) is one of the most widely studied semiconductor for photo-electrochemical water-splitting, as its bulk band gap (2.0-2.2eV) permits the absorption of visible light. It is also cheap, abundant and stable in water. Despite intensive research, the hematite-based devices have not yet achieved the theoretically predicted efficiency of 12.7–16.8%. On the one hand, this indicates the need for in-depth research on the water-splitting process itself on the hematite surface, as such incompatibility with theoretical predictions suggests incomplete understanding and incorrect prediction of the processes. On the other hand, one should consider the possibility of using a co-catalyst that would affect the optical properties of the hematite, possibly increasing the water-splitting efficiency.
 Using density functional theory we calculate the energetics of the (110) surface of hematite. We propose using Ti, Co, and Ni atoms as co-catalysts and analyze how these atoms affect the atomic and electronic structure of the surface and the magnetic ordering. We also show how the presence of a co-catalyst atom and the resulting charge redistribution and magnetic moments ordering influence stabilization of intermediates of water-splitting reaction.
 
-### Dr Michał Kochman
+### dr Michał Kochman
 
 **Instytut Chemii Fizycznej PAN**
 
@@ -672,7 +678,7 @@ Molecular machines are artificial (man-made) molecules which produce mechanical 
 ```.txt
 14:45-15:15 PRZERWA
 ```
-### Dr Marek Graff
+### dr Marek Graff
 
 **Instytut Chemii i Techniki Jądrowej, PAN**
 
@@ -684,7 +690,7 @@ Wpływ podstawników oraz izomerii
 i Techniki
 geometrycznej na aromatyczność HOMA polienów
 
-### Dr Michał Lesiuk
+### dr Michał Lesiuk
 
 **Uniwersytet Warszawski**
 
@@ -711,7 +717,7 @@ The accuracy levels of 1 kJ/mol are easily achievable, and even more demanding
 levels of accuracy can be reached with a considerable reduction of the computational costs. Extensions of the proposed method to include higher excitations are
 briefly discussed, along with possible strategies of reducing other residual errors.
 
-### Dr hab. inż. Maciej Śmiechowski
+### dr hab. inż. Maciej Śmiechowski
 
 **Politechnika Gdańska**
 
@@ -728,7 +734,7 @@ Wodór cząsteczkowy jako minimalny model hydratacji hydrofobowej.
 Hydratacja hydrofobowa cząsteczki wodoru w wodzie została zbadana na poziomie molekularnym w oparciu o symulacje metodą dynamiki molekularnej ab initio ze strukturą elektronową opisywaną teorią funkcjonału gęstości. Cząsteczka H2 i jej chwilowe otoczenie solwatacyjne („klatka”) dyfundują poprzez mechanizm dyfuzji strukturalnej, tzn. znacznie szybciej od samego rozpuszczalnika. Cząsteczkowy mechanizm leżący u podstaw tego procesu można powiązać z chwilowymi fluktuacjami objętości klatki wokół obu atomów H cząsteczki H2, prowadzącymi do specyficznych przypadków otwarcia klatki, które mogą być powiązane z intensywnymi sygnałami widmowymi widocznymi w zakresie terahercowym (THz) widma oscylacyjnego.
 
 
-### Dr Zuzanna Szymańska
+### dr Zuzanna Szymańska
 
 **Interdyscyplinarne Centrum Modelowania Matematycznego i Komputerowego Uniwersytetu Warszawskiego**
 
@@ -744,7 +750,7 @@ Większość modeli matematycznych zjawisk fizjologicznych (i patofizjologicznyc
 
 Mając powyższe na uwadze, proponujemy nowy, nielokalny model proliferacji komórek wraz z wnioskiem bayesowskim o parametrach układu w oparciu o dane eksperymentalne. Dyskutujemy zakres stosowalności modelu i przedstawiamy dowód stabilności rozkładów a posteriori.
 
-### Dr Marek Michalewicz
+### dr Marek Michalewicz
 
 **Interdyscyplinarne Centrum Modelowania Matematycznego i Komputerowego Uniwersytetu Warszawskiego**
 
