@@ -56,8 +56,8 @@ Zapraszamy do zapoznania się z programem wydarzenia.
 Możliwe są niewielkie przesunięcia w programie, w zależności od możliwości czasowych prelegentów.
 
 - Program Sesji:
-    * [dzien I](./sesja2020_granty_lista_v10_dzien1.pdf)
-    * [dzien II](./sesja2020_granty_lista_v10_dzien2.pdf)
+    * [dzien I](./sesja2020_granty_lista_v12_dzien1.pdf)
+    * [dzien II](./sesja2020_granty_lista_v12_dzien2.pdf)
 - Informacje o prelegentach dostępne są w zakładce [prelegenci](prelegenci.md)
 
 ### Kontakt
