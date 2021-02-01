@@ -3,6 +3,15 @@ Informacje o prelegentach, wg kolejności wystąpień.
 
 ## Dzień I
 
+
+### Profesor Grzegorz Chałasiński, Dr Marek Michalewicz
+
+**Interdyscyplinarne Centrum Modelowania Matematycznego i Komputerowego Uniwersytetu Warszawskiego**
+
+09:00-09:20
+
+**Powitanie**
+
 ### Dr hab. Krzysztof Rządca, prof. UW
 
 **Uniwersytet Warszawski, Google**
@@ -265,9 +274,6 @@ Wyjaśnialność i modele językowe w informatyce prawniczej
 
 Celem omawianych prac badawczych było zbadanie właściwości różnych modeli językowych (word2vec i BERT) w zastosowaniach związanych z informatyką prawniczą, zwłaszcza w kontekście wyjaśnialności. W tym celu wykorzystano modele wytrenowane na zbiorach danych o charakterze ogólnym (np. wikipedia), jak i specjalistycznym (baza orzecznictwa amerykańskich sądów - system Courtlistener) oraz przeanalizowano ich wpływ - z wykorzystaniem metody GradCAM - na predykcje konwolucyjnej sieci neuronowej. Wykorzystano następujące zbiory danych jako przedmiot klasyfikacji: h VetClaims-JSON (https://github.com/LLTLab/VetClaims-JSON; klasyfikacja ról retorycznych, jakie pełnią poszczególne zdania w uzasadnieniach decyzji dotyczących spraw weteranów) oraz Statury Interpretation Data set (https://github.com/jsavelka/statutory_interpretation; przydatność poszczególnych fragmentów orzeczeń dla wykładni zadanego przepisu prawa). W trakcie wystąpienia omówiony zostanie proces treningu (przeprowadzony z wykorzystaniem klastra GPU rysy) oraz uzyskane wyniki i wprowadzone metryki porównawcze.
 
-```.txt
-14:45-15:15 PRZERWA
-```
 ### Dr Piotr Śpiewak
 
 **Politechnika Warszawska**
@@ -280,33 +286,34 @@ Modelowanie ab initio właściwości transportowych w
 materiałach termoelektrycznych z wykorzystaniem
 funkcjonałów hybrydowych
 
-
-### Dr Paweł Szarek
-
-**Uniwersytet Warszawski, CENT**
-
-15:15-15:30
-
-**Abstrakt**
-
-Kompleksy metali przejściowych w roli urządzeń dla
-elektroniki molekularnej.
+```.txt
+14:45-15:15 PRZERWA
+```
 
 ### mgr Marcin Zemła
 
 **Politechnika Warszawska**
 
-15:30 15:45
+15:15 15:30
+
+![image](./zdjecia_prelegentow/MZemla.jpg#prelegent)
+
+Marcin Zemła jest doktorantem na Wydziale Inżynierii Materiałowej PW, gdzie zajmuje się modelowaniem oddziaływania helu z granicami ziaren w stopach Fe-Cr. Nad swoim doktoratem pracuje pod opieką prof. Tomasza Wejrzanowskiego oraz dra Jana Wróbla. W ramach pracy magisterskiej na Wydziale Fizyki UW, pod opieką prof. Jacka Majewskiego, bada właściwości struktur hybrydowych złożonych z dwuwymiarowych materiałów (np. grafenu) oraz jednomolekułowych magnesów. W swoich badaniach stosuje obliczenia w ramach teorii funkcjonału gęstości (DFT) oraz symulacje Dynamiki Molekularnej (MD) i Monte Carlo (MC). W wolnych chwilach czyta książki (najczęściej o historii nauki oraz pop-naukowe) i wychowuje swoją suczkę golden retrievera. 
 
 **Abstrakt**
 
 He w Fe
 
+Od połowy zeszłego wieku ludzkość z powodzeniem wykorzystuje elektrownie jądrowe, gdzie około 0,09% pierwotnej masy ciężkich jąder przekształcana jest w energię na drodze rozpadu. Kolejnym krokiem, na miarę XXI wieku, jest wykorzystanie lekkich pierwiastków w reakcji termojądrowej. Synteza termonuklearna, przekształcająca nawet ok. 1% masy w energię, jest przedmiotem badań od kilkudziesięciu lat.
+
+Działanie reaktora termojądrowego wymaga zastosowania materiałów odpornych na podwyższoną temperaturę, korozję helową i wodorową, czy napromieniowanie wysokoenergetycznymi neutronami. Szczególną uwagę należy zwrócić na segregację helu na granicach ziaren, bowiem ten proces prowadzi do powstania nanometrycznych pęcherzy helowych, co skutkuje kruchością oraz znacznym skróceniem żywotności takiego materiału. Empiryczne badanie tych procesów jest niezwykle trudne ze względu na skale atomową, w której zachodzi kinetyka tych reakcji, jak również ze względu na obecność nieuchwytnego dla większości metod helu. Dlatego, przy projektowaniu materiałów do takich zastosowań, ważne jest zrozumienie procesów zachodzących w strukturze krystalicznej.
+
+
 ### mgr Damian Sobieraj
 
 **Politechnika Warszawska**
 
-15:45-16:00
+15:30-15:45
 
 ![image](./zdjecia_prelegentow/DSobieraj.jpg#prelegent)
 
@@ -324,8 +331,36 @@ Opracowany model wykorzystany został do analizy stopu W38Ta36Cr15V11, wytworzon
 
 [2] O. El-Atwani, N. Li, M. Li, A. Devaraj, J. K. S. Baldwin, M. M. Schneider, D. Sobieraj, J. S. Wróbel, D. Nguyen-Manh, S. A. Maloy, E. Martinez, Outstanding radiation resistance of tungsten-based high-entropy alloys. Sci. Adv. 5, eaav2002, 2019
 
+### Dr Franciszek Rakowski
+
+**Interdyscyplinarne Centrum Modelowania Matematycznego i Komputerowego Uniwersytetu Warszawskiego**
+
+15:45-16:15
+
+**Abstrakt**
+
+Symulacje COVID-19 - model ICM
+
+
+### Maciej Szpindler
+
+**Interdyscyplinarne Centrum Modelowania Matematycznego i Komputerowego Uniwersytetu Warszawskiego**
+
+16:15-16:30
+
+**Abstrakt**
+
+Podsumowanie obliczeń w ICM w latach 2018-2020
+
 ## Dzień II
 
+### Zespół Wsparcia Użytkowników
+
+**Interdyscyplinarne Centrum Modelowania Matematycznego i Komputerowego Uniwersytetu Warszawskiego**
+
+09:00-09:15
+
+**Jak rozszyfrować 2FA, NEC, singularity i inne czyli o nowościach w HPC ICM?**
 ### Dr Yevgen Melikhov
 
 **Instytut Podstawowych Problemów Techniki PAN**
@@ -402,16 +437,21 @@ Dr. Siklitskaya defended her Ph.D. thesis on condensed matter physics in 2015, I
 XXI century brings us to the era of computational heaven with its developed software and technologies. In my talk I would like to focus on the importance of building the relevant model based on theoretical physics and chemistry before setting up the computational experiments. This step allows to save incredible amount of energy and computational resourses.
 Ab-initio molecular dynamics is an incredible tool for getting a qualitative insight into the structural properties of the system as well as getting a first guess of a chemical reaction mechanism. We've checked the possible routes of CO2 sequestration into various materials including calcite and carbon spiroids.
 
-
 ### Dr Marcin Kryński
 
 **Politechnika Warszawska**
 
 10:15-10:30
 
+![image](./zdjecia_prelegentow/marcin_krynski.jpeg#prelegent)
+
+Marcin Kryński jest adiunktem w Zakładzie Joniki Ciała Stałego na Wydziale Fizyki. Ukończył studia magisterskie i zdobył stopień doktora na Wydziale Fizyki PW, a następnie odbywał staże podoktorskie na Uniwersytecie w Cambridge oraz w Instytucie Fritza Habera w Berlinie. W pracy badawczej skupia się na klasycznym i kwantowym modelowaniu ciała stałego i na analizie procesów dyfuzji oraz przemian fazowych.
+
 **Abstrakt**
 
 Modelowanie właściwości elektrycznych przewodników jonów tlenu opartych na Bi2O3
+
+Badania materiałów przewodzących jony tlenu związane są z rozwojem urządzeń elektrochemicznych takich jak ogniwa paliwowe SOFC, czujniki gazów, elektrolizery czy też pompy tlenu. Dalekozasięgowy transport jonów tlenu w ciele stałym jest zależny przede wszystkim od koncentracji luk tlenowych w materiale, ale także od ich dystrybucji w strukturze krystalicznej, ich porządkowania oraz oddziaływania z podsiecią kationową i anionową. W prezentacji zaprezentowane zostaną wyniki badań związków opartych na tlenku bizmutu, które z jednej strony charakteryzują się rekordowo wysokim przewodnictwem jonów tlenu, ale jednocześnie niepożądanymi przejściami fazowymi i niestabilnościami. Pełna charakteryzacja tego typu zjawisk wymaga zastosowania szerokiego spektrum zaawansowanych metod eksperymentalnych oraz modelowania komputerowego. Omówione zostaną wynik modelowania DFT w szczególności zagadnienia dynamiki jonów, lokalnego otoczenia jonów, dystrybucji jonów tlenu.
 
 ### dr hab Wacław Kuś, prof. Pol.Śl.
 
@@ -424,7 +464,6 @@ Modelowanie właściwości elektrycznych przewodników jonów tlenu opartych na 
 
 Wacław Kuś jest pracownikiem Katedry Mechaniki i Inżynierii Obliczeniowej Politechniki Śląskiej. Jego prace skupiają się na rozwoju i zastosowaniach równoległych algorytmów optymalizacji w zagadnieniach z pogranicza mechaniki, biomechaniki i inżynierii materiałowej. Jest członkiem International Society for Structural and Multidisciplinary Optimization, Polskiego Towarzystwa Metod Komputerowych oraz American Institute of Aeronautics and Astronautics.
 
-
 **Abstrakt**
 
 Projektowanie materiałów 2D o zadanych
@@ -432,21 +471,17 @@ własnościach mechanicznych
 
 Materiały dwuwymiarowe zdobyły bardzo dużą popularność w ostatnich latach. Potrafimy je syntezować, wykorzystywać jako składniki kompozytów. Celem prezentacji jest przedstawienie metody projektowania materiałów dwuwymiarowych o nowej nanostrukturze a zarazem posiadających z góry założone własności materiałowe. Optymalizacja prowadzona jest w oparciu o wielopopulacyjne algorytmy optymalizacji, a wartości funkcji celu obliczane są z użyciem wyników zadań bezpośrednich rozwiązanych dynamiką molekularną. Zastosowana metoda optymalizacji wymaga rozwiązania bardzo dużej liczby zadań bezpośrednich, co byłoby niemożliwe z użyciem komputera PC. W przykładowych, przedstawionych podczas prezentacji obliczeniach, użyty został superkomputer Okeanos.
 
-### Przemyslaw Swiatek
+### Administratorzy, Zespół Wsparcia Użytkowników
 
-**INTiBS PAN**
+**Interdyscyplinarne Centrum Modelowania Matematycznego i Komputerowego Uniwersytetu Warszawskiego**
 
 10:45-11:00
 
-**Abstrakt**
-
-Struktura elektronowa wybranych materiałów d-
-elektronowych pod kątem badań podstawowych i
-aplikacji w spintronice
+**Sesja pytań i odpowiedzi**
 
 
 ```.txt
-11:00-14:30 PRZERWA
+11:00-11:30 PRZERWA
 ```
 
 ### Dr Maciej Szudarek
@@ -471,9 +506,28 @@ W ramach pracy opracowano model numeryczny przepływomierza wibracyjnego i wykon
 
 12:00-12:15
 
+![image](./zdjecia_prelegentow/Carmine-Autieri.png#prelegent)
+
+
+Dr. hab. Carmine Autieri is "Doctors with Advanced Research and Development Experience" at the
+International Centre for Interfacing Magnetism and Superconductivity with Topological Matter (MagTop),
+Division ON-6 of Institute of Physics, Polish Academy of Sciences (IF PAN) in Warsaw.
+The website of the MagTop division is available at http://www.magtop.ifpan.edu.pl
+His main area of research is the study of solid state physics by means of the density functional theory.
+His current research focusses on three main topics:
+(i) the interplay between magnetism and the topology in the k-space;
+(ii) the investigation of the superconductivity in transition metals compounds;
+(iii) the interface effects in ultrathin films.
+He did his Ph.D. in Physics from the University of Salerno, Italy.
+His Ph.D. studies were on 'Interplay of spin-orbital correlations and structural distortions in Ru- and Cr- based perovskite systems"'
+
+
 **Abstrakt**
 
 Magnetic impurities IN TOPological materials
+
+Exchange coupling between localized spins and band or topological states accounts for giant magnetotransport and magnetooptical effects as well as determines spin-spin interactions in magnetic insulators and semiconductors. However, even in archetypical dilute magnetic semiconductors such as Cd1−xMnxTe and Hg1−xMnxTe the evolution of this coupling with the wave vector is not understood. A series of experiments have demonstrated that exchange-induced splitting of magnetooptical spectra of Cd1−xMnxTe and Zn1−xMnxTe at the L points of the Brillouin zone is, in contradiction to the existing theories, more than one order of magnitude smaller compared to its value at the zone center and can show an unexpected sign of the effective Landé factors. The origin of these findings we elucidate quantitatively by combining: (i) relativistic first-principles density functional calculations; (ii) a tight-binding approach that takes carefully into account k-dependence of the potential and kinetic sp-d exchange interactions; (iii) a theory of magnetic circular dichroism (MCD) for E1 and E1 + Δ1 optical transitions, developed here within the envelope function kp formalism for the L point of the Brillouin zone in zinc-blende crystals. This combination of methods leads to the conclusion that the physics of MCD at the boundary of the Brillouin zone is strongly affected by the strength of two relativistic effects in particular compounds: (i) the mass-velocity term that controls the distance of the conduction band at the L point to the upper Hubbard band of Mn ions and, thus, a relative magnitude and sign of the exchange splittings in the conduction and valence bands; (ii) the spin-momentum locking by spin-orbit coupling that reduces exchange splitting depending on the orientation of particular L valleys with respect to the magnetization direction.
+
 
 ### Dr hab. Piotr Korcyl
 
@@ -637,9 +691,26 @@ geometrycznej na aromatyczność HOMA polienów
 
 15:30-15:45
 
+
+
+![image](./zdjecia_prelegentow/lesiuk.jpg#prelegent)
+
+
+W swojej pracy naukowej zajmuję się chemią teoretyczną i obliczeniową. W szczególności, interesuje mnie zastosowanie technik dekompozycji tensorów do redukcji
+kosztów obliczeniowych metod struktury elektronowej.
+
 **Abstrakt**
 
-Techniki dekompozycji tensorow w teorii coupled cluster
+Tensor decompositions in coupled-cluster theory.
+
+We report a complete implementation of the coupled-cluster method with single,
+double, and triple excitations (CCSDT) where tensor decompositions are used to
+reduce its scaling and overall computational costs. The accuracy of the proposed
+method is verified by benchmark calculations of total and relative energies for
+several small molecular systems and comparison with the exact CCSDT method.
+The accuracy levels of 1 kJ/mol are easily achievable, and even more demanding
+levels of accuracy can be reached with a considerable reduction of the computational costs. Extensions of the proposed method to include higher excitations are
+briefly discussed, along with possible strategies of reducing other residual errors.
 
 ### Dr hab. inż. Maciej Śmiechowski
 
@@ -673,3 +744,11 @@ Dr Zuzanna Szymańska jest absolwentką Wydziału Matematyki, Informatyki i Mech
 Większość modeli matematycznych zjawisk fizjologicznych (i patofizjologicznych) powstaje w oparciu o znajomość procesów biofizycznych. Dzięki temu dostajemy ogólną strukturę równań, jednakże najczęściej brakuje nam informacji na temat wielkości poszczególnych parametrów układu. Fakt ten pociąga za sobą znaczne ograniczenia stosowalności takich modeli. Szczątkowe dane literaturowe dotyczą zwykle specyficznych reżimów eksperymentalnych, często nieodpowiadających modelowanym sytuacjom. Co więcej, proces gromadzenia danych jest obarczony błędami i faktycznie otrzymujemy rozkłady prawdopodobieństwa szukanych współczynników. Dlatego bardzo ważny jest rozwój nie tylko modeli matematycznych, które ułatwiają zrozumienie procesów chorobowych, ale także metod matematycznych, które umożliwiają właściwe skalibrowanie tych modeli. Dopiero takie połączenie pozwala na uzyskiwanie kluczowych informacji ilościowych o badanym procesie.
 
 Mając powyższe na uwadze, proponujemy nowy, nielokalny model proliferacji komórek wraz z wnioskiem bayesowskim o parametrach układu w oparciu o dane eksperymentalne. Dyskutujemy zakres stosowalności modelu i przedstawiamy dowód stabilności rozkładów a posteriori.
+
+### Dr Marek Michalewicz
+
+**Interdyscyplinarne Centrum Modelowania Matematycznego i Komputerowego Uniwersytetu Warszawskiego**
+
+16:20-16:30
+
+**Zakończenie**
