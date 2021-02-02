@@ -343,9 +343,26 @@ Opracowany model wykorzystany został do analizy stopu W38Ta36Cr15V11, wytworzon
 
 15:45-16:15
 
+![image](./zdjecia_prelegentow/FR_IMG_1034_low_res.jpeg#prelegent)
+
+Dr inż. Franciszek Rakowski, w latach 2005-2017 pracownik ICM UW. 
+W pracy naukowo zajmował się kolejno: dynamiką molekularną biomolekuł, 
+symulacjami rozprzestrzeniania się epidemii grypy, neurokognitywistyką i sztuczną inteligencją. 
+W latach 2017-2020 pracował w centrum badawczo-rozwojowym Samsung jako 
+główny specjalista w zespole AI. Obecnie jest kierownikiem projektu prowadzącego 
+model epidemiologicznych ICM UW, prognozujący i analizujący epidemię COVID-19. 
+
 **Abstrakt**
 
 Symulacje COVID-19 - model ICM
+
+Model epidemiologiczny ICM UW, jest modelem agentowym, którego podstawą jest rekonstrukcja
+struktury socjo-demograficznej Polski. Na wykładzie omówię problemy które spotykamy przy tym
+procesie oraz korzyści jakie możemy szybko odnieść dzięki posiadaniu właśnie takiej
+reprezentacji. Następnie przejdę do omówienia bieżących i wariantowych prognoz które
+przygotowujemy. W tym zadaniu nieustannie doświadczamy problemów z brakiem oraz oraz często
+nieznaną wiarygodnością danych. Pokażę jaki to może mieć wpływ na przygotowywanie predykcji, oraz
+jak sobie z tym radzimy.
 
 
 ### mgr Maciej Szpindler
