@@ -77,3 +77,4 @@ Poniżej szczegółowa instrukcja.
 
 !!! note "Dlaczego sprawozdania są ważne?"
     Sprawozdania służą do pozyskiwania oraz rozliczania środków finansowych przeznaczonych na rozbudowę, utrzymanie Centrum Obliczeniowego (w tym zakup serwerów obliczeniowych) i dostęp do możliwości obliczeniowych (koszty energii, serwis techniczny, wynagrodzenia itp).
+
