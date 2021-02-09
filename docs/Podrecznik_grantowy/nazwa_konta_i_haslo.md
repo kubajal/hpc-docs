@@ -7,7 +7,7 @@ Hasło wysyłane jest automatycznie e-mailem, na adres podany w formularzu rejes
 - Uwaga: hasło wygenerowane na formularzu nie jest aktywowane. Należny używać tylko hasła wysłanego drogą mailową.
 - Kierownik grantu powinien również utworzyć konto składające się z max.8 znaków, [dodając siebie jako współwykonawcę do grantu](./jak_wystapic_o_grant_obliczeniowy.md).
 
-W razie trudności z uzyskaniem prawidłowego hasła do konta prosimy o wysłanie maila na adres [kontakt](../kontakt.md).
+W razie trudności z uzyskaniem prawidłowego hasła do konta prosimy o wysłanie maila na adres pomoc([monkey](https://en.wikipedia.org/wiki/At_sign#Names_in_other_languages))icm.edu.pl.
 
 ## Mam już konto, co dalej?
 
