@@ -7,20 +7,17 @@ obsługi grantów obliczeniowych ICM* dostępnym przez stronę <https://granty.i
 
 System pozwala na:
 
-  - składanie wniosków o otwarcie konta użytkownika w ICM
-  - składanie wniosków o grant obliczeniowy w ICM
-  - dodawanie współwykonanwców do grantu
-  - wprowadzanie informacji w toku realizacji grantu:
-  - dodawanie corocznych sprawozdań z grantów
-  - umieszczanie publikacji oraz informacji o referatach utworzonych
-        na podstawie obliczeń prowadzonych na maszynach ICM
+- składanie wniosków o otwarcie konta użytkownika w ICM
+- składanie wniosków o grant obliczeniowy w ICM
+- dodawanie współwykonanwców do grantu
 
 ### Jak przygotować *wniosek o przyznanie grantu obliczeniowego*
 
-Uwaga\!\!\! Wniosek o grant na systemie Crey (**Okeanos**) dostępny jest
-na stronie [konkurs Okeanos](./konkurs_okeanos.md)
 
-**Uruchamianie Grantów na serwerach Hydra, Topola, Boreasz, Nostromo**
+Możliwa jest aplikacja o grant na komputarach Topola, Okeanos oraz Rysy.
+
+Typy grantów na komputerze  **Okeanos**  (w zależności od ilości zadeklarowanych CPUh) opisane są
+na stronie [konkurs Okeanos](./konkurs_okeanos.md)
 
 Po wejściu na stronę <https://granty.icm.edu.pl/IcmGrants> należy:
 
@@ -53,11 +50,13 @@ Po wejściu na stronę <https://granty.icm.edu.pl/IcmGrants> należy:
 	
       - słowa kluczowe dla projektu i technik obliczeniowych (obydwa
         pola mogą być wykorzystywane przy wyszukiwaniu grantu)
+
       - streszczenie (powinno zawierać przynajmniej kilkanaście zdań
         opisujących tematykę grantu oraz planowanych obliczeń, w tym
         także **uzasadnienie wykorzystania komputerów dużej mocy do
         realizacji grantu**. Prosimy o NIE wprowadzanie w sprawozdaniu
         apostrofów, wyboldowania tekstu, italic'i itp).
+
       - poparcie (doktorantów uruchamiające grant na potrzeby
         prowadzenia obliczeń w ramach doktoratu, prosimy o podanie
         danych opiekuna naukowego, który akceptuje uruchomienie grantu
@@ -65,44 +64,42 @@ Po wejściu na stronę <https://granty.icm.edu.pl/IcmGrants> należy:
 
   - W tym miejscu należy **zatwierdzić dane**
 
-      -
-        Uwaga: jeśli dane nie zostały zatwierdzone, tzn nadal widoczny
-        jest **Dodawanie Grantu** zamiast nowego formularza **Dodawanie
-        użytkownika** oznacza to, że w którymś z wypełnianych pól jest
-        za długi teks. Informacja o tym pojawia się czarną czcionką,
-        zaraz po nazwie danego pola.
+      Uwaga: jeśli dane nie zostały zatwierdzone, tzn nadal widoczny
+      jest **Dodawanie Grantu** zamiast nowego formularza **Dodawanie
+      użytkownika** oznacza to, że w którymś z wypełnianych pól jest
+      za długi teks. Informacja o tym pojawia się czarną czcionką,
+      zaraz po nazwie danego pola.
 
   - Po zatwierdzeniu danych pojawia się formularz **Dodawanie
     użytkownika do grantu** (Uwaga: opcje dodawania użytkowników do
     grantu będą dostępne również po zatwierdzeniu grantu). Więcej
     informacji o wypełnianiu pól formularza nowego użytkownika oraz
     wybraniu z listy już istniejącego użytkownika znajduje się w
-    rozdziale [Jak dodać współwykonawców do
-    grantu](#jak-dodac-wspowykonawcow-do-grantu).
+    rozdziale [Jak dodać współwykonawców do grantu](#jak-dodac-wspowykonawcow-do-grantu).
 
-**UWAGA**: Będąc kierownikiem nie stajesz się automatycznie jego
-realizatorem. Aby móc zacząć prowadzić obliczenia dla grantu musi mieć
-on przypisaną osobę posiadającą konto w ICM. Można dodać do grantu osobę
-już posiadającą konto ICM, zgłosić wniosek o dodanie nowego realizatora
-oraz **dodać siebie** jako realizatora grantu. Jeśli kierownik grantu
-nie doda siebie jako realizatora, to nie zostanie utworzone dla niego
-konto użytkownika z dostępem do maszyn ICM.
+**UWAGA**: 
+Będąc kierownikiem grantu nie stajesz się automatycznie jego realizatorem. 
+Aby prowadzić obliczenia w ramach grantu, 
+musi on mieć przypisaną osobę posiadającą konto w ICM. 
+Można dodać do grantu osobę już posiadającą konto ICM, 
+zgłosić wniosek o dodanie nowego realizatora oraz **dodać siebie** jako realizatora grantu. 
+Jeśli kierownik grantu nie doda siebie jako realizatora, 
+to nie zostanie utworzone dla niego konto użytkownika z dostępem do maszyn ICM.
 
-  - Następnie dodajemy do grantu **CV kierownika** jako plik PDF.
-  - W ostatnim kroku generujemy formularz grantu opcją **Wyświetl plik
-    PDF zgłoszenia grantu**.
+- Następnie dodajemy do grantu **CV kierownika** jako plik PDF.
+- W ostatnim kroku generujemy formularz grantu opcją **Wyświetl plik PDF zgłoszenia grantu**.
 
 ### Uruchomienie grantu
 
 Po wypełnieniu formularza i wygenerowaniu formularza grantu, należy:
 
-  - zapoznać się z [regulaminem
+- zapoznać się z [regulaminem
     użytkownika](../O_zasobach_ICM/Formalnosci/regulamin.md),
 
-  - podpisać formularz grantu (podpis kierownika) oraz formularze nowych
+- podpisać formularz grantu (podpis kierownika) oraz formularze nowych
     użytkowników (podpis użytkowników),
-    
-  - odesłać skan formularza na adres  pomoc([monkey](https://en.wikipedia.org/wiki/At_sign#Names_in_other_languages))icm.edu.pl.
+
+- odesłać skan formularza na adres  pomoc([monkey](https://en.wikipedia.org/wiki/At_sign#Names_in_other_languages))icm.edu.pl.
 
 Razem z grantem należy **przesłać formularze użytkowników** (w tym
 kierownika grantu) dodanych do grantu, które są dostępne przy oknie
@@ -114,7 +111,7 @@ wysłać dodatkowo mail na adres  pomoc([monkey](https://en.wikipedia.org/wiki/A
 ### Jak dodać współwykonawców do grantu
 
 Kierownik grantu, po wejściu w zakładkę **Moje granty** i wybraniu
-właściwego grantu z listy, może dodać do grantu kolejnych
+właściwego grantu z listy, może (na każdym etapie trwania grantu) dodać do grantu kolejnych
 współwykonawców:
 
   - dodanie współwykonawcy, który nie posiada konta w ICM,
@@ -150,47 +147,24 @@ współwykonawców:
         istotne jest dodatkowo zgłoszenie na adres  informacji o
         dostępie do wybranych maszyn w ICM oraz oprogramowania.
 
-### Zadania kierownika grantu
+### Obowiązki kierownika grantu
 
 Kierownicy grantu, po uruchomieniu grantu, powinni:
 
   - weryfikować informacje o współwykonawcach swojego grantu np.
-    zgłaszać do zamknięcia konta osób z którymi zakończyli współpracę,
-    poprawiać dane kontaktowe,
+    zgłaszać do zamknięcia konta osób z którymi zakończyli współpracę, poprawiać dane kontaktowe
   - aktualizować streszczenie grantu w miarę rozwoju obliczeń naukowych
-  - zmieniać dane o instytucji naukowej, w przypadku jej zmiany przez
-    kierownika lub współwykonawców grantu
+  - aktulaizować dane o instytucji naukowej, w przypadku jej zmiany przez kierownika lub współwykonawców grantu
   - przestrzegać zasad dotyczących licencji
-  - zamieszczać w bazie grantów publikacje naukowe dotyczące
-    projektu,
-  - zamieszczać w publikacjach związanych z grantem obliczeniowym
-    następującą informację:
-
-**Obliczenia zostały wykonane przy wsparciu Interdyscyplinarnego Centrum
-Modelowania Matematycznego i Komputerowego (ICM) Uniwersytetu
-Warszawskiego w ramach grantu obliczeniowego nr Gxx-xx**
-
-lub
-
-'''This research was carried out with the support of the
-Interdisciplinary Centre for Mathematical and Computational Modelling
-(ICM), University of Warsaw, under grant no Gxx-xx '''
-
-  - raz w roku dokonywać [rozliczenia
-    grantu](./rozliczanie_grantu.md)
-  - raz w roku uczestniczyć w Sesji Sprawozdawczej Użytkowników KDM w
-    ICM, o której informacje rozsyłane są drogą mailową.
+  - zamieszczać w bazie grantów publikacje naukowe dotyczące projektu,
+  - zamieszczać w publikacjach informację [o korzystaniu z zasobów obliczeniowych ICM](./rozliczanie_grantu.md)
+  - raz w roku dokonywać [rozliczenia grantu](./rozliczanie_grantu.md)
+  - raz w roku uczestniczyć w Sesji Sprawozdawczej Użytkowników KDM w ICM, o której informacje rozsyłane są drogą mailową.
 
 ### Kilka grantów obliczeniowych
 
-Kierownik grantu może posiadać kilka grantów obliczeniowych w ICM. Nowe
-granty powinno się otwierać w sytuacjach gdy:
+Można posiadać kilka grantów obliczeniowych w ICM.
+Nowe granty powinno się otwierać w sytuacjach gdy:
 
-  - kończy się przewidywany czas trwania grantu, podany w formularzu
-    zgłoszenia grantu (maksymalnie 24 miesiące)
-      - *przewidywany czas trwania grantu* można znaleźć w bazie
-        grantów, w zakładce **moje granty**, w części **Szczegóły
-        grantu**,
-	
-  - planujemy prowadzić nowe obliczenia, niezwiązane z tematyką
-    dotychczasowego grantu.
+- kończy się przewidywany czas trwania grantu
+- planujemy prowadzić nowe obliczenia, niezwiązane z tematyką dotychczasowego grantu.

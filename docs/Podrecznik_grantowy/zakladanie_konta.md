@@ -29,8 +29,7 @@ Konto użytkownika zakładane jest po rejestracji w bazie grantów
             minut, sprawdź w pierwszej kolejności czy nie znalazł się w
             katalogu SPAM Twojego konta.***
 
-	    ***Rejestracja w systemie NIE JEST równoważna z otwarciem konta w
-ICM.***
+	    ***Rejestracja w systemie NIE JEST równoważna z otwarciem konta w ICM.***
 
 2.  Po otrzymaniu maila logujemy się ponownie do bazy grantów adresem
     mailowym i otrzymanym hasłem.
@@ -54,14 +53,9 @@ ICM.***
         alfabetu łacińskiego lub cyfry,
 	- pierwszym znakiem musi być
         litera,
-	- nie należy używać znaków przestankowych np.
-	```
-	,._\!?
-	```
-	
-    - Sugerujemy aby loginy były pochodnymi od nazwiska i imienia
-        użytkownika np. jkowalski (pierwsza litera imienia oraz
-        nazwisko).
+	- nie należy używać znaków przestankowych np. `,._\!?`
+  - Sugerujemy aby loginy były pochodnymi od nazwiska i imienia
+    użytkownika np. jkowalski (pierwsza litera imienia oraz nazwisko).
 
 ### Aktywacja konta
 
@@ -71,15 +65,4 @@ obliczeniowego](./jak_wystapic_o_grant_obliczeniowy.md#Uruchomienie_grantu "wiki
 ### Użyteczne komendy dotyczące konta
 
 Po [zalogowaniu](./nazwa_konta_i_haslo.md), użytkownik możne uzyskać
-podstawowe dane o swoim koncie używając kilku poniższych komend:
-
-  - `finger` - udostępnia podstawowe dane o użytkowniku (z wyjątkiem
-    informacji o poczcie elektronicznej),
-  - `id` - udostępnia dane o użytkowniku, jego uid, gid i nazwy grup do
-    których należy,
-  - `groups` - udostępnia listę grup, do których należy użytkownik,
-  - `limit` - limity nałożone na procesy użytkownika,
-  - `getent group | grep numer grantu` - informacje o wszystkich
-    użytkownikach którzy uzyskali dostęp grupy/grantu (zamiast numer
-    grantu nalezy podać np.G54-0,
-  - `ls` - informacje o plikach w katalogu użytkownika.
+podstawowe dane o swoim [koncie i grancie](../Tutorials/HPC-intro/status_grantu_i_konta.md).
