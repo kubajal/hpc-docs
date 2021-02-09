@@ -1,4 +1,4 @@
-### System obsługi grantów obliczeniowych ICM (IcmGrants)
+# System obsługi grantów obliczeniowych ICM (IcmGrants)
 
 Grant obliczeniowy przyznawany jest Kierownikowi grantu na podstawie
 *Wniosku o przyznanie grantu obliczeniowego ICM*. Do wygenerowania
@@ -13,7 +13,6 @@ System pozwala na:
 
 ### Jak przygotować *wniosek o przyznanie grantu obliczeniowego*
 
-
 Możliwa jest aplikacja o grant na komputarach Topola, Okeanos oraz Rysy.
 
 Typy grantów na komputerze  **Okeanos**  (w zależności od ilości zadeklarowanych CPUh) opisane są
@@ -21,8 +20,7 @@ na stronie [konkurs Okeanos](./konkurs_okeanos.md)
 
 Po wejściu na stronę <https://granty.icm.edu.pl/IcmGrants> należy:
 
-  - zalogować się (login i hasło zgodnie z danymi ustalonymi przy
-    [rejestracji](./zakladanie_konta.md))
+  - zalogować się (login i hasło zgodnie z danymi ustalonymi przy [rejestracji](./zakladanie_konta.md))
     
   - przejść do zakładki ***Utwórz grant***
   
@@ -74,8 +72,7 @@ Po wejściu na stronę <https://granty.icm.edu.pl/IcmGrants> należy:
     użytkownika do grantu** (Uwaga: opcje dodawania użytkowników do
     grantu będą dostępne również po zatwierdzeniu grantu). Więcej
     informacji o wypełnianiu pól formularza nowego użytkownika oraz
-    wybraniu z listy już istniejącego użytkownika znajduje się w
-    rozdziale [Jak dodać współwykonawców do grantu](#jak-dodac-wspowykonawcow-do-grantu).
+    wybraniu z listy już istniejącego użytkownika znajduje się niżej.
 
 **UWAGA**: 
 Będąc kierownikiem grantu nie stajesz się automatycznie jego realizatorem. 
@@ -93,20 +90,19 @@ to nie zostanie utworzone dla niego konto użytkownika z dostępem do maszyn ICM
 
 Po wypełnieniu formularza i wygenerowaniu formularza grantu, należy:
 
-- zapoznać się z [regulaminem
-    użytkownika](../O_zasobach_ICM/Formalnosci/regulamin.md),
+- zapoznać się z [regulaminem użytkownika](../O_zasobach_ICM/Formalnosci/regulamin.md),
 
 - podpisać formularz grantu (podpis kierownika) oraz formularze nowych
     użytkowników (podpis użytkowników),
 
-- odesłać skan formularza na adres  pomoc([monkey](https://en.wikipedia.org/wiki/At_sign#Names_in_other_languages))icm.edu.pl.
+- odesłać skan formularza na adres pomoc([monkey](https://en.wikipedia.org/wiki/At_sign#Names_in_other_languages))icm.edu.pl.
 
 Razem z grantem należy **przesłać formularze użytkowników** (w tym
 kierownika grantu) dodanych do grantu, które są dostępne przy oknie
 **Lista propozycji realizatorów**, przy loginach użytkowników (pliki
 **PDF**). Grant zostanie uruchomiony w ciągu 5 dni roboczych od wpłynięcia
 formularza. W celu uruchomienia dostępu do poszczególnych maszyn należy
-wysłać dodatkowo mail na adres  pomoc([monkey](https://en.wikipedia.org/wiki/At_sign#Names_in_other_languages))icm.edu.pl.
+wysłać dodatkowo mail na adres pomoc([monkey](https://en.wikipedia.org/wiki/At_sign#Names_in_other_languages))icm.edu.pl.
 
 ### Jak dodać współwykonawców do grantu
 
@@ -151,15 +147,15 @@ współwykonawców:
 
 Kierownicy grantu, po uruchomieniu grantu, powinni:
 
-  - weryfikować informacje o współwykonawcach swojego grantu np.
+- weryfikować informacje o współwykonawcach swojego grantu np.
     zgłaszać do zamknięcia konta osób z którymi zakończyli współpracę, poprawiać dane kontaktowe
-  - aktualizować streszczenie grantu w miarę rozwoju obliczeń naukowych
-  - aktulaizować dane o instytucji naukowej, w przypadku jej zmiany przez kierownika lub współwykonawców grantu
-  - przestrzegać zasad dotyczących licencji
-  - zamieszczać w bazie grantów publikacje naukowe dotyczące projektu,
-  - zamieszczać w publikacjach informację [o korzystaniu z zasobów obliczeniowych ICM](./rozliczanie_grantu.md)
-  - raz w roku dokonywać [rozliczenia grantu](./rozliczanie_grantu.md)
-  - raz w roku uczestniczyć w Sesji Sprawozdawczej Użytkowników KDM w ICM, o której informacje rozsyłane są drogą mailową.
+- aktualizować streszczenie grantu w miarę rozwoju obliczeń naukowych
+- aktulaizować dane o instytucji naukowej, w przypadku jej zmiany przez kierownika lub współwykonawców grantu
+- przestrzegać zasad dotyczących licencji
+- zamieszczać w bazie grantów publikacje naukowe dotyczące projektu,
+- zamieszczać w publikacjach informację [o korzystaniu z zasobów obliczeniowych ICM](./rozliczanie_grantu.md)
+- raz w roku dokonywać [rozliczenia grantu](./rozliczanie_grantu.md)
+- raz w roku uczestniczyć w Sesji Sprawozdawczej Użytkowników KDM w ICM, o której informacje rozsyłane są drogą mailową.
 
 ### Kilka grantów obliczeniowych
 
