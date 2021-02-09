@@ -569,44 +569,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../Podrecznik_grantowy/kierownik_oraz_nowi_wspolwykonawcy_grantu/" class="md-nav__link">
-        Kierownik oraz współwykonawcy grantu
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../Podrecznik_grantowy/sprawozdania_i_publikacje_w_grancie/" class="md-nav__link">
-        Sprawozdania i publikacje w grancie
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../../../Podrecznik_grantowy/rozliczanie_grantu/" class="md-nav__link">
         Rozliczanie grantu
-      </a>
-    </li>
-  
-
-          
-            
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../Podrecznik_grantowy/uzytkownik_i_kilka_grantow_obliczeniowych/" class="md-nav__link">
-        Użytkownik i kilka grantów obliczeniowych
       </a>
     </li>
   
@@ -1858,7 +1822,8 @@
                 <h2 id="ssh-logowanie">SSH - logowanie</h2>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>Logowanie do ICM: <code>ssh username@hpc.icm.edu.pl</code>
+<p>Logowanie do ICM: <code>ssh username@hpc.icm.edu.pl</code>.
+Logowanie odbywa się przy pomocy loginu (do 8 liter, nie adresu e-mail).
 W przypadku niektórych systemów możliwy/wymagany jest dodatkowy krok logowania wykonany z komputera hpc.icm.edu.pl, np. <code>ssh rysy</code>, <code>ssh okeanos</code>.</p>
 </div>
 <div class="admonition info">
@@ -1869,6 +1834,11 @@ W przypadku niektórych systemów możliwy/wymagany jest dodatkowy krok logowani
 <p>Nazwa konta użytkownika i hasło tworzone są w momencie rejestracji użytkownika w bazie grantów (dotyczy kierownika grantu) lub na etapie dodawania współwykonawcy do grantu.</p>
 <h3 id="zmiana-hasa">Zmiana hasła</h3>
 <p>Zmiana hasła możliwa jest pod adresem <a href="https://haslo.icm.edu.pl/">https://haslo.icm.edu.pl/</a></p>
+<p>W chwili skierowania konta do utworzenia, hasło jest wysyłane automatycznym mailem.
+Przed pierwszym logowaniu konieczna jest jego zmiana.
+Dopiero po dokonaniu zmiany hasła odblokuje się dostęp do serwera dostępowego <code>hpc.icm.edu.pl</code>. 
+Hasło wysyłane jest automatycznym mailem, w chwili skierowania konta do utworzenia. 
+Login jest zgodny z podanym na formularzu użytkownika.</p>
 <h2 id="autoryzacja-dwu-skadnikowa-2fa">Autoryzacja dwu-składnikowa (2FA)</h2>
 <p>Logując się przy użyciu ssh na serwer <code>hpc.icm.edu.pl</code> użytkownik podaje dane (hasło/klucz) po czym pojawia się dodatkowe zapytanie o <strong>OTP</strong> (one time password), czyli jednorazowy kod, indywidualny dla każdego, generowany przy użyciu specjalnej aplikacji.</p>
 <p>W celu uzyskania kodu konieczne jest zainstalowanie na swoim telefonie aplikacji obsługującej mechanizm tokenów <strong>TOTP</strong> (Time-based One-time Password algorithm), np. FreeOTP lub GoogleAuthenicator (dostępne w GooglePlay i AppStore). Aplikacje są darmowe i nie wymagają dostępu do internetu (działają w trybie offline).</p>
@@ -2175,7 +2145,7 @@ lub kombinacją klawiszy <code>Ctrl+D</code>.</p>
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 20, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 9, 2021</span>
     
   </small>
 </div>
