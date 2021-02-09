@@ -46,9 +46,6 @@ zamieszczane w bazie grantów oraz zawierać następującą informację:
     Interdisciplinary Centre for Mathematical and Computational Modelling
     ICM) University of Warsaw under grant no Gxx-xx
 
-Dodatkowo zapraszamy do zapoznania się z [zadaniami kierownika
-grantu](./kierownik_oraz_nowi_wspolwykonawcy_grantu.md).
-
 ## Jak złożyć sprawozdanie
 
 Od 2021r. sprawozdanie należy składać poprzez `System alokacji zasobów`. [TODO: LINK] 
