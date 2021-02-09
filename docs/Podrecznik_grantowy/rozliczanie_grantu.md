@@ -1,34 +1,37 @@
 
 # Rozliczenie Grantu
 
-Rozliczanie grantu odbywa się raz do roku, najczęściej na przełomie
-marca/kwietnia.
-Przypomnienie o konieczności złożenia sprawozdania przesyłane jest mailem do wszystkich kierowników
-grantów.
+Rozliczanie grantu odbywa się raz do roku, najczęściej na przełomie marca/kwietnia.
+Przypomnienie o konieczności złożenia sprawozdania przesyłane jest mailem do wszystkich kierowników grantów.
 
 Zadaniem kierownika jest podsumowanie obliczeń w grancie prowadzonych
 przez jego wykonawców i uzasadnienie wykorzystania zasobów ICM.
 
-## Sprawozdanie
+## Po co składać sprawozdanie
 
-Sprawozdanie powinno być podsumowaniem działań i powinno zawierać
-informacje dotyczące:
+!!! info "Dlaczego sprawozdania są ważne?"
+    Sprawozdania służą do pozyskiwania oraz rozliczania środków finansowych przeznaczonych na rozbudowę, utrzymanie Centrum Obliczeniowego (w tym zakup serwerów obliczeniowych) i dostęp do możliwości obliczeniowych (koszty energii, serwis techniczny, wynagrodzenia itp).
 
-  - wyników obliczeń
-  - wykorzystanego oprogramowania
-  - informacji o maszynach na których prowadzone były obliczenia
-  - czas wykorzystania zasobów (CPU)
-  - praktycznych informacji o obliczeniach na maszynach ICM
-  - możliwości stosowania obliczeń równoległych
-  - innych grantów (NCN, NCBiR, FP7 i inne) w których wykorzystywane są
-    obliczenia prowadzone w ICM
-  - publikacje związane z grantem
+    Nie złożenie sprawozdania przez kierownika grantu może skutkować zamknięciem grantu.
+
+    Wam i Nam zależy aby obliczenia naukowe odbywały się niekomercyjnie.
+
+## Jak przygotować sprawozdanie
+
+Sprawozdanie powinno zawierać:
+
+- podsumowanie działań i wyników obliczeń
+- informacje o wykorzystywanym oprogramowaniu
+- informacje o maszynach na których prowadzone były obliczenia
+- ilość wykorzystanych zasobów (CPUh)
+- informację o możliwości stosowania obliczeń równoległych
+- krótką informacje o grantach (NCN, NCBiR, FP7 i inne) w których wykorzystywane są obliczenia prowadzone w ICM
+- publikacje związane z grantem obliczeniowym
 
 Warto pamiętać o sprawdzeniu:
 
-  - streszczenia grantu
-  - danych kontaktowych do kierownika oraz
-    współwykonawców grantu
+- streszczenia grantu
+- danych kontaktowych do kierownika oraz współwykonawców grantu
 
 ### Publikacje
 
@@ -48,7 +51,7 @@ zamieszczane w bazie grantów oraz zawierać następującą informację:
 
 ## Jak złożyć sprawozdanie
 
-Od 2021r. sprawozdanie należy składać poprzez `System alokacji zasobów`. [TODO: LINK] 
+Od 2021r. sprawozdanie należy składać poprzez [System alokacji zasobów](https://owugate.nebula.grid.icm.edu.pl/sprawozdania/user/login).
 
 Poniżej szczegółowa instrukcja.
 
@@ -71,7 +74,3 @@ Poniżej szczegółowa instrukcja.
 <center> ![](screen_shots/szczegoly-projektu.png) </center>
 
 - Gotowe. Po uzupełnieniu pól nie trzeba nic więcej robić. Dziękujemy.
-
-!!! note "Dlaczego sprawozdania są ważne?"
-    Sprawozdania służą do pozyskiwania oraz rozliczania środków finansowych przeznaczonych na rozbudowę, utrzymanie Centrum Obliczeniowego (w tym zakup serwerów obliczeniowych) i dostęp do możliwości obliczeniowych (koszty energii, serwis techniczny, wynagrodzenia itp).
-

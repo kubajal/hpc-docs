@@ -59,8 +59,7 @@ Konto użytkownika zakładane jest po rejestracji w bazie grantów
 
 ### Aktywacja konta
 
-Aktywacja konta nastąpi równocześnie z [uruchomieniem grantu
-obliczeniowego](./jak_wystapic_o_grant_obliczeniowy.md#Uruchomienie_grantu "wikilink").
+Aktywacja konta nastąpi równocześnie z [uruchomieniem grantu obliczeniowego](./jak_wystapic_o_grant_obliczeniowy.md#Uruchomienie_grantu "wikilink").
 
 ### Użyteczne komendy dotyczące konta
 

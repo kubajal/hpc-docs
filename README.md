@@ -107,4 +107,4 @@ pandoc -s -r html http://www.gnu.org/software/make/ -o example_from_web.md
 ### How to contribute  - general workflow
 
 1) Test the changes on your local machine.
-2) Make a pull request to the develop branch.
+2) Make a pull request to the master branch.

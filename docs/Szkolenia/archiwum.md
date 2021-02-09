@@ -256,7 +256,7 @@ draft: false
 |  2005.01.07  |  Maciek Cytowski, Maria Fronczak  |  Środowisko programistyczne na Cray X1 i klastrze - podstawy  |
 |  2005.01.14/15  | 	 Maciej Geller, Witold Rudnicki, Piotr Setny  | Wstęp do projektowania leków - 2  |
 |  2005.01.21  |  Jacek Piechota  |  Wprowadzenie do modelowania materiałów przy użyciu pól siłowych i metod kwantowomechanicznych  |
-|  2005.03.18  |  Jacek Piechota  |  http://www.icm.edu.pl/~jp/Szkolenie_MM_QM.htm Wprowadzenie do modelowania materiałów przy użyciu pól siłowych i metod kwantowomechanicznych  |
+|  2005.03.18  |  Jacek Piechota  |  Wprowadzenie do modelowania materiałów przy użyciu pól siłowych i metod kwantowomechanicznych  |
 |  2005.04.15  |  Maciej Cytowski, Dr Miroslaw Habarta (MESco),  |  Diffpack - zaawansowane narzędzie do rozwiązywania równań różniczkowych  |
 |  2005.05.13    | Maria Fronczak, Franek Rakowski, Maciek Cytowski  | 	     Podstawy środowiska i narzędzi UNIX  |
 |  2005.06.03	   |  Franek Rakowski  |  Skryptologia i systemy kolejkowe  |
