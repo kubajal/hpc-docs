@@ -7,7 +7,8 @@ draft: false
 ## SSH - logowanie
 
 !!! Tip
-    Logowanie do ICM: `ssh username@hpc.icm.edu.pl`
+    Logowanie do ICM: `ssh username@hpc.icm.edu.pl`.
+    Logowanie odbywa się przy pomocy loginu (do 8 liter, nie adresu e-mail).
     W przypadku niektórych systemów możliwy/wymagany jest dodatkowy krok logowania wykonany z komputera hpc.icm.edu.pl, np. `ssh rysy`, `ssh okeanos`.
 
 !!! Info
@@ -20,6 +21,12 @@ Nazwa konta użytkownika i hasło tworzone są w momencie rejestracji użytkowni
 ### Zmiana hasła
 
 Zmiana hasła możliwa jest pod adresem <https://haslo.icm.edu.pl/>
+
+W chwili skierowania konta do utworzenia, hasło jest wysyłane automatycznym mailem.
+Przed pierwszym logowaniu konieczna jest jego zmiana.
+Dopiero po dokonaniu zmiany hasła odblokuje się dostęp do serwera dostępowego `hpc.icm.edu.pl`. 
+Hasło wysyłane jest automatycznym mailem, w chwili skierowania konta do utworzenia. 
+Login jest zgodny z podanym na formularzu użytkownika.
 
 ## Autoryzacja dwu-składnikowa (2FA)
 
