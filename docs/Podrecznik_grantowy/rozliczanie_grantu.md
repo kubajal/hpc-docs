@@ -87,7 +87,7 @@ Warto zauważyć, że w celu dodania publikacji wystarczy jej DOI.
 ### Sprawozdanie
 
 Uzupełniamy pozostałe dane: `Powiązane Granty (NCN, NCBiR itp)`, `Publikacje` oraz `Sprawozdanie`.
-W sekcji Powiązane Granty należy podać informację o zródle finansowania badań naukowych, np. NCN, NCBiR lub grant wewnętrzny Uniwersytetu X.
+W sekcji `Powiązane Granty` należy podać informację o zródle finansowania badań naukowych, np. NCN, NCBiR, grant wewnętrzny Uniwersytetu X.
 
 <center> ![](screen_shots/szczegoly-projektu.png) </center>
 
