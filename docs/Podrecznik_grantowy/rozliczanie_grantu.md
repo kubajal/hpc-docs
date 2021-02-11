@@ -1,8 +1,9 @@
 
 # Rozliczenie Grantu
 
-Rozliczanie grantu odbywa się raz do roku, najczęściej na przełomie marca/kwietnia.
-Przypomnienie o konieczności złożenia sprawozdania przesyłane jest mailem do wszystkich kierowników grantów.
+Rozliczanie grantu odbywa się raz do roku, najczęściej na przełomie lutego/marca.
+
+Przypomnienie o konieczności złożenia sprawozdania przesyłane jest mailem do wszystkich kierowników grantów oraz współwykonawców grantów. Sprawozdanie do bazy wstawia kierownik grantu.
 
 Zadaniem kierownika jest podsumowanie obliczeń w grancie prowadzonych
 przez jego wykonawców i uzasadnienie wykorzystania zasobów ICM.
@@ -10,7 +11,7 @@ przez jego wykonawców i uzasadnienie wykorzystania zasobów ICM.
 ## Po co składać sprawozdanie
 
 !!! info "Dlaczego sprawozdania są ważne?"
-    Sprawozdania służą do pozyskiwania oraz rozliczania środków finansowych przeznaczonych na rozbudowę, utrzymanie Centrum Obliczeniowego (w tym zakup serwerów obliczeniowych) i dostęp do możliwości obliczeniowych (koszty energii, serwis techniczny, wynagrodzenia itp).
+    Sprawozdania służą do pozyskiwania oraz rozliczania środków finansowych przeznaczonych na rozbudowę, utrzymanie Centrum Obliczeniowego (w tym zakup serwerów obliczeniowych) i dostęp do możliwości obliczeniowych (koszty energii, serwis techniczny, wsparcie techniczne dla prowadzących obliczenia, itp).
 
     Nie złożenie sprawozdania przez kierownika grantu może skutkować zamknięciem grantu.
 
@@ -27,11 +28,13 @@ Sprawozdanie powinno zawierać:
 - informację o możliwości stosowania obliczeń równoległych
 - krótką informacje o grantach (NCN, NCBiR, FP7 i inne) w których wykorzystywane są obliczenia prowadzone w ICM
 - publikacje związane z grantem obliczeniowym
+- informacje o wypromowanych pracach magisterskich i doktorskich
+- sprawozdanie powininno zawierać tylko tekst (bez wykresów, bez załączników, itp).
 
 Warto pamiętać o sprawdzeniu:
 
 - streszczenia grantu
-- danych kontaktowych do kierownika oraz współwykonawców grantu
+- danych kierownika oraz współwykonawców grantu (prosimy pamiętać o aktualizacji tytułów naukowych, telefonów kontaktowych oraz maili).
 
 ### Publikacje
 
@@ -51,7 +54,9 @@ zamieszczane w bazie grantów oraz zawierać następującą informację:
 
 ## Jak złożyć sprawozdanie
 
-Od 2021r. sprawozdanie należy składać poprzez [System alokacji zasobów](https://owugate.nebula.grid.icm.edu.pl/sprawozdania/user/login).
+Od 2021r. sprawozdanie należy składać poprzez <https://granty.icm.edu.pl/sprawozdania>.
+
+Jeśli nie prowadziłeś obliczeń, lub z innych powodów nie zamieszczasz sprawozdania kliknij w `Wyślij sprawozdanie` i wypełnij na dole strony pole `Powód nieaktualizowania projektu`.
 
 Poniżej szczegółowa instrukcja.
 
@@ -69,7 +74,7 @@ Wybieramy projekty które wymagają sprawozdania.
 
 ### Streszczenie Projektu
 
-W celu uzupełnienia streszczenia należy kliknąć w 'Zaktualizuj informacje o projekcie'.
+Jeżeli streszczenie wymaga aktualizacji, to należy kliknąć w 'Zaktualizuj informacje o projekcie'.
 
 <center> ![](screen_shots/streszczenie_i_zarzadzanie.png) </center>
 
@@ -81,7 +86,8 @@ Warto zauważyć, że w celu dodania publikacji wystarczy jej DOI.
 
 ### Sprawozdanie
 
-Uzupełniamy pozostałe dane: Grant (NCN, NCBiR, itp), Publikacje oraz Sprawozdanie.
+Uzupełniamy pozostałe dane: `Powiązane Granty (NCN, NCBiR itp)`, `Publikacje` oraz `Sprawozdanie`.
+W sekcji `Powiązane Granty` należy podać informację o zródle finansowania badań naukowych, np. NCN, NCBiR, grant wewnętrzny Uniwersytetu X.
 
 <center> ![](screen_shots/szczegoly-projektu.png) </center>
 
