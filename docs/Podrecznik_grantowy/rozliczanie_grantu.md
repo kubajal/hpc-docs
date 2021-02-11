@@ -13,7 +13,7 @@ przez jego wykonawców i uzasadnienie wykorzystania zasobów ICM.
 !!! info "Dlaczego sprawozdania są ważne?"
     Sprawozdania służą do pozyskiwania oraz rozliczania środków finansowych przeznaczonych na rozbudowę, utrzymanie Centrum Obliczeniowego (w tym zakup serwerów obliczeniowych) i dostęp do możliwości obliczeniowych (koszty energii, serwis techniczny, wsparcie techniczne dla prowadzących obliczenia, itp).
 
-    Nie złożenie sprawozdania przez kierownika grantu może skutkować zamknięciem grantu.
+    Nie złożenie sprawozdania przez kierownika grantu może skutkować zamknięciem grantu. 
 
     Wam i Nam zależy aby obliczenia naukowe odbywały się niekomercyjnie.
 
@@ -93,13 +93,13 @@ W sekcji `Powiązane Granty` należy podać informację o zródle finansowania b
 
 ### Wyślij sprawozdanie
 
-W celu wysłania sprawozdania należy kliknąć w link `Dodaj sprawozdanie` na górze strony.
+W celu wysłania sprawozdania należy kliknąć w link `Wyślij sprawozdanie` na górze strony.
 
-<center> ![](screen_shots/zloz_sprawozdanie.png) </center>
+<center> ![](screen_shots/wyslij_sprawozdanie.png) </center>
 
 ### Zatwierdź
 
-Zatwierdzamy sprawozdanie.
+Kliknij w `Zatwierdź` aby wysłać sprawozdanie (zmiany nie będą później możliwe).
 
 <center> ![](screen_shots/zatwierdz_sprawozdanie.png) </center>
 
