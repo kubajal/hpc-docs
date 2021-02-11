@@ -77,10 +77,9 @@ nav:
     - Gaussian: Licencje_krajowe/gaussian.md
 - Podręcznik grantowy:
     - Zakładanie konta: Podrecznik_grantowy/zakladanie_konta.md
-    - Nazwa konta i hasło: Podrecznik_grantowy/nazwa_konta_i_haslo.md
     - Poczta elektroniczna: Podrecznik_grantowy/poczta_elektroniczna.md
     - Jak wystąpić o grant obliczeniowy: Podrecznik_grantowy/jak_wystapic_o_grant_obliczeniowy.md
-    - Konkurs Okeanos: Podrecznik_grantowy/konkurs_okeanos.md
+    - Rodzaje grantów: Podrecznik_grantowy/rodzaje_grantow.md
     - Rozliczanie grantu: Podrecznik_grantowy/rozliczanie_grantu.md
 
 - (EN) Grants User Guide:
@@ -94,6 +93,7 @@ nav:
 
 - Instrukcje:
   - Logowanie:
+    - Nazwa konta i hasło: Tutorials/Logowanie/nazwa_konta_i_haslo.md
     - Logowanie SSH: Tutorials/Logowanie/ssh.md
     - Logowanie SSH (Użytkownicy Windows): Tutorials/Logowanie/ssh_windows.md
     - Tunelowanie SSH: Tutorials/Logowanie/ssh-tunel.md

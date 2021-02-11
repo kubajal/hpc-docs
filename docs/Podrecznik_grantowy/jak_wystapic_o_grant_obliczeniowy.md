@@ -11,12 +11,12 @@ System pozwala na:
 - składanie wniosków o grant obliczeniowy w ICM
 - dodawanie współwykonanwców do grantu
 
-### Jak przygotować *wniosek o przyznanie grantu obliczeniowego*
+## Jak przygotować *wniosek o przyznanie grantu obliczeniowego*
 
-Możliwa jest aplikacja o grant na komputarach Topola, Okeanos oraz Rysy.
+Możliwa jest aplikacja o grant obliczeniowy na komputarach Topola, Okeanos oraz Rysy.
 
-Typy grantów na komputerze  **Okeanos**  (w zależności od ilości zadeklarowanych CPUh) opisane są
-na stronie [konkurs Okeanos](./konkurs_okeanos.md)
+Rodzaje grantów obliczeniowych (w zależności od ilości zadeklarowanych CPUh) opisane są
+na stronie [rodzaje grantów](./rodzaje_grantow.md).
 
 Po wejściu na stronę <https://granty.icm.edu.pl/IcmGrants> należy:
 
@@ -28,23 +28,22 @@ Po wejściu na stronę <https://granty.icm.edu.pl/IcmGrants> należy:
     Grantu**:
       - tytuł projektu zgodny z tematem planowanych obliczeń,
       
-      - wybrać dziedzinę nauki ( lub wprowadzić własną zaznaczając opcję
+      - wybrać dziedzinę nauki (lub wprowadzić własną zaznaczając opcję
         *inne* i wypełniając pole tekstowe),
-	
+
       - wybrać oprogramowanie, które będzie wykorzystywane przy
         obliczeniach, z rozwijanej listy (w przypadku używania własnego
         skryptu pozostaw na liście oprogramowanie ABINIT),
 	
-      - podać wymagania sprzętowe np liczbę procesorów, niezbędną
-        pamięć, zasoby dyskowe czy serwer obliczeniowy,
-	
-      - wpisać wymagania dodatkowe (np.konfigurację systemu, sieci itp.),
-      
+      - podać sumaryczna liczba rdzenio-godzin (CPUh) oraz opis planowanych symulacji,
+
+      - podać uzasadnienie wnioskowanych zasobów
+
       - zaznaczyć zasoby z których grant chciałby korzystać.
 
-      - przewidywany czas trwania grantu (wskazane jest aby po tym
-        czasie utworzyć nowy grant obliczeniowy dla kontynuacji lub
-        nowych obliczeń, a poprzedni grant zgłosić do zamknięcia.
+      - przewidywany czas trwania grantu, standardowo przyjmuje się 12 miesięcy
+        (wskazane jest aby po tym czasie utworzyć nowy grant obliczeniowy dla kontynuacji  
+        lub nowych obliczeń, a poprzedni grant zgłosić do zamknięcia).
 	
       - słowa kluczowe dla projektu i technik obliczeniowych (obydwa
         pola mogą być wykorzystywane przy wyszukiwaniu grantu)
@@ -54,11 +53,6 @@ Po wejściu na stronę <https://granty.icm.edu.pl/IcmGrants> należy:
         także **uzasadnienie wykorzystania komputerów dużej mocy do
         realizacji grantu**. Prosimy o NIE wprowadzanie w sprawozdaniu
         apostrofów, wyboldowania tekstu, italic'i itp).
-
-      - poparcie (doktorantów uruchamiające grant na potrzeby
-        prowadzenia obliczeń w ramach doktoratu, prosimy o podanie
-        danych opiekuna naukowego, który akceptuje uruchomienie grantu
-        obliczeniowego)
 
   - W tym miejscu należy **zatwierdzić dane**
 

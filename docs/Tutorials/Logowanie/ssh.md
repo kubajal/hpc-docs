@@ -14,19 +14,9 @@ draft: false
 !!! Info
     Od grudnia 2020 r. logowanie za pomocą protokołu ssh wymaga autoryzacji dwu-składnikowej (2FA - 2 Factors Authentication) z użyciem tokenów typu TOTP (Time-based One-time Password).
 
-## Konto i hasło
+## Nazwa konta i ustawianie hasła
 
-Nazwa konta użytkownika i hasło tworzone są w momencie rejestracji użytkownika w bazie grantów (dotyczy kierownika grantu) lub na etapie dodawania współwykonawcy do grantu.
-
-### Zmiana hasła
-
-Zmiana hasła możliwa jest pod adresem <https://haslo.icm.edu.pl/>
-
-W chwili skierowania konta do utworzenia, hasło jest wysyłane automatycznym mailem.
-Przed pierwszym logowaniu konieczna jest jego zmiana.
-Dopiero po dokonaniu zmiany hasła odblokuje się dostęp do serwera dostępowego `hpc.icm.edu.pl`. 
-Hasło wysyłane jest automatycznym mailem, w chwili skierowania konta do utworzenia. 
-Login jest zgodny z podanym na formularzu użytkownika.
+Przy pierwszym logowaniu konieczna jest [zmiana hasła](./nazwa_konta_i_haslo.md).
 
 ## Autoryzacja dwu-składnikowa (2FA)
 
