@@ -1,4 +1,6 @@
-### Informacje ogólne
+# Informacje ogólne
+
+Usługi poczty ICM świadczone są wyłącznie dla pracowników ICM.
 
 - Centralnym serwerem pocztowym w ICM jest `mail.icm.edu.pl`.
 

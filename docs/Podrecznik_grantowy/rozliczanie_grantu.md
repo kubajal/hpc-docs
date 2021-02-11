@@ -55,22 +55,46 @@ Od 2021r. sprawozdanie należy składać poprzez [System alokacji zasobów](http
 
 Poniżej szczegółowa instrukcja.
 
+### Logowanie
+
+Logujemy się korzystając z nazwy użytkownika i hasła takiego jak na serwer dostępowy (`hpc.icm.edu.pl`).
+
 <center> ![](screen_shots/zaloguj_sie.png) </center>
 
-- Logujemy się korzystając z nazwy użytkownika i hasła takiego jak na serwer dostępowy (`hpc.icm.edu.pl`). 
+### Wybór projektu
+
+Wybieramy projekty które wymagają sprawozdania.
 
 <center> ![](screen_shots/projekty_wymagaja_sprawozdania.png) </center>
 
-- Wybieramy projekty które wymagają sprawozdania.
+### Streszczenie Projektu
+
+W celu uzupełnienia streszczenia należy kliknąć w 'Zaktualizuj informacje o projekcie'.
 
 <center> ![](screen_shots/streszczenie_i_zarzadzanie.png) </center>
 
-- Uzupełniamy dane: Streszczenie, Grant (NCN, NCBiR, itp), Publikacje oraz Sprawozdanie.
+### Publikacje
+
+Warto zauważyć, że w celu dodania publikacji wystarczy jej DOI.
 
 <center> ![](screen_shots/dodaj_publikacje.png) </center>
 
-- Warto zauważyć, że w celu dodania publikacji wystarczy jej DOI.
+### Sprawozdanie
+
+Uzupełniamy pozostałe dane: Grant (NCN, NCBiR, itp), Publikacje oraz Sprawozdanie.
 
 <center> ![](screen_shots/szczegoly-projektu.png) </center>
 
-- Gotowe. Po uzupełnieniu pól nie trzeba nic więcej robić. Dziękujemy.
+### Wyślij sprawozdanie
+
+W celu wysłania sprawozdania należy kliknąć w link `Dodaj sprawozdanie` na górze strony.
+
+<center> ![](screen_shots/zloz_sprawozdanie.png) </center>
+
+### Zatwierdź
+
+Zatwierdzamy sprawozdanie.
+
+<center> ![](screen_shots/zatwierdz_sprawozdanie.png) </center>
+
+Gotowe.

@@ -126,6 +126,7 @@ spack list xxx - pokazuje co umie zainstalować
 spack info xxx - pokazuje w jakich wersje i zależności dla danej paczki
 spack external find - aktulalizuje wiedze o paczkach obecnych w
 systemie (np. zainstalowanych bez pomocy spacka)
+spack config get config - pokazuje konfiguracje (tempdir, spack-cache, etc)
 ```
 
 ### Przygotowanie do instalacji
