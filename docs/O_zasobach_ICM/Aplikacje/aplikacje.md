@@ -342,48 +342,6 @@ przypadku również mają zastosowanie powyższe uwagi dotyczące licencji.
 
 ***
 
-###**EXCITING**
-*A full-potential all-electron density-functional-theory package implementing the families of linearized augmented planewave methods. It can be applied to all kinds of materials, irrespective of the atomic species involved, and also allows for exploring the physics of core electrons. A particular focus are excited states within many-body perturbation theory* (za [stroną internetową][exciting] projektu).
-
-[exciting]: http://exciting-code.org
-* [http://exciting-code.org][exciting]
-* Licencja: GNU General Public License
-* Dostępność: Topola
-
-***
-
-###**ESYS-PARTICLE**
-* *Open Source software for particle-based numerical modelling. The software implements the Discrete Element Method (DEM), a widely used technique for modelling processes involving large deformations, granular flow and/or fragmentation* (za [stroną internetową][esys] projektu).
-
-[esys]: https://launchpad.net/esys-particle
-* [https://launchpad.net/esys-particle][esys]
-* Licencja: Apache License 2.0
-* Dostępność: Okeanos
-
-***
-
-###**FHI-AIMS**
-* Full-Potential, All-Electron Electronic Structure Theory with Numeric Atom-Centered Basis Functions.
-
-[fhi]: https://aimsclub.fhi-berlin.mpg.de/
-* [https://aimsclub.fhi-berlin.mpg.de/][fhi]
-* Licencja: [własnościowa][fhi-license]
-[fhi-license]: https://aimsclub.fhi-berlin.mpg.de/aims_obtaining_simple.php
-* Dostępność: Topola
-
-***
-
-###**GAMESS**
-* *The General Atomic and Molecular Electronic Structure System (GAMESS)
-is a general ab initio quantum chemistry package.*
-
-[gamess]: https://www.msg.chem.iastate.edu/gamess/
-* [https://www.msg.chem.iastate.edu/gamess/][gamess]
-* Licencja: [własnościowa][gamess-license]
-[gamess-license]: https://www.msg.chem.iastate.edu/gamess/download.html
-* Dostępność: Topola
-
-***
 
 ###**GAUSSIAN**
 * Electronic structure modelling software.
@@ -454,15 +412,6 @@ is a general ab initio quantum chemistry package.*
 * [https://www.openfoam.com/](https://www.openfoam.com/)
 * Licencja: GNU General Public License
 * Dostępność: Topola, Okeanos
-
-***
-
-###**OpenMX**
-* *OpenMX (Open source package for Material eXplorer) is a software package for nano-scale material simulations based on density functional theories (DFT), norm-conserving pseudopotentials, and pseudo-atomic localized basis functions. The methods and algorithms used in OpenMX and their implementation are carefully designed for the realization of large-scale ab initio electronic structure calculations on parallel computers based on the MPI or MPI/OpenMP hybrid parallelism* (za [stroną internetową][openmx] projektu).
-* [http://www.openmx-square.org/][openmx]
-[openmx]: http://www.openmx-square.org
-* Licencja: GNU General Public License
-* Dostępność: Topola
 
 ***
 
