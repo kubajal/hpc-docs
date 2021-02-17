@@ -56,8 +56,10 @@ zamieszczane w bazie grantów oraz zawierać następującą informację:
 
 Od 2021r. sprawozdanie należy składać poprzez <https://granty.icm.edu.pl/sprawozdania>.
 
-Jeśli nie prowadziłeś obliczeń, lub z innych powodów nie zamieszczasz sprawozdania kliknij w `Wyślij sprawozdanie` i wypełnij na dole strony pole `Powód nieaktualizowania projektu`.
+Jeśli nie prowadziłeś obliczeń, lub z innych powodów nie zamieszczasz sprawozdania kliknij w `Wyślij sprawozdanie` i wypełnij na dole strony **tylko jedno** pole: `Powód nieaktualizowania projektu`. 
 
+<!-- [Powód nieaktualizowania projektu](./rozliczanie_grantu.md#powod-nieaktualizowania-projektu "wikilink").
+ -->
 Poniżej szczegółowa instrukcja.
 
 ### Logowanie
@@ -97,10 +99,11 @@ W celu wysłania sprawozdania należy kliknąć w link `Wyślij sprawozdanie` na
 
 <center> ![](screen_shots/wyslij_sprawozdanie.png) </center>
 
+
+
 ### Zatwierdź
 
-Kliknij w `Zatwierdź` aby wysłać sprawozdanie (zmiany nie będą później możliwe).
+Kliknij w `Zatwierdź` aby wysłać sprawozdanie (zmiany nie będą później możliwe). Gotowe.
 
 <center> ![](screen_shots/zatwierdz_sprawozdanie.png) </center>
 
-Gotowe.
