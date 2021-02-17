@@ -43,17 +43,11 @@ przypadku również mają zastosowanie powyższe uwagi dotyczące licencji.
     === "Okeanos"
 
         ``` .sh
-        Generated on: wto, 23 cze 2020, 21:27:53 CEST
+        Generated on: czw, 11 lut 2021, 19:41:41 CET
 
         abinit/8.10.1
         abinit/8.10.3(default)
         abinit/8.10.3-patch
-
-        amber/14
-
-        ansys/17.0
-        ansys/17.1
-        ansys/19.1
 
         bedtools2/2.29.2
 
@@ -61,17 +55,12 @@ przypadku również mają zastosowanie powyższe uwagi dotyczące licencji.
 
         cp2k/6.1.0(default)
 
-        cpmd/v4
-
-        elk/5.2.14
-
         espresso/6.1
         espresso/6.1.0(default)
         espresso/6.2.1
         espresso/6.4
         espresso/6.5
-
-        esys-particle/2.3.5
+        espresso/6.6
 
         fluent/17.0
         fluent/17.1
@@ -82,12 +71,17 @@ przypadku również mają zastosowanie powyższe uwagi dotyczące licencji.
         gromacs/2019.0
         gromacs/2020(default)
 
+        julia/1.3.0
+
         lammps/31Mar17
         lammps/5Jun19(default)
 
         ls-dyna/10.1.0(default)
         ls-dyna/11.0.0
+        ls-dyna/11.1
         ls-dyna/8.0.0
+
+        module_permission_check
 
         namd/2.11
         namd/2.13(default)
@@ -99,8 +93,6 @@ przypadku również mają zastosowanie powyższe uwagi dotyczące licencji.
 
         openfoam/1218(default)
 
-        phonopy/1.10.4
-
         r/3.4.2
 
         samtools/1.10
@@ -108,14 +100,21 @@ przypadku również mają zastosowanie powyższe uwagi dotyczące licencji.
         siesta/4.1
         siesta/4.1-b4
 
+        tau/2.30
+
         tensorflow/1.13.0
 
         vasp/5.2.12
         vasp/5.4.4(default)
         vasp/5.4.4_optics
+        vasp/5.4.4-spinorb
         vasp/5.4.4_vtst
+        vasp/6.1.1
 
         vtstscripts/93
+
+        wannier90/3.1.0-gnu
+        wannier90/3.1.0-intel
 
         xz/5.2.4
         ```
@@ -123,70 +122,44 @@ przypadku również mają zastosowanie powyższe uwagi dotyczące licencji.
     === "Topola"
 
         ``` .sh
-        Generated on: wto, 23 cze 2020, 21:36:18 CEST
+        Generated on: czw, 11 lut 2021, 19:47:07 CET
 
         abinit/8.0.6
         abinit/8.10.3(default)
         abinit/8.4.4
+        abinit/9.2.2
 
-        atat/3.36
+        ambertools/20
 
-        blastplus/2.2.28(default)
-
-        bwa/0.7.12(default)
-
-        cfour/1.0
-
-        chargemol/09.02.2017
+        bedtools/2.30.0
 
         cp2k/6.1.0(default)
 
         cpmd/v4
 
+        crystal/17
+
         dalton/2015
 
-
-
-        elk/4.0.15
         elk/4.3.6(default)
-        elk/4.3.6_libxc
+        elk/6.8.4
 
-        espresso/4.3.2
         espresso/5.0.2
         espresso/5.0.3
-        espresso/5.1.1
-        espresso/5.2.0
-        espresso/5.3.0
         espresso/6.1.0(default)
         espresso/6.3.0
         espresso/6.5
 
-        exciting/boron
-        exciting/nitrogen
-
-        fluent/17.1.0
-        fluent/17.2.0
+        fluent/15.0
         fluent/18.0
         fluent/18.2(default)
         fluent/19.0
         fluent/20.1
 
-        fluka/2011.2c
-        fluka/2011.2c-3
-
-        freefem/3.56-1
-
-        gadget/2.0.7
-
-        gamess/2012.R2
-
         gaussian/g09.B.01
         gaussian/g09.D.01
         gaussian/g09.E.01
         gaussian/g16.A.01(default)
-
-        genesis/parallel/2.3.1
-        genesis/sequential/2.3
 
         gromacs/2020
         gromacs/5.1.1(default)
@@ -194,19 +167,10 @@ przypadku również mają zastosowanie powyższe uwagi dotyczące licencji.
         hadoop/cdh-4.3.0
         hadoop/cdh-tt-4.3.0
 
-        imb/2014
-
-        julia/0.5.0
-        julia/0.6.2
         julia/1.1.1
 
-        lammps/16Mar18
-        lammps/16Mar18_mpi3
         lammps/16Mar18_mpi3_rigid
-        lammps/30Jul16
-        lammps/30Jul16_reax
         lammps/5Jun19(default)
-        lammps/6Dec13-mkl
 
         mathematica/10.3
         mathematica/11.0
@@ -214,78 +178,50 @@ przypadku również mają zastosowanie powyższe uwagi dotyczące licencji.
         matlab/R2016b(default)
 
         meep/1.14
-        meep/1.2
         meep/1.3
 
-        migraine/0.5
-
-        mrbayes/3.2.2(default)
-
-        music/1.0
+        module_permission_check
 
         namd/2.13(default)
-        namd/2.9b2
 
-        newtonx/1.4.0
-
-        nwchem/6.3
         nwchem/6.8(default)
 
-        octave/3.8.0
+        octave/5.2.0
 
         openfoam/2.1.1
         openfoam/5.0
 
-        openmx/3.7
-
-        orca/3.0.1
-        orca/3.0.3
-        orca/4.0.1
         orca/4.2.1
 
-        paraview/4.1.0
-
-        patran/2012.2.2
-
-        pcj-blast/0.1.0(default)
+        picard-tools/2.24.0
 
         plumed/2.2.1
 
-        psi4/0b5
-
-        r/3.0.2
-        r/3.1.0
-        r/3.1.2
         r/3.5.1
+        r/4.0.3
 
-        raspa/2.0
-
-        rosetta/2013wk48-bin
-        rosetta/2013wk48-bin_single(default)
         rosetta/2020.08.61146
 
-        rx/gnu/3.1.2
-        rx/gnu/3.3.1
-        rx/gnu/3.3.2
-        rx/gnu/3.3.3
-        rx/gnu/3.4.0
-        rx/intel/3.1.2
-        rx/intel/3.3.1
-        rx/intel/3.3.2
-        rx/intel/3.3.3
-        rx/intel/3.4.0(default)
-
-        shifter/16.08
+        samtools/1.11
 
         siesta/4.0b
+        siesta/4.1-b4
 
-        sire/14.3
+        star/2.7.7a
 
+        subread/2.0.1
+
+        trimmomatic/0.39
+
+        vasp/5.4.1
+        vasp/5.4.4(default)
+        vasp/5.4.4_wannier
+        vasp/5.4.4_wannier_patch
+        vasp/6.1.1
 
         wannier90/2.0.1
         wannier90/3.0.0(default)
-
-        wannier_tools/2.4.1
+        wannier90/3.1.0
         ```
 
     === "Bash"
@@ -311,7 +247,7 @@ przypadku również mają zastosowanie powyższe uwagi dotyczące licencji.
         done
         ```
 
-## Lista aplikacji
+## Opis aplikacji
 
 ###**ABINIT**
 * *A software suite to calculate the optical, mechanical,

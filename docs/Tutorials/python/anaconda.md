@@ -54,5 +54,5 @@ Następnie (lub przy kolejnym uruchomieniu):
 
 Przydatne linki:
 
-<https://conda.io/projects/conda/en/latest/user-guide/cheatsheet.html>
-<https://conda.io/projects/conda/en/latest/commands.html>
+- <https://conda.io/projects/conda/en/latest/user-guide/cheatsheet.html>
+- <https://conda.io/projects/conda/en/latest/commands.html>

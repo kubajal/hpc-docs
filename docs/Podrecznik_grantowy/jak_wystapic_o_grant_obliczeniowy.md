@@ -34,8 +34,8 @@ Po wejściu na stronę <https://granty.icm.edu.pl/IcmGrants> należy:
       - wybrać oprogramowanie, które będzie wykorzystywane przy
         obliczeniach, z rozwijanej listy (w przypadku używania własnego
         skryptu pozostaw na liście oprogramowanie ABINIT),
-	
-      - podać sumaryczna liczba rdzenio-godzin (CPUh) oraz opis planowanych symulacji,
+
+      - podać sumaryczną liczba rdzenio-godzin (CPUh) oraz opis planowanych symulacji,
 
       - podać uzasadnienie wnioskowanych zasobów
 
@@ -44,7 +44,7 @@ Po wejściu na stronę <https://granty.icm.edu.pl/IcmGrants> należy:
       - przewidywany czas trwania grantu, standardowo przyjmuje się 12 miesięcy
         (wskazane jest aby po tym czasie utworzyć nowy grant obliczeniowy dla kontynuacji  
         lub nowych obliczeń, a poprzedni grant zgłosić do zamknięcia).
-	
+
       - słowa kluczowe dla projektu i technik obliczeniowych (obydwa
         pola mogą być wykorzystywane przy wyszukiwaniu grantu)
 
