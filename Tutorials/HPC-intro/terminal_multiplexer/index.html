@@ -18,7 +18,7 @@
     
     
       
-        <title>Bash - Dokumentacja ICM UW</title>
+        <title>Terminal multiplexer - Dokumentacja ICM UW</title>
       
     
     
@@ -68,7 +68,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#vim" class="md-skip">
+        <a href="#terminal-multiplexer" class="md-skip">
           Skip to content
         </a>
       
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Bash
+              Terminal multiplexer
             
           </span>
         </div>
@@ -830,45 +830,11 @@
             
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Bash i terminal
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../bash_intro/" class="md-nav__link">
         Bash i terminal
       </a>
-      
-        
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#vim" class="md-nav__link">
-    vim
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -936,11 +902,20 @@
             
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../terminal_multiplexer/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Terminal multiplexer
       </a>
+      
     </li>
   
 
@@ -1517,21 +1492,8 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
+    
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#vim" class="md-nav__link">
-    vim
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -1543,25 +1505,65 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://git.icm.edu.pl/owu/hpc-docs/edit/master/docs/Tutorials/HPC-intro/bash_intro.md" title="Edit this page" class="md-content__button md-icon">
+                  <a href="https://git.icm.edu.pl/owu/hpc-docs/edit/master/docs/Tutorials/HPC-intro/terminal_multiplexer.md" title="Edit this page" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
                   </a>
                 
                 
-                  <h1>Bash i terminal</h1>
-                
-                <p>Materiały dostępne sa na:
-<a href="http://www.opcode.eu.org/">http://www.opcode.eu.org/</a></p>
-<!-- W celu uruchomienia terminala można użyć skrótu klawiszowego `Ctrl+Alt+T`. -->
+                <h1 id="terminal-multiplexer">Terminal multiplexer</h1>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<p>Czy kiedykolwiek spotkałeś się z sytuacją, w której wykonujesz długotrwałe, interaktywne zadanie na zdalnym komputerze i nagle twoje połączenie zostaje zerwane, sesja SSH zakończona, a twoja praca utracona? 
+Na szczęście istnieje narzędzie o nazwie <strong>Screen</strong>, które pozwala nam wznowić sesje.</p>
+</div>
+<p>Program <code>screen</code> to multiplekser terminala. Oznacza to, że można rozpocząć sesję <code>screen</code>, a następnie otworzyć dowolną liczbę okien (terminali wirtualnych) wewnątrz tej sesji. Procesy działające w <code>screen</code> będą nadal działać, nawet gdy ich okno nie będzie widoczne (np. połączenie internetowe zostanie zerwane).</p>
+<p>Poniżej przykład użycia programu <code>screen</code> na komputerze Okeanos.</p>
+<p>1) <a href="../../Logowanie/ssh/">Logujemy się</a></p>
+<div class="codehilite"><pre><span></span><code><span class="err">username@okeanos-login1:~&gt; # należy zapamiętać na którym login-nodzie jesteśmy</span>
+</code></pre></div>
 
-<h2 id="vim">vim</h2>
+
+<p>2) Uruchamiamy <code>screen</code>'a</p>
+<div class="codehilite"><pre><span></span><code><span class="err">username@okeanos-login1:~&gt; screen -S &lt;nazwa_zadania&gt;</span>
+</code></pre></div>
+
+
+<p>3) Uruchamiamy zadanie w trybie interaktywnym</p>
+<div class="codehilite"><pre><span></span><code><span class="err">username@okeanos-login1:~&gt; srun -n1 --partition=okeanos --account=GrantXX_YY --time=48:00:00 --pty /bin/bash -l</span>
+</code></pre></div>
+
+
+<p>4) Włączamy program w trybie interaktywnym, np kompilacje.</p>
+<div class="codehilite"><pre><span></span><code><span class="n">username</span><span class="p">@</span><span class="nl">nid00015</span><span class="p">:</span><span class="o">~&gt;</span> <span class="n">make</span> <span class="o">-</span><span class="n">j1</span> <span class="p">.</span><span class="o">/</span><span class="n">mystuff</span>
+<span class="cp"># w przypadku openfoam&#39;a</span>
+<span class="n">username</span><span class="p">@</span><span class="nl">nid00015</span><span class="p">:</span><span class="o">~&gt;</span> <span class="n">git</span> <span class="n">clone</span> <span class="nl">https</span><span class="p">:</span><span class="c1">//git.icm.edu.pl/owu-public/spack-icm-okeanos.git</span>
+<span class="n">username</span><span class="p">@</span><span class="nl">nid00015</span><span class="p">:</span><span class="o">~&gt;</span> <span class="n">source</span> <span class="p">.</span><span class="o">/</span><span class="n">spack</span><span class="o">-</span><span class="n">icm</span><span class="o">-</span><span class="n">okeanos</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">spack</span><span class="o">/</span><span class="n">setup</span><span class="o">-</span><span class="n">env</span><span class="p">.</span><span class="n">sh</span>
+<span class="n">username</span><span class="p">@</span><span class="nl">nid00015</span><span class="p">:</span><span class="o">~&gt;</span> <span class="n">spack</span> <span class="n">spec</span> <span class="o">-</span><span class="n">LI</span> <span class="n">openfoam</span><span class="mi">@2006</span><span class="o">%</span><span class="n">gcc</span><span class="mf">@8.3.0</span><span class="o">^</span><span class="n">mpich</span>
+<span class="n">username</span><span class="p">@</span><span class="nl">nid00015</span><span class="p">:</span><span class="o">~&gt;</span> <span class="n">spack</span> <span class="n">install</span> <span class="o">-</span><span class="n">j1</span> <span class="o">--</span><span class="n">verbose</span> <span class="n">openfoam</span><span class="mi">@2006</span><span class="o">%</span><span class="n">gcc</span><span class="o">^</span><span class="n">mpich</span>
+</code></pre></div>
+
+
+<p>Więcej o kompilacji z użyciem <code>spack'a</code> jest dostępny <a href="../instalacja_oprogramowania_spack/">tu</a>.</p>
+<p>5) Odłączamy sesję screena <code>Ctrl+A+D</code></p>
+<p>6) Wylogowujemy się z Okeanosa i wyłączamy komputer na noc...</p>
+<p>7) Rano logujemy się z powrotem na Okeanosa. Jeśli został nam przydzielony inny węzeł dostępowy, należy się przelogować
+(np. <code>username@okeanos-login2:~&gt; ssh login1</code>)</p>
+<div class="codehilite"><pre><span></span><code><span class="err">username@okeanos-login1:~&gt;screen -ls # sprawdzamy listę aktywnych sesji screen&#39;a</span>
+<span class="err">username@okeanos-login1:~&gt;screen -r &lt;nazwa_zadania&gt; # logujemy się do właściwej</span>
+<span class="err">username@nid00015:~&gt; # kontynuujemy zadanie na węźle obliczeniowym</span>
+</code></pre></div>
+
+
+<p>Przydatne polecenia:</p>
+<div class="highlight"><pre><span></span><code><span class="go">echo $STY  # zwraca nazwę sesji, np. 12345.pts-abc-01-12 jeśli jesteśmy wewnątrz sesji</span>
+<span class="go">echo $TERM # zwraca &quot;screen&quot; jeśli jesteśmy wewnątrz sesji</span>
+</code></pre></div>
+
+<p>Więcej przykładów:</p>
 <ul>
-<li><code>:w</code> - 'write'</li>
-<li><code>:wq!</code> - 'write and quit'</li>
-<li><code>:q!</code> - 'quit without saving (good for mistakes)</li>
-<li><code>i</code> - insert! (Insert mode, Replace mode)</li>
-<li><code>Esc</code> - back to command mode</li>
-<li><code>u</code> to undo in command mode</li>
+<li>google: screen terminal multiplexer examples</li>
+<li><a href="https://linuxize.com/post/how-to-use-linux-screen/">https://linuxize.com/post/how-to-use-linux-screen/</a></li>
+<li><a href="https://kapeli.com/cheat_sheets/screen.docset/Contents/Resources/Documents/index">https://kapeli.com/cheat_sheets/screen.docset/Contents/Resources/Documents/index</a></li>
 </ul>
                 
                   
@@ -1571,7 +1573,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 16, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 23, 2021</span>
     
   </small>
 </div>
@@ -1593,7 +1595,7 @@
   
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
-        <a href="../introduction/" class="md-footer__link md-footer__link--prev" rel="prev">
+        <a href="../instalacja_oprogramowania_spack/" class="md-footer__link md-footer__link--prev" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1602,19 +1604,19 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              Wstęp
+              Instalacja oprogramowania - spack
             </div>
           </div>
         </a>
       
       
-        <a href="../kopiowanie_plikow/" class="md-footer__link md-footer__link--next" rel="next">
+        <a href="../status_zadania/" class="md-footer__link md-footer__link--next" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              Kopiowanie plików
+              Status zadania
             </div>
           </div>
           <div class="md-footer__button md-icon">
