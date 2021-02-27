@@ -1701,6 +1701,8 @@ spack info xxx - pokazuje w jakich wersje i zależności dla danej paczki
 spack external find - aktulalizuje wiedze o paczkach obecnych w
 systemie <span class="o">(</span>np. zainstalowanych bez pomocy spacka<span class="o">)</span>
 spack config get config - pokazuje konfiguracje <span class="o">(</span>tempdir, spack-cache, etc<span class="o">)</span>
+spack gc  <span class="c1"># garbage collection</span>
+spack uninstall --dependents xxx <span class="c1"># usuwa xxx wraz z zależnościami</span>
 </code></pre></div>
 
 <h3 id="przygotowanie-do-instalacji">Przygotowanie do instalacji</h3>
@@ -1714,6 +1716,10 @@ xxx^zaleznosc_np_openmpi
 xxx~bez_tej_zaleznosci
 
 spack install xxx@wersja_1234^zaleznosc_np_openmpi
+
+spack install --verbose xxx
+spack install --fake xxx <span class="c1"># konfiguruje paczki, ale nie buduje</span>
+spack install -j1 xxx <span class="c1"># instaluje na innej niż domyślna (16) liczbie CPU.</span>
 </code></pre></div>
 
 <h3 id="inne">Inne</h3>
@@ -1741,7 +1747,7 @@ cat spack-icm-topola/var/spack/repos/icm-edu-pl/packages/
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 11, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 27, 2021</span>
     
   </small>
 </div>

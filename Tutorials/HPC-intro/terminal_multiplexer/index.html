@@ -1516,17 +1516,11 @@ Na szczęście istnieje narzędzie o nazwie <strong>Screen</strong>, które pozw
 </code></pre></div>
 
 
-<p>4) Włączamy program w trybie interaktywnym, np kompilacje.</p>
-<div class="codehilite"><pre><span></span><code><span class="n">username</span><span class="p">@</span><span class="nl">nid00015</span><span class="p">:</span><span class="o">~&gt;</span> <span class="n">make</span> <span class="o">-</span><span class="n">j1</span> <span class="p">.</span><span class="o">/</span><span class="n">mystuff</span>
-<span class="cp"># w przypadku openfoam&#39;a</span>
-<span class="n">username</span><span class="p">@</span><span class="nl">nid00015</span><span class="p">:</span><span class="o">~&gt;</span> <span class="n">git</span> <span class="n">clone</span> <span class="nl">https</span><span class="p">:</span><span class="c1">//git.icm.edu.pl/owu-public/spack-icm-okeanos.git</span>
-<span class="n">username</span><span class="p">@</span><span class="nl">nid00015</span><span class="p">:</span><span class="o">~&gt;</span> <span class="n">source</span> <span class="p">.</span><span class="o">/</span><span class="n">spack</span><span class="o">-</span><span class="n">icm</span><span class="o">-</span><span class="n">okeanos</span><span class="o">/</span><span class="n">share</span><span class="o">/</span><span class="n">spack</span><span class="o">/</span><span class="n">setup</span><span class="o">-</span><span class="n">env</span><span class="p">.</span><span class="n">sh</span>
-<span class="n">username</span><span class="p">@</span><span class="nl">nid00015</span><span class="p">:</span><span class="o">~&gt;</span> <span class="n">spack</span> <span class="n">spec</span> <span class="o">-</span><span class="n">LI</span> <span class="n">openfoam</span><span class="mi">@2006</span><span class="o">%</span><span class="n">gcc</span><span class="mf">@8.3.0</span><span class="o">^</span><span class="n">mpich</span>
-<span class="n">username</span><span class="p">@</span><span class="nl">nid00015</span><span class="p">:</span><span class="o">~&gt;</span> <span class="n">spack</span> <span class="n">install</span> <span class="o">-</span><span class="n">j1</span> <span class="o">--</span><span class="n">verbose</span> <span class="n">openfoam</span><span class="mi">@2006</span><span class="o">%</span><span class="n">gcc</span><span class="o">^</span><span class="n">mpich</span>
+<p>4) Włączamy program w trybie interaktywnym.</p>
+<div class="codehilite"><pre><span></span><code><span class="err">username@nid00015:~&gt; ./mystuff</span>
 </code></pre></div>
 
 
-<p>Więcej o kompilacji z użyciem <code>spack'a</code> jest dostępny <a href="../instalacja_oprogramowania_spack/">tu</a>.</p>
 <p>5) Odłączamy sesję screena <code>Ctrl+A+D</code></p>
 <p>6) Wylogowujemy się z Okeanosa i wyłączamy komputer na noc...</p>
 <p>7) Rano logujemy się z powrotem na Okeanosa. Jeśli został nam przydzielony inny węzeł dostępowy, należy się przelogować
@@ -1556,7 +1550,7 @@ Na szczęście istnieje narzędzie o nazwie <strong>Screen</strong>, które pozw
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 23, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 27, 2021</span>
     
   </small>
 </div>
