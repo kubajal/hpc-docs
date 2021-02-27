@@ -127,6 +127,8 @@ spack info xxx - pokazuje w jakich wersje i zależności dla danej paczki
 spack external find - aktulalizuje wiedze o paczkach obecnych w
 systemie (np. zainstalowanych bez pomocy spacka)
 spack config get config - pokazuje konfiguracje (tempdir, spack-cache, etc)
+spack gc  # garbage collection
+spack uninstall --dependents xxx # usuwa xxx wraz z zależnościami
 ```
 
 ### Przygotowanie do instalacji
@@ -142,6 +144,10 @@ xxx^zaleznosc_np_openmpi
 xxx~bez_tej_zaleznosci
 
 spack install xxx@wersja_1234^zaleznosc_np_openmpi
+
+spack install --verbose xxx
+spack install --fake xxx # konfiguruje paczki, ale nie buduje
+spack install -j1 xxx # instaluje na innej niż domyślna (16) liczbie CPU.
 ```
 
 ### Inne

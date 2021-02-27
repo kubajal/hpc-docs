@@ -21,17 +21,9 @@ Poniżej przykład użycia programu `screen` na komputerze Okeanos.
 
     username@okeanos-login1:~> srun -n1 --partition=okeanos --account=GrantXX_YY --time=48:00:00 --pty /bin/bash -l
 
-4) Włączamy program w trybie interaktywnym, np kompilacje.
+4) Włączamy program w trybie interaktywnym.
 
-
-    username@nid00015:~> make -j1 ./mystuff
-    # w przypadku openfoam'a
-    username@nid00015:~> git clone https://git.icm.edu.pl/owu-public/spack-icm-okeanos.git
-    username@nid00015:~> source ./spack-icm-okeanos/share/spack/setup-env.sh
-    username@nid00015:~> spack spec -LI openfoam@2006%gcc@8.3.0^mpich
-    username@nid00015:~> spack install -j1 --verbose openfoam@2006%gcc^mpich
-
-Więcej o kompilacji z użyciem `spack'a` jest dostępny [tu](./instalacja_oprogramowania_spack.md).
+    username@nid00015:~> ./mystuff
 
 5) Odłączamy sesję screena `Ctrl+A+D`
 
