@@ -27,6 +27,7 @@ repo_url: https://git.icm.edu.pl/owu/hpc-docs
 edit_uri: "https://git.icm.edu.pl/owu/hpc-docs/edit/master/docs/"
 
 markdown_extensions:
+    - attr_list
     - fenced_code
     - codehilite
     - mdx_math
