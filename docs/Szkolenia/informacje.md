@@ -14,6 +14,7 @@ Jeśli są Państwo zainteresowani tzw. szkoleniami podstawowymi (podstawy syste
 
 ## Najbliższe wydarzenia
 
-Data |Zapisy |Prowadzący |Temat |Uwagi
------|-----|-----|-----|-----
-– | –  | – | – | –
+Data           | Zapisy    | Prowadzący                     | Temat                                         | Uwagi
+---------------|-----------|--------------------------------|-----------------------------------------------|-----
+18 III 2021    | otwarte   | M. Szpindler, M. Hermanowicz   | Wprowadzenie do obliczeń na komputerach ICM   | [Program](./intro_icm_2021.md)
+–              | –         | –                              | –                                             | –

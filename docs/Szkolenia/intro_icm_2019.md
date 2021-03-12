@@ -6,6 +6,8 @@ draft: false
 
 <!-- <Last revision: 2020-04-17 by M. Hermanowicz <m.hermanowicz@icm.edu.pl> -->
 
+# Wprowadzenie do obliczeń na komputerach ICM 2019
+
 ## Program szkolenia
 
 1. Wstęp
