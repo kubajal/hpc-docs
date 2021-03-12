@@ -10,7 +10,7 @@ draft: false
 
 **Data **|**Zapisy **|**Prowadzący **|**Temat **|**Uwagi**
 -----|-----|-----|-----|-----
-2019-11-15 |zamknięte |Maciej Marchwiany, Michał Hermanowicz, Maciej Szpindler | [Wprowadzenie do obliczeń na komputerach ICM](./intro_icm.md) |wymagana rejestracja
+2019-11-15 |zamknięte |Maciej Marchwiany, Michał Hermanowicz, Maciej Szpindler | [Wprowadzenie do obliczeń na komputerach ICM](./intro_icm_2019.md) |wymagana rejestracja
 2020-01-15 |zamknięte |Michał Hermanowicz | [Wprowadzenie do obliczeń wektorowych: NEC SX-Aurora Tsubasa](./intro_nec.md) |wymagana rejestracja
 2020-09-30 |zamknięte |Nicolas Weber, Erich Focht | [Effective Neural Networks *Without* GPU. SOL: Transparent Neural Network Acceleration on NEC SX-Aurora TSUBASA](./intro_sol.md) | wymagana rejestracja
 

@@ -129,7 +129,8 @@ nav:
 - Szkolenia:
   - Informacje: Szkolenia/informacje.md
   - Materiały:
-    - Wprowadzenie do obliczeń na komputerach ICM: Szkolenia/intro_icm.md
+    - Wprowadzenie do obliczeń na komputerach ICM 2021: Szkolenia/intro_icm_2021.md
+    - Wprowadzenie do obliczeń na komputerach ICM 2019: Szkolenia/intro_icm_2019.md
     - Wprowadzenie do obliczeń wektorowych – NEC SX-Aurora Tsubasa: Szkolenia/intro_nec.md
     - Effective Neural Networks Without GPU (SOL): Szkolenia/intro_sol.md
     - Obliczenia grafowe i sieciowe: Szkolenia/intro_grafy.md
