@@ -18,3 +18,8 @@ Data           | Zapisy    | Prowadzący                     | Temat            
 ---------------|-----------|--------------------------------|-----------------------------------------------|-----
 18 III 2021    | otwarte   | M. Hermanowicz                 | Wprowadzenie do obliczeń na komputerach ICM   | [Program](./intro_icm_2021.md)
 –              | –         | –                              | –                                             | –
+
+
+## Akademia ICM
+
+Inne szkolenia organizowane przez ICM UW znajdują się na stronie [Akademia ICM](https://akademia.icm.edu.pl/archiwum-szkolen/).
