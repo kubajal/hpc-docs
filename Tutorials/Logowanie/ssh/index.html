@@ -1814,17 +1814,25 @@ W przypadku niektórych systemów możliwy/wymagany jest dodatkowy krok logowani
 <p>Przy pierwszym logowaniu konieczna jest <a href="../nazwa_konta_i_haslo/">zmiana hasła</a>.</p>
 <h2 id="autoryzacja-dwu-skadnikowa-2fa">Autoryzacja dwu-składnikowa (2FA)</h2>
 <p>Logując się przy użyciu ssh na serwer <code>hpc.icm.edu.pl</code> użytkownik podaje dane (hasło/klucz) po czym pojawia się dodatkowe zapytanie o <strong>OTP</strong> (one time password), czyli jednorazowy kod, indywidualny dla każdego, generowany przy użyciu specjalnej aplikacji.</p>
-<p>W celu uzyskania kodu konieczne jest zainstalowanie na swoim telefonie aplikacji obsługującej mechanizm tokenów <strong>TOTP</strong> (Time-based One-time Password algorithm), np. FreeOTP lub GoogleAuthenicator (dostępne w GooglePlay i AppStore). Aplikacje są darmowe i nie wymagają dostępu do internetu (działają w trybie offline).</p>
 <h3 id="2fa-rejestracja-tokenu-totp">2FA - rejestracja tokenu TOTP</h3>
 <p>W celu rejestracji tokenu prosimy o zalogowanie się swoimi danymi w ICM UW do serwisu <code>https://mfa.hpc.icm.edu.pl</code> 
 i wygenerowanie tokenu bez zmiany domyślnych ustawień (enroll token). 
-Pojawi się kod QR, który należny wskanować np. aplikacją FreeOTP. 
+Pojawi się kod QR, który należny wskanować <a href="./#aplikacje-do-obsugi-tokenow-totp">do aplikacji</a>.
 System będzie oczekiwał podania aktualnej wartości tokenu wyświetlanej w aplikacji przy logowaniu się na <code>hpc.icm.edu.pl</code>, nawet jeśli dotychczas nie został on wygenerowany.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>Po usunięciu tokenu z aplikacji w telefonie nie ma możliwości jego odzyskania (tylko reset wykonany przez administratora).</p>
 </div>
 <h3 id="aplikacje-do-obsugi-tokenow-totp">Aplikacje do obsługi tokenów TOTP</h3>
+<p>W celu uzyskania kodu konieczne jest zainstalowanie na swoim telefonie aplikacji obsługującej mechanizm tokenów <strong>TOTP</strong> (Time-based One-time Password), np. <code>FreeOTP</code> lub <code>GoogleAuthenicator</code>. 
+Aplikację są dostępne w GooglePlay i AppStore, są darmowe i nie wymagają dostępu do internetu (działają w trybie offline).</p>
+<p>Użycie aplikacji na telefon jest preferowane ponieważ:</p>
+<ul>
+<li>jest łatwiejsze w obsłudze</li>
+<li>inne urządzenie stanowi dodatkowy czynnik zabezpieczający</li>
+</ul>
+<p>Jeżeli nie jest to możliwe, należy zainstalować aplikację na komputerze.
+Szczegóły poniżej.</p>
 <h4 id="pl-gnulinux">[PL] GNU/Linux</h4>
 <p>Rejestracja tokenu TOTP przy pomocy aplikacji "pass" w systemie
 operacyjnym GNU/Linux:</p>
@@ -1849,19 +1857,34 @@ operacyjnym GNU/Linux:</p>
 <p>Wybieramy opcję "Enroll Token" i bez zmiany domyślnych parametrów
    wybieramy "Enroll".</p>
 <p><em>Uwaga: Tu musimy działać powoli, zbyt szybkie
-         przejście dalej spowoduje niemożliwość wykorzystania
-         wygenerowanego tokenu.</em></p>
-<p>Pojawi się nowa strona z obrazem kodu QR
- odpowiadającemu tokenowi. Obok kodu jest dostępny
- link (pokolorowane "here"). Kopiujemy adres, na który
- wskazuje link do schowka lub do dowolnego edytora
- tekstu.</p>
+        przejście dalej spowoduje niemożliwość wykorzystania
+        wygenerowanego tokenu.</em></p>
 </li>
+</ol>
+<p>Pojawi się nowa strona z obrazem kodu QR
+   odpowiadającemu tokenowi. Obok kodu jest dostępny
+   link (pokolorowane "here"). Kopiujemy adres, na który
+   wskazuje link do schowka lub do dowolnego edytora
+   tekstu.</p>
+<ol>
 <li>
 <p>W terminalu wykonujemy instrukcję:</p>
 <p><code>pass otp insert icm</code></p>
 <p>Program poprosi nas o podanie "otpauth://". W tym miejscu
  wklejamy w całości skopiowany wcześniej link.</p>
+<p>Pojawienie się komunikatu <code>Error: otp is not in the password store.</code> świadczy o niepoprawnym zainstalowaniu
+ wtyczki 'pass-otp' do programu 'pass'. W rezultacie komenda 'otp' nie jest rozpoznawana.
+ Przykład z błędem poniżej:</p>
+<div class="highlight"><pre><span></span><code>username@hostname:~$ pass blahblah
+Error: blahblah is not in the password store.
+
+username@hostname:~$ pass blahblah insert
+Error: blahblah is not in the password store.
+
+username@hostname:~$ pass blahblah insert icm
+Error: blahblah is not in the password store.
+</code></pre></div>
+
 </li>
 <li>
 <p>Gotowe. Można już zamknąć stronę internetową rejestracji tokenu, a
@@ -2118,7 +2141,7 @@ lub kombinacją klawiszy <code>Ctrl+D</code>.</p>
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 11, 2021</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 23, 2021</span>
     
   </small>
 </div>
