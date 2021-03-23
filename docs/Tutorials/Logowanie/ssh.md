@@ -22,19 +22,28 @@ Przy pierwszym logowaniu konieczna jest [zmiana hasła](./nazwa_konta_i_haslo.md
 
 Logując się przy użyciu ssh na serwer `hpc.icm.edu.pl` użytkownik podaje dane (hasło/klucz) po czym pojawia się dodatkowe zapytanie o **OTP** (one time password), czyli jednorazowy kod, indywidualny dla każdego, generowany przy użyciu specjalnej aplikacji.
 
-W celu uzyskania kodu konieczne jest zainstalowanie na swoim telefonie aplikacji obsługującej mechanizm tokenów **TOTP** (Time-based One-time Password algorithm), np. FreeOTP lub GoogleAuthenicator (dostępne w GooglePlay i AppStore). Aplikacje są darmowe i nie wymagają dostępu do internetu (działają w trybie offline).
-
 ### 2FA - rejestracja tokenu TOTP
 
 W celu rejestracji tokenu prosimy o zalogowanie się swoimi danymi w ICM UW do serwisu `https://mfa.hpc.icm.edu.pl` 
 i wygenerowanie tokenu bez zmiany domyślnych ustawień (enroll token). 
-Pojawi się kod QR, który należny wskanować np. aplikacją FreeOTP. 
+Pojawi się kod QR, który należny wskanować [do aplikacji](./ssh.md#aplikacje-do-obsugi-tokenow-totp).
 System będzie oczekiwał podania aktualnej wartości tokenu wyświetlanej w aplikacji przy logowaniu się na `hpc.icm.edu.pl`, nawet jeśli dotychczas nie został on wygenerowany.
 
 !!! Warning
     Po usunięciu tokenu z aplikacji w telefonie nie ma możliwości jego odzyskania (tylko reset wykonany przez administratora).
 
 ### Aplikacje do obsługi tokenów TOTP
+
+W celu uzyskania kodu konieczne jest zainstalowanie na swoim telefonie aplikacji obsługującej mechanizm tokenów **TOTP** (Time-based One-time Password), np. `FreeOTP` lub `GoogleAuthenicator`. 
+Aplikację są dostępne w GooglePlay i AppStore, są darmowe i nie wymagają dostępu do internetu (działają w trybie offline).
+
+Użycie aplikacji na telefon jest preferowane ponieważ:
+
+- jest łatwiejsze w obsłudze
+- inne urządzenie stanowi dodatkowy czynnik zabezpieczający
+
+Jeżeli nie jest to możliwe, należy zainstalować aplikację na komputerze.
+Szczegóły poniżej.
 
 #### [PL] GNU/Linux
 
@@ -62,14 +71,14 @@ operacyjnym GNU/Linux:
    wybieramy "Enroll".
 
       *Uwaga: Tu musimy działać powoli, zbyt szybkie
-	         przejście dalej spowoduje niemożliwość wykorzystania
-	         wygenerowanego tokenu.*
+            przejście dalej spowoduje niemożliwość wykorzystania
+            wygenerowanego tokenu.*
 
-	 Pojawi się nowa strona z obrazem kodu QR
-	 odpowiadającemu tokenowi. Obok kodu jest dostępny
-	 link (pokolorowane "here"). Kopiujemy adres, na który
-	 wskazuje link do schowka lub do dowolnego edytora
-	 tekstu.
+   Pojawi się nowa strona z obrazem kodu QR
+   odpowiadającemu tokenowi. Obok kodu jest dostępny
+   link (pokolorowane "here"). Kopiujemy adres, na który
+   wskazuje link do schowka lub do dowolnego edytora
+   tekstu.
 
 5. W terminalu wykonujemy instrukcję:
 
@@ -77,6 +86,21 @@ operacyjnym GNU/Linux:
 
      Program poprosi nas o podanie "otpauth://". W tym miejscu
      wklejamy w całości skopiowany wcześniej link.
+
+     Pojawienie się komunikatu `Error: otp is not in the password store.` świadczy o niepoprawnym zainstalowaniu
+     wtyczki 'pass-otp' do programu 'pass'. W rezultacie komenda 'otp' nie jest rozpoznawana.
+     Przykład z błędem poniżej:
+
+     ```.bash
+     username@hostname:~$ pass blahblah
+     Error: blahblah is not in the password store.
+
+     username@hostname:~$ pass blahblah insert
+     Error: blahblah is not in the password store.
+
+     username@hostname:~$ pass blahblah insert icm
+     Error: blahblah is not in the password store.
+     ```
 
 6. Gotowe. Można już zamknąć stronę internetową rejestracji tokenu, a
 link nie będzie już potrzebny. Żeby wygenerować token, wystarczy wydać
