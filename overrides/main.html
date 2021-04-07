@@ -2,14 +2,13 @@
 
 {% block scripts %}
 
-{% block content %}
-  {% if page.nb_url %}
-    <p>Pobierz Notebook</p>
-    <a href="{{ page.nb_url }}" title="Pobierz Notebook" class="md-icon" download>
-      {% include ".icons/material/download.svg" %}
-    </a>
-  {% endif %}
-{% endblock content %}
+{% if page.nb_url %}
+  <p>Pobierz Notebook</p>
+  <a href="{{ page.nb_url }}" title="Pobierz Notebook" class="md-icon" download>
+    {% include ".icons/material/download.svg" %}
+  </a>
+{% endif %}
+  
 {{ super() }} <!-- inherite from the parent template instead of overriding-->
 
 <!-- Cookie Consent by https://jakwylaczyccookie.pl/darmowy-notyfikator-cookie/ -->
