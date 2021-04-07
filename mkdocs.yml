@@ -16,6 +16,7 @@ plugins:
   - search # necessary for search to work
   - git-revision-date-localized:
       type: date
+  - monorepo
 
 extra_css:
     - style.css
@@ -133,7 +134,7 @@ nav:
     - Wprowadzenie do obliczeń na komputerach ICM 2019: Szkolenia/intro_icm_2019.md
     - Wprowadzenie do obliczeń wektorowych – NEC SX-Aurora Tsubasa: Szkolenia/intro_nec.md
     - Effective Neural Networks Without GPU (SOL): Szkolenia/intro_sol.md
-    - Obliczenia grafowe i sieciowe: Szkolenia/intro_grafy.md
+    - Obliczenia grafowe i sieciowe: '!include docs/Szkolenia/grafy/mkdocs.yml'
   - Archiwum: Szkolenia/archiwum.md
 - Sesje użytkowników KDM:
   - Aktualności: Sesje_KDM/aktualnosci.md

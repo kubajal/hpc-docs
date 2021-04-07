@@ -3,3 +3,5 @@ mkdocs-material
 python-markdown-math
 mkdocs-git-revision-date-localized-plugin
 pymdown-extensions
+mkdocs-monorepo-plugin
+mkdocs-jupyter
