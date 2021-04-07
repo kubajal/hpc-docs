@@ -46,6 +46,8 @@ test-pages:
     expire_in: 1 week
     when: always # on_failure
   script:
+    - git submodule update --init --recursive
+    - git submodule update --recursive --remote
     - mkdocs build --verbose --clean --strict
 
 publish-pages:
