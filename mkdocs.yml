@@ -16,6 +16,8 @@ plugins:
   - search # necessary for search to work
   - git-revision-date-localized:
       type: date
+  - mkdocs-jupyter:
+      include_source: True
 
 extra_css:
     - style.css
@@ -133,7 +135,34 @@ nav:
     - Wprowadzenie do obliczeń na komputerach ICM 2019: Szkolenia/intro_icm_2019.md
     - Wprowadzenie do obliczeń wektorowych – NEC SX-Aurora Tsubasa: Szkolenia/intro_nec.md
     - Effective Neural Networks Without GPU (SOL): Szkolenia/intro_sol.md
-    - Obliczenia grafowe i sieciowe: Szkolenia/intro_grafy.md
+    - Obliczenia grafowe i sieciowe:
+      - Start: 'Szkolenia/grafy/index.md'
+      - Terminy warsztatów: 'Szkolenia/grafy/terminy.md'
+      - Wymagania wstępne: 'Szkolenia/grafy/wymagania.md'
+      - Warsztaty z Trovares xGT:
+        - Materiały wprowadzające: 'Szkolenia/grafy/xgt/materialy-wprowadzajace.md'
+        - Agenda warsztatów: 'Szkolenia/grafy/xgt/agenda.md'
+        - Prezentacje + Notebooki:
+          - Prezentacje:
+            - Wprowadzenie: Szkolenia/grafy/xgt/files/presentations/wprowadzenie.pdf
+            - Łączenie się po SSH z superkomputerem Rysy: Szkolenia/grafy/xgt/files/presentations/ssh.pdf
+            - Część praktyczna: Szkolenia/grafy/xgt/files/presentations/czesc-praktyczna.pdf
+          - Jupyter Notebook:
+            - Demo - analiza ruchu sieciowego w LANL: Szkolenia/grafy/xgt/files/notebooks/demo.ipynb
+            - Hands-on cz. I: Szkolenia/grafy/xgt/files/notebooks/zadania-1.ipynb
+            - Hands-on cz. II: Szkolenia/grafy/xgt/files/notebooks/zadania-2.ipynb
+      - Warsztaty z Urika-XC Cray Graph Engine:
+        - Materiały wprowadzające: 'Szkolenia/grafy/urika-xc/materialy-wprowadzajace.md'
+        - Agenda warsztatów: 'Szkolenia/grafy/urika-xc/agenda.md'
+        - Materiały:
+          - Prezentacja: 'Szkolenia/grafy/urika-xc/files/presentations/warsztaty_cray_graph_engine.pdf'
+          - Przygotowanie do działania: 'Szkolenia/grafy/urika-xc/przygotowanie_do_dzialania.md'
+          - SPARQL: 'Szkolenia/grafy/urika-xc/sparql.md'
+          - S-T Connectivity: 'Szkolenia/grafy/urika-xc/st_connectivity.md'
+        - Materiały dodatkowe:
+          - Metody użycia CGE: Szkolenia/grafy/urika-xc/metody_uzycia_cge.ipynb
+          - Pagerank: Szkolenia/grafy/urika-xc/pagerank.ipynb
+      - Kontakt & Organizatorzy: 'Szkolenia/grafy/kontakty.md'
   - Archiwum: Szkolenia/archiwum.md
 - Sesje użytkowników KDM:
   - Aktualności: Sesje_KDM/aktualnosci.md
