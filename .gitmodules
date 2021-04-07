@@ -1,0 +1,4 @@
+[submodule "docs/Szkolenia/grafy"]
+	path = docs/Szkolenia/grafy
+	url = https://github.com/kubajal/hpc-docs-graphs.git
+	branch = stable
