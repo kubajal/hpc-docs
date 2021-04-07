@@ -14,8 +14,12 @@ theme:
 
 plugins:
   - search # necessary for search to work
+  - mkdocs-jupyter:
+      include_source: True
   - git-revision-date-localized:
       type: date
+      exclude:
+      - '*.ipynb'
   - monorepo
 
 extra_css:
